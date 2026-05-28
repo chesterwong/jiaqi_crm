@@ -1,0 +1,10287 @@
+/*
+ Navicat Premium Dump SQL
+
+ Source Server         : CRM客户管理
+ Source Server Type    : PostgreSQL
+ Source Server Version : 160013 (160013)
+ Source Host           : localhost:5432
+ Source Catalog        : crm
+ Source Schema         : public
+
+ Target Server Type    : PostgreSQL
+ Target Server Version : 160013 (160013)
+ File Encoding         : 65001
+
+ Date: 19/04/2026 12:05:48
+*/
+
+
+-- ----------------------------
+-- Sequence structure for app_portal_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."app_portal_id_seq";
+CREATE SEQUENCE "public"."app_portal_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_ai_customer_profiles_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_ai_customer_profiles_id_seq";
+CREATE SEQUENCE "public"."crm_ai_customer_profiles_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_ai_recommendations_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_ai_recommendations_id_seq";
+CREATE SEQUENCE "public"."crm_ai_recommendations_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_ai_tags_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_ai_tags_id_seq";
+CREATE SEQUENCE "public"."crm_ai_tags_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_campaign_leads_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_campaign_leads_id_seq";
+CREATE SEQUENCE "public"."crm_campaign_leads_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_campaigns_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_campaigns_id_seq";
+CREATE SEQUENCE "public"."crm_campaigns_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_contact_change_logs_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_contact_change_logs_id_seq";
+CREATE SEQUENCE "public"."crm_contact_change_logs_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_contact_relations_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_contact_relations_id_seq";
+CREATE SEQUENCE "public"."crm_contact_relations_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_contact_visits_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_contact_visits_id_seq";
+CREATE SEQUENCE "public"."crm_contact_visits_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_contacts_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_contacts_id_seq";
+CREATE SEQUENCE "public"."crm_contacts_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_contract_invoices_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_contract_invoices_id_seq";
+CREATE SEQUENCE "public"."crm_contract_invoices_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_contract_items_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_contract_items_id_seq";
+CREATE SEQUENCE "public"."crm_contract_items_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_contracts_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_contracts_id_seq";
+CREATE SEQUENCE "public"."crm_contracts_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_customer_activities_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_customer_activities_id_seq";
+CREATE SEQUENCE "public"."crm_customer_activities_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_customer_addresses_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_customer_addresses_id_seq";
+CREATE SEQUENCE "public"."crm_customer_addresses_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_customer_attachments_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_customer_attachments_id_seq";
+CREATE SEQUENCE "public"."crm_customer_attachments_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_customer_change_logs_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_customer_change_logs_id_seq";
+CREATE SEQUENCE "public"."crm_customer_change_logs_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_customer_duplicate_logs_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_customer_duplicate_logs_id_seq";
+CREATE SEQUENCE "public"."crm_customer_duplicate_logs_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_customer_health_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_customer_health_id_seq";
+CREATE SEQUENCE "public"."crm_customer_health_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_customer_health_scores_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_customer_health_scores_id_seq";
+CREATE SEQUENCE "public"."crm_customer_health_scores_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_customer_pool_logs_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_customer_pool_logs_id_seq";
+CREATE SEQUENCE "public"."crm_customer_pool_logs_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_customer_profiles_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_customer_profiles_id_seq";
+CREATE SEQUENCE "public"."crm_customer_profiles_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_customer_satisfaction_surveys_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_customer_satisfaction_surveys_id_seq";
+CREATE SEQUENCE "public"."crm_customer_satisfaction_surveys_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_customer_tags_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_customer_tags_id_seq";
+CREATE SEQUENCE "public"."crm_customer_tags_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_customer_timeline_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_customer_timeline_id_seq";
+CREATE SEQUENCE "public"."crm_customer_timeline_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_customers_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_customers_id_seq";
+CREATE SEQUENCE "public"."crm_customers_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_data_dicts_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_data_dicts_id_seq";
+CREATE SEQUENCE "public"."crm_data_dicts_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_deliveries_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_deliveries_id_seq";
+CREATE SEQUENCE "public"."crm_deliveries_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_follow_records_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_follow_records_id_seq";
+CREATE SEQUENCE "public"."crm_follow_records_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_followups_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_followups_id_seq";
+CREATE SEQUENCE "public"."crm_followups_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_import_records_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_import_records_id_seq";
+CREATE SEQUENCE "public"."crm_import_records_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_invoices_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_invoices_id_seq";
+CREATE SEQUENCE "public"."crm_invoices_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_joint_followups_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_joint_followups_id_seq";
+CREATE SEQUENCE "public"."crm_joint_followups_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_lead_scores_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_lead_scores_id_seq";
+CREATE SEQUENCE "public"."crm_lead_scores_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_leads_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_leads_id_seq";
+CREATE SEQUENCE "public"."crm_leads_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_marketing_campaigns_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_marketing_campaigns_id_seq";
+CREATE SEQUENCE "public"."crm_marketing_campaigns_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_marketing_channels_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_marketing_channels_id_seq";
+CREATE SEQUENCE "public"."crm_marketing_channels_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_notifications_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_notifications_id_seq";
+CREATE SEQUENCE "public"."crm_notifications_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_operation_logs_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_operation_logs_id_seq";
+CREATE SEQUENCE "public"."crm_operation_logs_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_opportunities_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_opportunities_id_seq";
+CREATE SEQUENCE "public"."crm_opportunities_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_opportunity_products_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_opportunity_products_id_seq";
+CREATE SEQUENCE "public"."crm_opportunity_products_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_opportunity_stages_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_opportunity_stages_id_seq";
+CREATE SEQUENCE "public"."crm_opportunity_stages_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_order_items_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_order_items_id_seq";
+CREATE SEQUENCE "public"."crm_order_items_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_orders_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_orders_id_seq";
+CREATE SEQUENCE "public"."crm_orders_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_payments_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_payments_id_seq";
+CREATE SEQUENCE "public"."crm_payments_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_pool_transfers_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_pool_transfers_id_seq";
+CREATE SEQUENCE "public"."crm_pool_transfers_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_price_tiers_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_price_tiers_id_seq";
+CREATE SEQUENCE "public"."crm_price_tiers_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_product_categories_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_product_categories_id_seq";
+CREATE SEQUENCE "public"."crm_product_categories_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_product_documents_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_product_documents_id_seq";
+CREATE SEQUENCE "public"."crm_product_documents_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_product_price_history_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_product_price_history_id_seq";
+CREATE SEQUENCE "public"."crm_product_price_history_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_product_price_policies_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_product_price_policies_id_seq";
+CREATE SEQUENCE "public"."crm_product_price_policies_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_product_prices_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_product_prices_id_seq";
+CREATE SEQUENCE "public"."crm_product_prices_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_product_skus_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_product_skus_id_seq";
+CREATE SEQUENCE "public"."crm_product_skus_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_products_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_products_id_seq";
+CREATE SEQUENCE "public"."crm_products_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_quotation_items_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_quotation_items_id_seq";
+CREATE SEQUENCE "public"."crm_quotation_items_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_quotations_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_quotations_id_seq";
+CREATE SEQUENCE "public"."crm_quotations_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_renewals_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_renewals_id_seq";
+CREATE SEQUENCE "public"."crm_renewals_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_report_instances_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_report_instances_id_seq";
+CREATE SEQUENCE "public"."crm_report_instances_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_report_templates_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_report_templates_id_seq";
+CREATE SEQUENCE "public"."crm_report_templates_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_sales_activities_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_sales_activities_id_seq";
+CREATE SEQUENCE "public"."crm_sales_activities_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_sales_targets_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_sales_targets_id_seq";
+CREATE SEQUENCE "public"."crm_sales_targets_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_satisfaction_surveys_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_satisfaction_surveys_id_seq";
+CREATE SEQUENCE "public"."crm_satisfaction_surveys_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_tag_definitions_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_tag_definitions_id_seq";
+CREATE SEQUENCE "public"."crm_tag_definitions_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_tags_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_tags_id_seq";
+CREATE SEQUENCE "public"."crm_tags_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_tasks_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_tasks_id_seq";
+CREATE SEQUENCE "public"."crm_tasks_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_user_extensions_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_user_extensions_id_seq";
+CREATE SEQUENCE "public"."crm_user_extensions_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_workflow_approvals_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_workflow_approvals_id_seq";
+CREATE SEQUENCE "public"."crm_workflow_approvals_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_workflow_logs_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_workflow_logs_id_seq";
+CREATE SEQUENCE "public"."crm_workflow_logs_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for crm_workflow_rules_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."crm_workflow_rules_id_seq";
+CREATE SEQUENCE "public"."crm_workflow_rules_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for gen_demo01_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."gen_demo01_id_seq";
+CREATE SEQUENCE "public"."gen_demo01_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for gen_demo_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."gen_demo_id_seq";
+CREATE SEQUENCE "public"."gen_demo_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for gen_table_column_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."gen_table_column_id_seq";
+CREATE SEQUENCE "public"."gen_table_column_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for gen_table_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."gen_table_id_seq";
+CREATE SEQUENCE "public"."gen_table_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for sys_dept_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."sys_dept_id_seq";
+CREATE SEQUENCE "public"."sys_dept_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for sys_dict_data_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."sys_dict_data_id_seq";
+CREATE SEQUENCE "public"."sys_dict_data_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for sys_dict_type_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."sys_dict_type_id_seq";
+CREATE SEQUENCE "public"."sys_dict_type_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for sys_log_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."sys_log_id_seq";
+CREATE SEQUENCE "public"."sys_log_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for sys_menu_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."sys_menu_id_seq";
+CREATE SEQUENCE "public"."sys_menu_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for sys_notice_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."sys_notice_id_seq";
+CREATE SEQUENCE "public"."sys_notice_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for sys_param_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."sys_param_id_seq";
+CREATE SEQUENCE "public"."sys_param_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for sys_position_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."sys_position_id_seq";
+CREATE SEQUENCE "public"."sys_position_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for sys_role_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."sys_role_id_seq";
+CREATE SEQUENCE "public"."sys_role_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for sys_tenant_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."sys_tenant_id_seq";
+CREATE SEQUENCE "public"."sys_tenant_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for sys_user_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."sys_user_id_seq";
+CREATE SEQUENCE "public"."sys_user_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for task_job_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."task_job_id_seq";
+CREATE SEQUENCE "public"."task_job_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for task_node_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."task_node_id_seq";
+CREATE SEQUENCE "public"."task_node_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for task_workflow_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."task_workflow_id_seq";
+CREATE SEQUENCE "public"."task_workflow_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for task_workflow_node_type_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."task_workflow_node_type_id_seq";
+CREATE SEQUENCE "public"."task_workflow_node_type_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Table structure for app_portal
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."app_portal";
+CREATE TABLE "public"."app_portal" (
+  "name" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "access_url" varchar(500) COLLATE "pg_catalog"."default" NOT NULL,
+  "icon_url" varchar(300) COLLATE "pg_catalog"."default",
+  "id" int4 NOT NULL DEFAULT nextval('app_portal_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL,
+  "tenant_id" int4 NOT NULL,
+  "created_id" int4,
+  "updated_id" int4
+)
+;
+COMMENT ON COLUMN "public"."app_portal"."name" IS '应用名称';
+COMMENT ON COLUMN "public"."app_portal"."access_url" IS '访问地址';
+COMMENT ON COLUMN "public"."app_portal"."icon_url" IS '应用图标URL';
+COMMENT ON COLUMN "public"."app_portal"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."app_portal"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."app_portal"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."app_portal"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."app_portal"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."app_portal"."updated_time" IS '更新时间';
+COMMENT ON COLUMN "public"."app_portal"."tenant_id" IS '租户ID';
+COMMENT ON COLUMN "public"."app_portal"."created_id" IS '创建人ID';
+COMMENT ON COLUMN "public"."app_portal"."updated_id" IS '更新人ID';
+COMMENT ON TABLE "public"."app_portal" IS '门户应用';
+
+-- ----------------------------
+-- Records of app_portal
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for apscheduler_jobs
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."apscheduler_jobs";
+CREATE TABLE "public"."apscheduler_jobs" (
+  "id" varchar(191) COLLATE "pg_catalog"."default" NOT NULL,
+  "next_run_time" float8,
+  "job_state" bytea NOT NULL
+)
+;
+
+-- ----------------------------
+-- Records of apscheduler_jobs
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_ai_customer_profiles
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_ai_customer_profiles";
+CREATE TABLE "public"."crm_ai_customer_profiles" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_ai_customer_profiles_id_seq'::regclass),
+  "customer_id" int4 NOT NULL,
+  "overall_score" int4,
+  "purchase_power" varchar(20) COLLATE "pg_catalog"."default",
+  "decision_speed" varchar(20) COLLATE "pg_catalog"."default",
+  "tags" json,
+  "interests" json,
+  "pain_points" json,
+  "engagement_level" varchar(20) COLLATE "pg_catalog"."default",
+  "preferred_contact_method" varchar(50) COLLATE "pg_catalog"."default",
+  "best_contact_time" varchar(50) COLLATE "pg_catalog"."default",
+  "churn_risk" varchar(20) COLLATE "pg_catalog"."default",
+  "upsell_probability" int4,
+  "next_best_action" varchar(200) COLLATE "pg_catalog"."default",
+  "summary" text COLLATE "pg_catalog"."default",
+  "generated_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6),
+  "created_by" int4,
+  "updated_by" int4,
+  "created_at" timestamp(6) DEFAULT CURRENT_TIMESTAMP
+)
+;
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."overall_score" IS '综合评分';
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."purchase_power" IS '购买力评分';
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."decision_speed" IS '决策速度评分';
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."tags" IS '标签';
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."interests" IS '兴趣标签';
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."pain_points" IS '痛点分析';
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."engagement_level" IS '参与度等级';
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."preferred_contact_method" IS '首选联系方式';
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."best_contact_time" IS '最佳联系时间';
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."churn_risk" IS '流失风险等级';
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."upsell_probability" IS '增购概率';
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."next_best_action" IS '下一步最佳行动';
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."summary" IS '摘要';
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."generated_at" IS '生成时间';
+COMMENT ON COLUMN "public"."crm_ai_customer_profiles"."updated_at" IS '更新时间';
+COMMENT ON TABLE "public"."crm_ai_customer_profiles" IS 'Ai Customer Profiles';
+
+-- ----------------------------
+-- Records of crm_ai_customer_profiles
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_ai_recommendations
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_ai_recommendations";
+CREATE TABLE "public"."crm_ai_recommendations" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_ai_recommendations_id_seq'::regclass),
+  "entity_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "entity_id" int4 NOT NULL,
+  "recommendation_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "recommendation_content" json NOT NULL,
+  "ai_model" varchar(50) COLLATE "pg_catalog"."default",
+  "confidence" numeric(5,2),
+  "reasoning" text COLLATE "pg_catalog"."default",
+  "user_feedback" varchar(20) COLLATE "pg_catalog"."default",
+  "feedback_at" timestamp(6),
+  "created_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6),
+  "created_by" int4,
+  "updated_by" int4,
+  "updated_at" timestamp(6) DEFAULT CURRENT_TIMESTAMP
+)
+;
+COMMENT ON COLUMN "public"."crm_ai_recommendations"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_ai_recommendations"."entity_type" IS '实体类型';
+COMMENT ON COLUMN "public"."crm_ai_recommendations"."entity_id" IS '实体ID';
+COMMENT ON COLUMN "public"."crm_ai_recommendations"."recommendation_type" IS '推荐类型';
+COMMENT ON COLUMN "public"."crm_ai_recommendations"."recommendation_content" IS '推荐内容';
+COMMENT ON COLUMN "public"."crm_ai_recommendations"."ai_model" IS 'AI模型';
+COMMENT ON COLUMN "public"."crm_ai_recommendations"."confidence" IS '置信度';
+COMMENT ON COLUMN "public"."crm_ai_recommendations"."reasoning" IS '推理依据';
+COMMENT ON COLUMN "public"."crm_ai_recommendations"."user_feedback" IS '用户反馈';
+COMMENT ON COLUMN "public"."crm_ai_recommendations"."feedback_at" IS '反馈时间';
+COMMENT ON COLUMN "public"."crm_ai_recommendations"."created_at" IS '创建时间';
+COMMENT ON TABLE "public"."crm_ai_recommendations" IS 'Ai Recommendations';
+
+-- ----------------------------
+-- Records of crm_ai_recommendations
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_ai_tags
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_ai_tags";
+CREATE TABLE "public"."crm_ai_tags" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_ai_tags_id_seq'::regclass),
+  "tag_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "tag_name" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "ai_model" varchar(50) COLLATE "pg_catalog"."default",
+  "ai_prompt" text COLLATE "pg_catalog"."default",
+  "confidence_threshold" numeric(5,2) DEFAULT 0.80,
+  "applicable_entities" json,
+  "usage_count" int4 DEFAULT 0,
+  "accuracy_rate" numeric(5,2),
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'active'::character varying,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6),
+  "created_by" int4,
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_ai_tags"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_ai_tags"."tag_code" IS '标签编号';
+COMMENT ON COLUMN "public"."crm_ai_tags"."tag_name" IS '标签名称';
+COMMENT ON COLUMN "public"."crm_ai_tags"."ai_model" IS 'AI模型';
+COMMENT ON COLUMN "public"."crm_ai_tags"."ai_prompt" IS 'AI提示词';
+COMMENT ON COLUMN "public"."crm_ai_tags"."confidence_threshold" IS '置信度阈值';
+COMMENT ON COLUMN "public"."crm_ai_tags"."applicable_entities" IS '适用实体';
+COMMENT ON COLUMN "public"."crm_ai_tags"."usage_count" IS '使用次数';
+COMMENT ON COLUMN "public"."crm_ai_tags"."accuracy_rate" IS '准确率比率';
+COMMENT ON COLUMN "public"."crm_ai_tags"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_ai_tags"."description" IS '描述';
+COMMENT ON COLUMN "public"."crm_ai_tags"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_ai_tags"."updated_at" IS '更新时间';
+COMMENT ON TABLE "public"."crm_ai_tags" IS 'Ai Tags';
+
+-- ----------------------------
+-- Records of crm_ai_tags
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_campaign_leads
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_campaign_leads";
+CREATE TABLE "public"."crm_campaign_leads" (
+  "id" int8 NOT NULL DEFAULT nextval('crm_campaign_leads_id_seq'::regclass),
+  "campaign_id" int8 NOT NULL,
+  "lead_id" int8 NOT NULL,
+  "participation_type" varchar(30) COLLATE "pg_catalog"."default",
+  "registration_date" date,
+  "attendance_status" varchar(20) COLLATE "pg_catalog"."default",
+  "lead_source_detail" varchar(100) COLLATE "pg_catalog"."default",
+  "channel" varchar(50) COLLATE "pg_catalog"."default",
+  "is_converted" bool DEFAULT false,
+  "converted_customer_id" int8,
+  "interaction_count" int4 DEFAULT 0,
+  "engagement_score" numeric(5,2),
+  "remark" text COLLATE "pg_catalog"."default",
+  "created_at" timestamptz(6) DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" timestamptz(6) DEFAULT CURRENT_TIMESTAMP,
+  "created_by" int8,
+  "updated_by" int8,
+  "deleted_at" timestamptz(6),
+  "version" int4 DEFAULT 1
+)
+;
+COMMENT ON COLUMN "public"."crm_campaign_leads"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."campaign_id" IS '活动ID';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."lead_id" IS '来源线索ID,关联crm_leads';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."participation_type" IS '参与类型';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."registration_date" IS '注册日期';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."attendance_status" IS '出席状态';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."lead_source_detail" IS '线索来源详情';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."channel" IS '渠道';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."is_converted" IS '是否已转化:0-否,1-是';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."converted_customer_id" IS '转化后客户ID';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."interaction_count" IS '互动次数';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."engagement_score" IS '参与度评分';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."remark" IS '备注';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."deleted_at" IS '删除时间(软删除)';
+COMMENT ON COLUMN "public"."crm_campaign_leads"."version" IS '版本号';
+COMMENT ON TABLE "public"."crm_campaign_leads" IS 'Campaign Leads';
+
+-- ----------------------------
+-- Records of crm_campaign_leads
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_campaigns
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_campaigns";
+CREATE TABLE "public"."crm_campaigns" (
+  "id" int8 NOT NULL DEFAULT nextval('crm_campaigns_id_seq'::regclass),
+  "campaign_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "campaign_name" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "campaign_type" varchar(30) COLLATE "pg_catalog"."default" NOT NULL,
+  "campaign_subtype" varchar(50) COLLATE "pg_catalog"."default",
+  "planned_start_date" date,
+  "planned_end_date" date,
+  "actual_start_date" date,
+  "actual_end_date" date,
+  "budget" numeric(18,2) DEFAULT 0,
+  "actual_cost" numeric(18,2) DEFAULT 0,
+  "cost_currency" varchar(10) COLLATE "pg_catalog"."default" DEFAULT 'CNY'::character varying,
+  "objectives" text COLLATE "pg_catalog"."default",
+  "target_participants" int4,
+  "actual_participants" int4 DEFAULT 0,
+  "target_leads" int4,
+  "actual_leads" int4 DEFAULT 0,
+  "target_conversions" int4,
+  "actual_conversions" int4 DEFAULT 0,
+  "expected_roi" numeric(10,2),
+  "actual_roi" numeric(10,2),
+  "channels" varchar(50)[] COLLATE "pg_catalog"."default",
+  "channel_ids" int8[],
+  "owner_id" int8,
+  "department_id" int8,
+  "team_members" int8[],
+  "related_campaign_id" int8,
+  "description" text COLLATE "pg_catalog"."default",
+  "content_plan" jsonb DEFAULT '[]'::jsonb,
+  "landing_page_url" varchar(500) COLLATE "pg_catalog"."default",
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'draft'::character varying,
+  "phase" varchar(20) COLLATE "pg_catalog"."default",
+  "created_at" timestamptz(6) DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" timestamptz(6),
+  "created_by" int8,
+  "updated_by" int8,
+  "deleted_at" timestamptz(6),
+  "version" int4 DEFAULT 1
+)
+;
+COMMENT ON COLUMN "public"."crm_campaigns"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_campaigns"."campaign_code" IS '活动编号';
+COMMENT ON COLUMN "public"."crm_campaigns"."campaign_name" IS '活动名称';
+COMMENT ON COLUMN "public"."crm_campaigns"."campaign_type" IS '活动类型';
+COMMENT ON COLUMN "public"."crm_campaigns"."campaign_subtype" IS '活动子类型';
+COMMENT ON COLUMN "public"."crm_campaigns"."planned_start_date" IS '计划开始日期';
+COMMENT ON COLUMN "public"."crm_campaigns"."planned_end_date" IS '计划结束日期';
+COMMENT ON COLUMN "public"."crm_campaigns"."actual_start_date" IS '实际开始日期';
+COMMENT ON COLUMN "public"."crm_campaigns"."actual_end_date" IS '实际结束日期';
+COMMENT ON COLUMN "public"."crm_campaigns"."budget" IS '预算金额';
+COMMENT ON COLUMN "public"."crm_campaigns"."actual_cost" IS '实际成本';
+COMMENT ON COLUMN "public"."crm_campaigns"."cost_currency" IS '成本币种';
+COMMENT ON COLUMN "public"."crm_campaigns"."objectives" IS '活动目标';
+COMMENT ON COLUMN "public"."crm_campaigns"."target_participants" IS '目标参与人数';
+COMMENT ON COLUMN "public"."crm_campaigns"."actual_participants" IS '实际参与人数';
+COMMENT ON COLUMN "public"."crm_campaigns"."target_leads" IS '目标线索数';
+COMMENT ON COLUMN "public"."crm_campaigns"."actual_leads" IS '实际线索数';
+COMMENT ON COLUMN "public"."crm_campaigns"."target_conversions" IS '目标转化数';
+COMMENT ON COLUMN "public"."crm_campaigns"."actual_conversions" IS '实际转化数';
+COMMENT ON COLUMN "public"."crm_campaigns"."expected_roi" IS '预期投资回报率';
+COMMENT ON COLUMN "public"."crm_campaigns"."actual_roi" IS '实际投资回报率';
+COMMENT ON COLUMN "public"."crm_campaigns"."channels" IS '渠道列表';
+COMMENT ON COLUMN "public"."crm_campaigns"."channel_ids" IS '渠道ID列表';
+COMMENT ON COLUMN "public"."crm_campaigns"."owner_id" IS '负责人ID,关联sys_users';
+COMMENT ON COLUMN "public"."crm_campaigns"."department_id" IS '所属部门ID,关联sys_dept';
+COMMENT ON COLUMN "public"."crm_campaigns"."team_members" IS '团队成员';
+COMMENT ON COLUMN "public"."crm_campaigns"."related_campaign_id" IS 'relatedcampaignID,关联对应表';
+COMMENT ON COLUMN "public"."crm_campaigns"."description" IS '描述';
+COMMENT ON COLUMN "public"."crm_campaigns"."content_plan" IS '内容计划';
+COMMENT ON COLUMN "public"."crm_campaigns"."landing_page_url" IS '落地页URL';
+COMMENT ON COLUMN "public"."crm_campaigns"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_campaigns"."phase" IS '阶段';
+COMMENT ON COLUMN "public"."crm_campaigns"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_campaigns"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_campaigns"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_campaigns"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_campaigns"."deleted_at" IS '删除时间(软删除)';
+COMMENT ON COLUMN "public"."crm_campaigns"."version" IS '版本号';
+COMMENT ON TABLE "public"."crm_campaigns" IS 'Campaigns';
+
+-- ----------------------------
+-- Records of crm_campaigns
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_contact_change_logs
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_contact_change_logs";
+CREATE TABLE "public"."crm_contact_change_logs" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_contact_change_logs_id_seq'::regclass),
+  "contact_id" int4 NOT NULL,
+  "customer_id" int4 NOT NULL,
+  "field_name" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "field_label" varchar(100) COLLATE "pg_catalog"."default",
+  "old_value" text COLLATE "pg_catalog"."default",
+  "new_value" text COLLATE "pg_catalog"."default",
+  "change_type" varchar(50) COLLATE "pg_catalog"."default",
+  "operator_id" int4 NOT NULL,
+  "operator_name" varchar(100) COLLATE "pg_catalog"."default",
+  "changed_at" timestamp(6) DEFAULT now(),
+  "created_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_contact_change_logs"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_contact_change_logs"."contact_id" IS '联系人ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_contact_change_logs"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_contact_change_logs"."field_name" IS '字段名称';
+COMMENT ON COLUMN "public"."crm_contact_change_logs"."field_label" IS '字段标签';
+COMMENT ON COLUMN "public"."crm_contact_change_logs"."old_value" IS '旧值';
+COMMENT ON COLUMN "public"."crm_contact_change_logs"."new_value" IS '新值';
+COMMENT ON COLUMN "public"."crm_contact_change_logs"."change_type" IS '变更类型';
+COMMENT ON COLUMN "public"."crm_contact_change_logs"."operator_id" IS '操作人ID';
+COMMENT ON COLUMN "public"."crm_contact_change_logs"."operator_name" IS '操作人名称';
+COMMENT ON COLUMN "public"."crm_contact_change_logs"."changed_at" IS '变更时间';
+COMMENT ON COLUMN "public"."crm_contact_change_logs"."created_at" IS '创建时间';
+COMMENT ON TABLE "public"."crm_contact_change_logs" IS 'Contact Change Logs';
+
+-- ----------------------------
+-- Records of crm_contact_change_logs
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_contact_relations
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_contact_relations";
+CREATE TABLE "public"."crm_contact_relations" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_contact_relations_id_seq'::regclass),
+  "contact_id" int4 NOT NULL,
+  "related_contact_id" int4,
+  "related_entity_type" varchar(50) COLLATE "pg_catalog"."default",
+  "related_entity_id" int4,
+  "relation_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "relation_desc" varchar(200) COLLATE "pg_catalog"."default",
+  "importance" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'normal'::character varying,
+  "decision_role" varchar(50) COLLATE "pg_catalog"."default",
+  "influence_level" int4,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'active'::character varying,
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_by" int4,
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_contact_relations"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_contact_relations"."contact_id" IS '联系人ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_contact_relations"."related_contact_id" IS '关联联系人ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_contact_relations"."related_entity_type" IS '关联实体类型';
+COMMENT ON COLUMN "public"."crm_contact_relations"."related_entity_id" IS '关联实体ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_contact_relations"."relation_type" IS '关系类型';
+COMMENT ON COLUMN "public"."crm_contact_relations"."relation_desc" IS '关系描述';
+COMMENT ON COLUMN "public"."crm_contact_relations"."importance" IS '重要性';
+COMMENT ON COLUMN "public"."crm_contact_relations"."decision_role" IS '决策角色';
+COMMENT ON COLUMN "public"."crm_contact_relations"."influence_level" IS '影响力等级';
+COMMENT ON COLUMN "public"."crm_contact_relations"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_contact_relations"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_contact_relations"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_contact_relations"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_contact_relations"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_contact_relations"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_contact_relations" IS 'Contact Relations';
+
+-- ----------------------------
+-- Records of crm_contact_relations
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_contact_visits
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_contact_visits";
+CREATE TABLE "public"."crm_contact_visits" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_contact_visits_id_seq'::regclass),
+  "contact_id" int4 NOT NULL,
+  "customer_id" int4 NOT NULL,
+  "visit_date" date NOT NULL,
+  "visit_type" varchar(50) COLLATE "pg_catalog"."default",
+  "visit_location" varchar(200) COLLATE "pg_catalog"."default",
+  "visit_duration" int4,
+  "visitor_id" int4 NOT NULL,
+  "visitor_name" varchar(100) COLLATE "pg_catalog"."default",
+  "attendees" json,
+  "visit_content" text COLLATE "pg_catalog"."default",
+  "visit_result" varchar(200) COLLATE "pg_catalog"."default",
+  "follow_up_action" text COLLATE "pg_catalog"."default",
+  "next_visit_date" date,
+  "attachments" json,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6),
+  "created_by" int4,
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_contact_visits"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_contact_visits"."contact_id" IS '联系人ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_contact_visits"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_contact_visits"."visit_date" IS '拜访日期';
+COMMENT ON COLUMN "public"."crm_contact_visits"."visit_type" IS '拜访类型:1-首次拜访,2-常规拜访,3-回访,4-线上沟通,5-会议';
+COMMENT ON COLUMN "public"."crm_contact_visits"."visit_location" IS '拜访地点';
+COMMENT ON COLUMN "public"."crm_contact_visits"."visit_duration" IS '拜访时长';
+COMMENT ON COLUMN "public"."crm_contact_visits"."visitor_id" IS '拜访人ID';
+COMMENT ON COLUMN "public"."crm_contact_visits"."visitor_name" IS '拜访人姓名';
+COMMENT ON COLUMN "public"."crm_contact_visits"."attendees" IS '参与人';
+COMMENT ON COLUMN "public"."crm_contact_visits"."visit_content" IS '拜访内容';
+COMMENT ON COLUMN "public"."crm_contact_visits"."visit_result" IS '拜访结果';
+COMMENT ON COLUMN "public"."crm_contact_visits"."follow_up_action" IS '跟进动作';
+COMMENT ON COLUMN "public"."crm_contact_visits"."next_visit_date" IS '下次拜访日期';
+COMMENT ON COLUMN "public"."crm_contact_visits"."attachments" IS '附件';
+COMMENT ON COLUMN "public"."crm_contact_visits"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_contact_visits"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_contact_visits"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_contact_visits" IS 'Contact Visits';
+
+-- ----------------------------
+-- Records of crm_contact_visits
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_contacts
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_contacts";
+CREATE TABLE "public"."crm_contacts" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_contacts_id_seq'::regclass),
+  "customer_id" int4 NOT NULL,
+  "contact_name" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "gender" varchar(10) COLLATE "pg_catalog"."default",
+  "position" varchar(100) COLLATE "pg_catalog"."default",
+  "department" varchar(100) COLLATE "pg_catalog"."default",
+  "mobile" varchar(50) COLLATE "pg_catalog"."default",
+  "phone" varchar(50) COLLATE "pg_catalog"."default",
+  "email" varchar(100) COLLATE "pg_catalog"."default",
+  "wechat" varchar(100) COLLATE "pg_catalog"."default",
+  "qq" varchar(50) COLLATE "pg_catalog"."default",
+  "is_primary" bool DEFAULT false,
+  "relationship" varchar(50) COLLATE "pg_catalog"."default",
+  "influence_level" varchar(20) COLLATE "pg_catalog"."default",
+  "birthday" date,
+  "anniversary_date" date,
+  "remark" text COLLATE "pg_catalog"."default",
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_by" int4,
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_contacts"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_contacts"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_contacts"."contact_name" IS '联系人姓名';
+COMMENT ON COLUMN "public"."crm_contacts"."gender" IS '性别:0-未知,1-男,2-女';
+COMMENT ON COLUMN "public"."crm_contacts"."position" IS '职位';
+COMMENT ON COLUMN "public"."crm_contacts"."department" IS '部门';
+COMMENT ON COLUMN "public"."crm_contacts"."mobile" IS '手机';
+COMMENT ON COLUMN "public"."crm_contacts"."phone" IS '电话';
+COMMENT ON COLUMN "public"."crm_contacts"."email" IS '邮箱';
+COMMENT ON COLUMN "public"."crm_contacts"."wechat" IS '微信';
+COMMENT ON COLUMN "public"."crm_contacts"."qq" IS 'QQ号';
+COMMENT ON COLUMN "public"."crm_contacts"."is_primary" IS '是否主要联系人:0-否,1-是';
+COMMENT ON COLUMN "public"."crm_contacts"."relationship" IS '关系';
+COMMENT ON COLUMN "public"."crm_contacts"."influence_level" IS '影响力等级';
+COMMENT ON COLUMN "public"."crm_contacts"."birthday" IS '生日';
+COMMENT ON COLUMN "public"."crm_contacts"."anniversary_date" IS '纪念日';
+COMMENT ON COLUMN "public"."crm_contacts"."remark" IS '备注';
+COMMENT ON COLUMN "public"."crm_contacts"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_contacts"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_contacts"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_contacts"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_contacts"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_contacts" IS 'Contacts';
+
+-- ----------------------------
+-- Records of crm_contacts
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_contract_invoices
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_contract_invoices";
+CREATE TABLE "public"."crm_contract_invoices" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_contract_invoices_id_seq'::regclass),
+  "contract_id" int4 NOT NULL,
+  "payment_plan_id" int4,
+  "invoice_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "invoice_number" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "invoice_type" varchar(50) COLLATE "pg_catalog"."default",
+  "amount" numeric(15,2) NOT NULL,
+  "tax_rate" numeric(5,2) DEFAULT 13.00,
+  "tax_amount" numeric(15,2),
+  "total_amount" numeric(15,2),
+  "invoice_date" date,
+  "invoice_status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'pending'::character varying,
+  "issued_by" int4,
+  "issued_at" timestamp(6),
+  "invoice_file_url" varchar(500) COLLATE "pg_catalog"."default",
+  "remark" text COLLATE "pg_catalog"."default",
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6),
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_contract_invoices"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."contract_id" IS '合同ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."payment_plan_id" IS '付款计划ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."invoice_code" IS '发票编号';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."invoice_number" IS '发票号码';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."invoice_type" IS '发票类型:1-增值税专票,2-增值税普票,3-普通发票';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."amount" IS '金额';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."tax_rate" IS '税率';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."tax_amount" IS '税额';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."total_amount" IS '总金额';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."invoice_date" IS '开票日期';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."invoice_status" IS '发票状态:1-草稿,2-已开具,3-已发送,4-已收款,5-已作废';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."issued_by" IS '开具人ID';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."issued_at" IS '开具时间';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."invoice_file_url" IS '发票文件URL';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."remark" IS '备注';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_contract_invoices"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_contract_invoices" IS 'Contract Invoices';
+
+-- ----------------------------
+-- Records of crm_contract_invoices
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_contract_items
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_contract_items";
+CREATE TABLE "public"."crm_contract_items" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_contract_items_id_seq'::regclass),
+  "contract_id" int4 NOT NULL,
+  "product_id" int4,
+  "product_name" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "product_code" varchar(50) COLLATE "pg_catalog"."default",
+  "quantity" numeric(10,2) NOT NULL,
+  "unit_price" numeric(15,2) NOT NULL,
+  "discount_rate" numeric(5,2) DEFAULT 0,
+  "amount" numeric(15,2) NOT NULL,
+  "delivery_date" date,
+  "delivery_address" text COLLATE "pg_catalog"."default",
+  "remark" text COLLATE "pg_catalog"."default",
+  "sort" int4 DEFAULT 0,
+  "created_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_contract_items"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_contract_items"."contract_id" IS '合同ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_contract_items"."product_id" IS '产品ID';
+COMMENT ON COLUMN "public"."crm_contract_items"."product_name" IS '产品名称';
+COMMENT ON COLUMN "public"."crm_contract_items"."product_code" IS '产品编号';
+COMMENT ON COLUMN "public"."crm_contract_items"."quantity" IS '数量';
+COMMENT ON COLUMN "public"."crm_contract_items"."unit_price" IS '单价';
+COMMENT ON COLUMN "public"."crm_contract_items"."discount_rate" IS '折扣率';
+COMMENT ON COLUMN "public"."crm_contract_items"."amount" IS '金额';
+COMMENT ON COLUMN "public"."crm_contract_items"."delivery_date" IS '交付日期';
+COMMENT ON COLUMN "public"."crm_contract_items"."delivery_address" IS '收货地址';
+COMMENT ON COLUMN "public"."crm_contract_items"."remark" IS '备注';
+COMMENT ON COLUMN "public"."crm_contract_items"."sort" IS '排序';
+COMMENT ON COLUMN "public"."crm_contract_items"."created_at" IS '创建时间';
+COMMENT ON TABLE "public"."crm_contract_items" IS 'Contract Items';
+
+-- ----------------------------
+-- Records of crm_contract_items
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_contracts
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_contracts";
+CREATE TABLE "public"."crm_contracts" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_contracts_id_seq'::regclass),
+  "contract_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "contract_name" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "customer_id" int4 NOT NULL,
+  "opportunity_id" int4,
+  "quotation_id" int4,
+  "contract_type" varchar(50) COLLATE "pg_catalog"."default",
+  "start_date" date,
+  "end_date" date,
+  "currency" varchar(10) COLLATE "pg_catalog"."default" DEFAULT 'CNY'::character varying,
+  "total_amount" numeric(15,2) NOT NULL,
+  "paid_amount" numeric(15,2) DEFAULT 0,
+  "unpaid_amount" numeric(15,2) GENERATED ALWAYS AS (
+(total_amount - paid_amount)
+) STORED,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'draft'::character varying,
+  "approval_status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'pending'::character varying,
+  "approved_by" int4,
+  "approved_at" timestamp(6),
+  "signed_date" date,
+  "signed_by_customer" varchar(100) COLLATE "pg_catalog"."default",
+  "signed_by_company" varchar(100) COLLATE "pg_catalog"."default",
+  "contract_file_url" varchar(500) COLLATE "pg_catalog"."default",
+  "owner_id" int4,
+  "terms_conditions" text COLLATE "pg_catalog"."default",
+  "remark" text COLLATE "pg_catalog"."default",
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_by" int4,
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_contracts"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_contracts"."contract_code" IS '合同编号';
+COMMENT ON COLUMN "public"."crm_contracts"."contract_name" IS '合同名称';
+COMMENT ON COLUMN "public"."crm_contracts"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_contracts"."opportunity_id" IS '商机ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_contracts"."quotation_id" IS '报价ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_contracts"."contract_type" IS '合同类型:1-销售合同,2-服务合同,3-框架协议,4-续签合同,5-变更协议,6-终止协议';
+COMMENT ON COLUMN "public"."crm_contracts"."start_date" IS '开始日期';
+COMMENT ON COLUMN "public"."crm_contracts"."end_date" IS '结束日期';
+COMMENT ON COLUMN "public"."crm_contracts"."currency" IS '币种:CNY-人民币,USD-美元,EUR-欧元';
+COMMENT ON COLUMN "public"."crm_contracts"."total_amount" IS '总金额';
+COMMENT ON COLUMN "public"."crm_contracts"."paid_amount" IS '已付金额';
+COMMENT ON COLUMN "public"."crm_contracts"."unpaid_amount" IS '未付金额';
+COMMENT ON COLUMN "public"."crm_contracts"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_contracts"."approval_status" IS '审批状态:1-待审批,2-审批中,3-已通过,4-已拒绝,5-已撤销';
+COMMENT ON COLUMN "public"."crm_contracts"."approved_by" IS '审批人ID,关联sys_users';
+COMMENT ON COLUMN "public"."crm_contracts"."approved_at" IS '审批时间';
+COMMENT ON COLUMN "public"."crm_contracts"."signed_date" IS '签约日期';
+COMMENT ON COLUMN "public"."crm_contracts"."signed_by_customer" IS '客户签字人';
+COMMENT ON COLUMN "public"."crm_contracts"."signed_by_company" IS '公司签字人';
+COMMENT ON COLUMN "public"."crm_contracts"."contract_file_url" IS '合同文件URL';
+COMMENT ON COLUMN "public"."crm_contracts"."owner_id" IS '负责人ID,关联sys_users';
+COMMENT ON COLUMN "public"."crm_contracts"."terms_conditions" IS '条款条件';
+COMMENT ON COLUMN "public"."crm_contracts"."remark" IS '备注';
+COMMENT ON COLUMN "public"."crm_contracts"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_contracts"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_contracts"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_contracts"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_contracts"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_contracts" IS 'Contracts';
+
+-- ----------------------------
+-- Records of crm_contracts
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_customer_activities
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_customer_activities";
+CREATE TABLE "public"."crm_customer_activities" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_customer_activities_id_seq'::regclass),
+  "customer_id" int4 NOT NULL,
+  "activity_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "activity_title" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "activity_content" text COLLATE "pg_catalog"."default",
+  "related_type" varchar(50) COLLATE "pg_catalog"."default",
+  "related_id" int4,
+  "operator_id" int4 NOT NULL,
+  "operator_name" varchar(100) COLLATE "pg_catalog"."default",
+  "activity_date" timestamp(6) DEFAULT now(),
+  "created_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_customer_activities"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_customer_activities"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_customer_activities"."activity_type" IS '活动类型:1-电话,2-邮件,3-拜访,4-会议,5-培训,6-展会';
+COMMENT ON COLUMN "public"."crm_customer_activities"."activity_title" IS '活动标题';
+COMMENT ON COLUMN "public"."crm_customer_activities"."activity_content" IS '活动内容';
+COMMENT ON COLUMN "public"."crm_customer_activities"."related_type" IS '关联类型';
+COMMENT ON COLUMN "public"."crm_customer_activities"."related_id" IS '关联ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_customer_activities"."operator_id" IS '操作人ID';
+COMMENT ON COLUMN "public"."crm_customer_activities"."operator_name" IS '操作人名称';
+COMMENT ON COLUMN "public"."crm_customer_activities"."activity_date" IS '活动日期';
+COMMENT ON COLUMN "public"."crm_customer_activities"."created_at" IS '创建时间';
+COMMENT ON TABLE "public"."crm_customer_activities" IS 'Customer Activities';
+
+-- ----------------------------
+-- Records of crm_customer_activities
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_customer_addresses
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_customer_addresses";
+CREATE TABLE "public"."crm_customer_addresses" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_customer_addresses_id_seq'::regclass),
+  "customer_id" int4 NOT NULL,
+  "address_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "address_name" varchar(200) COLLATE "pg_catalog"."default",
+  "province" varchar(50) COLLATE "pg_catalog"."default",
+  "city" varchar(50) COLLATE "pg_catalog"."default",
+  "district" varchar(50) COLLATE "pg_catalog"."default",
+  "detail_address" text COLLATE "pg_catalog"."default" NOT NULL,
+  "postal_code" varchar(20) COLLATE "pg_catalog"."default",
+  "latitude" numeric(10,8),
+  "longitude" numeric(11,8),
+  "contact_person" varchar(100) COLLATE "pg_catalog"."default",
+  "contact_phone" varchar(50) COLLATE "pg_catalog"."default",
+  "is_default" bool DEFAULT false,
+  "is_active" bool DEFAULT true,
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_customer_addresses"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."address_type" IS '地址类型';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."address_name" IS '地址名称';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."province" IS '省份';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."city" IS '城市';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."district" IS '区县';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."detail_address" IS '详细地址';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."postal_code" IS '邮编';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."latitude" IS '纬度';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."longitude" IS '经度';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."contact_person" IS '联系人';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."contact_phone" IS '联系电话';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."is_default" IS '是否默认:0-否,1-是';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."is_active" IS '是否启用:0-否,1-是';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_customer_addresses"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_customer_addresses" IS 'Customer Addresses';
+
+-- ----------------------------
+-- Records of crm_customer_addresses
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_customer_attachments
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_customer_attachments";
+CREATE TABLE "public"."crm_customer_attachments" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_customer_attachments_id_seq'::regclass),
+  "customer_id" int4 NOT NULL,
+  "file_name" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "file_path" varchar(500) COLLATE "pg_catalog"."default" NOT NULL,
+  "file_type" varchar(50) COLLATE "pg_catalog"."default",
+  "mime_type" varchar(100) COLLATE "pg_catalog"."default",
+  "file_size" int8,
+  "attachment_type" varchar(50) COLLATE "pg_catalog"."default",
+  "uploader_id" int4 NOT NULL,
+  "uploaded_at" timestamp(6) DEFAULT now(),
+  "created_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_customer_attachments"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_customer_attachments"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_customer_attachments"."file_name" IS '文件名';
+COMMENT ON COLUMN "public"."crm_customer_attachments"."file_path" IS '文件路径';
+COMMENT ON COLUMN "public"."crm_customer_attachments"."file_type" IS '文件类型';
+COMMENT ON COLUMN "public"."crm_customer_attachments"."mime_type" IS 'MIME类型';
+COMMENT ON COLUMN "public"."crm_customer_attachments"."file_size" IS '文件大小';
+COMMENT ON COLUMN "public"."crm_customer_attachments"."attachment_type" IS '附件类型';
+COMMENT ON COLUMN "public"."crm_customer_attachments"."uploader_id" IS '上传人ID';
+COMMENT ON COLUMN "public"."crm_customer_attachments"."uploaded_at" IS '上传时间';
+COMMENT ON COLUMN "public"."crm_customer_attachments"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_customer_attachments"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_customer_attachments" IS 'Customer Attachments';
+
+-- ----------------------------
+-- Records of crm_customer_attachments
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_customer_change_logs
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_customer_change_logs";
+CREATE TABLE "public"."crm_customer_change_logs" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_customer_change_logs_id_seq'::regclass),
+  "customer_id" int4 NOT NULL,
+  "field_name" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "field_label" varchar(100) COLLATE "pg_catalog"."default",
+  "old_value" text COLLATE "pg_catalog"."default",
+  "new_value" text COLLATE "pg_catalog"."default",
+  "change_type" varchar(50) COLLATE "pg_catalog"."default",
+  "operator_id" int4 NOT NULL,
+  "operator_name" varchar(100) COLLATE "pg_catalog"."default",
+  "change_reason" varchar(200) COLLATE "pg_catalog"."default",
+  "changed_at" timestamp(6) DEFAULT now(),
+  "created_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_customer_change_logs"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_customer_change_logs"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_customer_change_logs"."field_name" IS '字段名称';
+COMMENT ON COLUMN "public"."crm_customer_change_logs"."field_label" IS '字段标签';
+COMMENT ON COLUMN "public"."crm_customer_change_logs"."old_value" IS '旧值';
+COMMENT ON COLUMN "public"."crm_customer_change_logs"."new_value" IS '新值';
+COMMENT ON COLUMN "public"."crm_customer_change_logs"."change_type" IS '变更类型';
+COMMENT ON COLUMN "public"."crm_customer_change_logs"."operator_id" IS '操作人ID';
+COMMENT ON COLUMN "public"."crm_customer_change_logs"."operator_name" IS '操作人名称';
+COMMENT ON COLUMN "public"."crm_customer_change_logs"."change_reason" IS '变更原因';
+COMMENT ON COLUMN "public"."crm_customer_change_logs"."changed_at" IS '变更时间';
+COMMENT ON COLUMN "public"."crm_customer_change_logs"."created_at" IS '创建时间';
+COMMENT ON TABLE "public"."crm_customer_change_logs" IS 'Customer Change Logs';
+
+-- ----------------------------
+-- Records of crm_customer_change_logs
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_customer_duplicate_logs
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_customer_duplicate_logs";
+CREATE TABLE "public"."crm_customer_duplicate_logs" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_customer_duplicate_logs_id_seq'::regclass),
+  "customer_a_id" int4 NOT NULL,
+  "customer_b_id" int4 NOT NULL,
+  "similarity" numeric(5,2) NOT NULL,
+  "collision_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "handled_by" int4,
+  "handled_at" timestamp(6),
+  "result" varchar(50) COLLATE "pg_catalog"."default",
+  "created_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_customer_duplicate_logs"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_customer_duplicate_logs"."customer_a_id" IS '客户A ID';
+COMMENT ON COLUMN "public"."crm_customer_duplicate_logs"."customer_b_id" IS '客户B ID';
+COMMENT ON COLUMN "public"."crm_customer_duplicate_logs"."similarity" IS '相似度';
+COMMENT ON COLUMN "public"."crm_customer_duplicate_logs"."collision_type" IS '冲突类型';
+COMMENT ON COLUMN "public"."crm_customer_duplicate_logs"."handled_by" IS '处理人ID';
+COMMENT ON COLUMN "public"."crm_customer_duplicate_logs"."handled_at" IS '处理时间';
+COMMENT ON COLUMN "public"."crm_customer_duplicate_logs"."result" IS '结果';
+COMMENT ON COLUMN "public"."crm_customer_duplicate_logs"."created_at" IS '创建时间';
+COMMENT ON TABLE "public"."crm_customer_duplicate_logs" IS 'Customer Duplicate Logs';
+
+-- ----------------------------
+-- Records of crm_customer_duplicate_logs
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_customer_health
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_customer_health";
+CREATE TABLE "public"."crm_customer_health" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_customer_health_id_seq'::regclass),
+  "customer_id" int4 NOT NULL,
+  "health_score" int4 DEFAULT 50,
+  "health_level" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'medium'::character varying,
+  "product_usage_score" int4,
+  "support_tickets_score" int4,
+  "payment_score" int4,
+  "engagement_score" int4,
+  "satisfaction_score" int4,
+  "risk_factors" json,
+  "risk_level" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'low'::character varying,
+  "contract_end_date" date,
+  "renewal_probability" int4,
+  "renewal_status" varchar(20) COLLATE "pg_catalog"."default",
+  "assessed_at" timestamp(6) DEFAULT now(),
+  "next_assessment_date" date,
+  "updated_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_customer_health"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_customer_health"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_customer_health"."health_score" IS '健康度评分';
+COMMENT ON COLUMN "public"."crm_customer_health"."health_level" IS '健康等级';
+COMMENT ON COLUMN "public"."crm_customer_health"."product_usage_score" IS '产品使用评分';
+COMMENT ON COLUMN "public"."crm_customer_health"."support_tickets_score" IS '支持工单评分';
+COMMENT ON COLUMN "public"."crm_customer_health"."payment_score" IS '付款评分';
+COMMENT ON COLUMN "public"."crm_customer_health"."engagement_score" IS '参与度评分';
+COMMENT ON COLUMN "public"."crm_customer_health"."satisfaction_score" IS '满意度评分';
+COMMENT ON COLUMN "public"."crm_customer_health"."risk_factors" IS '风险因素';
+COMMENT ON COLUMN "public"."crm_customer_health"."risk_level" IS '风险等级';
+COMMENT ON COLUMN "public"."crm_customer_health"."contract_end_date" IS '合同结束日期';
+COMMENT ON COLUMN "public"."crm_customer_health"."renewal_probability" IS '续约概率';
+COMMENT ON COLUMN "public"."crm_customer_health"."renewal_status" IS '续约状态';
+COMMENT ON COLUMN "public"."crm_customer_health"."assessed_at" IS '评估时间';
+COMMENT ON COLUMN "public"."crm_customer_health"."next_assessment_date" IS '下次评估日期';
+COMMENT ON COLUMN "public"."crm_customer_health"."updated_at" IS '更新时间';
+COMMENT ON TABLE "public"."crm_customer_health" IS 'Customer Health';
+
+-- ----------------------------
+-- Records of crm_customer_health
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_customer_health_scores
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_customer_health_scores";
+CREATE TABLE "public"."crm_customer_health_scores" (
+  "id" int8 NOT NULL DEFAULT nextval('crm_customer_health_scores_id_seq'::regclass),
+  "customer_id" int8 NOT NULL,
+  "score_date" date NOT NULL,
+  "overall_score" int4 NOT NULL,
+  "health_level" varchar(20) COLLATE "pg_catalog"."default" NOT NULL,
+  "dimension_scores" jsonb NOT NULL DEFAULT '{}'::jsonb,
+  "product_usage" jsonb DEFAULT '{}'::jsonb,
+  "adoption_rate" numeric(5,2) DEFAULT 0,
+  "engagement_score" int4 DEFAULT 0,
+  "avg_contact_frequency" numeric(5,2) DEFAULT 0,
+  "last_interaction_date" date,
+  "payment_score" int4 DEFAULT 0,
+  "revenue_trend" varchar(20) COLLATE "pg_catalog"."default",
+  "arpu" numeric(18,2) DEFAULT 0,
+  "satisfaction_score" int4 DEFAULT 0,
+  "nps_score" int4,
+  "last_survey_date" date,
+  "risk_indicators" text[] COLLATE "pg_catalog"."default",
+  "churn_signals" text[] COLLATE "pg_catalog"."default",
+  "churn_probability" numeric(5,2) DEFAULT 0,
+  "expansion_probability" numeric(5,2) DEFAULT 0,
+  "ai_insights" jsonb DEFAULT '{}'::jsonb,
+  "created_at" timestamptz(6) DEFAULT CURRENT_TIMESTAMP,
+  "created_by" int8,
+  "version" int4 DEFAULT 1,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."score_date" IS '评分日期';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."overall_score" IS '综合评分';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."health_level" IS '健康等级';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."dimension_scores" IS '维度评分';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."product_usage" IS '产品使用情况';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."adoption_rate" IS '采用率';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."engagement_score" IS '参与度评分';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."avg_contact_frequency" IS '平均联系频率';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."last_interaction_date" IS '最后互动日期';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."payment_score" IS '付款评分';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."revenue_trend" IS '收入趋势';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."arpu" IS 'ARPU';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."satisfaction_score" IS '满意度评分';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."nps_score" IS 'NPS评分';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."last_survey_date" IS '最后调查日期';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."risk_indicators" IS '风险指标';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."churn_signals" IS '流失信号';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."churn_probability" IS '流失概率';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."expansion_probability" IS '扩展概率';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."ai_insights" IS 'AI洞察';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_customer_health_scores"."version" IS '版本号';
+COMMENT ON TABLE "public"."crm_customer_health_scores" IS 'Customer Health Scores';
+
+-- ----------------------------
+-- Records of crm_customer_health_scores
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_customer_pool_logs
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_customer_pool_logs";
+CREATE TABLE "public"."crm_customer_pool_logs" (
+  "id" int8 NOT NULL DEFAULT nextval('crm_customer_pool_logs_id_seq'::regclass),
+  "customer_id" int8 NOT NULL,
+  "action_type" varchar(30) COLLATE "pg_catalog"."default" NOT NULL,
+  "action_date" timestamptz(6) DEFAULT CURRENT_TIMESTAMP,
+  "from_user_id" int8,
+  "from_dept_id" int8,
+  "to_user_id" int8,
+  "to_dept_id" int8,
+  "reason" text COLLATE "pg_catalog"."default",
+  "transfer_type" varchar(20) COLLATE "pg_catalog"."default",
+  "operator_id" int8,
+  "created_at" timestamptz(6) DEFAULT CURRENT_TIMESTAMP,
+  "deleted_at" timestamptz(6),
+  "version" int4 DEFAULT 1
+)
+;
+COMMENT ON COLUMN "public"."crm_customer_pool_logs"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_customer_pool_logs"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_customer_pool_logs"."action_type" IS '操作类型';
+COMMENT ON COLUMN "public"."crm_customer_pool_logs"."action_date" IS '操作日期';
+COMMENT ON COLUMN "public"."crm_customer_pool_logs"."from_user_id" IS '原负责人ID';
+COMMENT ON COLUMN "public"."crm_customer_pool_logs"."from_dept_id" IS '原部门ID';
+COMMENT ON COLUMN "public"."crm_customer_pool_logs"."to_user_id" IS '目标负责人ID';
+COMMENT ON COLUMN "public"."crm_customer_pool_logs"."to_dept_id" IS '目标部门ID';
+COMMENT ON COLUMN "public"."crm_customer_pool_logs"."reason" IS '原因';
+COMMENT ON COLUMN "public"."crm_customer_pool_logs"."transfer_type" IS '转移类型';
+COMMENT ON COLUMN "public"."crm_customer_pool_logs"."operator_id" IS '操作人ID';
+COMMENT ON COLUMN "public"."crm_customer_pool_logs"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_customer_pool_logs"."deleted_at" IS '删除时间(软删除)';
+COMMENT ON COLUMN "public"."crm_customer_pool_logs"."version" IS '版本号';
+COMMENT ON TABLE "public"."crm_customer_pool_logs" IS 'Customer Pool Logs';
+
+-- ----------------------------
+-- Records of crm_customer_pool_logs
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_customer_profiles
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_customer_profiles";
+CREATE TABLE "public"."crm_customer_profiles" (
+  "id" int8 NOT NULL DEFAULT nextval('crm_customer_profiles_id_seq'::regclass),
+  "customer_id" int8 NOT NULL,
+  "basic_profile" jsonb DEFAULT '{}'::jsonb,
+  "behavior_profile" jsonb DEFAULT '{}'::jsonb,
+  "preference_profile" jsonb DEFAULT '{}'::jsonb,
+  "value_profile" jsonb DEFAULT '{}'::jsonb,
+  "purchase_patterns" jsonb DEFAULT '{}'::jsonb,
+  "preferred_products" jsonb DEFAULT '{}'::jsonb,
+  "price_sensitivity" varchar(20) COLLATE "pg_catalog"."default",
+  "buying_stages" varchar(20) COLLATE "pg_catalog"."default",
+  "communication_prefs" jsonb DEFAULT '{}'::jsonb,
+  "best_contact_times" varchar(20)[] COLLATE "pg_catalog"."default",
+  "preferred_channels" varchar(20)[] COLLATE "pg_catalog"."default",
+  "lifetime_value" numeric(18,2),
+  "churn_probability" numeric(5,2),
+  "upsell_probability" numeric(5,2),
+  "referral_probability" numeric(5,2),
+  "personas" varchar(50)[] COLLATE "pg_catalog"."default",
+  "tags" varchar(50)[] COLLATE "pg_catalog"."default",
+  "analysis_count" int4 DEFAULT 0,
+  "last_analysis_at" timestamptz(6),
+  "model_version" varchar(50) COLLATE "pg_catalog"."default",
+  "confidence_score" numeric(5,2),
+  "data_completeness" numeric(5,2),
+  "created_at" timestamptz(6) DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" timestamptz(6),
+  "version" int4 DEFAULT 1,
+  "deleted_at" timestamp(6),
+  "created_by" int4,
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_customer_profiles"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."basic_profile" IS '基础画像';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."behavior_profile" IS '行为画像';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."preference_profile" IS '偏好画像';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."value_profile" IS '价值画像';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."purchase_patterns" IS '购买模式';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."preferred_products" IS '首选产品';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."price_sensitivity" IS '价格敏感度';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."buying_stages" IS '购买阶段';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."communication_prefs" IS '沟通偏好';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."best_contact_times" IS '最佳联系时段';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."preferred_channels" IS '首选渠道';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."lifetime_value" IS '生命周期价值';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."churn_probability" IS '流失概率';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."upsell_probability" IS '增购概率';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."referral_probability" IS '推荐概率';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."personas" IS '角色';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."tags" IS '标签';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."analysis_count" IS '分析次数';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."last_analysis_at" IS '最后分析时间';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."model_version" IS '模型版本';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."confidence_score" IS '置信度评分';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."data_completeness" IS '数据完整度';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_customer_profiles"."version" IS '版本号';
+COMMENT ON TABLE "public"."crm_customer_profiles" IS 'Customer Profiles';
+
+-- ----------------------------
+-- Records of crm_customer_profiles
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_customer_satisfaction_surveys
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_customer_satisfaction_surveys";
+CREATE TABLE "public"."crm_customer_satisfaction_surveys" (
+  "id" int8 NOT NULL DEFAULT nextval('crm_customer_satisfaction_surveys_id_seq'::regclass),
+  "survey_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "survey_name" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "survey_type" varchar(30) COLLATE "pg_catalog"."default" NOT NULL,
+  "customer_id" int8,
+  "contact_id" int8,
+  "order_id" int8,
+  "project_id" int8,
+  "sent_date" date,
+  "completed_date" date,
+  "overall_score" int4,
+  "nps_score" int4,
+  "csat_score" int4,
+  "ces_score" int4,
+  "dimension_scores" jsonb DEFAULT '{}'::jsonb,
+  "feedback" text COLLATE "pg_catalog"."default",
+  "positive_feedback" text COLLATE "pg_catalog"."default",
+  "negative_feedback" text COLLATE "pg_catalog"."default",
+  "follow_up_required" bool DEFAULT false,
+  "follow_up_status" varchar(20) COLLATE "pg_catalog"."default",
+  "follow_up_by" int8,
+  "follow_up_date" date,
+  "follow_up_notes" text COLLATE "pg_catalog"."default",
+  "channel" varchar(30) COLLATE "pg_catalog"."default",
+  "respondent_email" varchar(255) COLLATE "pg_catalog"."default",
+  "created_at" timestamptz(6) DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" timestamptz(6),
+  "created_by" int8,
+  "updated_by" int8,
+  "deleted_at" timestamptz(6),
+  "version" int4 DEFAULT 1
+)
+;
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."survey_code" IS '调查编号';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."survey_name" IS '调查名称';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."survey_type" IS '调查类型';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."contact_id" IS '联系人ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."order_id" IS '订单ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."project_id" IS '项目ID';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."sent_date" IS '发送日期';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."completed_date" IS '完成日期';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."overall_score" IS '综合评分';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."nps_score" IS 'NPS评分';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."csat_score" IS 'CSAT评分';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."ces_score" IS 'CES评分';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."dimension_scores" IS '维度评分';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."feedback" IS '反馈';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."positive_feedback" IS '正面反馈';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."negative_feedback" IS '负面反馈';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."follow_up_required" IS '需要跟进';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."follow_up_status" IS '跟进状态';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."follow_up_by" IS '跟进人ID';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."follow_up_date" IS '跟进日期';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."follow_up_notes" IS '跟进备注';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."channel" IS '渠道';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."respondent_email" IS '受访者邮箱';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."deleted_at" IS '删除时间(软删除)';
+COMMENT ON COLUMN "public"."crm_customer_satisfaction_surveys"."version" IS '版本号';
+COMMENT ON TABLE "public"."crm_customer_satisfaction_surveys" IS 'Customer Satisfaction Surveys';
+
+-- ----------------------------
+-- Records of crm_customer_satisfaction_surveys
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_customer_tags
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_customer_tags";
+CREATE TABLE "public"."crm_customer_tags" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_customer_tags_id_seq'::regclass),
+  "customer_id" int4 NOT NULL,
+  "tag_id" int4 NOT NULL,
+  "tag_source" varchar(50) COLLATE "pg_catalog"."default" DEFAULT 'manual'::character varying,
+  "confidence" numeric(5,2),
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6),
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_customer_tags"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_customer_tags"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_customer_tags"."tag_id" IS '标签ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_customer_tags"."tag_source" IS '标签来源';
+COMMENT ON COLUMN "public"."crm_customer_tags"."confidence" IS '置信度';
+COMMENT ON COLUMN "public"."crm_customer_tags"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_customer_tags"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_customer_tags"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_customer_tags" IS 'Customer Tags';
+
+-- ----------------------------
+-- Records of crm_customer_tags
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_customer_timeline
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_customer_timeline";
+CREATE TABLE "public"."crm_customer_timeline" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_customer_timeline_id_seq'::regclass),
+  "customer_id" int4 NOT NULL,
+  "event_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "event_category" varchar(30) COLLATE "pg_catalog"."default",
+  "title" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "related_type" varchar(50) COLLATE "pg_catalog"."default",
+  "related_id" int4,
+  "related_name" varchar(200) COLLATE "pg_catalog"."default",
+  "operator_id" int4,
+  "operator_name" varchar(100) COLLATE "pg_catalog"."default",
+  "attachments" json,
+  "extra_data" json,
+  "created_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6),
+  "created_by" int4,
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_customer_timeline"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_customer_timeline"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_customer_timeline"."event_type" IS '事件类型';
+COMMENT ON COLUMN "public"."crm_customer_timeline"."event_category" IS '事件分类';
+COMMENT ON COLUMN "public"."crm_customer_timeline"."title" IS '职位';
+COMMENT ON COLUMN "public"."crm_customer_timeline"."description" IS '描述';
+COMMENT ON COLUMN "public"."crm_customer_timeline"."related_type" IS '关联类型';
+COMMENT ON COLUMN "public"."crm_customer_timeline"."related_id" IS '关联ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_customer_timeline"."related_name" IS '关联名称';
+COMMENT ON COLUMN "public"."crm_customer_timeline"."operator_id" IS '操作人ID';
+COMMENT ON COLUMN "public"."crm_customer_timeline"."operator_name" IS '操作人名称';
+COMMENT ON COLUMN "public"."crm_customer_timeline"."attachments" IS '附件';
+COMMENT ON COLUMN "public"."crm_customer_timeline"."extra_data" IS '扩展数据';
+COMMENT ON COLUMN "public"."crm_customer_timeline"."created_at" IS '创建时间';
+COMMENT ON TABLE "public"."crm_customer_timeline" IS 'Customer Timeline';
+
+-- ----------------------------
+-- Records of crm_customer_timeline
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_customers
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_customers";
+CREATE TABLE "public"."crm_customers" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_customers_id_seq'::regclass),
+  "customer_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "customer_name" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "customer_type" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'enterprise'::character varying,
+  "industry" varchar(100) COLLATE "pg_catalog"."default",
+  "source" varchar(50) COLLATE "pg_catalog"."default",
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'active'::character varying,
+  "owner_id" int4,
+  "department_id" int4,
+  "lead_id" int4,
+  "pool_status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'private'::character varying,
+  "last_followup_at" timestamp(6),
+  "next_followup_at" timestamp(6),
+  "created_at" timestamp(6) DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" timestamp(6) DEFAULT CURRENT_TIMESTAMP,
+  "created_by" int4,
+  "updated_by" int4,
+  "deleted_at" timestamp(6),
+  "customer_short_name" varchar(100) COLLATE "pg_catalog"."default",
+  "customer_level" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'C'::character varying,
+  "scale" varchar(20) COLLATE "pg_catalog"."default",
+  "registration_no" varchar(50) COLLATE "pg_catalog"."default",
+  "tax_no" varchar(50) COLLATE "pg_catalog"."default",
+  "legal_person" varchar(100) COLLATE "pg_catalog"."default",
+  "established_date" date,
+  "registered_capital" numeric(18,2),
+  "paid_capital" numeric(18,2),
+  "website" varchar(255) COLLATE "pg_catalog"."default",
+  "main_phone" varchar(50) COLLATE "pg_catalog"."default",
+  "main_email" varchar(255) COLLATE "pg_catalog"."default",
+  "country" varchar(50) COLLATE "pg_catalog"."default" DEFAULT '中国'::character varying,
+  "province" varchar(50) COLLATE "pg_catalog"."default",
+  "city" varchar(50) COLLATE "pg_catalog"."default",
+  "district" varchar(50) COLLATE "pg_catalog"."default",
+  "address" varchar(500) COLLATE "pg_catalog"."default",
+  "rating" int4 DEFAULT 3,
+  "territory" varchar(100) COLLATE "pg_catalog"."default",
+  "customer_since" date,
+  "first_order_date" date,
+  "last_order_date" date,
+  "total_revenue" numeric(18,2) DEFAULT 0,
+  "total_orders" int4 DEFAULT 0,
+  "credit_limit" numeric(18,2) DEFAULT 0,
+  "outstanding_amount" numeric(18,2) DEFAULT 0,
+  "payment_days" int4 DEFAULT 0,
+  "parent_customer_id" int4,
+  "is_parent" bool DEFAULT false,
+  "customer_segment" varchar(50) COLLATE "pg_catalog"."default",
+  "churn_risk" varchar(20) COLLATE "pg_catalog"."default",
+  "description" text COLLATE "pg_catalog"."default",
+  "extra_data" jsonb DEFAULT '{}'::jsonb,
+  "version" int4 DEFAULT 1,
+  "protection_deadline" timestamp(6),
+  "claim_time" timestamp(6),
+  "health_score" numeric(5,2),
+  "duplicate_check_key" varchar(200) COLLATE "pg_catalog"."default"
+)
+;
+COMMENT ON COLUMN "public"."crm_customers"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_customers"."customer_code" IS '客户编号';
+COMMENT ON COLUMN "public"."crm_customers"."customer_name" IS '客户名称';
+COMMENT ON COLUMN "public"."crm_customers"."customer_type" IS '客户类型:1-企业客户,2-个人客户,3-政府机构,4-事业单位,5-合作伙伴';
+COMMENT ON COLUMN "public"."crm_customers"."industry" IS '所属行业';
+COMMENT ON COLUMN "public"."crm_customers"."source" IS '来源:1-自主开发,2-市场活动,3-转介绍,4-网络推广,5-合作伙伴,6-招投标';
+COMMENT ON COLUMN "public"."crm_customers"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_customers"."owner_id" IS '负责人ID,关联sys_users';
+COMMENT ON COLUMN "public"."crm_customers"."department_id" IS '所属部门ID,关联sys_dept';
+COMMENT ON COLUMN "public"."crm_customers"."lead_id" IS '来源线索ID,关联crm_leads';
+COMMENT ON COLUMN "public"."crm_customers"."pool_status" IS '公海池状态:1-私有,2-公海';
+COMMENT ON COLUMN "public"."crm_customers"."last_followup_at" IS '最后跟进时间';
+COMMENT ON COLUMN "public"."crm_customers"."next_followup_at" IS '下次跟进时间';
+COMMENT ON COLUMN "public"."crm_customers"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_customers"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_customers"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_customers"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_customers"."deleted_at" IS '删除时间(软删除)';
+COMMENT ON COLUMN "public"."crm_customers"."customer_short_name" IS '客户简称';
+COMMENT ON COLUMN "public"."crm_customers"."customer_level" IS '客户等级:A/B/C/D';
+COMMENT ON COLUMN "public"."crm_customers"."scale" IS '企业规模:SME/中大型/大型/集团';
+COMMENT ON COLUMN "public"."crm_customers"."registration_no" IS '工商注册号';
+COMMENT ON COLUMN "public"."crm_customers"."tax_no" IS '税号';
+COMMENT ON COLUMN "public"."crm_customers"."legal_person" IS '法人代表';
+COMMENT ON COLUMN "public"."crm_customers"."established_date" IS '成立日期';
+COMMENT ON COLUMN "public"."crm_customers"."registered_capital" IS '注册资本';
+COMMENT ON COLUMN "public"."crm_customers"."paid_capital" IS '实缴资本';
+COMMENT ON COLUMN "public"."crm_customers"."website" IS '公司网站';
+COMMENT ON COLUMN "public"."crm_customers"."main_phone" IS '主联系电话';
+COMMENT ON COLUMN "public"."crm_customers"."main_email" IS '主联系邮箱';
+COMMENT ON COLUMN "public"."crm_customers"."country" IS '国家';
+COMMENT ON COLUMN "public"."crm_customers"."province" IS '省份';
+COMMENT ON COLUMN "public"."crm_customers"."city" IS '城市';
+COMMENT ON COLUMN "public"."crm_customers"."district" IS '区县';
+COMMENT ON COLUMN "public"."crm_customers"."address" IS '详细地址';
+COMMENT ON COLUMN "public"."crm_customers"."rating" IS '客户评分:1-5分';
+COMMENT ON COLUMN "public"."crm_customers"."territory" IS '所属区域';
+COMMENT ON COLUMN "public"."crm_customers"."customer_since" IS '成为客户时间';
+COMMENT ON COLUMN "public"."crm_customers"."first_order_date" IS '首单日期';
+COMMENT ON COLUMN "public"."crm_customers"."last_order_date" IS '最后订单日期';
+COMMENT ON COLUMN "public"."crm_customers"."total_revenue" IS '总营收';
+COMMENT ON COLUMN "public"."crm_customers"."total_orders" IS '总订单数';
+COMMENT ON COLUMN "public"."crm_customers"."credit_limit" IS '信用额度';
+COMMENT ON COLUMN "public"."crm_customers"."outstanding_amount" IS '欠款金额';
+COMMENT ON COLUMN "public"."crm_customers"."payment_days" IS '账期天数';
+COMMENT ON COLUMN "public"."crm_customers"."parent_customer_id" IS '父客户ID(集团客户)';
+COMMENT ON COLUMN "public"."crm_customers"."is_parent" IS '是否父客户(集团总部)';
+COMMENT ON COLUMN "public"."crm_customers"."customer_segment" IS '客户分群';
+COMMENT ON COLUMN "public"."crm_customers"."churn_risk" IS '流失风险(high/medium/low)';
+COMMENT ON COLUMN "public"."crm_customers"."description" IS '客户描述';
+COMMENT ON COLUMN "public"."crm_customers"."extra_data" IS '扩展数据(JSONB)';
+COMMENT ON COLUMN "public"."crm_customers"."version" IS '版本号(乐观锁)';
+COMMENT ON COLUMN "public"."crm_customers"."protection_deadline" IS '保护期截止时间(公海池)';
+COMMENT ON COLUMN "public"."crm_customers"."claim_time" IS '领取时间(公海池)';
+COMMENT ON COLUMN "public"."crm_customers"."health_score" IS '健康度评分';
+COMMENT ON COLUMN "public"."crm_customers"."duplicate_check_key" IS '查重键(防止重复客户)';
+COMMENT ON TABLE "public"."crm_customers" IS 'Customers';
+
+-- ----------------------------
+-- Records of crm_customers
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_data_dicts
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_data_dicts";
+CREATE TABLE "public"."crm_data_dicts" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_data_dicts_id_seq'::regclass),
+  "dict_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "dict_code" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "dict_label" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "dict_value" varchar(255) COLLATE "pg_catalog"."default",
+  "parent_id" int4 DEFAULT 0,
+  "level" int4 DEFAULT 1,
+  "is_leaf" bool DEFAULT true,
+  "dict_sort" int4 DEFAULT 0,
+  "css_class" varchar(100) COLLATE "pg_catalog"."default",
+  "list_class" varchar(100) COLLATE "pg_catalog"."default",
+  "color_class" varchar(50) COLLATE "pg_catalog"."default",
+  "dict_status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'active'::character varying,
+  "is_default" bool DEFAULT false,
+  "remark" varchar(500) COLLATE "pg_catalog"."default",
+  "extra_data" json,
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_by" int4,
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_data_dicts"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_data_dicts"."dict_type" IS '字典类型';
+COMMENT ON COLUMN "public"."crm_data_dicts"."dict_code" IS '字典编码';
+COMMENT ON COLUMN "public"."crm_data_dicts"."dict_label" IS '字典标签';
+COMMENT ON COLUMN "public"."crm_data_dicts"."dict_value" IS '字典值';
+COMMENT ON COLUMN "public"."crm_data_dicts"."parent_id" IS '父级ID';
+COMMENT ON COLUMN "public"."crm_data_dicts"."level" IS '级别';
+COMMENT ON COLUMN "public"."crm_data_dicts"."is_leaf" IS '是否叶子节点:0-否,1-是';
+COMMENT ON COLUMN "public"."crm_data_dicts"."dict_sort" IS '字典排序';
+COMMENT ON COLUMN "public"."crm_data_dicts"."css_class" IS 'CSS类名';
+COMMENT ON COLUMN "public"."crm_data_dicts"."list_class" IS '列表类名';
+COMMENT ON COLUMN "public"."crm_data_dicts"."color_class" IS '颜色类名';
+COMMENT ON COLUMN "public"."crm_data_dicts"."dict_status" IS '字典状态';
+COMMENT ON COLUMN "public"."crm_data_dicts"."is_default" IS '是否默认:0-否,1-是';
+COMMENT ON COLUMN "public"."crm_data_dicts"."remark" IS '备注';
+COMMENT ON COLUMN "public"."crm_data_dicts"."extra_data" IS '扩展数据';
+COMMENT ON COLUMN "public"."crm_data_dicts"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_data_dicts"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_data_dicts"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_data_dicts"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_data_dicts"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_data_dicts" IS 'Data Dicts';
+
+-- ----------------------------
+-- Records of crm_data_dicts
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_deliveries
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_deliveries";
+CREATE TABLE "public"."crm_deliveries" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_deliveries_id_seq'::regclass),
+  "order_id" int4 NOT NULL,
+  "delivery_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "delivery_date" date NOT NULL,
+  "delivery_method" varchar(50) COLLATE "pg_catalog"."default",
+  "logistics_company" varchar(100) COLLATE "pg_catalog"."default",
+  "tracking_number" varchar(100) COLLATE "pg_catalog"."default",
+  "receiver_name" varchar(100) COLLATE "pg_catalog"."default",
+  "receiver_signature" varchar(200) COLLATE "pg_catalog"."default",
+  "signed_at" timestamp(6),
+  "delivery_status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'pending'::character varying,
+  "remark" text COLLATE "pg_catalog"."default",
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6),
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_deliveries"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_deliveries"."order_id" IS '订单ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_deliveries"."delivery_code" IS '配送编号';
+COMMENT ON COLUMN "public"."crm_deliveries"."delivery_date" IS '交付日期';
+COMMENT ON COLUMN "public"."crm_deliveries"."delivery_method" IS '交付方式';
+COMMENT ON COLUMN "public"."crm_deliveries"."logistics_company" IS '物流公司';
+COMMENT ON COLUMN "public"."crm_deliveries"."tracking_number" IS '运单号';
+COMMENT ON COLUMN "public"."crm_deliveries"."receiver_name" IS '收货人姓名';
+COMMENT ON COLUMN "public"."crm_deliveries"."receiver_signature" IS '签收人';
+COMMENT ON COLUMN "public"."crm_deliveries"."signed_at" IS '签收时间';
+COMMENT ON COLUMN "public"."crm_deliveries"."delivery_status" IS '物流状态';
+COMMENT ON COLUMN "public"."crm_deliveries"."remark" IS '备注';
+COMMENT ON COLUMN "public"."crm_deliveries"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_deliveries"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_deliveries"."updated_at" IS '更新时间';
+COMMENT ON TABLE "public"."crm_deliveries" IS 'Deliveries';
+
+-- ----------------------------
+-- Records of crm_deliveries
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_follow_records
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_follow_records";
+CREATE TABLE "public"."crm_follow_records" (
+  "id" int8 NOT NULL DEFAULT nextval('crm_follow_records_id_seq'::regclass),
+  "opportunity_id" int8,
+  "customer_id" int8,
+  "contact_id" int8,
+  "follow_type" varchar(30) COLLATE "pg_catalog"."default" NOT NULL,
+  "subject" varchar(200) COLLATE "pg_catalog"."default",
+  "content" text COLLATE "pg_catalog"."default" NOT NULL,
+  "contact_mode" varchar(20) COLLATE "pg_catalog"."default",
+  "duration_minutes" int4,
+  "participants" int8[],
+  "location" varchar(200) COLLATE "pg_catalog"."default",
+  "outcome" varchar(20) COLLATE "pg_catalog"."default",
+  "next_action" varchar(200) COLLATE "pg_catalog"."default",
+  "next_follow_date" date,
+  "attachments" jsonb DEFAULT '[]'::jsonb,
+  "sentiment" varchar(20) COLLATE "pg_catalog"."default",
+  "key_points" text[] COLLATE "pg_catalog"."default",
+  "action_items" jsonb DEFAULT '[]'::jsonb,
+  "created_at" timestamptz(6) DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" timestamptz(6),
+  "created_by" int8,
+  "updated_by" int8,
+  "deleted_at" timestamptz(6),
+  "version" int4 DEFAULT 1
+)
+;
+COMMENT ON COLUMN "public"."crm_follow_records"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_follow_records"."opportunity_id" IS '商机ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_follow_records"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_follow_records"."contact_id" IS '联系人ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_follow_records"."follow_type" IS '跟进方式:1-电话,2-邮件,3-拜访,4-微信,5-其他';
+COMMENT ON COLUMN "public"."crm_follow_records"."subject" IS '主题';
+COMMENT ON COLUMN "public"."crm_follow_records"."content" IS '内容';
+COMMENT ON COLUMN "public"."crm_follow_records"."contact_mode" IS '联系方式';
+COMMENT ON COLUMN "public"."crm_follow_records"."duration_minutes" IS '用时(分钟)';
+COMMENT ON COLUMN "public"."crm_follow_records"."participants" IS '参与人';
+COMMENT ON COLUMN "public"."crm_follow_records"."location" IS '地点';
+COMMENT ON COLUMN "public"."crm_follow_records"."outcome" IS '结果';
+COMMENT ON COLUMN "public"."crm_follow_records"."next_action" IS '下一步行动';
+COMMENT ON COLUMN "public"."crm_follow_records"."next_follow_date" IS '下次跟进日期';
+COMMENT ON COLUMN "public"."crm_follow_records"."attachments" IS '附件';
+COMMENT ON COLUMN "public"."crm_follow_records"."sentiment" IS '情感倾向';
+COMMENT ON COLUMN "public"."crm_follow_records"."key_points" IS '要点';
+COMMENT ON COLUMN "public"."crm_follow_records"."action_items" IS '行动项';
+COMMENT ON COLUMN "public"."crm_follow_records"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_follow_records"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_follow_records"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_follow_records"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_follow_records"."deleted_at" IS '删除时间(软删除)';
+COMMENT ON COLUMN "public"."crm_follow_records"."version" IS '版本号';
+COMMENT ON TABLE "public"."crm_follow_records" IS 'Follow Records';
+
+-- ----------------------------
+-- Records of crm_follow_records
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_followups
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_followups";
+CREATE TABLE "public"."crm_followups" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_followups_id_seq'::regclass),
+  "customer_id" int4 NOT NULL,
+  "contact_id" int4,
+  "followup_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "followup_date" date NOT NULL,
+  "followup_time" time(6),
+  "duration" int4,
+  "content" text COLLATE "pg_catalog"."default" NOT NULL,
+  "result" varchar(50) COLLATE "pg_catalog"."default",
+  "next_followup_date" date,
+  "next_followup_content" text COLLATE "pg_catalog"."default",
+  "location" varchar(200) COLLATE "pg_catalog"."default",
+  "participants" text COLLATE "pg_catalog"."default",
+  "attachments" json,
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_followups"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_followups"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_followups"."contact_id" IS '联系人ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_followups"."followup_type" IS '跟进类型';
+COMMENT ON COLUMN "public"."crm_followups"."followup_date" IS '跟进日期';
+COMMENT ON COLUMN "public"."crm_followups"."followup_time" IS '跟进时间';
+COMMENT ON COLUMN "public"."crm_followups"."duration" IS '时长';
+COMMENT ON COLUMN "public"."crm_followups"."content" IS '内容';
+COMMENT ON COLUMN "public"."crm_followups"."result" IS '结果';
+COMMENT ON COLUMN "public"."crm_followups"."next_followup_date" IS '下次跟进日期';
+COMMENT ON COLUMN "public"."crm_followups"."next_followup_content" IS '下次跟进内容';
+COMMENT ON COLUMN "public"."crm_followups"."location" IS '地点';
+COMMENT ON COLUMN "public"."crm_followups"."participants" IS '参与人';
+COMMENT ON COLUMN "public"."crm_followups"."attachments" IS '附件';
+COMMENT ON COLUMN "public"."crm_followups"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_followups"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_followups"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_followups"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_followups" IS 'Followups';
+
+-- ----------------------------
+-- Records of crm_followups
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_import_records
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_import_records";
+CREATE TABLE "public"."crm_import_records" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_import_records_id_seq'::regclass),
+  "import_type" varchar(30) COLLATE "pg_catalog"."default" NOT NULL,
+  "file_name" varchar(255) COLLATE "pg_catalog"."default" NOT NULL,
+  "file_url" varchar(500) COLLATE "pg_catalog"."default",
+  "file_size" int8,
+  "total_rows" int4 DEFAULT 0,
+  "success_rows" int4 DEFAULT 0,
+  "failed_rows" int4 DEFAULT 0,
+  "duplicate_rows" int4 DEFAULT 0,
+  "error_log" text COLLATE "pg_catalog"."default",
+  "failed_data" json,
+  "success_ids" json,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'pending'::character varying,
+  "started_at" timestamp(6),
+  "completed_at" timestamp(6),
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_import_records"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_import_records"."import_type" IS '导入类型';
+COMMENT ON COLUMN "public"."crm_import_records"."file_name" IS '文件名';
+COMMENT ON COLUMN "public"."crm_import_records"."file_url" IS '文件URL';
+COMMENT ON COLUMN "public"."crm_import_records"."file_size" IS '文件大小';
+COMMENT ON COLUMN "public"."crm_import_records"."total_rows" IS '总行数';
+COMMENT ON COLUMN "public"."crm_import_records"."success_rows" IS '成功行数';
+COMMENT ON COLUMN "public"."crm_import_records"."failed_rows" IS '失败行数';
+COMMENT ON COLUMN "public"."crm_import_records"."duplicate_rows" IS '重复行数';
+COMMENT ON COLUMN "public"."crm_import_records"."error_log" IS '错误日志';
+COMMENT ON COLUMN "public"."crm_import_records"."failed_data" IS '失败数据';
+COMMENT ON COLUMN "public"."crm_import_records"."success_ids" IS '成功ID列表';
+COMMENT ON COLUMN "public"."crm_import_records"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_import_records"."started_at" IS '开始时间';
+COMMENT ON COLUMN "public"."crm_import_records"."completed_at" IS '完成时间';
+COMMENT ON COLUMN "public"."crm_import_records"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_import_records"."created_at" IS '创建时间';
+COMMENT ON TABLE "public"."crm_import_records" IS 'Import Records';
+
+-- ----------------------------
+-- Records of crm_import_records
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_invoices
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_invoices";
+CREATE TABLE "public"."crm_invoices" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_invoices_id_seq'::regclass),
+  "invoice_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "contract_id" int4 NOT NULL,
+  "order_id" int4,
+  "customer_id" int4 NOT NULL,
+  "invoice_type" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'standard'::character varying,
+  "invoice_date" date,
+  "due_date" date,
+  "amount" numeric(18,2) NOT NULL,
+  "tax_amount" numeric(18,2) DEFAULT 0,
+  "total_amount" numeric(18,2) NOT NULL,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'draft'::character varying,
+  "paid_amount" numeric(18,2) DEFAULT 0,
+  "payment_date" date,
+  "notes" text COLLATE "pg_catalog"."default",
+  "created_at" timestamp(6) DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" timestamp(6) DEFAULT CURRENT_TIMESTAMP,
+  "created_by" int4,
+  "updated_by" int4,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_invoices"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_invoices"."invoice_code" IS '发票编号';
+COMMENT ON COLUMN "public"."crm_invoices"."contract_id" IS '合同ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_invoices"."order_id" IS '订单ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_invoices"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_invoices"."invoice_type" IS '发票类型:1-增值税专票,2-增值税普票,3-普通发票';
+COMMENT ON COLUMN "public"."crm_invoices"."invoice_date" IS '开票日期';
+COMMENT ON COLUMN "public"."crm_invoices"."due_date" IS '到期日期';
+COMMENT ON COLUMN "public"."crm_invoices"."amount" IS '金额';
+COMMENT ON COLUMN "public"."crm_invoices"."tax_amount" IS '税额';
+COMMENT ON COLUMN "public"."crm_invoices"."total_amount" IS '总金额';
+COMMENT ON COLUMN "public"."crm_invoices"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_invoices"."paid_amount" IS '已付金额';
+COMMENT ON COLUMN "public"."crm_invoices"."payment_date" IS '付款日期';
+COMMENT ON COLUMN "public"."crm_invoices"."notes" IS '备注说明';
+COMMENT ON COLUMN "public"."crm_invoices"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_invoices"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_invoices"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_invoices"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_invoices"."deleted_at" IS '删除时间(软删除)';
+COMMENT ON TABLE "public"."crm_invoices" IS 'Invoices';
+
+-- ----------------------------
+-- Records of crm_invoices
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_joint_followups
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_joint_followups";
+CREATE TABLE "public"."crm_joint_followups" (
+  "id" int8 NOT NULL DEFAULT nextval('crm_joint_followups_id_seq'::regclass),
+  "opportunity_id" int8 NOT NULL,
+  "user_id" int8 NOT NULL,
+  "role_type" varchar(30) COLLATE "pg_catalog"."default",
+  "responsibility" text COLLATE "pg_catalog"."default",
+  "can_edit" bool DEFAULT false,
+  "can_view_sensitive" bool DEFAULT false,
+  "followup_count" int4 DEFAULT 0,
+  "last_followup_date" date,
+  "contribution_score" numeric(5,2),
+  "assigned_date" date,
+  "assigned_by" int8,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'active'::character varying,
+  "end_date" date,
+  "remark" text COLLATE "pg_catalog"."default",
+  "created_at" timestamptz(6) DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" timestamptz(6) DEFAULT CURRENT_TIMESTAMP,
+  "created_by" int8,
+  "updated_by" int8,
+  "deleted_at" timestamptz(6),
+  "version" int4 DEFAULT 1
+)
+;
+COMMENT ON COLUMN "public"."crm_joint_followups"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_joint_followups"."opportunity_id" IS '商机ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_joint_followups"."user_id" IS '用户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_joint_followups"."role_type" IS '角色类型';
+COMMENT ON COLUMN "public"."crm_joint_followups"."responsibility" IS '职责';
+COMMENT ON COLUMN "public"."crm_joint_followups"."can_edit" IS '是否可编辑:0-否,1-是';
+COMMENT ON COLUMN "public"."crm_joint_followups"."can_view_sensitive" IS '是否可查看敏感信息:0-否,1-是';
+COMMENT ON COLUMN "public"."crm_joint_followups"."followup_count" IS '跟进次数';
+COMMENT ON COLUMN "public"."crm_joint_followups"."last_followup_date" IS '最后跟进日期';
+COMMENT ON COLUMN "public"."crm_joint_followups"."contribution_score" IS '贡献评分';
+COMMENT ON COLUMN "public"."crm_joint_followups"."assigned_date" IS '分配日期';
+COMMENT ON COLUMN "public"."crm_joint_followups"."assigned_by" IS '分配人ID';
+COMMENT ON COLUMN "public"."crm_joint_followups"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_joint_followups"."end_date" IS '结束日期';
+COMMENT ON COLUMN "public"."crm_joint_followups"."remark" IS '备注';
+COMMENT ON COLUMN "public"."crm_joint_followups"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_joint_followups"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_joint_followups"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_joint_followups"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_joint_followups"."deleted_at" IS '删除时间(软删除)';
+COMMENT ON COLUMN "public"."crm_joint_followups"."version" IS '版本号';
+COMMENT ON TABLE "public"."crm_joint_followups" IS 'Joint Followups';
+
+-- ----------------------------
+-- Records of crm_joint_followups
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_lead_scores
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_lead_scores";
+CREATE TABLE "public"."crm_lead_scores" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_lead_scores_id_seq'::regclass),
+  "lead_id" int4 NOT NULL,
+  "total_score" int4 DEFAULT 0,
+  "demographic_score" int4 DEFAULT 0,
+  "behavior_score" int4 DEFAULT 0,
+  "engagement_score" int4 DEFAULT 0,
+  "score_grade" varchar(10) COLLATE "pg_catalog"."default",
+  "score_level" varchar(20) COLLATE "pg_catalog"."default",
+  "score_details" json,
+  "last_scored_at" timestamp(6),
+  "next_score_date" date,
+  "is_qualified" bool DEFAULT false,
+  "qualified_at" timestamp(6),
+  "converted_to_opportunity" bool DEFAULT false,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_lead_scores"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_lead_scores"."lead_id" IS '来源线索ID,关联crm_leads';
+COMMENT ON COLUMN "public"."crm_lead_scores"."total_score" IS '总分';
+COMMENT ON COLUMN "public"."crm_lead_scores"."demographic_score" IS '人口统计评分';
+COMMENT ON COLUMN "public"."crm_lead_scores"."behavior_score" IS '行为评分';
+COMMENT ON COLUMN "public"."crm_lead_scores"."engagement_score" IS '参与度评分';
+COMMENT ON COLUMN "public"."crm_lead_scores"."score_grade" IS '评分等级';
+COMMENT ON COLUMN "public"."crm_lead_scores"."score_level" IS '评分等级';
+COMMENT ON COLUMN "public"."crm_lead_scores"."score_details" IS '评分详情';
+COMMENT ON COLUMN "public"."crm_lead_scores"."last_scored_at" IS '最后评分时间';
+COMMENT ON COLUMN "public"."crm_lead_scores"."next_score_date" IS '下次评分日期';
+COMMENT ON COLUMN "public"."crm_lead_scores"."is_qualified" IS '是否合格';
+COMMENT ON COLUMN "public"."crm_lead_scores"."qualified_at" IS '合格时间';
+COMMENT ON COLUMN "public"."crm_lead_scores"."converted_to_opportunity" IS '是否转商机';
+COMMENT ON COLUMN "public"."crm_lead_scores"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_lead_scores"."updated_at" IS '更新时间';
+COMMENT ON TABLE "public"."crm_lead_scores" IS 'Lead Scores';
+
+-- ----------------------------
+-- Records of crm_lead_scores
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_leads
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_leads";
+CREATE TABLE "public"."crm_leads" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_leads_id_seq'::regclass),
+  "lead_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "lead_name" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "source" varchar(50) COLLATE "pg_catalog"."default",
+  "campaign_id" int4,
+  "channel" varchar(50) COLLATE "pg_catalog"."default",
+  "phone" varchar(50) COLLATE "pg_catalog"."default",
+  "email" varchar(100) COLLATE "pg_catalog"."default",
+  "company" varchar(200) COLLATE "pg_catalog"."default",
+  "position" varchar(100) COLLATE "pg_catalog"."default",
+  "score" int4 DEFAULT 0,
+  "grade" varchar(10) COLLATE "pg_catalog"."default",
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'new'::character varying,
+  "converted_customer_id" int4,
+  "owner_id" int4,
+  "assigned_at" timestamp(6),
+  "nurturing_stage" varchar(50) COLLATE "pg_catalog"."default",
+  "last_nurturing_date" date,
+  "duplicate_check_key" varchar(100) COLLATE "pg_catalog"."default",
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_by" int4,
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_leads"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_leads"."lead_code" IS '线索编号';
+COMMENT ON COLUMN "public"."crm_leads"."lead_name" IS '线索名称';
+COMMENT ON COLUMN "public"."crm_leads"."source" IS '来源:1-自主开发,2-市场活动,3-转介绍,4-网络推广,5-合作伙伴,6-招投标';
+COMMENT ON COLUMN "public"."crm_leads"."campaign_id" IS '活动ID';
+COMMENT ON COLUMN "public"."crm_leads"."channel" IS '渠道';
+COMMENT ON COLUMN "public"."crm_leads"."phone" IS '电话';
+COMMENT ON COLUMN "public"."crm_leads"."email" IS '邮箱';
+COMMENT ON COLUMN "public"."crm_leads"."company" IS '公司名称';
+COMMENT ON COLUMN "public"."crm_leads"."position" IS '职位';
+COMMENT ON COLUMN "public"."crm_leads"."score" IS '评分';
+COMMENT ON COLUMN "public"."crm_leads"."grade" IS '等级';
+COMMENT ON COLUMN "public"."crm_leads"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_leads"."converted_customer_id" IS '转化后客户ID';
+COMMENT ON COLUMN "public"."crm_leads"."owner_id" IS '负责人ID,关联sys_users';
+COMMENT ON COLUMN "public"."crm_leads"."assigned_at" IS '分配时间';
+COMMENT ON COLUMN "public"."crm_leads"."nurturing_stage" IS '培育阶段';
+COMMENT ON COLUMN "public"."crm_leads"."last_nurturing_date" IS '最后培育日期';
+COMMENT ON COLUMN "public"."crm_leads"."duplicate_check_key" IS '查重键';
+COMMENT ON COLUMN "public"."crm_leads"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_leads"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_leads"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_leads"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_leads"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_leads" IS 'Leads';
+
+-- ----------------------------
+-- Records of crm_leads
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_marketing_campaigns
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_marketing_campaigns";
+CREATE TABLE "public"."crm_marketing_campaigns" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_marketing_campaigns_id_seq'::regclass),
+  "campaign_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "campaign_name" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "campaign_type" varchar(50) COLLATE "pg_catalog"."default",
+  "start_date" date,
+  "end_date" date,
+  "location" varchar(200) COLLATE "pg_catalog"."default",
+  "description" text COLLATE "pg_catalog"."default",
+  "budget" numeric(15,2),
+  "actual_cost" numeric(15,2),
+  "target_leads" int4,
+  "target_customers" int4,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'planning'::character varying,
+  "owner_id" int4,
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_by" int4,
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."campaign_code" IS '活动编号';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."campaign_name" IS '活动名称';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."campaign_type" IS '活动类型';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."start_date" IS '开始日期';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."end_date" IS '结束日期';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."location" IS '地点';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."description" IS '描述';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."budget" IS '预算金额';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."actual_cost" IS '实际成本';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."target_leads" IS '目标线索数';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."target_customers" IS '目标客户';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."owner_id" IS '负责人ID,关联sys_users';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_marketing_campaigns"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_marketing_campaigns" IS 'Marketing Campaigns';
+
+-- ----------------------------
+-- Records of crm_marketing_campaigns
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_marketing_channels
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_marketing_channels";
+CREATE TABLE "public"."crm_marketing_channels" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_marketing_channels_id_seq'::regclass),
+  "channel_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "channel_name" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "channel_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "channel_category" varchar(50) COLLATE "pg_catalog"."default",
+  "parent_id" int4 DEFAULT 0,
+  "cost_per_lead" numeric(10,2),
+  "monthly_budget" numeric(15,2),
+  "actual_cost" numeric(15,2) DEFAULT 0,
+  "total_leads" int4 DEFAULT 0,
+  "qualified_leads" int4 DEFAULT 0,
+  "converted_customers" int4 DEFAULT 0,
+  "total_revenue" numeric(15,2) DEFAULT 0,
+  "conversion_rate" numeric(5,2),
+  "roi" numeric(5,2),
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'active'::character varying,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6),
+  "created_by" int4,
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_marketing_channels"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."channel_code" IS '渠道编号';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."channel_name" IS '渠道名称';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."channel_type" IS '渠道类型';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."channel_category" IS '渠道分类';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."parent_id" IS '父级ID';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."cost_per_lead" IS '单线索成本';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."monthly_budget" IS '月度预算';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."actual_cost" IS '实际成本';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."total_leads" IS '总线索数';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."qualified_leads" IS '合格线索数';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."converted_customers" IS '转化客户数';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."total_revenue" IS '总收入';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."conversion_rate" IS '转化率';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."roi" IS '投资回报率';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."description" IS '描述';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_marketing_channels"."updated_at" IS '更新时间';
+COMMENT ON TABLE "public"."crm_marketing_channels" IS 'Marketing Channels';
+
+-- ----------------------------
+-- Records of crm_marketing_channels
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_notifications
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_notifications";
+CREATE TABLE "public"."crm_notifications" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_notifications_id_seq'::regclass),
+  "user_id" int4 NOT NULL,
+  "notification_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "title" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "content" text COLLATE "pg_catalog"."default",
+  "related_type" varchar(50) COLLATE "pg_catalog"."default",
+  "related_id" int4,
+  "is_read" bool DEFAULT false,
+  "read_at" timestamp(6),
+  "priority" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'normal'::character varying,
+  "sent_at" timestamp(6) DEFAULT now(),
+  "created_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_notifications"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_notifications"."user_id" IS '用户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_notifications"."notification_type" IS '通知类型:1-系统通知,2-审批通知,3-提醒通知,4-公告';
+COMMENT ON COLUMN "public"."crm_notifications"."title" IS '职位';
+COMMENT ON COLUMN "public"."crm_notifications"."content" IS '内容';
+COMMENT ON COLUMN "public"."crm_notifications"."related_type" IS '关联类型';
+COMMENT ON COLUMN "public"."crm_notifications"."related_id" IS '关联ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_notifications"."is_read" IS '是否已读:0-未读,1-已读';
+COMMENT ON COLUMN "public"."crm_notifications"."read_at" IS '阅读时间';
+COMMENT ON COLUMN "public"."crm_notifications"."priority" IS '优先级:1-低,2-中,3-高,4-紧急';
+COMMENT ON COLUMN "public"."crm_notifications"."sent_at" IS '发送时间';
+COMMENT ON COLUMN "public"."crm_notifications"."created_at" IS '创建时间';
+COMMENT ON TABLE "public"."crm_notifications" IS 'Notifications';
+
+-- ----------------------------
+-- Records of crm_notifications
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_operation_logs
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_operation_logs";
+CREATE TABLE "public"."crm_operation_logs" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_operation_logs_id_seq'::regclass),
+  "user_id" int4 NOT NULL,
+  "username" varchar(100) COLLATE "pg_catalog"."default",
+  "module" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "action" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "target_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "target_id" int4 NOT NULL,
+  "target_name" varchar(200) COLLATE "pg_catalog"."default",
+  "old_value" json,
+  "new_value" json,
+  "changed_fields" json,
+  "ip_address" varchar(45) COLLATE "pg_catalog"."default",
+  "user_agent" text COLLATE "pg_catalog"."default",
+  "request_method" varchar(10) COLLATE "pg_catalog"."default",
+  "request_url" varchar(500) COLLATE "pg_catalog"."default",
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'success'::character varying,
+  "error_message" text COLLATE "pg_catalog"."default",
+  "execution_time" int4,
+  "operated_at" timestamp(6) DEFAULT now(),
+  "created_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_operation_logs"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_operation_logs"."user_id" IS '用户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_operation_logs"."username" IS '用户名';
+COMMENT ON COLUMN "public"."crm_operation_logs"."module" IS '模块';
+COMMENT ON COLUMN "public"."crm_operation_logs"."action" IS '行动';
+COMMENT ON COLUMN "public"."crm_operation_logs"."target_type" IS '目标类型';
+COMMENT ON COLUMN "public"."crm_operation_logs"."target_id" IS '目标ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_operation_logs"."target_name" IS '目标名称';
+COMMENT ON COLUMN "public"."crm_operation_logs"."old_value" IS '旧值';
+COMMENT ON COLUMN "public"."crm_operation_logs"."new_value" IS '新值';
+COMMENT ON COLUMN "public"."crm_operation_logs"."changed_fields" IS '变更字段';
+COMMENT ON COLUMN "public"."crm_operation_logs"."ip_address" IS 'IP地址';
+COMMENT ON COLUMN "public"."crm_operation_logs"."user_agent" IS '用户代理';
+COMMENT ON COLUMN "public"."crm_operation_logs"."request_method" IS '请求方法';
+COMMENT ON COLUMN "public"."crm_operation_logs"."request_url" IS '请求URL';
+COMMENT ON COLUMN "public"."crm_operation_logs"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_operation_logs"."error_message" IS '错误信息';
+COMMENT ON COLUMN "public"."crm_operation_logs"."execution_time" IS '执行时间';
+COMMENT ON COLUMN "public"."crm_operation_logs"."operated_at" IS '操作时间';
+COMMENT ON COLUMN "public"."crm_operation_logs"."created_at" IS '创建时间';
+COMMENT ON TABLE "public"."crm_operation_logs" IS 'Operation Logs';
+
+-- ----------------------------
+-- Records of crm_operation_logs
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_opportunities
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_opportunities";
+CREATE TABLE "public"."crm_opportunities" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_opportunities_id_seq'::regclass),
+  "opportunity_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "opportunity_name" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "customer_id" int4 NOT NULL,
+  "amount" numeric(15,2),
+  "currency" varchar(10) COLLATE "pg_catalog"."default" DEFAULT 'CNY'::character varying,
+  "probability" int4 DEFAULT 10,
+  "expected_close_date" date,
+  "stage" varchar(50) COLLATE "pg_catalog"."default" NOT NULL DEFAULT 'discovery'::character varying,
+  "stage_updated_at" timestamp(6),
+  "product_ids" json,
+  "source" varchar(50) COLLATE "pg_catalog"."default",
+  "owner_id" int4 NOT NULL,
+  "lost_reason" varchar(200) COLLATE "pg_catalog"."default",
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_by" int4,
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_opportunities"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_opportunities"."opportunity_code" IS '商机编号';
+COMMENT ON COLUMN "public"."crm_opportunities"."opportunity_name" IS '商机名称';
+COMMENT ON COLUMN "public"."crm_opportunities"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_opportunities"."amount" IS '金额';
+COMMENT ON COLUMN "public"."crm_opportunities"."currency" IS '币种:CNY-人民币,USD-美元,EUR-欧元';
+COMMENT ON COLUMN "public"."crm_opportunities"."probability" IS '赢单概率';
+COMMENT ON COLUMN "public"."crm_opportunities"."expected_close_date" IS '预计成交日期';
+COMMENT ON COLUMN "public"."crm_opportunities"."stage" IS '阶段:1-初步接触,2-需求分析,3-方案设计,4-报价谈判,5-赢单,6-输单,7-暂停';
+COMMENT ON COLUMN "public"."crm_opportunities"."stage_updated_at" IS '阶段更新时间';
+COMMENT ON COLUMN "public"."crm_opportunities"."product_ids" IS '产品IDs';
+COMMENT ON COLUMN "public"."crm_opportunities"."source" IS '来源:1-自主开发,2-市场活动,3-转介绍,4-网络推广,5-合作伙伴,6-招投标';
+COMMENT ON COLUMN "public"."crm_opportunities"."owner_id" IS '负责人ID,关联sys_users';
+COMMENT ON COLUMN "public"."crm_opportunities"."lost_reason" IS '输单原因';
+COMMENT ON COLUMN "public"."crm_opportunities"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_opportunities"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_opportunities"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_opportunities"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_opportunities"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_opportunities" IS 'Opportunities';
+
+-- ----------------------------
+-- Records of crm_opportunities
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_opportunity_products
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_opportunity_products";
+CREATE TABLE "public"."crm_opportunity_products" (
+  "id" int8 NOT NULL DEFAULT nextval('crm_opportunity_products_id_seq'::regclass),
+  "opportunity_id" int8 NOT NULL,
+  "product_id" int8 NOT NULL,
+  "product_name" varchar(200) COLLATE "pg_catalog"."default",
+  "quantity" int4 DEFAULT 1,
+  "unit_price" numeric(18,4),
+  "estimated_amount" numeric(18,2),
+  "is_preferred" bool DEFAULT false,
+  "win_rate" numeric(5,2),
+  "competitor_product" varchar(200) COLLATE "pg_catalog"."default",
+  "remark" text COLLATE "pg_catalog"."default",
+  "created_at" timestamptz(6) DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" timestamptz(6) DEFAULT CURRENT_TIMESTAMP,
+  "created_by" int8,
+  "updated_by" int8,
+  "deleted_at" timestamptz(6),
+  "version" int4 DEFAULT 1
+)
+;
+COMMENT ON COLUMN "public"."crm_opportunity_products"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_opportunity_products"."opportunity_id" IS '商机ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_opportunity_products"."product_id" IS '产品ID';
+COMMENT ON COLUMN "public"."crm_opportunity_products"."product_name" IS '产品名称';
+COMMENT ON COLUMN "public"."crm_opportunity_products"."quantity" IS '数量';
+COMMENT ON COLUMN "public"."crm_opportunity_products"."unit_price" IS '单价';
+COMMENT ON COLUMN "public"."crm_opportunity_products"."estimated_amount" IS '预计金额';
+COMMENT ON COLUMN "public"."crm_opportunity_products"."is_preferred" IS '是否首选:0-否,1-是';
+COMMENT ON COLUMN "public"."crm_opportunity_products"."win_rate" IS '赢单率';
+COMMENT ON COLUMN "public"."crm_opportunity_products"."competitor_product" IS '竞品';
+COMMENT ON COLUMN "public"."crm_opportunity_products"."remark" IS '备注';
+COMMENT ON COLUMN "public"."crm_opportunity_products"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_opportunity_products"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_opportunity_products"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_opportunity_products"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_opportunity_products"."deleted_at" IS '删除时间(软删除)';
+COMMENT ON COLUMN "public"."crm_opportunity_products"."version" IS '版本号';
+COMMENT ON TABLE "public"."crm_opportunity_products" IS 'Opportunity Products';
+
+-- ----------------------------
+-- Records of crm_opportunity_products
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_opportunity_stages
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_opportunity_stages";
+CREATE TABLE "public"."crm_opportunity_stages" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_opportunity_stages_id_seq'::regclass),
+  "stage_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "stage_name" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "stage_sequence" int4 NOT NULL,
+  "probability" int4 NOT NULL,
+  "color" varchar(20) COLLATE "pg_catalog"."default",
+  "stay_limit" int4,
+  "stay_limit_action" varchar(50) COLLATE "pg_catalog"."default",
+  "required_fields" json,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'active'::character varying,
+  "is_system" bool DEFAULT false,
+  "is_final" bool DEFAULT false,
+  "final_result" varchar(20) COLLATE "pg_catalog"."default",
+  "description" text COLLATE "pg_catalog"."default",
+  "sort" int4 DEFAULT 0,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6),
+  "created_by" int4,
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."stage_code" IS '阶段编号';
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."stage_name" IS '阶段名称';
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."stage_sequence" IS '阶段顺序';
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."probability" IS '赢单概率';
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."color" IS '颜色';
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."stay_limit" IS '停留限制(天)';
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."stay_limit_action" IS '超时动作';
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."required_fields" IS '必填字段';
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."is_system" IS '是否系统内置';
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."is_final" IS '是否终态';
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."final_result" IS '最终结果';
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."description" IS '描述';
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."sort" IS '排序';
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_opportunity_stages"."updated_at" IS '更新时间';
+COMMENT ON TABLE "public"."crm_opportunity_stages" IS 'Opportunity Stages';
+
+-- ----------------------------
+-- Records of crm_opportunity_stages
+-- ----------------------------
+INSERT INTO "public"."crm_opportunity_stages" VALUES (1, 'LEAD', '初步接触', 1, 10, 'info', 7, NULL, NULL, 'active', 'f', 'f', NULL, NULL, 0, '2026-04-17 22:33:22.097147', '2026-04-17 22:33:22.097147', NULL, NULL, NULL);
+INSERT INTO "public"."crm_opportunity_stages" VALUES (2, 'QUALIFY', '需求确认', 2, 25, 'primary', 14, NULL, NULL, 'active', 'f', 'f', NULL, NULL, 0, '2026-04-17 22:33:22.097147', '2026-04-17 22:33:22.097147', NULL, NULL, NULL);
+INSERT INTO "public"."crm_opportunity_stages" VALUES (3, 'PROPOSAL', '方案报价', 3, 50, 'warning', 21, NULL, NULL, 'active', 'f', 'f', NULL, NULL, 0, '2026-04-17 22:33:22.097147', '2026-04-17 22:33:22.097147', NULL, NULL, NULL);
+INSERT INTO "public"."crm_opportunity_stages" VALUES (4, 'NEGOTIATE', '谈判签约', 4, 75, 'warning', 14, NULL, NULL, 'active', 'f', 'f', NULL, NULL, 0, '2026-04-17 22:33:22.097147', '2026-04-17 22:33:22.097147', NULL, NULL, NULL);
+INSERT INTO "public"."crm_opportunity_stages" VALUES (5, 'WON', '赢单', 5, 100, 'success', NULL, NULL, NULL, 'active', 'f', 'f', NULL, NULL, 0, '2026-04-17 22:33:22.097147', '2026-04-17 22:33:22.097147', NULL, NULL, NULL);
+INSERT INTO "public"."crm_opportunity_stages" VALUES (6, 'LOST', '输单', 6, 0, 'danger', NULL, NULL, NULL, 'active', 'f', 'f', NULL, NULL, 0, '2026-04-17 22:33:22.097147', '2026-04-17 22:33:22.097147', NULL, NULL, NULL);
+
+-- ----------------------------
+-- Table structure for crm_order_items
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_order_items";
+CREATE TABLE "public"."crm_order_items" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_order_items_id_seq'::regclass),
+  "order_id" int4 NOT NULL,
+  "product_id" int4,
+  "product_code" varchar(50) COLLATE "pg_catalog"."default",
+  "product_name" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "sku_id" int4,
+  "sku_code" varchar(50) COLLATE "pg_catalog"."default",
+  "quantity" numeric(10,2) NOT NULL,
+  "unit_price" numeric(15,2) NOT NULL,
+  "discount_rate" numeric(5,2) DEFAULT 0,
+  "discount_amount" numeric(15,2) DEFAULT 0,
+  "tax_rate" numeric(5,2) DEFAULT 13.00,
+  "tax_amount" numeric(15,2) DEFAULT 0,
+  "amount" numeric(15,2) NOT NULL,
+  "delivery_date" date,
+  "delivery_address" text COLLATE "pg_catalog"."default",
+  "delivered_quantity" numeric(10,2) DEFAULT 0,
+  "pending_quantity" numeric(10,2) GENERATED ALWAYS AS (
+(quantity - delivered_quantity)
+) STORED,
+  "production_status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'pending'::character varying,
+  "production_note" text COLLATE "pg_catalog"."default",
+  "remark" text COLLATE "pg_catalog"."default",
+  "sort" int4 DEFAULT 0,
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_order_items"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_order_items"."order_id" IS '订单ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_order_items"."product_id" IS '产品ID';
+COMMENT ON COLUMN "public"."crm_order_items"."product_code" IS '产品编号';
+COMMENT ON COLUMN "public"."crm_order_items"."product_name" IS '产品名称';
+COMMENT ON COLUMN "public"."crm_order_items"."sku_id" IS 'SKU ID';
+COMMENT ON COLUMN "public"."crm_order_items"."sku_code" IS 'SKU编号';
+COMMENT ON COLUMN "public"."crm_order_items"."quantity" IS '数量';
+COMMENT ON COLUMN "public"."crm_order_items"."unit_price" IS '单价';
+COMMENT ON COLUMN "public"."crm_order_items"."discount_rate" IS '折扣率';
+COMMENT ON COLUMN "public"."crm_order_items"."discount_amount" IS '折扣金额';
+COMMENT ON COLUMN "public"."crm_order_items"."tax_rate" IS '税率';
+COMMENT ON COLUMN "public"."crm_order_items"."tax_amount" IS '税额';
+COMMENT ON COLUMN "public"."crm_order_items"."amount" IS '金额';
+COMMENT ON COLUMN "public"."crm_order_items"."delivery_date" IS '交付日期';
+COMMENT ON COLUMN "public"."crm_order_items"."delivery_address" IS '收货地址';
+COMMENT ON COLUMN "public"."crm_order_items"."delivered_quantity" IS '已交付数量';
+COMMENT ON COLUMN "public"."crm_order_items"."pending_quantity" IS '待交付数量';
+COMMENT ON COLUMN "public"."crm_order_items"."production_status" IS '生产状态';
+COMMENT ON COLUMN "public"."crm_order_items"."production_note" IS '生产备注';
+COMMENT ON COLUMN "public"."crm_order_items"."remark" IS '备注';
+COMMENT ON COLUMN "public"."crm_order_items"."sort" IS '排序';
+COMMENT ON COLUMN "public"."crm_order_items"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_order_items"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_order_items"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_order_items"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_order_items" IS 'Order Items';
+
+-- ----------------------------
+-- Records of crm_order_items
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_orders
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_orders";
+CREATE TABLE "public"."crm_orders" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_orders_id_seq'::regclass),
+  "order_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "contract_id" int4 NOT NULL,
+  "customer_id" int4 NOT NULL,
+  "order_date" date NOT NULL,
+  "expected_delivery_date" date,
+  "actual_delivery_date" date,
+  "total_amount" numeric(15,2) NOT NULL,
+  "paid_amount" numeric(15,2) DEFAULT 0,
+  "unpaid_amount" numeric(15,2) GENERATED ALWAYS AS (
+(total_amount - paid_amount)
+) STORED,
+  "order_status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'pending'::character varying,
+  "payment_status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'unpaid'::character varying,
+  "owner_id" int4,
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_orders"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_orders"."order_code" IS '订单编号';
+COMMENT ON COLUMN "public"."crm_orders"."contract_id" IS '合同ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_orders"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_orders"."order_date" IS '订单日期';
+COMMENT ON COLUMN "public"."crm_orders"."expected_delivery_date" IS '预计交付日期';
+COMMENT ON COLUMN "public"."crm_orders"."actual_delivery_date" IS '实际交付日期';
+COMMENT ON COLUMN "public"."crm_orders"."total_amount" IS '总金额';
+COMMENT ON COLUMN "public"."crm_orders"."paid_amount" IS '已付金额';
+COMMENT ON COLUMN "public"."crm_orders"."unpaid_amount" IS '未付金额';
+COMMENT ON COLUMN "public"."crm_orders"."order_status" IS '订单状态:1-待确认,2-已确认,3-生产中,4-已发货,5-已完成,6-已取消';
+COMMENT ON COLUMN "public"."crm_orders"."payment_status" IS '付款状态:1-未付款,2-部分付款,3-已付款,4-退款中,5-已退款';
+COMMENT ON COLUMN "public"."crm_orders"."owner_id" IS '负责人ID,关联sys_users';
+COMMENT ON COLUMN "public"."crm_orders"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_orders"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_orders"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_orders"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_orders" IS 'Orders';
+
+-- ----------------------------
+-- Records of crm_orders
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_payments
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_payments";
+CREATE TABLE "public"."crm_payments" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_payments_id_seq'::regclass),
+  "payment_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "contract_id" int4 NOT NULL,
+  "order_id" int4,
+  "payment_plan_id" int4,
+  "customer_id" int4 NOT NULL,
+  "payment_amount" numeric(15,2) NOT NULL,
+  "payment_method" varchar(30) COLLATE "pg_catalog"."default" NOT NULL,
+  "payment_date" date NOT NULL,
+  "bank_name" varchar(100) COLLATE "pg_catalog"."default",
+  "bank_account" varchar(100) COLLATE "pg_catalog"."default",
+  "account_name" varchar(100) COLLATE "pg_catalog"."default",
+  "receipt_number" varchar(50) COLLATE "pg_catalog"."default",
+  "receipt_file_url" varchar(500) COLLATE "pg_catalog"."default",
+  "invoice_id" int4,
+  "is_invoiced" bool DEFAULT false,
+  "payment_status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'confirmed'::character varying,
+  "confirmed_by" int4,
+  "confirmed_at" timestamp(6),
+  "remark" text COLLATE "pg_catalog"."default",
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_by" int4,
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_payments"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_payments"."payment_code" IS '收款编号';
+COMMENT ON COLUMN "public"."crm_payments"."contract_id" IS '合同ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_payments"."order_id" IS '订单ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_payments"."payment_plan_id" IS '付款计划ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_payments"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_payments"."payment_amount" IS '收款金额';
+COMMENT ON COLUMN "public"."crm_payments"."payment_method" IS '付款方式';
+COMMENT ON COLUMN "public"."crm_payments"."payment_date" IS '付款日期';
+COMMENT ON COLUMN "public"."crm_payments"."bank_name" IS '银行名称';
+COMMENT ON COLUMN "public"."crm_payments"."bank_account" IS '银行账号';
+COMMENT ON COLUMN "public"."crm_payments"."account_name" IS '账户名称';
+COMMENT ON COLUMN "public"."crm_payments"."receipt_number" IS '收款单号';
+COMMENT ON COLUMN "public"."crm_payments"."receipt_file_url" IS '收款凭证URL';
+COMMENT ON COLUMN "public"."crm_payments"."invoice_id" IS '发票ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_payments"."is_invoiced" IS '是否已开票';
+COMMENT ON COLUMN "public"."crm_payments"."payment_status" IS '付款状态:1-未付款,2-部分付款,3-已付款,4-退款中,5-已退款';
+COMMENT ON COLUMN "public"."crm_payments"."confirmed_by" IS '确认人ID';
+COMMENT ON COLUMN "public"."crm_payments"."confirmed_at" IS '确认时间';
+COMMENT ON COLUMN "public"."crm_payments"."remark" IS '备注';
+COMMENT ON COLUMN "public"."crm_payments"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_payments"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_payments"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_payments"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_payments"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_payments" IS 'Payments';
+
+-- ----------------------------
+-- Records of crm_payments
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_pool_transfers
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_pool_transfers";
+CREATE TABLE "public"."crm_pool_transfers" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_pool_transfers_id_seq'::regclass),
+  "customer_id" int4 NOT NULL,
+  "from_pool" varchar(20) COLLATE "pg_catalog"."default" NOT NULL,
+  "to_pool" varchar(20) COLLATE "pg_catalog"."default" NOT NULL,
+  "from_owner_id" int4,
+  "to_owner_id" int4,
+  "transfer_reason" varchar(200) COLLATE "pg_catalog"."default",
+  "transfer_type" varchar(20) COLLATE "pg_catalog"."default",
+  "operator_id" int4 NOT NULL,
+  "transferred_at" timestamp(6) DEFAULT now(),
+  "created_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_pool_transfers"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_pool_transfers"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_pool_transfers"."from_pool" IS '来源公海';
+COMMENT ON COLUMN "public"."crm_pool_transfers"."to_pool" IS '目标公海';
+COMMENT ON COLUMN "public"."crm_pool_transfers"."from_owner_id" IS '原负责人ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_pool_transfers"."to_owner_id" IS '新负责人ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_pool_transfers"."transfer_reason" IS '转移原因';
+COMMENT ON COLUMN "public"."crm_pool_transfers"."transfer_type" IS '转移类型';
+COMMENT ON COLUMN "public"."crm_pool_transfers"."operator_id" IS '操作人ID';
+COMMENT ON COLUMN "public"."crm_pool_transfers"."transferred_at" IS '转移时间';
+COMMENT ON COLUMN "public"."crm_pool_transfers"."created_at" IS '创建时间';
+COMMENT ON TABLE "public"."crm_pool_transfers" IS 'Pool Transfers';
+
+-- ----------------------------
+-- Records of crm_pool_transfers
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_price_tiers
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_price_tiers";
+CREATE TABLE "public"."crm_price_tiers" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_price_tiers_id_seq'::regclass),
+  "tier_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "tier_name" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "discount_rate" numeric(5,2) NOT NULL,
+  "min_amount" numeric(15,2),
+  "max_amount" numeric(15,2),
+  "customer_level" varchar(20) COLLATE "pg_catalog"."default",
+  "annual_revenue_min" numeric(15,2),
+  "order_count_min" int4,
+  "benefits" json,
+  "priority" int4 DEFAULT 0,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'active'::character varying,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6),
+  "created_by" int4,
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_price_tiers"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_price_tiers"."tier_code" IS '层级编号';
+COMMENT ON COLUMN "public"."crm_price_tiers"."tier_name" IS '层级名称';
+COMMENT ON COLUMN "public"."crm_price_tiers"."discount_rate" IS '折扣率';
+COMMENT ON COLUMN "public"."crm_price_tiers"."min_amount" IS '最小金额';
+COMMENT ON COLUMN "public"."crm_price_tiers"."max_amount" IS '最大金额';
+COMMENT ON COLUMN "public"."crm_price_tiers"."customer_level" IS '客户等级:A-战略客户,B-重要客户,C-普通客户,D-潜在客户';
+COMMENT ON COLUMN "public"."crm_price_tiers"."annual_revenue_min" IS '最低年营业额';
+COMMENT ON COLUMN "public"."crm_price_tiers"."order_count_min" IS '最低订单数';
+COMMENT ON COLUMN "public"."crm_price_tiers"."benefits" IS '权益说明';
+COMMENT ON COLUMN "public"."crm_price_tiers"."priority" IS '优先级:1-低,2-中,3-高,4-紧急';
+COMMENT ON COLUMN "public"."crm_price_tiers"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_price_tiers"."description" IS '描述';
+COMMENT ON COLUMN "public"."crm_price_tiers"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_price_tiers"."updated_at" IS '更新时间';
+COMMENT ON TABLE "public"."crm_price_tiers" IS 'Price Tiers';
+
+-- ----------------------------
+-- Records of crm_price_tiers
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_product_categories
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_product_categories";
+CREATE TABLE "public"."crm_product_categories" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_product_categories_id_seq'::regclass),
+  "category_name" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "parent_id" int4 DEFAULT 0,
+  "level" int4 DEFAULT 1,
+  "sort" int4 DEFAULT 0,
+  "icon" varchar(100) COLLATE "pg_catalog"."default",
+  "description" text COLLATE "pg_catalog"."default",
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'active'::character varying,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6),
+  "created_by" int4,
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_product_categories"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_product_categories"."category_name" IS '分类名称';
+COMMENT ON COLUMN "public"."crm_product_categories"."parent_id" IS '父级ID';
+COMMENT ON COLUMN "public"."crm_product_categories"."level" IS '级别';
+COMMENT ON COLUMN "public"."crm_product_categories"."sort" IS '排序';
+COMMENT ON COLUMN "public"."crm_product_categories"."icon" IS '图标';
+COMMENT ON COLUMN "public"."crm_product_categories"."description" IS '描述';
+COMMENT ON COLUMN "public"."crm_product_categories"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_product_categories"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_product_categories"."updated_at" IS '更新时间';
+COMMENT ON TABLE "public"."crm_product_categories" IS 'Product Categories';
+
+-- ----------------------------
+-- Records of crm_product_categories
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_product_documents
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_product_documents";
+CREATE TABLE "public"."crm_product_documents" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_product_documents_id_seq'::regclass),
+  "product_id" int4 NOT NULL,
+  "sku_id" int4,
+  "doc_name" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "doc_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "file_path" varchar(500) COLLATE "pg_catalog"."default" NOT NULL,
+  "file_size" int4,
+  "mime_type" varchar(100) COLLATE "pg_catalog"."default",
+  "version" varchar(20) COLLATE "pg_catalog"."default",
+  "is_latest" bool DEFAULT true,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'active'::character varying,
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6),
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_product_documents"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_product_documents"."product_id" IS '产品ID';
+COMMENT ON COLUMN "public"."crm_product_documents"."sku_id" IS 'SKU ID';
+COMMENT ON COLUMN "public"."crm_product_documents"."doc_name" IS '文档名称';
+COMMENT ON COLUMN "public"."crm_product_documents"."doc_type" IS '文档类型';
+COMMENT ON COLUMN "public"."crm_product_documents"."file_path" IS '文件路径';
+COMMENT ON COLUMN "public"."crm_product_documents"."file_size" IS '文件大小';
+COMMENT ON COLUMN "public"."crm_product_documents"."mime_type" IS 'MIME类型';
+COMMENT ON COLUMN "public"."crm_product_documents"."version" IS '版本号';
+COMMENT ON COLUMN "public"."crm_product_documents"."is_latest" IS '是否最新版本';
+COMMENT ON COLUMN "public"."crm_product_documents"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_product_documents"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_product_documents"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_product_documents"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_product_documents" IS 'Product Documents';
+
+-- ----------------------------
+-- Records of crm_product_documents
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_product_price_history
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_product_price_history";
+CREATE TABLE "public"."crm_product_price_history" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_product_price_history_id_seq'::regclass),
+  "product_id" int4 NOT NULL,
+  "old_price" numeric(15,2),
+  "new_price" numeric(15,2) NOT NULL,
+  "price_type" varchar(20) COLLATE "pg_catalog"."default",
+  "change_reason" varchar(200) COLLATE "pg_catalog"."default",
+  "approval_status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'approved'::character varying,
+  "approved_by" int4,
+  "effective_date" date NOT NULL,
+  "operator_id" int4 NOT NULL,
+  "created_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_product_price_history"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_product_price_history"."product_id" IS '产品ID';
+COMMENT ON COLUMN "public"."crm_product_price_history"."old_price" IS '原价';
+COMMENT ON COLUMN "public"."crm_product_price_history"."new_price" IS '新价';
+COMMENT ON COLUMN "public"."crm_product_price_history"."price_type" IS '价格类型';
+COMMENT ON COLUMN "public"."crm_product_price_history"."change_reason" IS '变更原因';
+COMMENT ON COLUMN "public"."crm_product_price_history"."approval_status" IS '审批状态:1-待审批,2-审批中,3-已通过,4-已拒绝,5-已撤销';
+COMMENT ON COLUMN "public"."crm_product_price_history"."approved_by" IS '审批人ID,关联sys_users';
+COMMENT ON COLUMN "public"."crm_product_price_history"."effective_date" IS '生效日期';
+COMMENT ON COLUMN "public"."crm_product_price_history"."operator_id" IS '操作人ID';
+COMMENT ON COLUMN "public"."crm_product_price_history"."created_at" IS '创建时间';
+COMMENT ON TABLE "public"."crm_product_price_history" IS 'Product Price History';
+
+-- ----------------------------
+-- Records of crm_product_price_history
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_product_price_policies
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_product_price_policies";
+CREATE TABLE "public"."crm_product_price_policies" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_product_price_policies_id_seq'::regclass),
+  "product_id" int4 NOT NULL,
+  "sku_id" int4,
+  "policy_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "policy_name" varchar(200) COLLATE "pg_catalog"."default",
+  "customer_level" varchar(20) COLLATE "pg_catalog"."default",
+  "customer_id" int4,
+  "min_quantity" int4,
+  "max_quantity" int4,
+  "price" numeric(15,2) NOT NULL,
+  "discount_rate" numeric(5,2),
+  "valid_from" date,
+  "valid_to" date,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'active'::character varying,
+  "priority" int4 DEFAULT 0,
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_product_price_policies"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."product_id" IS '产品ID';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."sku_id" IS 'SKU ID';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."policy_type" IS '策略类型';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."policy_name" IS '策略名称';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."customer_level" IS '客户等级:A-战略客户,B-重要客户,C-普通客户,D-潜在客户';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."min_quantity" IS '最小数量';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."max_quantity" IS '最大数量';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."price" IS '价格';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."discount_rate" IS '折扣率';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."valid_from" IS '生效日期';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."valid_to" IS '失效日期';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."priority" IS '优先级:1-低,2-中,3-高,4-紧急';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_product_price_policies"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_product_price_policies" IS 'Product Price Policies';
+
+-- ----------------------------
+-- Records of crm_product_price_policies
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_product_prices
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_product_prices";
+CREATE TABLE "public"."crm_product_prices" (
+  "id" int8 NOT NULL DEFAULT nextval('crm_product_prices_id_seq'::regclass),
+  "product_id" int8,
+  "sku_id" int8,
+  "price_type" varchar(20) COLLATE "pg_catalog"."default" NOT NULL,
+  "price_name" varchar(100) COLLATE "pg_catalog"."default",
+  "unit_price" numeric(18,4) NOT NULL,
+  "min_quantity" int4 DEFAULT 1,
+  "max_quantity" int4,
+  "effective_from" timestamptz(6) DEFAULT CURRENT_TIMESTAMP,
+  "effective_to" timestamptz(6),
+  "is_active" bool DEFAULT true,
+  "customer_id" int8,
+  "customer_level" varchar(20) COLLATE "pg_catalog"."default",
+  "quantity_prices" jsonb DEFAULT '[]'::jsonb,
+  "approval_status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'pending'::character varying,
+  "approved_by" int8,
+  "approved_at" timestamptz(6),
+  "created_at" timestamptz(6) DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" timestamptz(6),
+  "created_by" int8,
+  "updated_by" int8,
+  "deleted_at" timestamptz(6),
+  "version" int4 DEFAULT 1
+)
+;
+COMMENT ON COLUMN "public"."crm_product_prices"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_product_prices"."product_id" IS '产品ID';
+COMMENT ON COLUMN "public"."crm_product_prices"."sku_id" IS 'SKU ID';
+COMMENT ON COLUMN "public"."crm_product_prices"."price_type" IS '价格类型';
+COMMENT ON COLUMN "public"."crm_product_prices"."price_name" IS '价格名称';
+COMMENT ON COLUMN "public"."crm_product_prices"."unit_price" IS '单价';
+COMMENT ON COLUMN "public"."crm_product_prices"."min_quantity" IS '最小数量';
+COMMENT ON COLUMN "public"."crm_product_prices"."max_quantity" IS '最大数量';
+COMMENT ON COLUMN "public"."crm_product_prices"."effective_from" IS '生效日期';
+COMMENT ON COLUMN "public"."crm_product_prices"."effective_to" IS '失效日期';
+COMMENT ON COLUMN "public"."crm_product_prices"."is_active" IS '是否启用:0-否,1-是';
+COMMENT ON COLUMN "public"."crm_product_prices"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_product_prices"."customer_level" IS '客户等级:A-战略客户,B-重要客户,C-普通客户,D-潜在客户';
+COMMENT ON COLUMN "public"."crm_product_prices"."quantity_prices" IS '阶梯价格';
+COMMENT ON COLUMN "public"."crm_product_prices"."approval_status" IS '审批状态:1-待审批,2-审批中,3-已通过,4-已拒绝,5-已撤销';
+COMMENT ON COLUMN "public"."crm_product_prices"."approved_by" IS '审批人ID,关联sys_users';
+COMMENT ON COLUMN "public"."crm_product_prices"."approved_at" IS '审批时间';
+COMMENT ON COLUMN "public"."crm_product_prices"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_product_prices"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_product_prices"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_product_prices"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_product_prices"."deleted_at" IS '删除时间(软删除)';
+COMMENT ON COLUMN "public"."crm_product_prices"."version" IS '版本号';
+COMMENT ON TABLE "public"."crm_product_prices" IS 'Product Prices';
+
+-- ----------------------------
+-- Records of crm_product_prices
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_product_skus
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_product_skus";
+CREATE TABLE "public"."crm_product_skus" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_product_skus_id_seq'::regclass),
+  "product_id" int4 NOT NULL,
+  "sku_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "sku_name" varchar(200) COLLATE "pg_catalog"."default",
+  "specifications" json,
+  "standard_price" numeric(15,2) NOT NULL,
+  "cost_price" numeric(15,2),
+  "stock_quantity" int4 DEFAULT 0,
+  "min_stock" int4 DEFAULT 0,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'active'::character varying,
+  "is_default" bool DEFAULT false,
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_product_skus"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_product_skus"."product_id" IS '产品ID';
+COMMENT ON COLUMN "public"."crm_product_skus"."sku_code" IS 'SKU编号';
+COMMENT ON COLUMN "public"."crm_product_skus"."sku_name" IS 'SKU名称';
+COMMENT ON COLUMN "public"."crm_product_skus"."specifications" IS '规格参数';
+COMMENT ON COLUMN "public"."crm_product_skus"."standard_price" IS '标准价';
+COMMENT ON COLUMN "public"."crm_product_skus"."cost_price" IS '成本价';
+COMMENT ON COLUMN "public"."crm_product_skus"."stock_quantity" IS '库存数量';
+COMMENT ON COLUMN "public"."crm_product_skus"."min_stock" IS '最低库存';
+COMMENT ON COLUMN "public"."crm_product_skus"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_product_skus"."is_default" IS '是否默认:0-否,1-是';
+COMMENT ON COLUMN "public"."crm_product_skus"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_product_skus"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_product_skus"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_product_skus"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_product_skus" IS 'Product Skus';
+
+-- ----------------------------
+-- Records of crm_product_skus
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_products
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_products";
+CREATE TABLE "public"."crm_products" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_products_id_seq'::regclass),
+  "product_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "product_name" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "category_id" int4,
+  "product_type" varchar(20) COLLATE "pg_catalog"."default",
+  "standard_price" numeric(15,2) NOT NULL,
+  "cost_price" numeric(15,2),
+  "min_price" numeric(15,2),
+  "currency" varchar(10) COLLATE "pg_catalog"."default" DEFAULT 'CNY'::character varying,
+  "unit" varchar(20) COLLATE "pg_catalog"."default",
+  "specifications" text COLLATE "pg_catalog"."default",
+  "stock_quantity" int4 DEFAULT 0,
+  "min_stock" int4 DEFAULT 0,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'active'::character varying,
+  "is_featured" bool DEFAULT false,
+  "image_url" varchar(500) COLLATE "pg_catalog"."default",
+  "document_urls" json,
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_by" int4,
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_products"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_products"."product_code" IS '产品编号';
+COMMENT ON COLUMN "public"."crm_products"."product_name" IS '产品名称';
+COMMENT ON COLUMN "public"."crm_products"."category_id" IS '分类ID';
+COMMENT ON COLUMN "public"."crm_products"."product_type" IS '产品类型:1-硬件,2-软件,3-服务';
+COMMENT ON COLUMN "public"."crm_products"."standard_price" IS '标准价';
+COMMENT ON COLUMN "public"."crm_products"."cost_price" IS '成本价';
+COMMENT ON COLUMN "public"."crm_products"."min_price" IS '最低价';
+COMMENT ON COLUMN "public"."crm_products"."currency" IS '币种:CNY-人民币,USD-美元,EUR-欧元';
+COMMENT ON COLUMN "public"."crm_products"."unit" IS '单位';
+COMMENT ON COLUMN "public"."crm_products"."specifications" IS '规格参数';
+COMMENT ON COLUMN "public"."crm_products"."stock_quantity" IS '库存数量';
+COMMENT ON COLUMN "public"."crm_products"."min_stock" IS '最低库存';
+COMMENT ON COLUMN "public"."crm_products"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_products"."is_featured" IS '是否推荐';
+COMMENT ON COLUMN "public"."crm_products"."image_url" IS '图片URL';
+COMMENT ON COLUMN "public"."crm_products"."document_urls" IS '文档链接';
+COMMENT ON COLUMN "public"."crm_products"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_products"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_products"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_products"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_products"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_products" IS 'Products';
+
+-- ----------------------------
+-- Records of crm_products
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_quotation_items
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_quotation_items";
+CREATE TABLE "public"."crm_quotation_items" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_quotation_items_id_seq'::regclass),
+  "quotation_id" int4 NOT NULL,
+  "product_id" int4,
+  "product_name" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "product_code" varchar(50) COLLATE "pg_catalog"."default",
+  "quantity" numeric(10,2) NOT NULL,
+  "unit_price" numeric(15,2) NOT NULL,
+  "discount_rate" numeric(5,2) DEFAULT 0,
+  "amount" numeric(15,2) NOT NULL,
+  "remark" text COLLATE "pg_catalog"."default",
+  "sort" int4 DEFAULT 0,
+  "created_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6),
+  "created_by" int4,
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_quotation_items"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_quotation_items"."quotation_id" IS '报价ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_quotation_items"."product_id" IS '产品ID';
+COMMENT ON COLUMN "public"."crm_quotation_items"."product_name" IS '产品名称';
+COMMENT ON COLUMN "public"."crm_quotation_items"."product_code" IS '产品编号';
+COMMENT ON COLUMN "public"."crm_quotation_items"."quantity" IS '数量';
+COMMENT ON COLUMN "public"."crm_quotation_items"."unit_price" IS '单价';
+COMMENT ON COLUMN "public"."crm_quotation_items"."discount_rate" IS '折扣率';
+COMMENT ON COLUMN "public"."crm_quotation_items"."amount" IS '金额';
+COMMENT ON COLUMN "public"."crm_quotation_items"."remark" IS '备注';
+COMMENT ON COLUMN "public"."crm_quotation_items"."sort" IS '排序';
+COMMENT ON COLUMN "public"."crm_quotation_items"."created_at" IS '创建时间';
+COMMENT ON TABLE "public"."crm_quotation_items" IS 'Quotation Items';
+
+-- ----------------------------
+-- Records of crm_quotation_items
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_quotations
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_quotations";
+CREATE TABLE "public"."crm_quotations" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_quotations_id_seq'::regclass),
+  "quotation_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "quotation_name" varchar(200) COLLATE "pg_catalog"."default",
+  "customer_id" int4 NOT NULL,
+  "opportunity_id" int4,
+  "valid_until" date,
+  "currency" varchar(10) COLLATE "pg_catalog"."default" DEFAULT 'CNY'::character varying,
+  "exchange_rate" numeric(10,4) DEFAULT 1.0000,
+  "subtotal" numeric(15,2) DEFAULT 0,
+  "discount_rate" numeric(5,2) DEFAULT 0,
+  "discount_amount" numeric(15,2) DEFAULT 0,
+  "tax_rate" numeric(5,2) DEFAULT 13.00,
+  "tax_amount" numeric(15,2) DEFAULT 0,
+  "total_amount" numeric(15,2) DEFAULT 0,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'draft'::character varying,
+  "approval_status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'pending'::character varying,
+  "approved_by" int4,
+  "approved_at" timestamp(6),
+  "converted_contract_id" int4,
+  "terms_conditions" text COLLATE "pg_catalog"."default",
+  "remark" text COLLATE "pg_catalog"."default",
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_by" int4,
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_quotations"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_quotations"."quotation_code" IS '报价编号';
+COMMENT ON COLUMN "public"."crm_quotations"."quotation_name" IS '报价名称';
+COMMENT ON COLUMN "public"."crm_quotations"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_quotations"."opportunity_id" IS '商机ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_quotations"."valid_until" IS '有效期至';
+COMMENT ON COLUMN "public"."crm_quotations"."currency" IS '币种:CNY-人民币,USD-美元,EUR-欧元';
+COMMENT ON COLUMN "public"."crm_quotations"."exchange_rate" IS '汇率';
+COMMENT ON COLUMN "public"."crm_quotations"."subtotal" IS '小计';
+COMMENT ON COLUMN "public"."crm_quotations"."discount_rate" IS '折扣率';
+COMMENT ON COLUMN "public"."crm_quotations"."discount_amount" IS '折扣金额';
+COMMENT ON COLUMN "public"."crm_quotations"."tax_rate" IS '税率';
+COMMENT ON COLUMN "public"."crm_quotations"."tax_amount" IS '税额';
+COMMENT ON COLUMN "public"."crm_quotations"."total_amount" IS '总金额';
+COMMENT ON COLUMN "public"."crm_quotations"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_quotations"."approval_status" IS '审批状态:1-待审批,2-审批中,3-已通过,4-已拒绝,5-已撤销';
+COMMENT ON COLUMN "public"."crm_quotations"."approved_by" IS '审批人ID,关联sys_users';
+COMMENT ON COLUMN "public"."crm_quotations"."approved_at" IS '审批时间';
+COMMENT ON COLUMN "public"."crm_quotations"."converted_contract_id" IS '转化合同ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_quotations"."terms_conditions" IS '条款条件';
+COMMENT ON COLUMN "public"."crm_quotations"."remark" IS '备注';
+COMMENT ON COLUMN "public"."crm_quotations"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_quotations"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_quotations"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_quotations"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_quotations"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_quotations" IS 'Quotations';
+
+-- ----------------------------
+-- Records of crm_quotations
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_renewals
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_renewals";
+CREATE TABLE "public"."crm_renewals" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_renewals_id_seq'::regclass),
+  "customer_id" int4 NOT NULL,
+  "renewal_type" varchar(20) COLLATE "pg_catalog"."default" NOT NULL,
+  "current_contract_id" int4,
+  "new_contract_id" int4,
+  "current_amount" numeric(15,2),
+  "new_amount" numeric(15,2),
+  "increase_amount" numeric(15,2),
+  "contract_start_date" date,
+  "contract_end_date" date,
+  "renewal_date" date,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'pending'::character varying,
+  "owner_id" int4,
+  "remark" text COLLATE "pg_catalog"."default",
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_by" int4,
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_renewals"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_renewals"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_renewals"."renewal_type" IS '续约类型';
+COMMENT ON COLUMN "public"."crm_renewals"."current_contract_id" IS '当前合同ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_renewals"."new_contract_id" IS '新合同ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_renewals"."current_amount" IS '当前金额';
+COMMENT ON COLUMN "public"."crm_renewals"."new_amount" IS '新金额';
+COMMENT ON COLUMN "public"."crm_renewals"."increase_amount" IS '增加金额';
+COMMENT ON COLUMN "public"."crm_renewals"."contract_start_date" IS '合同开始日期';
+COMMENT ON COLUMN "public"."crm_renewals"."contract_end_date" IS '合同结束日期';
+COMMENT ON COLUMN "public"."crm_renewals"."renewal_date" IS '续约日期';
+COMMENT ON COLUMN "public"."crm_renewals"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_renewals"."owner_id" IS '负责人ID,关联sys_users';
+COMMENT ON COLUMN "public"."crm_renewals"."remark" IS '备注';
+COMMENT ON COLUMN "public"."crm_renewals"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_renewals"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_renewals"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_renewals"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_renewals"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_renewals" IS 'Renewals';
+
+-- ----------------------------
+-- Records of crm_renewals
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_report_instances
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_report_instances";
+CREATE TABLE "public"."crm_report_instances" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_report_instances_id_seq'::regclass),
+  "template_id" int4 NOT NULL,
+  "generated_by" int4 NOT NULL,
+  "generated_at" timestamp(6) DEFAULT now(),
+  "filter_params" json,
+  "result_data" json,
+  "total_rows" int4,
+  "file_url" varchar(500) COLLATE "pg_catalog"."default",
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'completed'::character varying,
+  "error_message" text COLLATE "pg_catalog"."default",
+  "execution_time" int4,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_report_instances"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_report_instances"."template_id" IS '模板ID';
+COMMENT ON COLUMN "public"."crm_report_instances"."generated_by" IS '生成人ID';
+COMMENT ON COLUMN "public"."crm_report_instances"."generated_at" IS '生成时间';
+COMMENT ON COLUMN "public"."crm_report_instances"."filter_params" IS '过滤参数';
+COMMENT ON COLUMN "public"."crm_report_instances"."result_data" IS '结果数据';
+COMMENT ON COLUMN "public"."crm_report_instances"."total_rows" IS '总行数';
+COMMENT ON COLUMN "public"."crm_report_instances"."file_url" IS '文件URL';
+COMMENT ON COLUMN "public"."crm_report_instances"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_report_instances"."error_message" IS '错误信息';
+COMMENT ON COLUMN "public"."crm_report_instances"."execution_time" IS '执行时间';
+COMMENT ON TABLE "public"."crm_report_instances" IS 'Report Instances';
+
+-- ----------------------------
+-- Records of crm_report_instances
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_report_templates
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_report_templates";
+CREATE TABLE "public"."crm_report_templates" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_report_templates_id_seq'::regclass),
+  "template_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "template_name" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "report_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "query_config" json NOT NULL,
+  "chart_config" json,
+  "columns_config" json,
+  "filter_config" json,
+  "owner_id" int4,
+  "is_public" bool DEFAULT false,
+  "shared_roles" json,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'active'::character varying,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_report_templates"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_report_templates"."template_code" IS '模板编号';
+COMMENT ON COLUMN "public"."crm_report_templates"."template_name" IS '模板名称';
+COMMENT ON COLUMN "public"."crm_report_templates"."report_type" IS '报表类型';
+COMMENT ON COLUMN "public"."crm_report_templates"."query_config" IS '查询配置';
+COMMENT ON COLUMN "public"."crm_report_templates"."chart_config" IS '图表配置';
+COMMENT ON COLUMN "public"."crm_report_templates"."columns_config" IS '列配置';
+COMMENT ON COLUMN "public"."crm_report_templates"."filter_config" IS '过滤配置';
+COMMENT ON COLUMN "public"."crm_report_templates"."owner_id" IS '负责人ID,关联sys_users';
+COMMENT ON COLUMN "public"."crm_report_templates"."is_public" IS '是否公开';
+COMMENT ON COLUMN "public"."crm_report_templates"."shared_roles" IS '共享角色';
+COMMENT ON COLUMN "public"."crm_report_templates"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_report_templates"."description" IS '描述';
+COMMENT ON COLUMN "public"."crm_report_templates"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_report_templates"."updated_at" IS '更新时间';
+COMMENT ON TABLE "public"."crm_report_templates" IS 'Report Templates';
+
+-- ----------------------------
+-- Records of crm_report_templates
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_sales_activities
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_sales_activities";
+CREATE TABLE "public"."crm_sales_activities" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_sales_activities_id_seq'::regclass),
+  "customer_id" int4,
+  "contact_id" int4,
+  "opportunity_id" int4,
+  "activity_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "subject" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "activity_date" date NOT NULL,
+  "start_time" time(6),
+  "end_time" time(6),
+  "duration_minutes" int4,
+  "participants" json,
+  "outcome" varchar(200) COLLATE "pg_catalog"."default",
+  "next_step" text COLLATE "pg_catalog"."default",
+  "next_follow_date" date,
+  "related_customer_id" int4,
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_sales_activities"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_sales_activities"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_sales_activities"."contact_id" IS '联系人ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_sales_activities"."opportunity_id" IS '商机ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_sales_activities"."activity_type" IS '活动类型:1-电话,2-邮件,3-拜访,4-会议,5-培训,6-展会';
+COMMENT ON COLUMN "public"."crm_sales_activities"."subject" IS '主题';
+COMMENT ON COLUMN "public"."crm_sales_activities"."description" IS '描述';
+COMMENT ON COLUMN "public"."crm_sales_activities"."activity_date" IS '活动日期';
+COMMENT ON COLUMN "public"."crm_sales_activities"."start_time" IS '开始时间';
+COMMENT ON COLUMN "public"."crm_sales_activities"."end_time" IS '结束时间';
+COMMENT ON COLUMN "public"."crm_sales_activities"."duration_minutes" IS '用时(分钟)';
+COMMENT ON COLUMN "public"."crm_sales_activities"."participants" IS '参与人';
+COMMENT ON COLUMN "public"."crm_sales_activities"."outcome" IS '结果';
+COMMENT ON COLUMN "public"."crm_sales_activities"."next_step" IS '下一步行动';
+COMMENT ON COLUMN "public"."crm_sales_activities"."next_follow_date" IS '下次跟进日期';
+COMMENT ON COLUMN "public"."crm_sales_activities"."related_customer_id" IS '关联客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_sales_activities"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_sales_activities"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_sales_activities"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_sales_activities"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_sales_activities" IS 'Sales Activities';
+
+-- ----------------------------
+-- Records of crm_sales_activities
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_sales_targets
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_sales_targets";
+CREATE TABLE "public"."crm_sales_targets" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_sales_targets_id_seq'::regclass),
+  "owner_id" int4 NOT NULL,
+  "target_year" int4 NOT NULL,
+  "target_quarter" int4,
+  "target_month" int4,
+  "target_amount" numeric(15,2) NOT NULL,
+  "target_deals" int4,
+  "target_new_customers" int4,
+  "actual_amount" numeric(15,2) DEFAULT 0,
+  "actual_deals" int4 DEFAULT 0,
+  "actual_new_customers" int4 DEFAULT 0,
+  "completion_rate" numeric(5,2) GENERATED ALWAYS AS (
+
+CASE
+    WHEN (target_amount > (0)::numeric) THEN ((actual_amount / target_amount) * (100)::numeric)
+    ELSE (0)::numeric
+END
+) STORED,
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_sales_targets"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_sales_targets"."owner_id" IS '负责人ID,关联sys_users';
+COMMENT ON COLUMN "public"."crm_sales_targets"."target_year" IS '目标年份';
+COMMENT ON COLUMN "public"."crm_sales_targets"."target_quarter" IS '目标季度';
+COMMENT ON COLUMN "public"."crm_sales_targets"."target_month" IS '目标月份';
+COMMENT ON COLUMN "public"."crm_sales_targets"."target_amount" IS '目标金额';
+COMMENT ON COLUMN "public"."crm_sales_targets"."target_deals" IS '目标成交数';
+COMMENT ON COLUMN "public"."crm_sales_targets"."target_new_customers" IS '目标新客数';
+COMMENT ON COLUMN "public"."crm_sales_targets"."actual_amount" IS '实际金额';
+COMMENT ON COLUMN "public"."crm_sales_targets"."actual_deals" IS '实际成交数';
+COMMENT ON COLUMN "public"."crm_sales_targets"."actual_new_customers" IS '实际新客数';
+COMMENT ON COLUMN "public"."crm_sales_targets"."completion_rate" IS '完成比率';
+COMMENT ON COLUMN "public"."crm_sales_targets"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_sales_targets"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_sales_targets"."updated_at" IS '更新时间';
+COMMENT ON TABLE "public"."crm_sales_targets" IS 'Sales Targets';
+
+-- ----------------------------
+-- Records of crm_sales_targets
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_satisfaction_surveys
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_satisfaction_surveys";
+CREATE TABLE "public"."crm_satisfaction_surveys" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_satisfaction_surveys_id_seq'::regclass),
+  "customer_id" int4 NOT NULL,
+  "survey_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "survey_date" date NOT NULL,
+  "overall_score" numeric(3,1) NOT NULL,
+  "product_quality_score" numeric(3,1),
+  "service_score" numeric(3,1),
+  "delivery_score" numeric(3,1),
+  "communication_score" numeric(3,1),
+  "strengths" text COLLATE "pg_catalog"."default",
+  "weaknesses" text COLLATE "pg_catalog"."default",
+  "suggestions" text COLLATE "pg_catalog"."default",
+  "nps_score" int4,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'completed'::character varying,
+  "created_by" int4,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."survey_type" IS '调查类型';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."survey_date" IS '调查日期';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."overall_score" IS '综合评分';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."product_quality_score" IS '产品质量评分';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."service_score" IS '服务评分';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."delivery_score" IS '交付评分';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."communication_score" IS '沟通评分';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."strengths" IS '优势分析';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."weaknesses" IS '劣势分析';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."suggestions" IS '改进建议';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."nps_score" IS 'NPS评分';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_satisfaction_surveys"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_satisfaction_surveys" IS 'Satisfaction Surveys';
+
+-- ----------------------------
+-- Records of crm_satisfaction_surveys
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_tag_definitions
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_tag_definitions";
+CREATE TABLE "public"."crm_tag_definitions" (
+  "id" int8 NOT NULL DEFAULT nextval('crm_tag_definitions_id_seq'::regclass),
+  "tag_code" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "tag_name" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "tag_type" varchar(20) COLLATE "pg_catalog"."default" NOT NULL,
+  "category" varchar(50) COLLATE "pg_catalog"."default",
+  "color" varchar(20) COLLATE "pg_catalog"."default",
+  "icon" varchar(50) COLLATE "pg_catalog"."default",
+  "applicable_types" varchar(20)[] COLLATE "pg_catalog"."default" DEFAULT '{}'::character varying[],
+  "is_multi_select" bool DEFAULT true,
+  "is_required" bool DEFAULT false,
+  "validation_rule" varchar(200) COLLATE "pg_catalog"."default",
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'active'::character varying,
+  "sort_order" int4 DEFAULT 0,
+  "usage_count" int4 DEFAULT 0,
+  "created_at" timestamptz(6) DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" timestamptz(6),
+  "created_by" int8,
+  "updated_by" int8,
+  "deleted_at" timestamptz(6),
+  "version" int4 DEFAULT 1
+)
+;
+COMMENT ON COLUMN "public"."crm_tag_definitions"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."tag_code" IS '标签编号';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."tag_name" IS '标签名称';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."tag_type" IS '标签类型';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."category" IS '分类';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."color" IS '颜色';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."icon" IS '图标';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."applicable_types" IS '适用类型';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."is_multi_select" IS '是否多选';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."is_required" IS '是否必填';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."validation_rule" IS '验证规则';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."sort_order" IS '排序';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."usage_count" IS '使用次数';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."deleted_at" IS '删除时间(软删除)';
+COMMENT ON COLUMN "public"."crm_tag_definitions"."version" IS '版本号';
+COMMENT ON TABLE "public"."crm_tag_definitions" IS 'Tag Definitions';
+
+-- ----------------------------
+-- Records of crm_tag_definitions
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_tags
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_tags";
+CREATE TABLE "public"."crm_tags" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_tags_id_seq'::regclass),
+  "tag_name" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "tag_category" varchar(50) COLLATE "pg_catalog"."default",
+  "tag_color" varchar(20) COLLATE "pg_catalog"."default",
+  "tag_icon" varchar(100) COLLATE "pg_catalog"."default",
+  "description" text COLLATE "pg_catalog"."default",
+  "ai_accuracy" numeric(5,2),
+  "usage_count" int4 DEFAULT 0,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'active'::character varying,
+  "sort" int4 DEFAULT 0,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6),
+  "created_by" int4,
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_tags"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_tags"."tag_name" IS '标签名称';
+COMMENT ON COLUMN "public"."crm_tags"."tag_category" IS '标签分类';
+COMMENT ON COLUMN "public"."crm_tags"."tag_color" IS '标签颜色';
+COMMENT ON COLUMN "public"."crm_tags"."tag_icon" IS '标签图标';
+COMMENT ON COLUMN "public"."crm_tags"."description" IS '描述';
+COMMENT ON COLUMN "public"."crm_tags"."ai_accuracy" IS 'AI准确率';
+COMMENT ON COLUMN "public"."crm_tags"."usage_count" IS '使用次数';
+COMMENT ON COLUMN "public"."crm_tags"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_tags"."sort" IS '排序';
+COMMENT ON COLUMN "public"."crm_tags"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_tags"."updated_at" IS '更新时间';
+COMMENT ON TABLE "public"."crm_tags" IS 'Tags';
+
+-- ----------------------------
+-- Records of crm_tags
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_tasks
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_tasks";
+CREATE TABLE "public"."crm_tasks" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_tasks_id_seq'::regclass),
+  "task_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "title" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "customer_id" int4,
+  "contact_id" int4,
+  "opportunity_id" int4,
+  "contract_id" int4,
+  "assignee_id" int4 NOT NULL,
+  "assigner_id" int4,
+  "due_date" date NOT NULL,
+  "priority" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'medium'::character varying,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'pending'::character varying,
+  "completed_at" timestamp(6),
+  "remind_enabled" bool DEFAULT true,
+  "remind_before_minutes" int4 DEFAULT 60,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "is_deleted" bool DEFAULT false,
+  "deleted_at" timestamp(6),
+  "created_by" int4,
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_tasks"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_tasks"."task_type" IS '任务类型';
+COMMENT ON COLUMN "public"."crm_tasks"."title" IS '职位';
+COMMENT ON COLUMN "public"."crm_tasks"."description" IS '描述';
+COMMENT ON COLUMN "public"."crm_tasks"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_tasks"."contact_id" IS '联系人ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_tasks"."opportunity_id" IS '商机ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_tasks"."contract_id" IS '合同ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_tasks"."assignee_id" IS '接收人ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_tasks"."assigner_id" IS '分配人ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_tasks"."due_date" IS '到期日期';
+COMMENT ON COLUMN "public"."crm_tasks"."priority" IS '优先级:1-低,2-中,3-高,4-紧急';
+COMMENT ON COLUMN "public"."crm_tasks"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_tasks"."completed_at" IS '完成时间';
+COMMENT ON COLUMN "public"."crm_tasks"."remind_enabled" IS '是否启用提醒';
+COMMENT ON COLUMN "public"."crm_tasks"."remind_before_minutes" IS '提前提醒分钟数';
+COMMENT ON COLUMN "public"."crm_tasks"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_tasks"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_tasks"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除';
+COMMENT ON TABLE "public"."crm_tasks" IS 'Tasks';
+
+-- ----------------------------
+-- Records of crm_tasks
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_user_extensions
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_user_extensions";
+CREATE TABLE "public"."crm_user_extensions" (
+  "id" int8 NOT NULL DEFAULT nextval('crm_user_extensions_id_seq'::regclass),
+  "user_id" int4 NOT NULL,
+  "sales_area" varchar(100) COLLATE "pg_catalog"."default",
+  "team_id" int4,
+  "territory" varchar(100) COLLATE "pg_catalog"."default",
+  "sales_targets" numeric(18,2),
+  "commission_rate" numeric(5,2),
+  "max_discount" numeric(5,2),
+  "manager_id" int4,
+  "max_customers" int4,
+  "auto_assign_enabled" bool DEFAULT true,
+  "created_at" timestamp(6) DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" timestamp(6) DEFAULT CURRENT_TIMESTAMP,
+  "created_by" int4,
+  "updated_by" int4,
+  "deleted_at" timestamp(6),
+  "version" int4 DEFAULT 1
+)
+;
+COMMENT ON COLUMN "public"."crm_user_extensions"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_user_extensions"."user_id" IS '用户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_user_extensions"."sales_area" IS '销售区域';
+COMMENT ON COLUMN "public"."crm_user_extensions"."team_id" IS '团队ID';
+COMMENT ON COLUMN "public"."crm_user_extensions"."territory" IS '领土';
+COMMENT ON COLUMN "public"."crm_user_extensions"."sales_targets" IS '销售目标';
+COMMENT ON COLUMN "public"."crm_user_extensions"."commission_rate" IS '佣金比率';
+COMMENT ON COLUMN "public"."crm_user_extensions"."max_discount" IS '最大折扣';
+COMMENT ON COLUMN "public"."crm_user_extensions"."manager_id" IS '经理ID,关联sys_users';
+COMMENT ON COLUMN "public"."crm_user_extensions"."max_customers" IS '最大客户数';
+COMMENT ON COLUMN "public"."crm_user_extensions"."auto_assign_enabled" IS '自动分配启用:0-否,1-是';
+COMMENT ON COLUMN "public"."crm_user_extensions"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_user_extensions"."updated_at" IS '更新时间';
+COMMENT ON COLUMN "public"."crm_user_extensions"."created_by" IS '创建人ID';
+COMMENT ON COLUMN "public"."crm_user_extensions"."updated_by" IS '更新人ID';
+COMMENT ON COLUMN "public"."crm_user_extensions"."deleted_at" IS '删除时间(软删除)';
+COMMENT ON COLUMN "public"."crm_user_extensions"."version" IS '版本号';
+COMMENT ON TABLE "public"."crm_user_extensions" IS 'User Extensions';
+
+-- ----------------------------
+-- Records of crm_user_extensions
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_workflow_approvals
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_workflow_approvals";
+CREATE TABLE "public"."crm_workflow_approvals" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_workflow_approvals_id_seq'::regclass),
+  "workflow_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "related_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "related_id" int4 NOT NULL,
+  "current_step" int4 DEFAULT 1,
+  "total_steps" int4 NOT NULL,
+  "status" varchar(20) COLLATE "pg_catalog"."default" DEFAULT 'pending'::character varying,
+  "initiator_id" int4 NOT NULL,
+  "initiated_at" timestamp(6) DEFAULT now(),
+  "remark" text COLLATE "pg_catalog"."default",
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6),
+  "created_by" int4,
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_workflow_approvals"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_workflow_approvals"."workflow_type" IS '工作流类型';
+COMMENT ON COLUMN "public"."crm_workflow_approvals"."related_type" IS '关联类型';
+COMMENT ON COLUMN "public"."crm_workflow_approvals"."related_id" IS '关联ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_workflow_approvals"."current_step" IS '当前步骤';
+COMMENT ON COLUMN "public"."crm_workflow_approvals"."total_steps" IS '总步骤数';
+COMMENT ON COLUMN "public"."crm_workflow_approvals"."status" IS '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失';
+COMMENT ON COLUMN "public"."crm_workflow_approvals"."initiator_id" IS '发起人ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_workflow_approvals"."initiated_at" IS '发起时间';
+COMMENT ON COLUMN "public"."crm_workflow_approvals"."remark" IS '备注';
+COMMENT ON COLUMN "public"."crm_workflow_approvals"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_workflow_approvals"."updated_at" IS '更新时间';
+COMMENT ON TABLE "public"."crm_workflow_approvals" IS 'Workflow Approvals';
+
+-- ----------------------------
+-- Records of crm_workflow_approvals
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_workflow_logs
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_workflow_logs";
+CREATE TABLE "public"."crm_workflow_logs" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_workflow_logs_id_seq'::regclass),
+  "rule_id" int4 NOT NULL,
+  "customer_id" int4,
+  "opportunity_id" int4,
+  "trigger_data" json,
+  "execution_result" varchar(50) COLLATE "pg_catalog"."default",
+  "error_message" text COLLATE "pg_catalog"."default",
+  "executed_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6)
+)
+;
+COMMENT ON COLUMN "public"."crm_workflow_logs"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_workflow_logs"."rule_id" IS '规则ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_workflow_logs"."customer_id" IS '客户ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_workflow_logs"."opportunity_id" IS '商机ID,关联对应表';
+COMMENT ON COLUMN "public"."crm_workflow_logs"."trigger_data" IS '触发数据';
+COMMENT ON COLUMN "public"."crm_workflow_logs"."execution_result" IS '执行结果';
+COMMENT ON COLUMN "public"."crm_workflow_logs"."error_message" IS '错误信息';
+COMMENT ON COLUMN "public"."crm_workflow_logs"."executed_at" IS '执行时间';
+COMMENT ON TABLE "public"."crm_workflow_logs" IS 'Workflow Logs';
+
+-- ----------------------------
+-- Records of crm_workflow_logs
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for crm_workflow_rules
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."crm_workflow_rules";
+CREATE TABLE "public"."crm_workflow_rules" (
+  "id" int4 NOT NULL DEFAULT nextval('crm_workflow_rules_id_seq'::regclass),
+  "rule_name" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "rule_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "trigger_event" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "trigger_condition" json,
+  "action_type" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "action_config" json,
+  "enabled" bool DEFAULT true,
+  "priority" int4 DEFAULT 0,
+  "created_at" timestamp(6) DEFAULT now(),
+  "updated_at" timestamp(6) DEFAULT now(),
+  "deleted_at" timestamp(6),
+  "created_by" int4,
+  "updated_by" int4
+)
+;
+COMMENT ON COLUMN "public"."crm_workflow_rules"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."crm_workflow_rules"."rule_name" IS '规则名称';
+COMMENT ON COLUMN "public"."crm_workflow_rules"."rule_type" IS '规则类型';
+COMMENT ON COLUMN "public"."crm_workflow_rules"."trigger_event" IS '触发事件';
+COMMENT ON COLUMN "public"."crm_workflow_rules"."trigger_condition" IS '触发条件';
+COMMENT ON COLUMN "public"."crm_workflow_rules"."action_type" IS '操作类型';
+COMMENT ON COLUMN "public"."crm_workflow_rules"."action_config" IS '动作配置';
+COMMENT ON COLUMN "public"."crm_workflow_rules"."enabled" IS '是否启用:0-否,1-是';
+COMMENT ON COLUMN "public"."crm_workflow_rules"."priority" IS '优先级:1-低,2-中,3-高,4-紧急';
+COMMENT ON COLUMN "public"."crm_workflow_rules"."created_at" IS '创建时间';
+COMMENT ON COLUMN "public"."crm_workflow_rules"."updated_at" IS '更新时间';
+COMMENT ON TABLE "public"."crm_workflow_rules" IS 'Workflow Rules';
+
+-- ----------------------------
+-- Records of crm_workflow_rules
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for gen_demo
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."gen_demo";
+CREATE TABLE "public"."gen_demo" (
+  "name" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "a" int4,
+  "b" int8,
+  "c" float8,
+  "d" bool NOT NULL,
+  "e" date,
+  "f" time(6),
+  "g" timestamp(6),
+  "h" text COLLATE "pg_catalog"."default",
+  "i" json,
+  "id" int4 NOT NULL DEFAULT nextval('gen_demo_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL,
+  "created_id" int4,
+  "updated_id" int4
+)
+;
+COMMENT ON COLUMN "public"."gen_demo"."name" IS '名称';
+COMMENT ON COLUMN "public"."gen_demo"."a" IS '整数';
+COMMENT ON COLUMN "public"."gen_demo"."b" IS '大整数';
+COMMENT ON COLUMN "public"."gen_demo"."c" IS '浮点数';
+COMMENT ON COLUMN "public"."gen_demo"."d" IS '布尔型';
+COMMENT ON COLUMN "public"."gen_demo"."e" IS '日期';
+COMMENT ON COLUMN "public"."gen_demo"."f" IS '时间';
+COMMENT ON COLUMN "public"."gen_demo"."g" IS '日期时间';
+COMMENT ON COLUMN "public"."gen_demo"."h" IS '长文本';
+COMMENT ON COLUMN "public"."gen_demo"."i" IS '元数据(JSON格式)';
+COMMENT ON COLUMN "public"."gen_demo"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."gen_demo"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."gen_demo"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."gen_demo"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."gen_demo"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."gen_demo"."updated_time" IS '更新时间';
+COMMENT ON COLUMN "public"."gen_demo"."created_id" IS '创建人ID';
+COMMENT ON COLUMN "public"."gen_demo"."updated_id" IS '更新人ID';
+COMMENT ON TABLE "public"."gen_demo" IS '示例表';
+
+-- ----------------------------
+-- Records of gen_demo
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for gen_demo01
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."gen_demo01";
+CREATE TABLE "public"."gen_demo01" (
+  "name" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "id" int4 NOT NULL DEFAULT nextval('gen_demo01_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL,
+  "created_id" int4,
+  "updated_id" int4
+)
+;
+COMMENT ON COLUMN "public"."gen_demo01"."name" IS '名称';
+COMMENT ON COLUMN "public"."gen_demo01"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."gen_demo01"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."gen_demo01"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."gen_demo01"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."gen_demo01"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."gen_demo01"."updated_time" IS '更新时间';
+COMMENT ON COLUMN "public"."gen_demo01"."created_id" IS '创建人ID';
+COMMENT ON COLUMN "public"."gen_demo01"."updated_id" IS '更新人ID';
+COMMENT ON TABLE "public"."gen_demo01" IS '示例1表';
+
+-- ----------------------------
+-- Records of gen_demo01
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for gen_table
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."gen_table";
+CREATE TABLE "public"."gen_table" (
+  "table_name" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "table_comment" varchar(200) COLLATE "pg_catalog"."default",
+  "class_name" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "package_name" varchar(100) COLLATE "pg_catalog"."default",
+  "module_name" varchar(100) COLLATE "pg_catalog"."default",
+  "business_name" varchar(100) COLLATE "pg_catalog"."default",
+  "function_name" varchar(100) COLLATE "pg_catalog"."default",
+  "sub_table_name" varchar(64) COLLATE "pg_catalog"."default" DEFAULT NULL::character varying,
+  "sub_table_fk_name" varchar(64) COLLATE "pg_catalog"."default" DEFAULT NULL::character varying,
+  "parent_menu_id" int4,
+  "id" int4 NOT NULL DEFAULT nextval('gen_table_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL,
+  "created_id" int4,
+  "updated_id" int4
+)
+;
+COMMENT ON COLUMN "public"."gen_table"."table_name" IS '表名称';
+COMMENT ON COLUMN "public"."gen_table"."table_comment" IS '表描述';
+COMMENT ON COLUMN "public"."gen_table"."class_name" IS '实体类名称';
+COMMENT ON COLUMN "public"."gen_table"."package_name" IS '生成包路径';
+COMMENT ON COLUMN "public"."gen_table"."module_name" IS '生成模块名';
+COMMENT ON COLUMN "public"."gen_table"."business_name" IS '生成业务名';
+COMMENT ON COLUMN "public"."gen_table"."function_name" IS '生成功能名';
+COMMENT ON COLUMN "public"."gen_table"."sub_table_name" IS '关联子表的表名';
+COMMENT ON COLUMN "public"."gen_table"."sub_table_fk_name" IS '子表关联的外键名';
+COMMENT ON COLUMN "public"."gen_table"."parent_menu_id" IS '父菜单ID';
+COMMENT ON COLUMN "public"."gen_table"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."gen_table"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."gen_table"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."gen_table"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."gen_table"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."gen_table"."updated_time" IS '更新时间';
+COMMENT ON COLUMN "public"."gen_table"."created_id" IS '创建人ID';
+COMMENT ON COLUMN "public"."gen_table"."updated_id" IS '更新人ID';
+COMMENT ON TABLE "public"."gen_table" IS '代码生成表';
+
+-- ----------------------------
+-- Records of gen_table
+-- ----------------------------
+INSERT INTO "public"."gen_table" VALUES ('crm_opportunity_products', 'Opportunity Products', 'CrmOpportunityProducts', 'module_crm_opportunity_products', 'crm_opportunity_products', 'crm_opportunity_products', 'Opportunity Products', NULL, NULL, NULL, 135, 'b362a40d-1c5c-4cfc-ac87-53f85a20646a', '0', NULL, '2026-04-19 09:14:53.247848', '2026-04-19 09:14:53.247854', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_joint_followups', 'Joint Followups', 'CrmJointFollowups', 'module_crm_joint_followups', 'crm_joint_followups', 'crm_joint_followups', 'Joint Followups', NULL, NULL, NULL, 136, '13a9ce2f-173d-4897-a481-ca92b302b69a', '0', NULL, '2026-04-19 09:14:53.541423', '2026-04-19 09:14:53.541444', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_follow_records', 'Follow Records', 'CrmFollowRecords', 'module_crm_follow_records', 'crm_follow_records', 'crm_follow_records', 'Follow Records', NULL, NULL, NULL, 137, '0cb7c97a-b2e2-4b5a-a458-5007793a6995', '0', NULL, '2026-04-19 09:14:53.618291', '2026-04-19 09:14:53.618299', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_campaign_leads', 'Campaign Leads', 'CrmCampaignLeads', 'module_crm_campaign_leads', 'crm_campaign_leads', 'crm_campaign_leads', 'Campaign Leads', NULL, NULL, NULL, 138, 'a80fd7f7-053f-4c34-9a4f-a3657fa0994e', '0', NULL, '2026-04-19 09:14:53.69977', '2026-04-19 09:14:53.699776', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_customer_health_scores', 'Customer Health Scores', 'CrmCustomerHealthScores', 'module_crm_customer_health_scores', 'crm_customer_health_scores', 'crm_customer_health_scores', 'Customer Health Scores', NULL, NULL, NULL, 139, 'f63069a2-0c8d-4965-a09f-27ab23978ba0', '0', NULL, '2026-04-19 09:14:53.765774', '2026-04-19 09:14:53.76578', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_customer_pool_logs', 'Customer Pool Logs', 'CrmCustomerPoolLogs', 'module_crm_customer_pool_logs', 'crm_customer_pool_logs', 'crm_customer_pool_logs', 'Customer Pool Logs', NULL, NULL, NULL, 140, '6394b68e-9264-45c7-8716-b89f1e31a255', '0', NULL, '2026-04-19 09:14:53.849049', '2026-04-19 09:14:53.849059', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_customer_profiles', 'Customer Profiles', 'CrmCustomerProfiles', 'module_crm_customer_profiles', 'crm_customer_profiles', 'crm_customer_profiles', 'Customer Profiles', NULL, NULL, NULL, 141, 'a0528ffa-fd4d-422c-800c-e2c8f055f92c', '0', NULL, '2026-04-19 09:14:53.90606', '2026-04-19 09:14:53.906065', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_customer_satisfaction_surveys', 'Customer Satisfaction Surveys', 'CrmCustomerSatisfactionSurveys', 'module_crm_customer_satisfaction_surveys', 'crm_customer_satisfaction_surveys', 'crm_customer_satisfaction_surveys', 'Customer Satisfaction Surveys', NULL, NULL, NULL, 142, '5e96de5e-2c38-4aaf-bd05-2e04ef479ed5', '0', NULL, '2026-04-19 09:14:53.991429', '2026-04-19 09:14:53.99144', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_campaigns', 'Campaigns', 'CrmCampaigns', 'module_crm_campaigns', 'crm_campaigns', 'crm_campaigns', 'Campaigns', NULL, NULL, NULL, 143, '0fbd4773-4683-4f2a-9c6b-ec1b886a8fa5', '0', NULL, '2026-04-19 09:14:54.151495', '2026-04-19 09:14:54.151522', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_contacts', 'Contacts', 'CrmContacts', 'module_crm_contacts', 'crm_contacts', 'crm_contacts', 'Contacts', NULL, NULL, NULL, 144, '334b74c4-cd49-4b43-93ac-019d9bca9ca2', '0', NULL, '2026-04-19 09:14:54.282715', '2026-04-19 09:14:54.282719', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_customer_activities', 'Customer Activities', 'CrmCustomerActivities', 'module_crm_customer_activities', 'crm_customer_activities', 'crm_customer_activities', 'Customer Activities', NULL, NULL, NULL, 145, 'ec110e0e-747d-447a-9d4f-99c6c1c930cf', '0', NULL, '2026-04-19 09:14:54.37457', '2026-04-19 09:14:54.374575', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_customer_addresses', 'Customer Addresses', 'CrmCustomerAddresses', 'module_crm_customer_addresses', 'crm_customer_addresses', 'crm_customer_addresses', 'Customer Addresses', NULL, NULL, NULL, 146, '1b5d0594-2847-4f9e-a2e2-6045645d4f27', '0', NULL, '2026-04-19 09:14:54.431955', '2026-04-19 09:14:54.431962', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_customer_tags', 'Customer Tags', 'CrmCustomerTags', 'module_crm_customer_tags', 'crm_customer_tags', 'crm_customer_tags', 'Customer Tags', NULL, NULL, NULL, 147, 'd6aa511b-8eb4-4d7b-8f12-de34f628fee5', '0', NULL, '2026-04-19 09:14:54.500062', '2026-04-19 09:14:54.500067', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_customer_change_logs', 'Customer Change Logs', 'CrmCustomerChangeLogs', 'module_crm_customer_change_logs', 'crm_customer_change_logs', 'crm_customer_change_logs', 'Customer Change Logs', NULL, NULL, NULL, 148, 'e8353511-3d8e-43cd-bb0d-f8cec0b18219', '0', NULL, '2026-04-19 09:14:54.542343', '2026-04-19 09:14:54.54235', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_customer_duplicate_logs', 'Customer Duplicate Logs', 'CrmCustomerDuplicateLogs', 'module_crm_customer_duplicate_logs', 'crm_customer_duplicate_logs', 'crm_customer_duplicate_logs', 'Customer Duplicate Logs', NULL, NULL, NULL, 149, '0a1659c6-0a5a-42ae-bd47-c36e9968d049', '0', NULL, '2026-04-19 09:14:54.594032', '2026-04-19 09:14:54.594038', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_opportunities', 'Opportunities', 'CrmOpportunities', 'module_crm_opportunities', 'crm_opportunities', 'crm_opportunities', 'Opportunities', NULL, NULL, NULL, 150, '1b265e02-814c-47e1-9fb0-0b8503d35066', '0', NULL, '2026-04-19 09:14:54.638334', '2026-04-19 09:14:54.63834', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_product_documents', 'Product Documents', 'CrmProductDocuments', 'module_crm_product_documents', 'crm_product_documents', 'crm_product_documents', 'Product Documents', NULL, NULL, NULL, 151, '540b5120-4695-443c-90f7-94462dc0a725', '0', NULL, '2026-04-19 09:14:54.708521', '2026-04-19 09:14:54.708528', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_marketing_campaigns', 'Marketing Campaigns', 'CrmMarketingCampaigns', 'module_crm_marketing_campaigns', 'crm_marketing_campaigns', 'crm_marketing_campaigns', 'Marketing Campaigns', NULL, NULL, NULL, 152, 'a3d1ea0a-b2c0-4e6b-a4bc-32ef27d45c32', '0', NULL, '2026-04-19 09:14:54.763392', '2026-04-19 09:14:54.763398', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_customer_health', 'Customer Health', 'CrmCustomerHealth', 'module_crm_customer_health', 'crm_customer_health', 'crm_customer_health', 'Customer Health', NULL, NULL, NULL, 153, '2de904b8-e16a-4a12-86be-230bc3724678', '0', NULL, '2026-04-19 09:14:54.834884', '2026-04-19 09:14:54.83489', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_contract_invoices', 'Contract Invoices', 'CrmContractInvoices', 'module_crm_contract_invoices', 'crm_contract_invoices', 'crm_contract_invoices', 'Contract Invoices', NULL, NULL, NULL, 154, '148a136c-3f5d-4044-a162-c698266aab28', '0', NULL, '2026-04-19 09:14:54.897529', '2026-04-19 09:14:54.897535', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_notifications', 'Notifications', 'CrmNotifications', 'module_crm_notifications', 'crm_notifications', 'crm_notifications', 'Notifications', NULL, NULL, NULL, 155, 'a66a8e78-f629-484d-a583-78d303b039d4', '0', NULL, '2026-04-19 09:14:54.965282', '2026-04-19 09:14:54.965288', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_operation_logs', 'Operation Logs', 'CrmOperationLogs', 'module_crm_operation_logs', 'crm_operation_logs', 'crm_operation_logs', 'Operation Logs', NULL, NULL, NULL, 156, '4dada7cb-56f0-4eb9-bcd6-4568de5fb20b', '0', NULL, '2026-04-19 09:14:55.018171', '2026-04-19 09:14:55.018175', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_import_records', 'Import Records', 'CrmImportRecords', 'module_crm_import_records', 'crm_import_records', 'crm_import_records', 'Import Records', NULL, NULL, NULL, 157, 'de1d6e28-6dc3-4b6e-8509-1421312e6a16', '0', NULL, '2026-04-19 09:14:55.225246', '2026-04-19 09:14:55.225255', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_opportunity_stages', 'Opportunity Stages', 'CrmOpportunityStages', 'module_crm_opportunity_stages', 'crm_opportunity_stages', 'crm_opportunity_stages', 'Opportunity Stages', NULL, NULL, NULL, 158, 'bd7168b8-9980-4c46-ab93-45bee6199cc0', '0', NULL, '2026-04-19 09:14:55.292766', '2026-04-19 09:14:55.292772', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_price_tiers', 'Price Tiers', 'CrmPriceTiers', 'module_crm_price_tiers', 'crm_price_tiers', 'crm_price_tiers', 'Price Tiers', NULL, NULL, NULL, 159, 'dd2f6d10-9886-4697-94aa-9dc2162e4d73', '0', NULL, '2026-04-19 09:14:55.365996', '2026-04-19 09:14:55.366002', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_lead_scores', 'Lead Scores', 'CrmLeadScores', 'module_crm_lead_scores', 'crm_lead_scores', 'crm_lead_scores', 'Lead Scores', NULL, NULL, NULL, 160, '97590c6b-603b-4410-b2c6-402a867a4770', '0', NULL, '2026-04-19 09:14:55.424068', '2026-04-19 09:14:55.424072', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_marketing_channels', 'Marketing Channels', 'CrmMarketingChannels', 'module_crm_marketing_channels', 'crm_marketing_channels', 'crm_marketing_channels', 'Marketing Channels', NULL, NULL, NULL, 161, '61685e31-5abc-4a5b-b67f-3f90154a701d', '0', NULL, '2026-04-19 09:14:55.48574', '2026-04-19 09:14:55.485745', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_customer_timeline', 'Customer Timeline', 'CrmCustomerTimeline', 'module_crm_customer_timeline', 'crm_customer_timeline', 'crm_customer_timeline', 'Customer Timeline', NULL, NULL, NULL, 162, '0943b0e8-92fc-4ee7-950f-8198eb43ee49', '0', NULL, '2026-04-19 09:14:55.554564', '2026-04-19 09:14:55.554569', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_ai_tags', 'Ai Tags', 'CrmAiTags', 'module_crm_ai_tags', 'crm_ai_tags', 'crm_ai_tags', 'Ai Tags', NULL, NULL, NULL, 163, 'c82fdd0b-a507-4849-92c8-5233fc804ea7', '0', NULL, '2026-04-19 09:14:55.611339', '2026-04-19 09:14:55.611345', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_contact_visits', 'Contact Visits', 'CrmContactVisits', 'module_crm_contact_visits', 'crm_contact_visits', 'crm_contact_visits', 'Contact Visits', NULL, NULL, NULL, 164, '3ff7e2db-e224-4189-8a29-43c3ce4e1745', '0', NULL, '2026-04-19 09:14:55.66353', '2026-04-19 09:14:55.663535', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_contact_change_logs', 'Contact Change Logs', 'CrmContactChangeLogs', 'module_crm_contact_change_logs', 'crm_contact_change_logs', 'crm_contact_change_logs', 'Contact Change Logs', NULL, NULL, NULL, 165, '606923f6-e3bd-4941-9a6f-75973bb229cd', '0', NULL, '2026-04-19 09:14:55.733087', '2026-04-19 09:14:55.733092', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_customer_attachments', 'Customer Attachments', 'CrmCustomerAttachments', 'module_crm_customer_attachments', 'crm_customer_attachments', 'crm_customer_attachments', 'Customer Attachments', NULL, NULL, NULL, 166, '5f0f137b-31ae-4de6-8a83-72d8721872e5', '0', NULL, '2026-04-19 09:14:55.788071', '2026-04-19 09:14:55.788077', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_pool_transfers', 'Pool Transfers', 'CrmPoolTransfers', 'module_crm_pool_transfers', 'crm_pool_transfers', 'crm_pool_transfers', 'Pool Transfers', NULL, NULL, NULL, 167, '36dde8ac-08b5-45ba-8908-553f86f7a89a', '0', NULL, '2026-04-19 09:14:55.841105', '2026-04-19 09:14:55.841111', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_followups', 'Followups', 'CrmFollowups', 'module_crm_followups', 'crm_followups', 'crm_followups', 'Followups', NULL, NULL, NULL, 168, '133867bc-5c43-4e7b-a808-297e42bd6f48', '0', NULL, '2026-04-19 09:14:55.890435', '2026-04-19 09:14:55.890439', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_product_categories', 'Product Categories', 'CrmProductCategories', 'module_crm_product_categories', 'crm_product_categories', 'crm_product_categories', 'Product Categories', NULL, NULL, NULL, 169, '679ef8c0-d59a-429b-af67-8a1659c38d83', '0', NULL, '2026-04-19 09:14:55.95561', '2026-04-19 09:14:55.955617', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_product_price_history', 'Product Price History', 'CrmProductPriceHistory', 'module_crm_product_price_history', 'crm_product_price_history', 'crm_product_price_history', 'Product Price History', NULL, NULL, NULL, 170, 'dfca6e72-c2c5-4bca-963b-37f518d44e93', '0', NULL, '2026-04-19 09:14:56.001047', '2026-04-19 09:14:56.001058', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_product_price_policies', 'Product Price Policies', 'CrmProductPricePolicies', 'module_crm_product_price_policies', 'crm_product_price_policies', 'crm_product_price_policies', 'Product Price Policies', NULL, NULL, NULL, 171, 'aae82955-629f-4d77-a678-1f477fd31ee0', '0', NULL, '2026-04-19 09:14:56.050297', '2026-04-19 09:14:56.050302', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_leads', 'Leads', 'CrmLeads', 'module_crm_leads', 'crm_leads', 'crm_leads', 'Leads', NULL, NULL, NULL, 172, '9044e9fb-d2e2-47b1-abeb-c71482f4fa06', '0', NULL, '2026-04-19 09:14:56.117993', '2026-04-19 09:14:56.118', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_contract_items', 'Contract Items', 'CrmContractItems', 'module_crm_contract_items', 'crm_contract_items', 'crm_contract_items', 'Contract Items', NULL, NULL, NULL, 173, 'aa161d4b-c290-4534-8bdc-5a149e80fb69', '0', NULL, '2026-04-19 09:14:56.204536', '2026-04-19 09:14:56.204543', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_contracts', 'Contracts', 'CrmContracts', 'module_crm_contracts', 'crm_contracts', 'crm_contracts', 'Contracts', NULL, NULL, NULL, 174, 'ab4a9a4b-3df1-4678-825a-ef5f3bdf9c3f', '0', NULL, '2026-04-19 09:14:56.260974', '2026-04-19 09:14:56.260981', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_orders', 'Orders', 'CrmOrders', 'module_crm_orders', 'crm_orders', 'crm_orders', 'Orders', NULL, NULL, NULL, 175, 'bc70aa65-18d4-4931-a913-809c14c529e6', '0', NULL, '2026-04-19 09:14:56.361736', '2026-04-19 09:14:56.36174', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_deliveries', 'Deliveries', 'CrmDeliveries', 'module_crm_deliveries', 'crm_deliveries', 'crm_deliveries', 'Deliveries', NULL, NULL, NULL, 176, '9250321a-7df6-4b95-9880-8e5c9ca54f81', '0', NULL, '2026-04-19 09:14:56.435293', '2026-04-19 09:14:56.435299', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_ai_customer_profiles', 'Ai Customer Profiles', 'CrmAiCustomerProfiles', 'module_crm_ai_customer_profiles', 'crm_ai_customer_profiles', 'crm_ai_customer_profiles', 'Ai Customer Profiles', NULL, NULL, NULL, 177, '35adfd3d-ef8b-4034-afe3-e956a5d26550', '0', NULL, '2026-04-19 09:14:56.499486', '2026-04-19 09:14:56.499491', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_data_dicts', 'Data Dicts', 'CrmDataDicts', 'module_crm_data_dicts', 'crm_data_dicts', 'crm_data_dicts', 'Data Dicts', NULL, NULL, NULL, 178, 'bbc13b00-1de1-462b-8b00-2cf008f4e2b6', '0', NULL, '2026-04-19 09:14:56.574078', '2026-04-19 09:14:56.574098', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_payments', 'Payments', 'CrmPayments', 'module_crm_payments', 'crm_payments', 'crm_payments', 'Payments', NULL, NULL, NULL, 179, '731f6bd2-5376-459e-b714-4d295c7b9c0c', '0', NULL, '2026-04-19 09:14:56.660754', '2026-04-19 09:14:56.660761', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_order_items', 'Order Items', 'CrmOrderItems', 'module_crm_order_items', 'crm_order_items', 'crm_order_items', 'Order Items', NULL, NULL, NULL, 180, '2e07a5c6-9770-44dd-b7ab-a392e8fd7e7c', '0', NULL, '2026-04-19 09:14:56.747124', '2026-04-19 09:14:56.747131', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_contact_relations', 'Contact Relations', 'CrmContactRelations', 'module_crm_contact_relations', 'crm_contact_relations', 'crm_contact_relations', 'Contact Relations', NULL, NULL, NULL, 181, '67f02202-f8e3-4b53-9a00-483fa3d729c3', '0', NULL, '2026-04-19 09:14:56.840027', '2026-04-19 09:14:56.840033', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_ai_recommendations', 'Ai Recommendations', 'CrmAiRecommendations', 'module_crm_ai_recommendations', 'crm_ai_recommendations', 'crm_ai_recommendations', 'Ai Recommendations', NULL, NULL, NULL, 182, '130e1984-b522-4bd7-9e8d-490dc8b8ba7e', '0', NULL, '2026-04-19 09:14:56.903347', '2026-04-19 09:14:56.903353', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_invoices', 'Invoices', 'CrmInvoices', 'module_crm_invoices', 'crm_invoices', 'crm_invoices', 'Invoices', NULL, NULL, NULL, 184, 'fe2c2935-76c7-4089-ba7a-eede0f69cbc0', '0', NULL, '2026-04-19 09:14:57.021864', '2026-04-19 09:14:57.021871', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_product_prices', 'Product Prices', 'CrmProductPrices', 'module_crm_product_prices', 'crm_product_prices', 'crm_product_prices', 'Product Prices', NULL, NULL, NULL, 185, '9ca4962d-9e6c-4871-980b-63222774040d', '0', NULL, '2026-04-19 09:15:05.793242', '2026-04-19 09:15:05.793255', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_user_extensions', 'User Extensions', 'CrmUserExtensions', 'module_crm_user_extensions', 'crm_user_extensions', 'crm_user_extensions', 'User Extensions', NULL, NULL, NULL, 186, '81004eef-3e5d-4782-afd0-018cb6539627', '0', NULL, '2026-04-19 09:15:05.886657', '2026-04-19 09:15:05.886664', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_workflow_rules', 'Workflow Rules', 'CrmWorkflowRules', 'module_crm_workflow_rules', 'crm_workflow_rules', 'crm_workflow_rules', 'Workflow Rules', NULL, NULL, NULL, 187, '675c04ca-1b28-4861-83eb-a2a4db6c6e9a', '0', NULL, '2026-04-19 09:15:05.97635', '2026-04-19 09:15:05.976358', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_sales_targets', 'Sales Targets', 'CrmSalesTargets', 'module_crm_sales_targets', 'crm_sales_targets', 'crm_sales_targets', 'Sales Targets', NULL, NULL, NULL, 188, '72fa6309-5b0c-4a27-9799-632bead47577', '0', NULL, '2026-04-19 09:15:06.047111', '2026-04-19 09:15:06.047118', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_tag_definitions', 'Tag Definitions', 'CrmTagDefinitions', 'module_crm_tag_definitions', 'crm_tag_definitions', 'crm_tag_definitions', 'Tag Definitions', NULL, NULL, NULL, 189, 'a3911d78-e692-44e9-b12c-c807cf335ee3', '0', NULL, '2026-04-19 09:15:06.123671', '2026-04-19 09:15:06.123678', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_sales_activities', 'Sales Activities', 'CrmSalesActivities', 'module_crm_sales_activities', 'crm_sales_activities', 'crm_sales_activities', 'Sales Activities', NULL, NULL, NULL, 190, '5137e5d6-b8d9-4a07-9fe0-8d9b528163ac', '0', NULL, '2026-04-19 09:15:06.214553', '2026-04-19 09:15:06.214564', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_tasks', 'Tasks', 'CrmTasks', 'module_crm_tasks', 'crm_tasks', 'crm_tasks', 'Tasks', NULL, NULL, NULL, 191, 'f2fea51d-e094-4d87-84ee-e42f1c5aa120', '0', NULL, '2026-04-19 09:15:06.308275', '2026-04-19 09:15:06.308285', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_workflow_logs', 'Workflow Logs', 'CrmWorkflowLogs', 'module_crm_workflow_logs', 'crm_workflow_logs', 'crm_workflow_logs', 'Workflow Logs', NULL, NULL, NULL, 192, '4163a372-2a2a-4d42-a537-9bf12f3220e0', '0', NULL, '2026-04-19 09:15:06.392877', '2026-04-19 09:15:06.392884', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_products', 'Products', 'CrmProducts', 'module_crm_products', 'crm_products', 'crm_products', 'Products', NULL, NULL, NULL, 193, '6a32c3da-528e-40d4-9628-2af5e7f38000', '0', NULL, '2026-04-19 09:15:06.438677', '2026-04-19 09:15:06.438684', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_product_skus', 'Product Skus', 'CrmProductSkus', 'module_crm_product_skus', 'crm_product_skus', 'crm_product_skus', 'Product Skus', NULL, NULL, NULL, 194, 'e892a4ee-6397-49a0-8466-777cdd46f5b6', '0', NULL, '2026-04-19 09:15:06.538163', '2026-04-19 09:15:06.538169', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_satisfaction_surveys', 'Satisfaction Surveys', 'CrmSatisfactionSurveys', 'module_crm_satisfaction_surveys', 'crm_satisfaction_surveys', 'crm_satisfaction_surveys', 'Satisfaction Surveys', NULL, NULL, NULL, 195, 'ba845ec6-10be-428d-90e4-9f3453840e25', '0', NULL, '2026-04-19 09:15:06.619331', '2026-04-19 09:15:06.619338', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_renewals', 'Renewals', 'CrmRenewals', 'module_crm_renewals', 'crm_renewals', 'crm_renewals', 'Renewals', NULL, NULL, NULL, 196, '7d6167a5-4e18-49a8-9d7e-dbffdc4ed99e', '0', NULL, '2026-04-19 09:15:06.701329', '2026-04-19 09:15:06.701335', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_report_instances', 'Report Instances', 'CrmReportInstances', 'module_crm_report_instances', 'crm_report_instances', 'crm_report_instances', 'Report Instances', NULL, NULL, NULL, 197, '2ae1ef8b-eeb5-403a-a38d-f1faaed60d20', '0', NULL, '2026-04-19 09:15:06.76768', '2026-04-19 09:15:06.767686', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_tags', 'Tags', 'CrmTags', 'module_crm_tags', 'crm_tags', 'crm_tags', 'Tags', NULL, NULL, NULL, 198, 'd4efd12c-a633-4e03-b6c7-6c25654147bb', '0', NULL, '2026-04-19 09:15:06.818268', '2026-04-19 09:15:06.818274', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_quotations', 'Quotations', 'CrmQuotations', 'module_crm_quotations', 'crm_quotations', 'crm_quotations', 'Quotations', NULL, NULL, NULL, 199, '7f2c52d8-4e90-4581-9d1d-4b955498049e', '0', NULL, '2026-04-19 09:15:06.924016', '2026-04-19 09:15:06.924022', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_quotation_items', 'Quotation Items', 'CrmQuotationItems', 'module_crm_quotation_items', 'crm_quotation_items', 'crm_quotation_items', 'Quotation Items', NULL, NULL, NULL, 200, '7cf2240c-0ce8-434f-ac7b-6251395ddcee', '0', NULL, '2026-04-19 09:15:07.023322', '2026-04-19 09:15:07.023328', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_workflow_approvals', 'Workflow Approvals', 'CrmWorkflowApprovals', 'module_crm_workflow_approvals', 'crm_workflow_approvals', 'crm_workflow_approvals', 'Workflow Approvals', NULL, NULL, NULL, 201, 'a4ebcc16-3aa9-4498-ac8a-56788ede32f1', '0', NULL, '2026-04-19 09:15:07.077371', '2026-04-19 09:15:07.077378', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_report_templates', 'Report Templates', 'CrmReportTemplates', 'module_crm_report_templates', 'crm_report_templates', 'crm_report_templates', 'Report Templates', NULL, NULL, NULL, 202, '35c65e6e-1d96-42f9-8bd4-53d66ac5d4c2', '0', NULL, '2026-04-19 09:15:07.133842', '2026-04-19 09:15:07.133848', 1, 1);
+INSERT INTO "public"."gen_table" VALUES ('crm_customers', '客户中心', 'CrmCustomers', 'module_crm_customers', 'crm_customers', 'crm_customers', 'Customers', NULL, NULL, NULL, 183, 'ffac2c6f-c05a-4474-b64a-6d73334a47f1', '0', '联系人管理模块 ，crm_contacts (客户中心的子模块)', '2026-04-19 09:14:56.950857', '2026-04-19 10:13:39.808924', 1, 1);
+
+-- ----------------------------
+-- Table structure for gen_table_column
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."gen_table_column";
+CREATE TABLE "public"."gen_table_column" (
+  "column_name" varchar(200) COLLATE "pg_catalog"."default" NOT NULL,
+  "column_comment" varchar(500) COLLATE "pg_catalog"."default",
+  "column_type" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "column_length" varchar(50) COLLATE "pg_catalog"."default",
+  "column_default" varchar(200) COLLATE "pg_catalog"."default",
+  "is_pk" bool NOT NULL DEFAULT false,
+  "is_increment" bool NOT NULL DEFAULT false,
+  "is_nullable" bool NOT NULL DEFAULT true,
+  "is_unique" bool NOT NULL DEFAULT false,
+  "python_type" varchar(100) COLLATE "pg_catalog"."default",
+  "python_field" varchar(200) COLLATE "pg_catalog"."default",
+  "is_insert" bool NOT NULL DEFAULT true,
+  "is_edit" bool NOT NULL DEFAULT true,
+  "is_list" bool NOT NULL DEFAULT true,
+  "is_query" bool NOT NULL DEFAULT false,
+  "query_type" varchar(50) COLLATE "pg_catalog"."default",
+  "html_type" varchar(100) COLLATE "pg_catalog"."default",
+  "dict_type" varchar(200) COLLATE "pg_catalog"."default",
+  "sort" int4 NOT NULL,
+  "table_id" int4 NOT NULL,
+  "id" int4 NOT NULL DEFAULT nextval('gen_table_column_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL,
+  "created_id" int4,
+  "updated_id" int4,
+  "super_column" varchar(1) COLLATE "pg_catalog"."default" DEFAULT '0'::character varying
+)
+;
+COMMENT ON COLUMN "public"."gen_table_column"."column_name" IS '列名称';
+COMMENT ON COLUMN "public"."gen_table_column"."column_comment" IS '列描述';
+COMMENT ON COLUMN "public"."gen_table_column"."column_type" IS '列类型';
+COMMENT ON COLUMN "public"."gen_table_column"."column_length" IS '列长度';
+COMMENT ON COLUMN "public"."gen_table_column"."column_default" IS '列默认值';
+COMMENT ON COLUMN "public"."gen_table_column"."is_pk" IS '是否主键';
+COMMENT ON COLUMN "public"."gen_table_column"."is_increment" IS '是否自增';
+COMMENT ON COLUMN "public"."gen_table_column"."is_nullable" IS '是否允许为空';
+COMMENT ON COLUMN "public"."gen_table_column"."is_unique" IS '是否唯一';
+COMMENT ON COLUMN "public"."gen_table_column"."python_type" IS 'Python类型';
+COMMENT ON COLUMN "public"."gen_table_column"."python_field" IS 'Python字段名';
+COMMENT ON COLUMN "public"."gen_table_column"."is_insert" IS '是否为新增字段';
+COMMENT ON COLUMN "public"."gen_table_column"."is_edit" IS '是否编辑字段';
+COMMENT ON COLUMN "public"."gen_table_column"."is_list" IS '是否列表字段';
+COMMENT ON COLUMN "public"."gen_table_column"."is_query" IS '是否查询字段';
+COMMENT ON COLUMN "public"."gen_table_column"."query_type" IS '查询方式';
+COMMENT ON COLUMN "public"."gen_table_column"."html_type" IS '显示类型';
+COMMENT ON COLUMN "public"."gen_table_column"."dict_type" IS '字典类型';
+COMMENT ON COLUMN "public"."gen_table_column"."sort" IS '排序';
+COMMENT ON COLUMN "public"."gen_table_column"."table_id" IS '归属表编号';
+COMMENT ON COLUMN "public"."gen_table_column"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."gen_table_column"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."gen_table_column"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."gen_table_column"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."gen_table_column"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."gen_table_column"."updated_time" IS '更新时间';
+COMMENT ON COLUMN "public"."gen_table_column"."created_id" IS '创建人ID';
+COMMENT ON COLUMN "public"."gen_table_column"."updated_id" IS '更新人ID';
+COMMENT ON COLUMN "public"."gen_table_column"."super_column" IS '是否为基类字段(1是 0否)';
+COMMENT ON TABLE "public"."gen_table_column" IS '代码生成表字段';
+
+-- ----------------------------
+-- Records of gen_table_column
+-- ----------------------------
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'BIGINT', '', 'nextval(''crm_opportunity_products_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 135, 1972, '8a6ec084-c33f-4266-bb36-434e6ffd77ca', '0', NULL, '2026-04-19 09:14:53.442651', '2026-04-19 09:14:53.442663', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('opportunity_id', '商机ID,关联对应表', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'opportunityId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 135, 1973, '3bac20fe-0e50-4777-b48a-d33a255103b4', '0', NULL, '2026-04-19 09:14:53.496422', '2026-04-19 09:14:53.496428', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_id', '产品ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'productId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 135, 1974, '0bf8e9d7-7ff1-49f2-9c6e-d796aa89379c', '0', NULL, '2026-04-19 09:14:53.499251', '2026-04-19 09:14:53.499256', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_name', '产品名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'productName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 135, 1975, 'e84c3cdc-9852-4e60-8774-45346f9753e1', '0', NULL, '2026-04-19 09:14:53.501682', '2026-04-19 09:14:53.501687', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('quantity', '数量', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'quantity', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 135, 1976, '7a2e521b-3aab-4c0b-8224-96cced0b5d85', '0', NULL, '2026-04-19 09:14:53.504391', '2026-04-19 09:14:53.504396', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('unit_price', '单价', 'NUMERIC(18, 4)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'unitPrice', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 135, 1977, '6b0f6b72-af99-4fb5-bbc1-3e3e5ac9c1fe', '0', NULL, '2026-04-19 09:14:53.506766', '2026-04-19 09:14:53.50677', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('estimated_amount', '预计金额', 'NUMERIC(18, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'estimatedAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 135, 1978, 'f620bd9f-0997-4b8d-a03f-4e51f497843e', '0', NULL, '2026-04-19 09:14:53.510504', '2026-04-19 09:14:53.510512', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_preferred', '是否首选:0-否,1-是', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isPreferred', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 135, 1979, 'd43d7aa7-35c4-40fd-b3d8-fc44085985f0', '0', NULL, '2026-04-19 09:14:53.513445', '2026-04-19 09:14:53.513451', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('win_rate', '赢单率', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'winRate', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 135, 1980, '2ffc5112-e6d2-429f-b37b-1dd0826443d7', '0', NULL, '2026-04-19 09:14:53.516068', '2026-04-19 09:14:53.516075', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('competitor_product', '竞品', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'competitorProduct', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 10, 135, 1981, '7f9e9572-b56f-4a0a-8d77-11ebe7c14e66', '0', NULL, '2026-04-19 09:14:53.519094', '2026-04-19 09:14:53.5191', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remark', '备注', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'remark', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 11, 135, 1982, '9b7c72c2-4a1e-400c-b389-ee25992bb53d', '0', NULL, '2026-04-19 09:14:53.521407', '2026-04-19 09:14:53.521411', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 12, 135, 1983, '3ea0e193-3e21-4b5e-8de3-8993eb7c4268', '0', NULL, '2026-04-19 09:14:53.524144', '2026-04-19 09:14:53.524232', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 13, 135, 1984, 'debbca62-30ad-4470-b1b1-e490b9372f60', '0', NULL, '2026-04-19 09:14:53.527118', '2026-04-19 09:14:53.527124', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 135, 1985, '951e277a-eccc-4669-a3db-34c056a398a7', '0', NULL, '2026-04-19 09:14:53.529725', '2026-04-19 09:14:53.52973', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 135, 1986, 'be5a6119-4163-4adf-a381-4c9ab0ec27d6', '0', NULL, '2026-04-19 09:14:53.531851', '2026-04-19 09:14:53.531855', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('deleted_at', '删除时间(软删除)', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'deletedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 135, 1987, '5f755e33-d59b-4249-a778-122c5af7087d', '0', NULL, '2026-04-19 09:14:53.534287', '2026-04-19 09:14:53.534291', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('version', '版本号', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'version', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 135, 1988, '9d56cbb9-a12d-469c-8bbe-c0012cdfcf39', '0', NULL, '2026-04-19 09:14:53.536921', '2026-04-19 09:14:53.536927', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'BIGINT', '', 'nextval(''crm_joint_followups_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 136, 1989, '87471f33-25b3-4432-a5dd-204f5bab84fe', '0', NULL, '2026-04-19 09:14:53.563631', '2026-04-19 09:14:53.56364', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('opportunity_id', '商机ID,关联对应表', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'opportunityId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 136, 1990, '3b217d72-dfd0-4410-bc6c-3dea6c841770', '0', NULL, '2026-04-19 09:14:53.566755', '2026-04-19 09:14:53.566762', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('user_id', '用户ID,关联对应表', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'userId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 136, 1991, '2af50ec0-421d-4e0a-93f6-193863d39925', '0', NULL, '2026-04-19 09:14:53.568977', '2026-04-19 09:14:53.568982', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('role_type', '角色类型', 'VARCHAR(30)', '30', '', 'f', 'f', 'f', 'f', 'str', 'roleType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 4, 136, 1992, '9dbb2b37-9444-4a69-b231-66274958de4d', '0', NULL, '2026-04-19 09:14:53.572129', '2026-04-19 09:14:53.572136', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('responsibility', '职责', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'responsibility', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 5, 136, 1993, 'c9c12683-a3b8-4381-9437-9f8078ac74b2', '0', NULL, '2026-04-19 09:14:53.574583', '2026-04-19 09:14:53.574589', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('can_edit', '是否可编辑:0-否,1-是', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'canEdit', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 136, 1994, '7ce21662-b63c-4c04-8961-e390668921b2', '0', NULL, '2026-04-19 09:14:53.576934', '2026-04-19 09:14:53.57694', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('can_view_sensitive', '是否可查看敏感信息:0-否,1-是', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'canViewSensitive', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 136, 1995, '9eb9750f-d6fd-4506-8820-bbbf56ce9882', '0', NULL, '2026-04-19 09:14:53.579124', '2026-04-19 09:14:53.579129', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('followup_count', '跟进次数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'followupCount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 136, 1996, '2c6649ff-bca5-449f-8c72-a5ca4839dc19', '0', NULL, '2026-04-19 09:14:53.581266', '2026-04-19 09:14:53.581271', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('last_followup_date', '最后跟进日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'lastFollowupDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 9, 136, 1997, '4319e237-1b97-4f86-90e0-e48a931f4f7f', '0', NULL, '2026-04-19 09:14:53.583326', '2026-04-19 09:14:53.58333', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contribution_score', '贡献评分', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'contributionScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 136, 1998, '77996b31-0db2-4985-a8b1-169a3df35b0b', '0', NULL, '2026-04-19 09:14:53.586225', '2026-04-19 09:14:53.586234', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('assigned_date', '分配日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'assignedDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 136, 1999, '6b10985f-1902-40b7-92c2-e19fa5e85ed7', '0', NULL, '2026-04-19 09:14:53.590017', '2026-04-19 09:14:53.590024', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('assigned_by', '分配人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'assignedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 136, 2000, '9e443aee-850c-42af-9705-27102406fa14', '0', NULL, '2026-04-19 09:14:53.592625', '2026-04-19 09:14:53.592631', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''active''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 13, 136, 2001, 'a1330b57-f874-45a2-be1f-d18261ab3c4e', '0', NULL, '2026-04-19 09:14:53.594713', '2026-04-19 09:14:53.594718', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('end_date', '结束日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'endDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 14, 136, 2002, '43dbe0db-0414-432b-bcbc-62838a14cdd6', '0', NULL, '2026-04-19 09:14:53.596634', '2026-04-19 09:14:53.596639', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remark', '备注', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'remark', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 15, 136, 2003, '96c68937-c075-441e-8d6e-0d0a5b481d2f', '0', NULL, '2026-04-19 09:14:53.598639', '2026-04-19 09:14:53.598643', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 136, 2004, '52dc6040-d2b3-4686-bd1f-4a2fe238a745', '0', NULL, '2026-04-19 09:14:53.601101', '2026-04-19 09:14:53.60111', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 17, 136, 2005, '4c8f9daf-faf0-40a7-a402-1dceae6a63b0', '0', NULL, '2026-04-19 09:14:53.604298', '2026-04-19 09:14:53.604304', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 18, 136, 2006, '1ac510c3-2d89-4dc9-8ae0-8b0bf8796450', '0', NULL, '2026-04-19 09:14:53.606746', '2026-04-19 09:14:53.606752', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 19, 136, 2007, 'b5b457f4-75de-4b96-9d89-c0982efd672e', '0', NULL, '2026-04-19 09:14:53.609592', '2026-04-19 09:14:53.609599', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('deleted_at', '删除时间(软删除)', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'deletedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 20, 136, 2008, 'dde2aa74-6832-4e01-8576-86dea5bc2ecb', '0', NULL, '2026-04-19 09:14:53.61188', '2026-04-19 09:14:53.611885', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('version', '版本号', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'version', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 21, 136, 2009, '7f13fd73-1b74-4963-ba0d-b80e9a58bc34', '0', NULL, '2026-04-19 09:14:53.613944', '2026-04-19 09:14:53.613948', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'BIGINT', '', 'nextval(''crm_follow_records_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 137, 2010, '54707490-0d3c-4ca9-a168-6150d71b3604', '0', NULL, '2026-04-19 09:14:53.637518', '2026-04-19 09:14:53.637524', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('opportunity_id', '商机ID,关联对应表', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'opportunityId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 137, 2011, 'dae02270-c38e-4b7c-879b-cdfcc0ea674d', '0', NULL, '2026-04-19 09:14:53.639685', '2026-04-19 09:14:53.63969', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 137, 2012, 'bdd3f55f-f009-41da-811a-9c9dc655690e', '0', NULL, '2026-04-19 09:14:53.641805', '2026-04-19 09:14:53.641809', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contact_id', '联系人ID,关联对应表', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'contactId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 137, 2013, '51b308a3-a951-44ed-8d5c-74e0c2a44765', '0', NULL, '2026-04-19 09:14:53.643712', '2026-04-19 09:14:53.643717', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('follow_type', '跟进方式:1-电话,2-邮件,3-拜访,4-微信,5-其他', 'VARCHAR(30)', '30', '', 'f', 'f', 'f', 'f', 'str', 'followType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 5, 137, 2014, '1da4820d-4d08-4daf-bc35-ff0c9c073a90', '0', NULL, '2026-04-19 09:14:53.645811', '2026-04-19 09:14:53.645816', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('subject', '主题', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'subject', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 6, 137, 2015, 'e61b2ede-a252-4377-b95a-21f3ccd7c856', '0', NULL, '2026-04-19 09:14:53.648476', '2026-04-19 09:14:53.648484', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('content', '内容', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'content', 'f', 'f', 'f', 'f', 'LIKE', 'editor', '', 7, 137, 2016, 'bb6b9d36-4dbf-4356-85ac-59910ced278f', '0', NULL, '2026-04-19 09:14:53.651407', '2026-04-19 09:14:53.651413', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contact_mode', '联系方式', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'contactMode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 8, 137, 2017, 'ebff7838-441c-40e1-86cc-086d1269cc33', '0', NULL, '2026-04-19 09:14:53.653943', '2026-04-19 09:14:53.653971', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('duration_minutes', '用时(分钟)', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'durationMinutes', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 137, 2018, 'fb446d27-ea8b-4483-8d4c-fde8ce2a708f', '0', NULL, '2026-04-19 09:14:53.656768', '2026-04-19 09:14:53.656774', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('participants', '参与人', 'ARRAY', '', '', 'f', 'f', 'f', 'f', 'list', 'participants', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 137, 2019, '895589e9-590b-4f6d-87cb-226a2c48a8fc', '0', NULL, '2026-04-19 09:14:53.659372', '2026-04-19 09:14:53.659377', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('location', '地点', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'location', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 11, 137, 2020, 'c1f72ce7-1f82-48f3-b4fc-de85b2991218', '0', NULL, '2026-04-19 09:14:53.661424', '2026-04-19 09:14:53.661428', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('outcome', '结果', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'outcome', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 12, 137, 2021, '13999bab-a360-415f-8033-e0aa25fbc66c', '0', NULL, '2026-04-19 09:14:53.664859', '2026-04-19 09:14:53.664866', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('next_action', '下一步行动', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'nextAction', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 13, 137, 2022, 'be2299d3-0b9f-47fe-9570-24d0fa503536', '0', NULL, '2026-04-19 09:14:53.668453', '2026-04-19 09:14:53.668459', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('next_follow_date', '下次跟进日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'nextFollowDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 14, 137, 2023, '2c9ae4af-a04c-4d07-a0c9-7f2a262e732f', '0', NULL, '2026-04-19 09:14:53.67087', '2026-04-19 09:14:53.670875', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('attachments', '附件', 'JSONB', '', '''[]''::jsonb', 'f', 'f', 'f', 'f', 'dict', 'attachments', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 137, 2024, 'f0ee0810-4936-4b9e-9e19-a7be16b79463', '0', NULL, '2026-04-19 09:14:53.673021', '2026-04-19 09:14:53.673027', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sentiment', '情感倾向', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'sentiment', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 16, 137, 2025, '3c6a9601-2585-484d-804c-a964f3f70932', '0', NULL, '2026-04-19 09:14:53.674967', '2026-04-19 09:14:53.674972', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('key_points', '要点', 'ARRAY', '', '', 'f', 'f', 'f', 'f', 'list', 'keyPoints', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 137, 2026, '3ff6386b-5681-4700-9851-3d98d372261d', '0', NULL, '2026-04-19 09:14:53.676865', '2026-04-19 09:14:53.67687', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('action_items', '行动项', 'JSONB', '', '''[]''::jsonb', 'f', 'f', 'f', 'f', 'dict', 'actionItems', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 18, 137, 2027, '6f159c32-5c59-48a2-9159-17c50f42e6ac', '0', NULL, '2026-04-19 09:14:53.67973', '2026-04-19 09:14:53.679737', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 19, 137, 2028, '248244bf-cd56-45c6-b61c-db0161f07b34', '0', NULL, '2026-04-19 09:14:53.682647', '2026-04-19 09:14:53.682654', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 20, 137, 2029, 'c32f7bd5-7e62-403a-96c4-b09b487a30c9', '0', NULL, '2026-04-19 09:14:53.685262', '2026-04-19 09:14:53.685269', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 21, 137, 2030, '0b099067-4100-4897-a971-fb9a160a88c9', '0', NULL, '2026-04-19 09:14:53.688087', '2026-04-19 09:14:53.688093', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 22, 137, 2031, 'b1874276-a04c-41f8-ab39-9715b610c7fa', '0', NULL, '2026-04-19 09:14:53.690509', '2026-04-19 09:14:53.690515', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('deleted_at', '删除时间(软删除)', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'deletedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 23, 137, 2032, '65f9c9f5-0fdb-4752-92e3-ccd5fa15c004', '0', NULL, '2026-04-19 09:14:53.692587', '2026-04-19 09:14:53.692591', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('version', '版本号', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'version', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 24, 137, 2033, '1714e575-516b-4e30-88e2-5fc1b3c64a4f', '0', NULL, '2026-04-19 09:14:53.695277', '2026-04-19 09:14:53.695283', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'BIGINT', '', 'nextval(''crm_campaign_leads_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 138, 2034, '431631d5-c48c-4165-84fa-9b64b06ab38c', '0', NULL, '2026-04-19 09:14:53.719136', '2026-04-19 09:14:53.719143', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('campaign_id', '活动ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'campaignId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 138, 2035, '1eee2834-6f1c-4a1b-84e1-2096d37c2dcc', '0', NULL, '2026-04-19 09:14:53.721943', '2026-04-19 09:14:53.721949', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('lead_id', '来源线索ID,关联crm_leads', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'leadId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 138, 2036, 'b25dbeec-3beb-422f-9783-53695e07826c', '0', NULL, '2026-04-19 09:14:53.724018', '2026-04-19 09:14:53.724022', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('participation_type', '参与类型', 'VARCHAR(30)', '30', '', 'f', 'f', 'f', 'f', 'str', 'participationType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 4, 138, 2037, '727e5b4b-c10a-4f65-a3c9-d303fa78ab6f', '0', NULL, '2026-04-19 09:14:53.726932', '2026-04-19 09:14:53.726937', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('registration_date', '注册日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'registrationDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 5, 138, 2038, '15cc5bf1-9e06-48d3-9fa7-7ae15f450c16', '0', NULL, '2026-04-19 09:14:53.729323', '2026-04-19 09:14:53.729329', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('attendance_status', '出席状态', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'attendanceStatus', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 6, 138, 2039, 'ab59ae29-3e58-44e8-9e3b-4be90c5a12d0', '0', NULL, '2026-04-19 09:14:53.731693', '2026-04-19 09:14:53.731699', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('lead_source_detail', '线索来源详情', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'leadSourceDetail', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 7, 138, 2040, '6ed67f1d-a224-4a0d-9b99-2f9a109f4c25', '0', NULL, '2026-04-19 09:14:53.733788', '2026-04-19 09:14:53.733793', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('channel', '渠道', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'channel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 8, 138, 2041, '2bcb8bbd-f7a2-43d1-88e8-2d6a00e82dbd', '0', NULL, '2026-04-19 09:14:53.735713', '2026-04-19 09:14:53.735717', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_converted', '是否已转化:0-否,1-是', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isConverted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 138, 2042, '9d09d987-e015-4cb8-a188-6550205e75d4', '0', NULL, '2026-04-19 09:14:53.737825', '2026-04-19 09:14:53.737829', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('converted_customer_id', '转化后客户ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'convertedCustomerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 138, 2043, '34b1ce6e-49f8-485a-a805-9e76ef63898e', '0', NULL, '2026-04-19 09:14:53.739839', '2026-04-19 09:14:53.739843', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('interaction_count', '互动次数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'interactionCount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 138, 2044, 'b287ae4c-e60c-4852-9220-21a2e1d9c03c', '0', NULL, '2026-04-19 09:14:53.743138', '2026-04-19 09:14:53.743144', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('engagement_score', '参与度评分', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'engagementScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 138, 2045, '7178e157-4230-4983-9de8-c139b721a9ff', '0', NULL, '2026-04-19 09:14:53.745706', '2026-04-19 09:14:53.745712', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remark', '备注', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'remark', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 13, 138, 2046, '7d64ff90-d8fb-4501-90ae-e6bac1604bb8', '0', NULL, '2026-04-19 09:14:53.747855', '2026-04-19 09:14:53.74786', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 14, 138, 2047, 'e61795a4-1a6b-4d0b-a7b5-13cebdf3f189', '0', NULL, '2026-04-19 09:14:53.749844', '2026-04-19 09:14:53.749848', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 15, 138, 2048, '5c108f01-e251-4211-9005-2c89b4c5ea0c', '0', NULL, '2026-04-19 09:14:53.751605', '2026-04-19 09:14:53.751609', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 16, 138, 2049, '2fe5e575-5cca-4b8c-9b89-ec790d815d6e', '0', NULL, '2026-04-19 09:14:53.753427', '2026-04-19 09:14:53.75343', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 138, 2050, '615deb42-e9b8-4806-804d-bb76a40601a4', '0', NULL, '2026-04-19 09:14:53.755377', '2026-04-19 09:14:53.755381', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('deleted_at', '删除时间(软删除)', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'deletedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 18, 138, 2051, 'b4cb6399-80d7-4a8d-bc65-b60dcd443aa3', '0', NULL, '2026-04-19 09:14:53.758803', '2026-04-19 09:14:53.75881', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('version', '版本号', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'version', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 19, 138, 2052, '1a1839fd-2469-40c3-bbf7-49815dda9e66', '0', NULL, '2026-04-19 09:14:53.761646', '2026-04-19 09:14:53.761652', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'BIGINT', '', 'nextval(''crm_customer_health_scores_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 139, 2053, '8e3aeebb-114b-46e7-90a2-edc0f8957d6e', '0', NULL, '2026-04-19 09:14:53.785803', '2026-04-19 09:14:53.785809', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 139, 2054, 'fdae27b8-55f7-428c-9c50-b56124fefeb9', '0', NULL, '2026-04-19 09:14:53.789567', '2026-04-19 09:14:53.789575', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('score_date', '评分日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'scoreDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 3, 139, 2055, '02cfc0c5-89d2-4fa3-94b2-7bb93d912225', '0', NULL, '2026-04-19 09:14:53.792499', '2026-04-19 09:14:53.792505', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('overall_score', '综合评分', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'overallScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 139, 2056, 'ac7ba5d5-66a6-4f34-b45a-ba27c788fc98', '0', NULL, '2026-04-19 09:14:53.795027', '2026-04-19 09:14:53.795034', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('health_level', '健康等级', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'healthLevel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 139, 2057, '3de75ed6-1124-49e6-8098-e6d5dbf8c492', '0', NULL, '2026-04-19 09:14:53.797983', '2026-04-19 09:14:53.79799', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('dimension_scores', '维度评分', 'JSONB', '', '''{}''::jsonb', 'f', 'f', 'f', 'f', 'dict', 'dimensionScores', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 139, 2058, '2739c4af-0e7e-4ce2-8ee2-f4db3ade004e', '0', NULL, '2026-04-19 09:14:53.800535', '2026-04-19 09:14:53.80054', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_usage', '产品使用情况', 'JSONB', '', '''{}''::jsonb', 'f', 'f', 'f', 'f', 'dict', 'productUsage', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 139, 2059, '782be495-7f75-4307-b6b7-26c280a96c3a', '0', NULL, '2026-04-19 09:14:53.802378', '2026-04-19 09:14:53.802381', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('adoption_rate', '采用率', 'NUMERIC(5, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'adoptionRate', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 139, 2060, 'b7fccf7e-5c3b-4e0c-9ece-a43922854970', '0', NULL, '2026-04-19 09:14:53.806087', '2026-04-19 09:14:53.806095', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('engagement_score', '参与度评分', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'engagementScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 139, 2061, '1c59f5bc-7c4d-4a7d-bebe-7d823a3e156c', '0', NULL, '2026-04-19 09:14:53.808719', '2026-04-19 09:14:53.808725', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('avg_contact_frequency', '平均联系频率', 'NUMERIC(5, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'avgContactFrequency', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 139, 2062, '5d643e14-0457-4edd-ac8b-72ca611e7a1a', '0', NULL, '2026-04-19 09:14:53.810627', '2026-04-19 09:14:53.810631', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('last_interaction_date', '最后互动日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'lastInteractionDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 139, 2063, 'ef0cf65c-6fe8-4af6-9575-8b0f02ade76a', '0', NULL, '2026-04-19 09:14:53.812558', '2026-04-19 09:14:53.812562', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('payment_score', '付款评分', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'paymentScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 139, 2064, '92b98a88-7197-4e71-8453-7e9cf78ea0b8', '0', NULL, '2026-04-19 09:14:53.814394', '2026-04-19 09:14:53.814399', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('revenue_trend', '收入趋势', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'revenueTrend', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 13, 139, 2065, '49dab42b-7c27-46fe-961b-9ead0c963130', '0', NULL, '2026-04-19 09:14:53.816348', '2026-04-19 09:14:53.816352', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('arpu', 'ARPU', 'NUMERIC(18, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'arpu', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 139, 2066, 'd07e6bc3-8910-4381-bb83-7197e23841e8', '0', NULL, '2026-04-19 09:14:53.818176', '2026-04-19 09:14:53.81818', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('satisfaction_score', '满意度评分', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'satisfactionScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 139, 2067, '16aaaf13-fa62-43ba-b127-42ae136b9a60', '0', NULL, '2026-04-19 09:14:53.821755', '2026-04-19 09:14:53.821762', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('nps_score', 'NPS评分', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'npsScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 16, 139, 2068, '425cd03e-f331-4a43-9457-47ccff64ebfd', '0', NULL, '2026-04-19 09:14:53.82446', '2026-04-19 09:14:53.824466', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('last_survey_date', '最后调查日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'lastSurveyDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 17, 139, 2069, '7cb593f3-6903-473b-881c-4efd5449961d', '0', NULL, '2026-04-19 09:14:53.826965', '2026-04-19 09:14:53.826971', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('risk_indicators', '风险指标', 'ARRAY', '', '', 'f', 'f', 'f', 'f', 'list', 'riskIndicators', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 18, 139, 2070, '065b58a9-d309-41b1-ba14-71e245fe6247', '0', NULL, '2026-04-19 09:14:53.830024', '2026-04-19 09:14:53.830031', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('churn_signals', '流失信号', 'ARRAY', '', '', 'f', 'f', 'f', 'f', 'list', 'churnSignals', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 19, 139, 2071, 'd6fd6e5a-160d-4567-ba9a-7266b538a29f', '0', NULL, '2026-04-19 09:14:53.832431', '2026-04-19 09:14:53.832437', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('churn_probability', '流失概率', 'NUMERIC(5, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'churnProbability', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 20, 139, 2072, '12ddba5f-2dcd-4948-a2bc-02ac0e633238', '0', NULL, '2026-04-19 09:14:53.834992', '2026-04-19 09:14:53.834998', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('expansion_probability', '扩展概率', 'NUMERIC(5, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'expansionProbability', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 21, 139, 2073, '5db3a2a8-038d-44b2-84af-c0429f77f095', '0', NULL, '2026-04-19 09:14:53.837367', '2026-04-19 09:14:53.837373', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('ai_insights', 'AI洞察', 'JSONB', '', '''{}''::jsonb', 'f', 'f', 'f', 'f', 'dict', 'aiInsights', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 22, 139, 2074, '8c791505-7e58-473b-8235-24225a133db6', '0', NULL, '2026-04-19 09:14:53.839777', '2026-04-19 09:14:53.839782', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 23, 139, 2075, 'e3424603-1a58-4951-97b7-a38aea9b2671', '0', NULL, '2026-04-19 09:14:53.841855', '2026-04-19 09:14:53.84186', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 24, 139, 2076, '8fe86975-c118-4a16-88ab-2c0607e0eab6', '0', NULL, '2026-04-19 09:14:53.843735', '2026-04-19 09:14:53.843739', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('version', '版本号', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'version', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 25, 139, 2077, '99b1ee30-a9b2-424d-8a33-4d51cf5ff559', '0', NULL, '2026-04-19 09:14:53.84559', '2026-04-19 09:14:53.845594', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'BIGINT', '', 'nextval(''crm_customer_pool_logs_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 140, 2078, '6cffa2db-9b02-4ab9-969b-50f6d34dae77', '0', NULL, '2026-04-19 09:14:53.868879', '2026-04-19 09:14:53.868885', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 140, 2079, '92ab098c-f73c-40e7-b5d9-21f0f0c5434c', '0', NULL, '2026-04-19 09:14:53.871475', '2026-04-19 09:14:53.87148', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('action_type', '操作类型', 'VARCHAR(30)', '30', '', 'f', 'f', 'f', 'f', 'str', 'actionType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 3, 140, 2080, 'bd7b30ad-8d60-4e91-80b0-eeea59c82283', '0', NULL, '2026-04-19 09:14:53.873574', '2026-04-19 09:14:53.873578', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('action_date', '操作日期', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'actionDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 4, 140, 2081, '203472ec-2af6-4515-b942-b0218262807b', '0', NULL, '2026-04-19 09:14:53.8755', '2026-04-19 09:14:53.875505', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('from_user_id', '原负责人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'fromUserId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 140, 2082, '1a72a4b7-1245-4943-911d-25f373990d4f', '0', NULL, '2026-04-19 09:14:53.877461', '2026-04-19 09:14:53.877465', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('from_dept_id', '原部门ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'fromDeptId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 140, 2083, '4a87f7e1-65e2-4b3a-b122-cdc0023516a3', '0', NULL, '2026-04-19 09:14:53.879327', '2026-04-19 09:14:53.879331', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('to_user_id', '目标负责人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'toUserId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 140, 2084, '133913b6-7b92-48b1-ac37-fe04c3eca02c', '0', NULL, '2026-04-19 09:14:53.883809', '2026-04-19 09:14:53.883817', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('to_dept_id', '目标部门ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'toDeptId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 140, 2085, 'b8b18e66-de50-4997-a09b-11b516505fba', '0', NULL, '2026-04-19 09:14:53.886794', '2026-04-19 09:14:53.886801', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('reason', '原因', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'reason', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 9, 140, 2086, '159e0b92-6c8d-4d2e-8200-21748eda760a', '0', NULL, '2026-04-19 09:14:53.889429', '2026-04-19 09:14:53.88945', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('transfer_type', '转移类型', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'transferType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 10, 140, 2087, '373b019c-831b-4e05-b53e-17e059811ec8', '0', NULL, '2026-04-19 09:14:53.892469', '2026-04-19 09:14:53.892475', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('operator_id', '操作人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'operatorId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 140, 2088, '23f7c6fe-5cb8-4918-b2a0-a44f46c8b919', '0', NULL, '2026-04-19 09:14:53.894648', '2026-04-19 09:14:53.894653', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 12, 140, 2089, 'e9639e89-24b6-4bf6-98fc-43c5a1b8f246', '0', NULL, '2026-04-19 09:14:53.897684', '2026-04-19 09:14:53.89769', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('deleted_at', '删除时间(软删除)', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'deletedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 13, 140, 2090, '9bc30a30-5ddb-49b3-b9dd-e0e00ee4835e', '0', NULL, '2026-04-19 09:14:53.900409', '2026-04-19 09:14:53.900415', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('version', '版本号', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'version', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 140, 2091, '20dab0a0-cf44-401d-996a-f3cbfb3dc564', '0', NULL, '2026-04-19 09:14:53.902898', '2026-04-19 09:14:53.902904', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'BIGINT', '', 'nextval(''crm_customer_profiles_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 141, 2092, '4a16ee51-df68-4af6-abf0-a27d832d222a', '0', NULL, '2026-04-19 09:14:53.925527', '2026-04-19 09:14:53.925533', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 141, 2093, '685ccbe4-825d-42a9-8232-20a438e92d05', '0', NULL, '2026-04-19 09:14:53.928337', '2026-04-19 09:14:53.928344', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('basic_profile', '基础画像', 'JSONB', '', '''{}''::jsonb', 'f', 'f', 'f', 'f', 'dict', 'basicProfile', 'f', 'f', 'f', 'f', 'EQ', 'fileUpload', '', 3, 141, 2094, '45deef22-6011-4a13-babf-a6f4f5cba1d0', '0', NULL, '2026-04-19 09:14:53.930691', '2026-04-19 09:14:53.930696', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('behavior_profile', '行为画像', 'JSONB', '', '''{}''::jsonb', 'f', 'f', 'f', 'f', 'dict', 'behaviorProfile', 'f', 'f', 'f', 'f', 'EQ', 'fileUpload', '', 4, 141, 2095, '31a33a1c-e085-4090-91a3-6acdcfc0d2bc', '0', NULL, '2026-04-19 09:14:53.933257', '2026-04-19 09:14:53.933263', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('preference_profile', '偏好画像', 'JSONB', '', '''{}''::jsonb', 'f', 'f', 'f', 'f', 'dict', 'preferenceProfile', 'f', 'f', 'f', 'f', 'EQ', 'fileUpload', '', 5, 141, 2096, 'e7d51f41-4f80-4ffc-85d9-df470eeaf9ff', '0', NULL, '2026-04-19 09:14:53.935153', '2026-04-19 09:14:53.935157', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('value_profile', '价值画像', 'JSONB', '', '''{}''::jsonb', 'f', 'f', 'f', 'f', 'dict', 'valueProfile', 'f', 'f', 'f', 'f', 'EQ', 'fileUpload', '', 6, 141, 2097, 'a6c2969e-62a0-4f24-9565-38375ad3e289', '0', NULL, '2026-04-19 09:14:53.937077', '2026-04-19 09:14:53.937081', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('purchase_patterns', '购买模式', 'JSONB', '', '''{}''::jsonb', 'f', 'f', 'f', 'f', 'dict', 'purchasePatterns', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 141, 2098, 'b6d5ae5e-1388-4711-bc45-4b7172059688', '0', NULL, '2026-04-19 09:14:53.939115', '2026-04-19 09:14:53.939119', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('preferred_products', '首选产品', 'JSONB', '', '''{}''::jsonb', 'f', 'f', 'f', 'f', 'dict', 'preferredProducts', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 141, 2099, 'f705b568-f540-410d-af12-da58657743fc', '0', NULL, '2026-04-19 09:14:53.941246', '2026-04-19 09:14:53.941251', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('price_sensitivity', '价格敏感度', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'priceSensitivity', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 9, 141, 2100, '6ab6a5c4-0be7-4556-8a15-111bef053f51', '0', NULL, '2026-04-19 09:14:53.943125', '2026-04-19 09:14:53.943129', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('buying_stages', '购买阶段', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'buyingStages', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 10, 141, 2101, '1a7c54f7-ba14-4faa-9cfe-5ad558d6371b', '0', NULL, '2026-04-19 09:14:53.946563', '2026-04-19 09:14:53.94658', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('communication_prefs', '沟通偏好', 'JSONB', '', '''{}''::jsonb', 'f', 'f', 'f', 'f', 'dict', 'communicationPrefs', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 141, 2102, '83b3c8f4-3ad9-45e3-b136-104742e10b28', '0', NULL, '2026-04-19 09:14:53.949442', '2026-04-19 09:14:53.949448', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('best_contact_times', '最佳联系时段', 'ARRAY', '', '', 'f', 'f', 'f', 'f', 'list', 'bestContactTimes', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 141, 2103, '53edaf17-8dce-4daa-9780-3e14397253ec', '0', NULL, '2026-04-19 09:14:53.95199', '2026-04-19 09:14:53.951997', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('preferred_channels', '首选渠道', 'ARRAY', '', '', 'f', 'f', 'f', 'f', 'list', 'preferredChannels', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 141, 2104, '75fd3b75-080b-4937-83b8-f4d679080bee', '0', NULL, '2026-04-19 09:14:53.954579', '2026-04-19 09:14:53.954586', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('lifetime_value', '生命周期价值', 'NUMERIC(18, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'lifetimeValue', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 141, 2105, '0924065e-2a2f-44e9-a073-3bda77a98642', '0', NULL, '2026-04-19 09:14:53.957107', '2026-04-19 09:14:53.957112', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('churn_probability', '流失概率', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'churnProbability', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 141, 2106, '5a16bf36-c386-406c-a1a9-7c15f9a714f9', '0', NULL, '2026-04-19 09:14:53.959028', '2026-04-19 09:14:53.959031', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('upsell_probability', '增购概率', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'upsellProbability', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 16, 141, 2107, 'eae3e0d6-2990-4ad7-9fa8-92df27c8b65d', '0', NULL, '2026-04-19 09:14:53.961837', '2026-04-19 09:14:53.961843', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('referral_probability', '推荐概率', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'referralProbability', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 141, 2108, '762483c1-4504-4ea5-a6a9-8ec93d7f16be', '0', NULL, '2026-04-19 09:14:53.964734', '2026-04-19 09:14:53.96474', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('personas', '角色', 'ARRAY', '', '', 'f', 'f', 'f', 'f', 'list', 'personas', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 18, 141, 2109, 'e56edd83-f4fd-4296-b28c-6435448579e7', '0', NULL, '2026-04-19 09:14:53.966701', '2026-04-19 09:14:53.966705', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tags', '标签', 'ARRAY', '', '', 'f', 'f', 'f', 'f', 'list', 'tags', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 19, 141, 2110, 'd3a2d6d8-7db0-4c4f-9733-753da7235f64', '0', NULL, '2026-04-19 09:14:53.968667', '2026-04-19 09:14:53.968671', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('analysis_count', '分析次数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'analysisCount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 20, 141, 2111, 'a78d859f-7f38-4770-beb6-93a349070917', '0', NULL, '2026-04-19 09:14:53.97065', '2026-04-19 09:14:53.970654', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('last_analysis_at', '最后分析时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'lastAnalysisAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 21, 141, 2112, 'e29d56a5-3f77-4f54-a993-5773c174e9fc', '0', NULL, '2026-04-19 09:14:53.972619', '2026-04-19 09:14:53.972623', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('model_version', '模型版本', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'modelVersion', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 22, 141, 2113, '15cd08d9-ca1a-402e-83e0-f0a871936221', '0', NULL, '2026-04-19 09:14:53.974536', '2026-04-19 09:14:53.974541', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('confidence_score', '置信度评分', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'confidenceScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 23, 141, 2114, 'c6adc002-86f1-4b88-bce7-40f01b4220b8', '0', NULL, '2026-04-19 09:14:53.977511', '2026-04-19 09:14:53.977518', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('data_completeness', '数据完整度', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'dataCompleteness', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 24, 141, 2115, '46ccd879-274a-41bd-b4dc-dbebb9dd5708', '0', NULL, '2026-04-19 09:14:53.980343', '2026-04-19 09:14:53.980349', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 25, 141, 2116, 'cd8f321d-fe1f-44db-8065-b3a6efde0134', '0', NULL, '2026-04-19 09:14:53.982993', '2026-04-19 09:14:53.983', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 26, 141, 2117, '95391b48-b5e4-435c-959b-705c97d42b45', '0', NULL, '2026-04-19 09:14:53.985943', '2026-04-19 09:14:53.985949', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('version', '版本号', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'version', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 27, 141, 2118, 'd8752d02-8df7-4fd2-a4c9-af5aaa3a0c60', '0', NULL, '2026-04-19 09:14:53.98814', '2026-04-19 09:14:53.988145', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'BIGINT', '', 'nextval(''crm_customer_satisfaction_surveys_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 142, 2119, '75d54945-c6c7-402c-9b10-e2f73f952c38', '0', NULL, '2026-04-19 09:14:54.012945', '2026-04-19 09:14:54.012951', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('survey_code', '调查编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'surveyCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 142, 2120, 'db59e79d-630f-4f3c-9e81-545dc0ca5621', '0', NULL, '2026-04-19 09:14:54.015111', '2026-04-19 09:14:54.015116', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('survey_name', '调查名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'surveyName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 142, 2121, 'd9b93b27-dbc7-47c9-aa49-9f44272e36cb', '0', NULL, '2026-04-19 09:14:54.017135', '2026-04-19 09:14:54.017139', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('survey_type', '调查类型', 'VARCHAR(30)', '30', '', 'f', 'f', 'f', 'f', 'str', 'surveyType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 4, 142, 2122, '9aed94ff-5451-4701-95e6-8a359217c0ee', '0', NULL, '2026-04-19 09:14:54.019024', '2026-04-19 09:14:54.019028', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 142, 2123, '08c2ac6a-9caf-4d72-b672-e35bed256b34', '0', NULL, '2026-04-19 09:14:54.02093', '2026-04-19 09:14:54.020933', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contact_id', '联系人ID,关联对应表', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'contactId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 142, 2124, '015f5c87-835a-4a08-99db-5467d24bc728', '0', NULL, '2026-04-19 09:14:54.023037', '2026-04-19 09:14:54.023046', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('order_id', '订单ID,关联对应表', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'orderId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 142, 2125, '82f8378b-b2e1-436a-817a-09102a2c95d1', '0', NULL, '2026-04-19 09:14:54.026639', '2026-04-19 09:14:54.026646', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('project_id', '项目ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'projectId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 142, 2126, 'd10f1237-10c7-4048-ac87-a454c0aafcf1', '0', NULL, '2026-04-19 09:14:54.029166', '2026-04-19 09:14:54.029172', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sent_date', '发送日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'sentDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 9, 142, 2127, '35bd69b5-0e59-491c-8f79-b61da8471679', '0', NULL, '2026-04-19 09:14:54.031756', '2026-04-19 09:14:54.031762', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('completed_date', '完成日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'completedDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 10, 142, 2128, 'dc7956d8-13c8-41e5-aff0-2625cc017d0e', '0', NULL, '2026-04-19 09:14:54.034721', '2026-04-19 09:14:54.034726', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('overall_score', '综合评分', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'overallScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 142, 2129, '40f866d8-99b0-4025-b9a0-5eda15e1a2e3', '0', NULL, '2026-04-19 09:14:54.058322', '2026-04-19 09:14:54.058329', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('nps_score', 'NPS评分', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'npsScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 142, 2130, 'ca3be7ec-e913-45f8-b1b3-b3bb75e86e18', '0', NULL, '2026-04-19 09:14:54.060894', '2026-04-19 09:14:54.060899', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('csat_score', 'CSAT评分', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'csatScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 142, 2131, 'dd464eba-2127-4b43-8cec-ec54db442f0e', '0', NULL, '2026-04-19 09:14:54.063406', '2026-04-19 09:14:54.063413', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('ces_score', 'CES评分', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'cesScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 142, 2132, 'ec17c3e0-cccd-4031-9bad-c799b6e5ea8a', '0', NULL, '2026-04-19 09:14:54.066057', '2026-04-19 09:14:54.066064', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('dimension_scores', '维度评分', 'JSONB', '', '''{}''::jsonb', 'f', 'f', 'f', 'f', 'dict', 'dimensionScores', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 142, 2133, 'aeea2516-c948-4fa7-8bae-c012dd0e0560', '0', NULL, '2026-04-19 09:14:54.068308', '2026-04-19 09:14:54.068313', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('feedback', '反馈', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'feedback', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 16, 142, 2134, '9964809a-8457-4f1a-b22e-027e7d88bd84', '0', NULL, '2026-04-19 09:14:54.07039', '2026-04-19 09:14:54.070394', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('positive_feedback', '正面反馈', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'positiveFeedback', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 17, 142, 2135, '92659d63-d241-4f8d-9e47-775c31246ff0', '0', NULL, '2026-04-19 09:14:54.073802', '2026-04-19 09:14:54.073808', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('negative_feedback', '负面反馈', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'negativeFeedback', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 18, 142, 2136, '62bf2ed3-d3b5-422a-bf13-43ff2d64d478', '0', NULL, '2026-04-19 09:14:54.076389', '2026-04-19 09:14:54.076395', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('follow_up_required', '需要跟进', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'followUpRequired', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 19, 142, 2137, '2c758252-4e71-4b52-af45-edc962b8ca64', '0', NULL, '2026-04-19 09:14:54.08003', '2026-04-19 09:14:54.080041', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('follow_up_status', '跟进状态', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'followUpStatus', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 20, 142, 2138, 'db699e61-aac6-4bc1-b608-e1c86d139dd7', '0', NULL, '2026-04-19 09:14:54.084317', '2026-04-19 09:14:54.084325', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('follow_up_by', '跟进人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'followUpBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 21, 142, 2139, '311ca4bc-a42e-4107-a786-872153dacf19', '0', NULL, '2026-04-19 09:14:54.08834', '2026-04-19 09:14:54.08835', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('follow_up_date', '跟进日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'followUpDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 22, 142, 2140, 'ada6b7c7-4188-4ebe-bcc6-c8f17792ba67', '0', NULL, '2026-04-19 09:14:54.092262', '2026-04-19 09:14:54.092268', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('follow_up_notes', '跟进备注', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'followUpNotes', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 23, 142, 2141, '66fc8c4f-0cda-4b2b-ad3e-a6bb8ab837e1', '0', NULL, '2026-04-19 09:14:54.096081', '2026-04-19 09:14:54.096094', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('channel', '渠道', 'VARCHAR(30)', '30', '', 'f', 'f', 'f', 'f', 'str', 'channel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 24, 142, 2142, '6b8a4d1d-9bd4-434d-bc34-ee12c47c2292', '0', NULL, '2026-04-19 09:14:54.100035', '2026-04-19 09:14:54.10006', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('respondent_email', '受访者邮箱', 'VARCHAR(255)', '255', '', 'f', 'f', 'f', 'f', 'str', 'respondentEmail', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 25, 142, 2143, 'ad2f8d2d-9f82-4775-b55a-b02a28e8cd28', '0', NULL, '2026-04-19 09:14:54.104721', '2026-04-19 09:14:54.104732', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 26, 142, 2144, '41fdb618-738f-4dfc-bd0b-3004f4efecf7', '0', NULL, '2026-04-19 09:14:54.108626', '2026-04-19 09:14:54.10866', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 27, 142, 2145, '848d56ea-85b1-4aac-9c6e-a59a1e66f00c', '0', NULL, '2026-04-19 09:14:54.111174', '2026-04-19 09:14:54.111179', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 28, 142, 2146, '6a4753e7-1f6c-418c-acfd-8b2f0b237c40', '0', NULL, '2026-04-19 09:14:54.137416', '2026-04-19 09:14:54.137422', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 29, 142, 2147, '986e2c92-c469-451e-b504-2d2d13fff8b4', '0', NULL, '2026-04-19 09:14:54.139671', '2026-04-19 09:14:54.139685', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('deleted_at', '删除时间(软删除)', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'deletedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 30, 142, 2148, 'd0661f48-6085-4a05-85f5-9891af48262b', '0', NULL, '2026-04-19 09:14:54.142864', '2026-04-19 09:14:54.142873', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('version', '版本号', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'version', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 31, 142, 2149, 'd53b3685-2a18-4e35-83b0-41f015301278', '0', NULL, '2026-04-19 09:14:54.146119', '2026-04-19 09:14:54.146125', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'BIGINT', '', 'nextval(''crm_campaigns_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 143, 2150, '540168ad-013d-431b-bb86-f77e1ac8983a', '0', NULL, '2026-04-19 09:14:54.17451', '2026-04-19 09:14:54.174517', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('campaign_code', '活动编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'campaignCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 143, 2151, 'd6574708-3524-41ee-a647-e16d43c76d30', '0', NULL, '2026-04-19 09:14:54.177907', '2026-04-19 09:14:54.177913', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('campaign_name', '活动名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'campaignName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 143, 2152, '72cc96c8-c304-48d6-9c8f-a63e244c9213', '0', NULL, '2026-04-19 09:14:54.181866', '2026-04-19 09:14:54.181875', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('campaign_type', '活动类型', 'VARCHAR(30)', '30', '', 'f', 'f', 'f', 'f', 'str', 'campaignType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 4, 143, 2153, '4fd7b159-338c-4cfb-934f-991c01ba9f3e', '0', NULL, '2026-04-19 09:14:54.18572', '2026-04-19 09:14:54.185733', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('campaign_subtype', '活动子类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'campaignSubtype', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 5, 143, 2154, 'cc547649-edef-4c3b-b755-4b1a4e54427b', '0', NULL, '2026-04-19 09:14:54.189989', '2026-04-19 09:14:54.189995', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('planned_start_date', '计划开始日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'plannedStartDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 6, 143, 2155, 'd642c5f9-ca1e-4ad5-82fb-82b397926531', '0', NULL, '2026-04-19 09:14:54.192759', '2026-04-19 09:14:54.192764', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('planned_end_date', '计划结束日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'plannedEndDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 7, 143, 2156, '748312cd-02a7-4c27-8127-8503e17a9b8c', '0', NULL, '2026-04-19 09:14:54.196336', '2026-04-19 09:14:54.196346', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('actual_start_date', '实际开始日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'actualStartDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 8, 143, 2157, '1886aec2-f12f-47bf-83d5-fbd0d4cca2a4', '0', NULL, '2026-04-19 09:14:54.199727', '2026-04-19 09:14:54.199733', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('actual_end_date', '实际结束日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'actualEndDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 9, 143, 2158, 'befb26e1-b048-4b3f-93c5-15a4aa1ce0a8', '0', NULL, '2026-04-19 09:14:54.202698', '2026-04-19 09:14:54.202706', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('budget', '预算金额', 'NUMERIC(18, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'budget', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 143, 2159, 'a69e6ea4-e1b4-478b-9dbb-4046275ad7a2', '0', NULL, '2026-04-19 09:14:54.20577', '2026-04-19 09:14:54.205776', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('actual_cost', '实际成本', 'NUMERIC(18, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'actualCost', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 143, 2160, 'bc97ece4-aead-4b6c-86fb-16254cd99818', '0', NULL, '2026-04-19 09:14:54.207989', '2026-04-19 09:14:54.207994', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('cost_currency', '成本币种', 'VARCHAR(10)', '10', '''CNY''::character varying', 'f', 'f', 'f', 'f', 'str', 'costCurrency', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 12, 143, 2161, '8d8d519b-1e40-431f-8d50-afa94a0a0584', '0', NULL, '2026-04-19 09:14:54.210488', '2026-04-19 09:14:54.210494', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('objectives', '活动目标', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'objectives', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 13, 143, 2162, '81150e85-0101-47e3-b550-a144c6389794', '0', NULL, '2026-04-19 09:14:54.214561', '2026-04-19 09:14:54.214568', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('target_participants', '目标参与人数', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'targetParticipants', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 143, 2163, '53de693d-aef6-4269-88cd-9c6d954ae6c9', '0', NULL, '2026-04-19 09:14:54.217002', '2026-04-19 09:14:54.217008', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('actual_participants', '实际参与人数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'actualParticipants', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 143, 2164, 'c06b8a91-c3dc-4826-8930-8b6424bfe7e8', '0', NULL, '2026-04-19 09:14:54.219705', '2026-04-19 09:14:54.219712', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('target_leads', '目标线索数', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'targetLeads', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 16, 143, 2165, '11b80471-10a2-481a-9320-de4265751e08', '0', NULL, '2026-04-19 09:14:54.222737', '2026-04-19 09:14:54.222743', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('actual_leads', '实际线索数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'actualLeads', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 143, 2166, 'fff6438b-5a95-4455-b4b1-9688e98fe071', '0', NULL, '2026-04-19 09:14:54.225238', '2026-04-19 09:14:54.225244', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('target_conversions', '目标转化数', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'targetConversions', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 18, 143, 2167, '91cdb7c5-ca70-4017-826d-7a26ef60aa59', '0', NULL, '2026-04-19 09:14:54.228412', '2026-04-19 09:14:54.228418', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('actual_conversions', '实际转化数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'actualConversions', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 19, 143, 2168, 'c6d037c7-7b42-4e4a-86ad-99f9202874bc', '0', NULL, '2026-04-19 09:14:54.231122', '2026-04-19 09:14:54.231128', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('expected_roi', '预期投资回报率', 'NUMERIC(10, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'expectedRoi', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 20, 143, 2169, '3b1b0815-ba5f-4a91-97e7-defa5098bb16', '0', NULL, '2026-04-19 09:14:54.233414', '2026-04-19 09:14:54.233418', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('actual_roi', '实际投资回报率', 'NUMERIC(10, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'actualRoi', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 21, 143, 2170, '18e7740d-1b83-45f3-9774-2daf16c3ac0a', '0', NULL, '2026-04-19 09:14:54.235457', '2026-04-19 09:14:54.235461', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('channels', '渠道列表', 'ARRAY', '', '', 'f', 'f', 'f', 'f', 'list', 'channels', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 22, 143, 2171, 'a0c8fa2e-d610-4121-aea8-c65325b3490e', '0', NULL, '2026-04-19 09:14:54.237621', '2026-04-19 09:14:54.237625', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('channel_ids', '渠道ID列表', 'ARRAY', '', '', 'f', 'f', 'f', 'f', 'list', 'channelIds', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 23, 143, 2172, '517cd84e-041e-47bf-a51e-19174be014f7', '0', NULL, '2026-04-19 09:14:54.239702', '2026-04-19 09:14:54.239707', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('owner_id', '负责人ID,关联sys_users', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'ownerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 24, 143, 2173, '997cd871-305c-4991-9c8c-3ff25d806c28', '0', NULL, '2026-04-19 09:14:54.242543', '2026-04-19 09:14:54.24255', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('department_id', '所属部门ID,关联sys_dept', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'departmentId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 25, 143, 2174, '531d5ebc-1389-4e20-adb6-603eead41271', '0', NULL, '2026-04-19 09:14:54.245527', '2026-04-19 09:14:54.245533', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('team_members', '团队成员', 'ARRAY', '', '', 'f', 'f', 'f', 'f', 'list', 'teamMembers', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 26, 143, 2175, '039bb98b-7a4e-4791-823d-de9fdbcadba2', '0', NULL, '2026-04-19 09:14:54.247782', '2026-04-19 09:14:54.247786', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('related_campaign_id', 'relatedcampaignID,关联对应表', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'relatedCampaignId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 27, 143, 2176, '8e4cc097-708f-45a9-b033-32d333b610be', '0', NULL, '2026-04-19 09:14:54.249912', '2026-04-19 09:14:54.249916', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('description', '描述', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'description', 'f', 'f', 'f', 'f', NULL, 'textarea', '', 28, 143, 2177, 'c31e2cbe-3144-4ea3-bcc5-346cadbf90a5', '0', NULL, '2026-04-19 09:14:54.25201', '2026-04-19 09:14:54.252015', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('content_plan', '内容计划', 'JSONB', '', '''[]''::jsonb', 'f', 'f', 'f', 'f', 'dict', 'contentPlan', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 29, 143, 2178, '5936c6bd-f82f-4bb2-86b3-9ca4b64c33f9', '0', NULL, '2026-04-19 09:14:54.254151', '2026-04-19 09:14:54.254155', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('landing_page_url', '落地页URL', 'VARCHAR(500)', '500', '', 'f', 'f', 'f', 'f', 'str', 'landingPageUrl', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 30, 143, 2179, '82c9691f-4c25-40d3-9e22-f04338cef9cf', '0', NULL, '2026-04-19 09:14:54.256298', '2026-04-19 09:14:54.256302', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''draft''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 31, 143, 2180, '5648711e-a23d-4141-b4f6-7a0c7858468b', '0', NULL, '2026-04-19 09:14:54.260006', '2026-04-19 09:14:54.260013', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('phase', '阶段', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'phase', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 32, 143, 2181, 'b25b1ce1-a10c-4791-a22e-86ca8cc6c46f', '0', NULL, '2026-04-19 09:14:54.262816', '2026-04-19 09:14:54.262822', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 33, 143, 2182, '00f7dfcd-977a-45f0-877e-9305dcccad6e', '0', NULL, '2026-04-19 09:14:54.265484', '2026-04-19 09:14:54.265503', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 34, 143, 2183, '580779ae-8c09-4f7d-ab29-96f95c0d150a', '0', NULL, '2026-04-19 09:14:54.268447', '2026-04-19 09:14:54.268454', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 35, 143, 2184, '104818a7-b6f0-4421-9ddd-d7615b19495c', '0', NULL, '2026-04-19 09:14:54.270759', '2026-04-19 09:14:54.270764', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 36, 143, 2185, '24ae0d8d-d736-4018-88bf-1277ecb88aff', '0', NULL, '2026-04-19 09:14:54.274136', '2026-04-19 09:14:54.274144', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('deleted_at', '删除时间(软删除)', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'deletedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 37, 143, 2186, '7268927e-11e6-4393-bfbe-694d94a89c09', '0', NULL, '2026-04-19 09:14:54.277725', '2026-04-19 09:14:54.277731', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('version', '版本号', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'version', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 38, 143, 2187, '66da5325-61b9-4ebc-9089-fc1bd6408b31', '0', NULL, '2026-04-19 09:14:54.279767', '2026-04-19 09:14:54.279771', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_contacts_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 144, 2188, '5539b069-7fa7-4206-a2ea-b975d922e680', '0', NULL, '2026-04-19 09:14:54.303049', '2026-04-19 09:14:54.303059', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 144, 2189, '71a36c35-f4e1-4244-8788-a7cb75dd902e', '0', NULL, '2026-04-19 09:14:54.30733', '2026-04-19 09:14:54.307337', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contact_name', '联系人姓名', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'contactName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 144, 2190, '6858bbda-8702-48fb-9962-93fe6d0cff23', '0', NULL, '2026-04-19 09:14:54.311036', '2026-04-19 09:14:54.311042', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('gender', '性别:0-未知,1-男,2-女', 'VARCHAR(10)', '10', '', 'f', 'f', 'f', 'f', 'str', 'gender', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 144, 2191, 'd5483b0c-66ad-4f59-8db5-112453962e32', '0', NULL, '2026-04-19 09:14:54.314327', '2026-04-19 09:14:54.314333', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('position', '职位', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'position', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 144, 2192, '74a03db6-a07d-4248-91ae-100d6b47b091', '0', NULL, '2026-04-19 09:14:54.317604', '2026-04-19 09:14:54.317632', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('department', '部门', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'department', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 6, 144, 2193, '26aabc77-7b2f-4c1b-8fa1-a9a2a686d190', '0', NULL, '2026-04-19 09:14:54.322447', '2026-04-19 09:14:54.322457', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('mobile', '手机', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'mobile', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 7, 144, 2194, '7b480d67-6b47-4ddc-987d-9ae88c4da356', '0', NULL, '2026-04-19 09:14:54.325847', '2026-04-19 09:14:54.325853', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('phone', '电话', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'phone', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 8, 144, 2195, '76c92eb4-23dc-4d94-bdca-5ea95de74bc1', '0', NULL, '2026-04-19 09:14:54.329666', '2026-04-19 09:14:54.329674', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('email', '邮箱', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'email', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 9, 144, 2196, 'd3388290-9b38-4ac6-891b-710f92544ff1', '0', NULL, '2026-04-19 09:14:54.332869', '2026-04-19 09:14:54.332875', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('wechat', '微信', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'wechat', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 10, 144, 2197, '073b9738-8256-4d8d-9c27-97e69198d854', '0', NULL, '2026-04-19 09:14:54.336578', '2026-04-19 09:14:54.336585', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('qq', 'QQ号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'qq', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 11, 144, 2198, '502a4094-c6a4-4bf8-b90a-86ae4bbdfbbc', '0', NULL, '2026-04-19 09:14:54.339852', '2026-04-19 09:14:54.339859', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_primary', '是否主要联系人:0-否,1-是', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isPrimary', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 144, 2199, 'ba81a2a5-f97d-405d-bdca-63872935653e', '0', NULL, '2026-04-19 09:14:54.342332', '2026-04-19 09:14:54.342337', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('relationship', '关系', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'relationship', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 13, 144, 2200, '3c3939a1-8c81-402d-9fbe-bbb541306d67', '0', NULL, '2026-04-19 09:14:54.344395', '2026-04-19 09:14:54.344399', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('influence_level', '影响力等级', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'influenceLevel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 14, 144, 2201, '1e054690-1c92-4444-8f79-5a8dfee438d8', '0', NULL, '2026-04-19 09:14:54.346371', '2026-04-19 09:14:54.346375', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('birthday', '生日', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'birthday', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 15, 144, 2202, 'd4385bb2-46c3-40e9-ab3f-292308e5475c', '0', NULL, '2026-04-19 09:14:54.348424', '2026-04-19 09:14:54.348428', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('anniversary_date', '纪念日', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'anniversaryDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 144, 2203, '167d5af0-a059-4aed-a2a2-9eb4627769e4', '0', NULL, '2026-04-19 09:14:54.351321', '2026-04-19 09:14:54.35133', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remark', '备注', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'remark', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 17, 144, 2204, '4c4b9fdf-098c-473a-b37d-80ca70be75cf', '0', NULL, '2026-04-19 09:14:54.354666', '2026-04-19 09:14:54.354673', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 18, 144, 2205, 'e78f83c6-dcf8-4d2f-be8d-fc347c87bada', '0', NULL, '2026-04-19 09:14:54.358391', '2026-04-19 09:14:54.358398', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 19, 144, 2206, '6f7b5608-703e-4ba1-b5f6-3e8fa15007ab', '0', NULL, '2026-04-19 09:14:54.361336', '2026-04-19 09:14:54.361343', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 20, 144, 2207, '783209d5-3baa-4474-aafb-4a584bf01209', '0', NULL, '2026-04-19 09:14:54.364554', '2026-04-19 09:14:54.36456', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 21, 144, 2208, '4989f961-fe7f-4b1f-abce-5ebc55a376ef', '0', NULL, '2026-04-19 09:14:54.367761', '2026-04-19 09:14:54.367767', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 22, 144, 2209, '01f9adcd-3c96-4139-bc19-2a36332ab9db', '0', NULL, '2026-04-19 09:14:54.370882', '2026-04-19 09:14:54.370888', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_customer_activities_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 145, 2210, '21b89d3b-e0b0-4426-ba7d-f4d4ccd2fb39', '0', NULL, '2026-04-19 09:14:54.399235', '2026-04-19 09:14:54.399243', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 145, 2211, '30cd592a-adc1-4190-92e4-b400c9829714', '0', NULL, '2026-04-19 09:14:54.40275', '2026-04-19 09:14:54.402757', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('activity_type', '活动类型:1-电话,2-邮件,3-拜访,4-会议,5-培训,6-展会', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'activityType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 3, 145, 2212, '869fe831-7eee-4a41-af12-bdb10e09186f', '0', NULL, '2026-04-19 09:14:54.405623', '2026-04-19 09:14:54.40563', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('activity_title', '活动标题', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'activityTitle', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 145, 2213, '8b48f90d-b8d4-42ae-b7d8-35727e3bd676', '0', NULL, '2026-04-19 09:14:54.408655', '2026-04-19 09:14:54.408661', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('activity_content', '活动内容', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'activityContent', 'f', 'f', 'f', 'f', 'LIKE', 'editor', '', 5, 145, 2214, 'b177fd6d-152f-421b-85f0-1cf064506c66', '0', NULL, '2026-04-19 09:14:54.410919', '2026-04-19 09:14:54.410924', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('related_type', '关联类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'relatedType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 6, 145, 2215, 'ab9c25bb-c536-44bc-a51a-6d5c37cb29f5', '0', NULL, '2026-04-19 09:14:54.414147', '2026-04-19 09:14:54.414174', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('related_id', '关联ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'relatedId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 145, 2216, '5148af4b-58bb-4a5f-8571-29e71bb64626', '0', NULL, '2026-04-19 09:14:54.417484', '2026-04-19 09:14:54.417491', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('operator_id', '操作人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'operatorId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 145, 2217, 'ddc1e85a-3d72-4548-97d0-fe116a6f981c', '0', NULL, '2026-04-19 09:14:54.419967', '2026-04-19 09:14:54.419974', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('operator_name', '操作人名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'operatorName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 9, 145, 2218, '9b4b1a7b-6333-4fb9-8d8a-a4774daf2ada', '0', NULL, '2026-04-19 09:14:54.42288', '2026-04-19 09:14:54.422886', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('activity_date', '活动日期', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'activityDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 10, 145, 2219, '15a4186b-9e5f-4b29-94a9-19bef7b72e5e', '0', NULL, '2026-04-19 09:14:54.42521', '2026-04-19 09:14:54.425215', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 145, 2220, '06571d55-1a91-4be8-a4f1-1516cc60717c', '0', NULL, '2026-04-19 09:14:54.427188', '2026-04-19 09:14:54.427193', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_customer_addresses_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 146, 2221, 'f4132cc8-e223-4595-9355-6b441d1feed9', '0', NULL, '2026-04-19 09:14:54.449818', '2026-04-19 09:14:54.449825', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 146, 2222, 'f75a28c1-2584-41b2-aadd-be17474df48d', '0', NULL, '2026-04-19 09:14:54.452047', '2026-04-19 09:14:54.452052', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('address_type', '地址类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'addressType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 3, 146, 2223, 'ea9c9398-caba-4f10-9a62-5af35707d6a3', '0', NULL, '2026-04-19 09:14:54.454255', '2026-04-19 09:14:54.45426', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('address_name', '地址名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'addressName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 146, 2224, '7c7099f9-35e0-4425-a979-4fe8a2b67151', '0', NULL, '2026-04-19 09:14:54.456438', '2026-04-19 09:14:54.456442', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('province', '省份', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'province', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 146, 2225, 'fbfe53be-41ce-49e9-8c16-d47c584c6c90', '0', NULL, '2026-04-19 09:14:54.45843', '2026-04-19 09:14:54.458434', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('city', '城市', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'city', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 6, 146, 2226, '3a3797d5-de7d-4045-bb1e-1e7d67c28bff', '0', NULL, '2026-04-19 09:14:54.461742', '2026-04-19 09:14:54.461749', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('district', '区县', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'district', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 7, 146, 2227, 'b78c6daf-35db-4141-91c8-308f21bbc86e', '0', NULL, '2026-04-19 09:14:54.464744', '2026-04-19 09:14:54.464751', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('detail_address', '详细地址', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'detailAddress', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 8, 146, 2228, '138eee3f-7382-492c-ba66-72358db36b32', '0', NULL, '2026-04-19 09:14:54.467499', '2026-04-19 09:14:54.467506', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('postal_code', '邮编', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'postalCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 9, 146, 2229, '5beccf91-5463-4fec-b26f-e7b881a7d82f', '0', NULL, '2026-04-19 09:14:54.47049', '2026-04-19 09:14:54.470497', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('latitude', '纬度', 'NUMERIC(10, 8)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'latitude', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 146, 2230, '0bb93b73-d729-44af-93f6-71617284e9a6', '0', NULL, '2026-04-19 09:14:54.473008', '2026-04-19 09:14:54.473013', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('longitude', '经度', 'NUMERIC(11, 8)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'longitude', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 146, 2231, '63d7301a-1d5e-4d84-aaef-22af2bcaaa81', '0', NULL, '2026-04-19 09:14:54.475801', '2026-04-19 09:14:54.475814', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contact_person', '联系人', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'contactPerson', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 12, 146, 2232, 'cd3db1cc-fa47-4922-8685-3efde2540662', '0', NULL, '2026-04-19 09:14:54.479179', '2026-04-19 09:14:54.479186', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contact_phone', '联系电话', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'contactPhone', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 13, 146, 2233, 'ba68ca00-f851-47f7-8a6a-6cb0f479b891', '0', NULL, '2026-04-19 09:14:54.48188', '2026-04-19 09:14:54.481886', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_default', '是否默认:0-否,1-是', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDefault', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 146, 2234, '53a41e1d-c34a-4966-adfc-633d830da64f', '0', NULL, '2026-04-19 09:14:54.484644', '2026-04-19 09:14:54.484651', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_active', '是否启用:0-否,1-是', 'BOOLEAN', '', 'true', 'f', 'f', 'f', 'f', 'bool', 'isActive', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 146, 2235, '6fcbb438-983b-4b92-ab4a-4cb790eb498c', '0', NULL, '2026-04-19 09:14:54.487404', '2026-04-19 09:14:54.48741', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 16, 146, 2236, 'c8c97b0d-3070-48ab-8f44-1f01a57059e1', '0', NULL, '2026-04-19 09:14:54.489988', '2026-04-19 09:14:54.489994', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 17, 146, 2237, 'd2abfc43-028d-4228-b6ec-9640be749f44', '0', NULL, '2026-04-19 09:14:54.492273', '2026-04-19 09:14:54.492279', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 18, 146, 2238, 'dc933b33-19ca-4e9b-bbcc-6bdc5ed3d090', '0', NULL, '2026-04-19 09:14:54.494782', '2026-04-19 09:14:54.494788', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 19, 146, 2239, 'd92aa802-2763-4f20-8afd-b81dae326741', '0', NULL, '2026-04-19 09:14:54.497037', '2026-04-19 09:14:54.497042', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_customer_tags_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 147, 2240, 'ec5c7bb7-8089-42b4-84fe-5a45b3dc9860', '0', NULL, '2026-04-19 09:14:54.518225', '2026-04-19 09:14:54.518233', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 147, 2241, '51c33584-a7ae-4d9f-ad6f-628340d7ff25', '0', NULL, '2026-04-19 09:14:54.520569', '2026-04-19 09:14:54.520574', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tag_id', '标签ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'tagId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 147, 2242, '53330e79-fff6-46a0-8160-9df85d79076a', '0', NULL, '2026-04-19 09:14:54.523643', '2026-04-19 09:14:54.52365', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tag_source', '标签来源', 'VARCHAR(50)', '50', '''manual''::character varying', 'f', 'f', 'f', 'f', 'str', 'tagSource', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 147, 2243, '391c5b4a-03c8-4ed5-8d1b-621fb70da798', '0', NULL, '2026-04-19 09:14:54.526755', '2026-04-19 09:14:54.526761', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('confidence', '置信度', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'confidence', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 147, 2244, 'a639f05a-90d2-41f1-ade8-dfa0a179ec56', '0', NULL, '2026-04-19 09:14:54.529875', '2026-04-19 09:14:54.529883', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 147, 2245, 'b5989a2f-6eb0-4c8f-b3bb-0d865c50abf6', '0', NULL, '2026-04-19 09:14:54.533027', '2026-04-19 09:14:54.533033', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 7, 147, 2246, 'fd12b4c7-51f8-45f2-a587-4ad8e802aab9', '0', NULL, '2026-04-19 09:14:54.535114', '2026-04-19 09:14:54.535119', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 147, 2247, '7cb63f16-ee36-4961-bd9f-5454d43b5843', '0', NULL, '2026-04-19 09:14:54.537442', '2026-04-19 09:14:54.537448', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_customer_change_logs_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 148, 2248, 'c36ea9df-e948-4e22-a139-8c6f3439467c', '0', NULL, '2026-04-19 09:14:54.56065', '2026-04-19 09:14:54.560658', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 148, 2249, '0d203908-6f88-463a-a598-1f8864ea84aa', '0', NULL, '2026-04-19 09:14:54.563778', '2026-04-19 09:14:54.563785', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('field_name', '字段名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'fieldName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 148, 2250, '2ee7ae36-26f1-423d-a7aa-07e3ddfa82da', '0', NULL, '2026-04-19 09:14:54.566197', '2026-04-19 09:14:54.566202', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('field_label', '字段标签', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'fieldLabel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 148, 2251, '23465ed2-7af0-4090-95c9-9600e155657e', '0', NULL, '2026-04-19 09:14:54.568373', '2026-04-19 09:14:54.568377', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('old_value', '旧值', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'oldValue', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 5, 148, 2252, 'f8464bb0-a303-47b5-ad76-826e5fff5cd1', '0', NULL, '2026-04-19 09:14:54.571168', '2026-04-19 09:14:54.571174', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('new_value', '新值', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'newValue', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 6, 148, 2253, '0d5056aa-a68c-4c2a-b339-e6129559837b', '0', NULL, '2026-04-19 09:14:54.574113', '2026-04-19 09:14:54.574119', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('change_type', '变更类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'changeType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 7, 148, 2254, 'dd6e238a-6aab-4028-b5b5-f2272e48a0ef', '0', NULL, '2026-04-19 09:14:54.576703', '2026-04-19 09:14:54.576708', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('operator_id', '操作人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'operatorId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 148, 2255, '1c1c5f84-b7be-458c-aadc-a8f027d00602', '0', NULL, '2026-04-19 09:14:54.578898', '2026-04-19 09:14:54.578904', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('operator_name', '操作人名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'operatorName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 9, 148, 2256, 'd8a025eb-52fb-4f01-9090-22632151df45', '0', NULL, '2026-04-19 09:14:54.581077', '2026-04-19 09:14:54.581081', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('change_reason', '变更原因', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'changeReason', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 10, 148, 2257, '9d619ee6-06d9-4f11-90dd-cd84bfa7badb', '0', NULL, '2026-04-19 09:14:54.583142', '2026-04-19 09:14:54.583147', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('changed_at', '变更时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'changedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 148, 2258, '4fc4efb5-2fe5-444b-875e-5bf39c5bd897', '0', NULL, '2026-04-19 09:14:54.586227', '2026-04-19 09:14:54.586234', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 12, 148, 2259, '1d867cfb-540e-49b3-ad88-29ab2ed0e99b', '0', NULL, '2026-04-19 09:14:54.589696', '2026-04-19 09:14:54.589703', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_customer_duplicate_logs_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 149, 2260, 'ea8e7f79-8976-46f0-8d73-abf13838fbc0', '0', NULL, '2026-04-19 09:14:54.613477', '2026-04-19 09:14:54.613483', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_a_id', '客户A ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerAId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 149, 2261, '30080891-cbe4-4d30-8b08-cc8b1284ee5b', '0', NULL, '2026-04-19 09:14:54.616721', '2026-04-19 09:14:54.61673', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_b_id', '客户B ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerBId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 149, 2262, '17354225-ea6e-4399-bc21-a0c6280a4c1a', '0', NULL, '2026-04-19 09:14:54.619554', '2026-04-19 09:14:54.619561', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('similarity', '相似度', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'similarity', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 149, 2263, 'a3d38449-d248-4178-be00-6a434bcd9832', '0', NULL, '2026-04-19 09:14:54.622383', '2026-04-19 09:14:54.62239', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('collision_type', '冲突类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'collisionType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 5, 149, 2264, 'f8a85eb4-c74a-48bd-81f7-17ad100a186d', '0', NULL, '2026-04-19 09:14:54.625084', '2026-04-19 09:14:54.62509', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('handled_by', '处理人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'handledBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 149, 2265, '868845ac-50d8-4300-8a7b-78700cee90ce', '0', NULL, '2026-04-19 09:14:54.627542', '2026-04-19 09:14:54.627547', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('handled_at', '处理时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'handledAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 7, 149, 2266, 'bec3922c-f53f-4f30-bbca-be8553792b44', '0', NULL, '2026-04-19 09:14:54.629666', '2026-04-19 09:14:54.62967', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('result', '结果', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'result', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 8, 149, 2267, 'b29a5fe8-a955-4a39-8632-6dd43f474afd', '0', NULL, '2026-04-19 09:14:54.632367', '2026-04-19 09:14:54.632373', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 9, 149, 2268, 'fe00383d-671d-4d6c-8000-05b5d8f45bf2', '0', NULL, '2026-04-19 09:14:54.634447', '2026-04-19 09:14:54.634451', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_opportunities_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 150, 2269, 'df4ef928-3d3a-4b4b-9c97-b3f33c158afb', '0', NULL, '2026-04-19 09:14:54.659335', '2026-04-19 09:14:54.659342', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('opportunity_code', '商机编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'opportunityCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 150, 2270, '47317b2a-9e99-402e-a0ea-234a3aa7c16d', '0', NULL, '2026-04-19 09:14:54.662325', '2026-04-19 09:14:54.662331', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('opportunity_name', '商机名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'opportunityName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 150, 2271, 'a904318f-c4b5-4197-ad5a-140540b8096f', '0', NULL, '2026-04-19 09:14:54.664639', '2026-04-19 09:14:54.664644', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 150, 2272, '1013d66b-ec0d-4855-be67-a6e0a7c65d71', '0', NULL, '2026-04-19 09:14:54.666722', '2026-04-19 09:14:54.666727', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('amount', '金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'amount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 150, 2273, 'e095d036-949e-4766-bd00-f4e9f77c1564', '0', NULL, '2026-04-19 09:14:54.669292', '2026-04-19 09:14:54.669297', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('currency', '币种:CNY-人民币,USD-美元,EUR-欧元', 'VARCHAR(10)', '10', '''CNY''::character varying', 'f', 'f', 'f', 'f', 'str', 'currency', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 6, 150, 2274, '11b86967-60cb-4af2-be05-b0e118badfe5', '0', NULL, '2026-04-19 09:14:54.671353', '2026-04-19 09:14:54.671357', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('probability', '赢单概率', 'INTEGER', '', '10', 'f', 'f', 'f', 'f', 'int', 'probability', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 150, 2275, 'b0c6d3b3-4f81-4eb5-a4ae-41265f434c03', '0', NULL, '2026-04-19 09:14:54.673704', '2026-04-19 09:14:54.673709', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('expected_close_date', '预计成交日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'expectedCloseDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 8, 150, 2276, '3da69663-31b5-4cfa-aa9b-8bce5ad2cd3b', '0', NULL, '2026-04-19 09:14:54.675832', '2026-04-19 09:14:54.675878', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('stage', '阶段:1-初步接触,2-需求分析,3-方案设计,4-报价谈判,5-赢单,6-输单,7-暂停', 'VARCHAR(50)', '50', '''discovery''::character varying', 'f', 'f', 'f', 'f', 'str', 'stage', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 9, 150, 2277, 'b64c88bf-8060-46c1-bb58-f4e606d1c63e', '0', NULL, '2026-04-19 09:14:54.678447', '2026-04-19 09:14:54.678452', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('stage_updated_at', '阶段更新时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'stageUpdatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 10, 150, 2278, '91249e6f-b83b-44e0-bdf3-5a427646a415', '0', NULL, '2026-04-19 09:14:54.680477', '2026-04-19 09:14:54.680481', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_ids', '产品IDs', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'productIds', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 150, 2279, '3bf34e0c-1c07-44bd-8fd5-a3aab4598e53', '0', NULL, '2026-04-19 09:14:54.68289', '2026-04-19 09:14:54.682897', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('source', '来源:1-自主开发,2-市场活动,3-转介绍,4-网络推广,5-合作伙伴,6-招投标', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'source', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 12, 150, 2280, 'fdcc85bd-02f9-42df-91a4-47dd6e1d3c62', '0', NULL, '2026-04-19 09:14:54.685191', '2026-04-19 09:14:54.685197', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('owner_id', '负责人ID,关联sys_users', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'ownerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 150, 2281, '341a14fb-dc1b-42ca-9659-427024e622cb', '0', NULL, '2026-04-19 09:14:54.687117', '2026-04-19 09:14:54.687121', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('lost_reason', '输单原因', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'lostReason', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 14, 150, 2282, 'a450c12e-a0ae-4aa4-8136-1ec54c367d5c', '0', NULL, '2026-04-19 09:14:54.689428', '2026-04-19 09:14:54.689433', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 150, 2283, '14c3dad1-e1d9-4ed7-9a63-642a186e67d9', '0', NULL, '2026-04-19 09:14:54.691859', '2026-04-19 09:14:54.691908', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 150, 2284, '814fd68f-2d8a-44ab-9582-a159f7ec9f28', '0', NULL, '2026-04-19 09:14:54.695745', '2026-04-19 09:14:54.695752', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 150, 2285, '5e9fb309-93cd-4152-a1f0-08f4d0391279', '0', NULL, '2026-04-19 09:14:54.699183', '2026-04-19 09:14:54.699191', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 18, 150, 2286, '4ad3584a-fcf9-4534-b03e-73c2df358544', '0', NULL, '2026-04-19 09:14:54.702638', '2026-04-19 09:14:54.702644', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 19, 150, 2287, '5a555d6b-8ee5-4c88-b0c3-1f02918dfd56', '0', NULL, '2026-04-19 09:14:54.704993', '2026-04-19 09:14:54.704998', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_product_documents_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 151, 2288, '5b50c28a-736c-429b-9207-89f4439aaa6d', '0', NULL, '2026-04-19 09:14:54.725703', '2026-04-19 09:14:54.725709', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_id', '产品ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'productId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 151, 2289, '9fda7fb9-b32c-4bca-a65c-fee7a4e36902', '0', NULL, '2026-04-19 09:14:54.728574', '2026-04-19 09:14:54.728582', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sku_id', 'SKU ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'skuId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 151, 2290, 'e5802909-6320-4c13-8bcd-84e8b84fedb0', '0', NULL, '2026-04-19 09:14:54.731484', '2026-04-19 09:14:54.731491', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('doc_name', '文档名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'docName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 151, 2291, 'f643b19f-3714-468b-a785-4ce77541a867', '0', NULL, '2026-04-19 09:14:54.734422', '2026-04-19 09:14:54.734429', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('doc_type', '文档类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'docType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 5, 151, 2292, 'e3231fef-697a-418b-b43e-90f07803aaad', '0', NULL, '2026-04-19 09:14:54.736679', '2026-04-19 09:14:54.736684', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('file_path', '文件路径', 'VARCHAR(500)', '500', '', 'f', 'f', 'f', 'f', 'str', 'filePath', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 6, 151, 2293, '27562061-1cf1-4684-99ea-c71a1c0880ef', '0', NULL, '2026-04-19 09:14:54.738591', '2026-04-19 09:14:54.738596', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('file_size', '文件大小', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'fileSize', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 151, 2294, '6afc24d9-c33e-4bc0-8bb8-06c9cb886a31', '0', NULL, '2026-04-19 09:14:54.742246', '2026-04-19 09:14:54.742252', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('mime_type', 'MIME类型', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'mimeType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 8, 151, 2295, '821159a0-d927-4aba-907c-f6ab962ba5dc', '0', NULL, '2026-04-19 09:14:54.74511', '2026-04-19 09:14:54.745117', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('version', '版本号', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'version', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 9, 151, 2296, 'b55f601e-240e-4a38-bde7-59f0563061a1', '0', NULL, '2026-04-19 09:14:54.747374', '2026-04-19 09:14:54.747385', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_latest', '是否最新版本', 'BOOLEAN', '', 'true', 'f', 'f', 'f', 'f', 'bool', 'isLatest', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 151, 2297, '0d8cff2b-c245-4784-9e3d-4df661e2322c', '0', NULL, '2026-04-19 09:14:54.749375', '2026-04-19 09:14:54.749379', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''active''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 11, 151, 2298, '558d9d9a-ed4d-4efc-9aef-7754902c88f9', '0', NULL, '2026-04-19 09:14:54.751232', '2026-04-19 09:14:54.751253', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 151, 2299, 'c1efef41-4b79-4be9-b6d6-4a8d6c232c1d', '0', NULL, '2026-04-19 09:14:54.753372', '2026-04-19 09:14:54.753377', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 13, 151, 2300, '11e78d8b-63be-45b2-9355-3bbc92825ee4', '0', NULL, '2026-04-19 09:14:54.756767', '2026-04-19 09:14:54.756788', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 151, 2301, '840f5f19-d67e-4c96-b79c-982d2db55b3c', '0', NULL, '2026-04-19 09:14:54.75999', '2026-04-19 09:14:54.759997', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('request_url', '请求URL', 'VARCHAR(500)', '500', '', 'f', 'f', 'f', 'f', 'str', 'requestUrl', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 15, 156, 2384, 'ef8649f4-e8ce-4bdb-9827-1e9c3b7a79c2', '0', NULL, '2026-04-19 09:14:55.209725', '2026-04-19 09:14:55.209733', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_marketing_campaigns_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 152, 2302, 'e340911a-9ea9-4fc7-b950-2cdc559552db', '0', NULL, '2026-04-19 09:14:54.782401', '2026-04-19 09:14:54.782407', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('campaign_code', '活动编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'campaignCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 152, 2303, '61521d88-1209-4f99-9c76-26fe1e28be37', '0', NULL, '2026-04-19 09:14:54.784715', '2026-04-19 09:14:54.78472', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('campaign_name', '活动名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'campaignName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 152, 2304, 'e6390e4f-2749-4b3e-ae5a-c16cf2573669', '0', NULL, '2026-04-19 09:14:54.788652', '2026-04-19 09:14:54.788658', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('campaign_type', '活动类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'campaignType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 4, 152, 2305, '9be7bdf0-6258-4d56-aaeb-b30878996e2b', '0', NULL, '2026-04-19 09:14:54.79158', '2026-04-19 09:14:54.791587', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('start_date', '开始日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'startDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 5, 152, 2306, '4fc6c285-51cb-4e0e-ac7b-2a23649e1a3e', '0', NULL, '2026-04-19 09:14:54.794349', '2026-04-19 09:14:54.794356', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('end_date', '结束日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'endDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 6, 152, 2307, 'cad04318-55e1-4540-af87-e5af7932c14d', '0', NULL, '2026-04-19 09:14:54.797003', '2026-04-19 09:14:54.797048', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('location', '地点', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'location', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 7, 152, 2308, '60fdad38-7482-47f1-b29e-9c931906ffd4', '0', NULL, '2026-04-19 09:14:54.799333', '2026-04-19 09:14:54.799338', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('description', '描述', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'description', 'f', 'f', 'f', 'f', NULL, 'textarea', '', 8, 152, 2309, 'dd168a7d-83dd-48c6-9092-e38f6d5244b4', '0', NULL, '2026-04-19 09:14:54.802568', '2026-04-19 09:14:54.802576', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('budget', '预算金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'budget', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 152, 2310, '3b4f2719-050c-4348-bbba-3b5ba031df62', '0', NULL, '2026-04-19 09:14:54.806074', '2026-04-19 09:14:54.806082', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('actual_cost', '实际成本', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'actualCost', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 152, 2311, '6c627e43-6849-41ee-9b09-1ba77ae6fdbd', '0', NULL, '2026-04-19 09:14:54.808755', '2026-04-19 09:14:54.80876', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('target_leads', '目标线索数', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'targetLeads', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 152, 2312, 'db40388b-81f7-438a-b483-78edb832b50b', '0', NULL, '2026-04-19 09:14:54.8109', '2026-04-19 09:14:54.810905', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('target_customers', '目标客户', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'targetCustomers', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 152, 2313, 'cc69999f-924b-4c8e-a321-3fc12a8ee40a', '0', NULL, '2026-04-19 09:14:54.812897', '2026-04-19 09:14:54.812901', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''planning''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 13, 152, 2314, '3ec18990-01f7-4cbf-a5e2-addde95f6674', '0', NULL, '2026-04-19 09:14:54.814839', '2026-04-19 09:14:54.814843', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('owner_id', '负责人ID,关联sys_users', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'ownerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 152, 2315, '10afcce1-ce5f-40e0-89f3-7101bc949bc5', '0', NULL, '2026-04-19 09:14:54.817866', '2026-04-19 09:14:54.817883', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 152, 2316, 'f8608aad-5a5c-4b5f-a4e8-b52001e369fd', '0', NULL, '2026-04-19 09:14:54.82039', '2026-04-19 09:14:54.820395', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 152, 2317, '44bf203f-a302-482e-8438-c6ec25c71b9c', '0', NULL, '2026-04-19 09:14:54.823009', '2026-04-19 09:14:54.823016', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 152, 2318, '811d820a-e14f-4c5e-b118-7a7ff78e15be', '0', NULL, '2026-04-19 09:14:54.826387', '2026-04-19 09:14:54.826394', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 18, 152, 2319, 'a771cb93-4d1d-411f-85c9-5fe80ecc77cf', '0', NULL, '2026-04-19 09:14:54.829004', '2026-04-19 09:14:54.82901', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 19, 152, 2320, '26c8735a-5af1-40d0-ad43-370022b0d632', '0', NULL, '2026-04-19 09:14:54.83102', '2026-04-19 09:14:54.831024', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_customer_health_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 153, 2321, '8a733cf3-f9c2-4c34-835e-71831262c7aa', '0', NULL, '2026-04-19 09:14:54.853905', '2026-04-19 09:14:54.853916', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 153, 2322, '8bb2fe34-d48d-42d0-9421-bfd5177400d7', '0', NULL, '2026-04-19 09:14:54.857574', '2026-04-19 09:14:54.857582', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('health_score', '健康度评分', 'INTEGER', '', '50', 'f', 'f', 'f', 'f', 'int', 'healthScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 153, 2323, '9d2f5765-6f5a-4893-8b15-9bdf6dcec079', '0', NULL, '2026-04-19 09:14:54.860143', '2026-04-19 09:14:54.86021', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('health_level', '健康等级', 'VARCHAR(20)', '20', '''medium''::character varying', 'f', 'f', 'f', 'f', 'str', 'healthLevel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 153, 2324, '1d9596c7-810d-448d-a441-9e1f68ac4b1e', '0', NULL, '2026-04-19 09:14:54.862612', '2026-04-19 09:14:54.862617', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_usage_score', '产品使用评分', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'productUsageScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 153, 2325, 'd86db9dc-1a8e-48dc-b0e4-15f4ea1049cc', '0', NULL, '2026-04-19 09:14:54.866587', '2026-04-19 09:14:54.866593', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('support_tickets_score', '支持工单评分', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'supportTicketsScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 153, 2326, '74c28503-0950-4ad7-8ef3-c5f85d9fb212', '0', NULL, '2026-04-19 09:14:54.869327', '2026-04-19 09:14:54.869334', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('payment_score', '付款评分', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'paymentScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 153, 2327, '9ef0a0e8-f976-4db6-9589-73cbefe006ac', '0', NULL, '2026-04-19 09:14:54.871485', '2026-04-19 09:14:54.87149', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('engagement_score', '参与度评分', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'engagementScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 153, 2328, '49d37f2b-028f-424a-963c-3b800722e591', '0', NULL, '2026-04-19 09:14:54.873528', '2026-04-19 09:14:54.873532', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('satisfaction_score', '满意度评分', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'satisfactionScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 153, 2329, '2b12b07c-5e60-4a43-8f9d-4361c5102a6c', '0', NULL, '2026-04-19 09:14:54.875435', '2026-04-19 09:14:54.875439', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('risk_factors', '风险因素', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'riskFactors', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 153, 2330, 'c016a8a3-c6d4-46dd-a88f-fc7ef73229d7', '0', NULL, '2026-04-19 09:14:54.877412', '2026-04-19 09:14:54.877417', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('risk_level', '风险等级', 'VARCHAR(20)', '20', '''low''::character varying', 'f', 'f', 'f', 'f', 'str', 'riskLevel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 11, 153, 2331, 'a3ff517c-e797-46f8-88cd-d89b0b8e979e', '0', NULL, '2026-04-19 09:14:54.880108', '2026-04-19 09:14:54.880114', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contract_end_date', '合同结束日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'contractEndDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 12, 153, 2332, '2065fa51-8de5-4265-ae7c-1e7093d3abce', '0', NULL, '2026-04-19 09:14:54.882307', '2026-04-19 09:14:54.882312', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('renewal_probability', '续约概率', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'renewalProbability', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 153, 2333, '3be92a00-efa6-43d0-8360-3efd6937df08', '0', NULL, '2026-04-19 09:14:54.884908', '2026-04-19 09:14:54.884914', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('renewal_status', '续约状态', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'renewalStatus', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 14, 153, 2334, '147e03f0-71da-4970-91df-ee8290ebda2d', '0', NULL, '2026-04-19 09:14:54.887064', '2026-04-19 09:14:54.887069', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('assessed_at', '评估时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'assessedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 15, 153, 2335, 'd5bba6b0-7dd2-497f-ace5-c003c8f7e517', '0', NULL, '2026-04-19 09:14:54.889283', '2026-04-19 09:14:54.889288', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('next_assessment_date', '下次评估日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'nextAssessmentDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 153, 2336, '3f7d3abd-60a0-4ce6-89f7-f09645c9274a', '0', NULL, '2026-04-19 09:14:54.891214', '2026-04-19 09:14:54.891218', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 17, 153, 2337, 'fff8d6b0-bb1f-49b9-a352-c15b47685b55', '0', NULL, '2026-04-19 09:14:54.893215', '2026-04-19 09:14:54.893219', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_contract_invoices_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 154, 2338, '7d42044b-adc8-4233-82c9-80d87f540303', '0', NULL, '2026-04-19 09:14:54.917157', '2026-04-19 09:14:54.917165', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contract_id', '合同ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'contractId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 154, 2339, 'f1db7ec5-0bd2-453d-a358-6e5c9e3ae239', '0', NULL, '2026-04-19 09:14:54.920141', '2026-04-19 09:14:54.920147', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('payment_plan_id', '付款计划ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'paymentPlanId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 154, 2340, 'e1ca2d5d-7984-4078-b43b-b1848c1fec03', '0', NULL, '2026-04-19 09:14:54.922989', '2026-04-19 09:14:54.922995', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('invoice_code', '发票编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'invoiceCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 154, 2341, '51a51f54-023b-4816-a728-dba5f8b7c22d', '0', NULL, '2026-04-19 09:14:54.925042', '2026-04-19 09:14:54.925047', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('invoice_number', '发票号码', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'invoiceNumber', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 154, 2342, 'dd62250b-a6a0-4097-be10-23365f156d1c', '0', NULL, '2026-04-19 09:14:54.927785', '2026-04-19 09:14:54.927791', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('invoice_type', '发票类型:1-增值税专票,2-增值税普票,3-普通发票', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'invoiceType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 6, 154, 2343, '40689c35-7122-49ff-8c2f-0d86c4a96f57', '0', NULL, '2026-04-19 09:14:54.930083', '2026-04-19 09:14:54.930087', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('amount', '金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'amount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 154, 2344, '49d633f5-d014-4c19-b23f-10b1a2e873f1', '0', NULL, '2026-04-19 09:14:54.932785', '2026-04-19 09:14:54.932791', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tax_rate', '税率', 'NUMERIC(5, 2)', '', '13.00', 'f', 'f', 'f', 'f', 'Decimal', 'taxRate', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 154, 2345, '2a6ec349-6de3-4abb-a640-940c3e3806b3', '0', NULL, '2026-04-19 09:14:54.934944', '2026-04-19 09:14:54.934948', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tax_amount', '税额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'taxAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 154, 2346, '141b5807-8c9c-4779-be72-0c07a0fd1ce2', '0', NULL, '2026-04-19 09:14:54.937098', '2026-04-19 09:14:54.937102', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('total_amount', '总金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'totalAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 154, 2347, '5b9d9495-ab7c-45b3-a3fc-3b8d9e333585', '0', NULL, '2026-04-19 09:14:54.939045', '2026-04-19 09:14:54.939049', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('invoice_date', '开票日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'invoiceDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 154, 2348, '0eda59ab-8ca0-44b2-9e6e-b1d5a5e2c800', '0', NULL, '2026-04-19 09:14:54.941154', '2026-04-19 09:14:54.941159', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('invoice_status', '发票状态:1-草稿,2-已开具,3-已发送,4-已收款,5-已作废', 'VARCHAR(20)', '20', '''pending''::character varying', 'f', 'f', 'f', 'f', 'str', 'invoiceStatus', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 12, 154, 2349, 'ffbd4523-4da1-4e8f-ac08-cbe5211d6339', '0', NULL, '2026-04-19 09:14:54.944014', '2026-04-19 09:14:54.94402', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('issued_by', '开具人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'issuedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 154, 2350, '867134ba-fa47-4bdd-83db-763292a3f25d', '0', NULL, '2026-04-19 09:14:54.946564', '2026-04-19 09:14:54.946571', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('issued_at', '开具时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'issuedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 14, 154, 2351, '42e75e3f-a5d1-4345-b277-61ee34791e91', '0', NULL, '2026-04-19 09:14:54.949068', '2026-04-19 09:14:54.949074', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('invoice_file_url', '发票文件URL', 'VARCHAR(500)', '500', '', 'f', 'f', 'f', 'f', 'str', 'invoiceFileUrl', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 15, 154, 2352, '76033f38-b3a6-4149-be3a-0a6fffec6823', '0', NULL, '2026-04-19 09:14:54.950985', '2026-04-19 09:14:54.950989', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remark', '备注', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'remark', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 16, 154, 2353, 'b7e35358-9909-41e4-8d28-f88a1541266c', '0', NULL, '2026-04-19 09:14:54.952954', '2026-04-19 09:14:54.952958', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 154, 2354, 'd94046ce-f775-4037-b9d7-4acf92897456', '0', NULL, '2026-04-19 09:14:54.954759', '2026-04-19 09:14:54.954763', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 18, 154, 2355, '2fd78745-a209-4c97-afcc-df44315be8e6', '0', NULL, '2026-04-19 09:14:54.956801', '2026-04-19 09:14:54.956823', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 19, 154, 2356, '467beec4-6510-4b17-9148-556386c8c00a', '0', NULL, '2026-04-19 09:14:54.959298', '2026-04-19 09:14:54.959304', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 20, 154, 2357, '6f58d5fa-d4cd-4072-b8e7-69579c3319c2', '0', NULL, '2026-04-19 09:14:54.961382', '2026-04-19 09:14:54.961386', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_notifications_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 155, 2358, '2c90a872-14bb-418f-8a95-1dae5aee1a2e', '0', NULL, '2026-04-19 09:14:54.984743', '2026-04-19 09:14:54.98475', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('user_id', '用户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'userId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 155, 2359, '2b394705-e892-4325-824a-385aa936eead', '0', NULL, '2026-04-19 09:14:54.987088', '2026-04-19 09:14:54.987093', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('notification_type', '通知类型:1-系统通知,2-审批通知,3-提醒通知,4-公告', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'notificationType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 3, 155, 2360, '5d27b802-d93e-40a1-afbe-89673bde17c9', '0', NULL, '2026-04-19 09:14:54.990836', '2026-04-19 09:14:54.990843', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('title', '职位', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'title', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 155, 2361, 'ee182bf5-7878-48ba-9b58-dcda35606fad', '0', NULL, '2026-04-19 09:14:54.993245', '2026-04-19 09:14:54.99325', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('content', '内容', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'content', 'f', 'f', 'f', 'f', 'LIKE', 'editor', '', 5, 155, 2362, '6aca0eff-aac3-427c-8be0-9c7631cb0770', '0', NULL, '2026-04-19 09:14:54.99632', '2026-04-19 09:14:54.996328', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('related_type', '关联类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'relatedType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 6, 155, 2363, 'ddbbc502-6830-4e38-b4bc-d93ef209577e', '0', NULL, '2026-04-19 09:14:54.999369', '2026-04-19 09:14:54.999376', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('related_id', '关联ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'relatedId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 155, 2364, 'e8eaad55-d28b-4610-ad1a-c4b1c94c857f', '0', NULL, '2026-04-19 09:14:55.001925', '2026-04-19 09:14:55.001931', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_read', '是否已读:0-未读,1-已读', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isRead', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 155, 2365, '76b34821-8496-45c3-905a-b950ada0f00d', '0', NULL, '2026-04-19 09:14:55.004896', '2026-04-19 09:14:55.004901', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('read_at', '阅读时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'readAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 9, 155, 2366, '13451071-72de-4bf2-aece-27c811078970', '0', NULL, '2026-04-19 09:14:55.008325', '2026-04-19 09:14:55.008331', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('priority', '优先级:1-低,2-中,3-高,4-紧急', 'VARCHAR(20)', '20', '''normal''::character varying', 'f', 'f', 'f', 'f', 'str', 'priority', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 10, 155, 2367, '7d7b1491-bf19-42a6-9337-6772120ca746', '0', NULL, '2026-04-19 09:14:55.010393', '2026-04-19 09:14:55.010398', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sent_at', '发送时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'sentAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 155, 2368, '344f8751-0457-4fd0-bff7-ce4e3412cef7', '0', NULL, '2026-04-19 09:14:55.013124', '2026-04-19 09:14:55.013131', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 12, 155, 2369, '026ef54d-f6a7-4b15-abab-7b52158804b2', '0', NULL, '2026-04-19 09:14:55.015119', '2026-04-19 09:14:55.015124', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_operation_logs_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 156, 2370, '745bed5b-4d77-46da-88f2-4c4a43456367', '0', NULL, '2026-04-19 09:14:55.038331', '2026-04-19 09:14:55.038337', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('user_id', '用户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'userId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 156, 2371, '354179be-b8ff-491b-bfb9-d3596aec3367', '0', NULL, '2026-04-19 09:14:55.041197', '2026-04-19 09:14:55.041203', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('username', '用户名', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'username', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 156, 2372, '69966b06-ed66-4f36-8bd7-8633a7ca19a2', '0', NULL, '2026-04-19 09:14:55.043732', '2026-04-19 09:14:55.043737', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('module', '模块', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'module', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 156, 2373, '4e43dc8e-26b1-4674-890f-7407c7a0ace1', '0', NULL, '2026-04-19 09:14:55.045845', '2026-04-19 09:14:55.045849', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('action', '行动', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'action', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 156, 2374, '7c17577c-6933-49ff-91f8-5711b1c7a127', '0', NULL, '2026-04-19 09:14:55.047816', '2026-04-19 09:14:55.047821', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('target_type', '目标类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'targetType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 6, 156, 2375, 'c5ac1440-4bb9-4997-a2bc-b8aeeb27bfe1', '0', NULL, '2026-04-19 09:14:55.049821', '2026-04-19 09:14:55.049825', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('target_id', '目标ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'targetId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 156, 2376, '7f677f25-60f2-436a-a600-88888fdb2a8c', '0', NULL, '2026-04-19 09:14:55.053374', '2026-04-19 09:14:55.05338', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('target_name', '目标名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'targetName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 8, 156, 2377, '8ee4c157-79f9-44c0-bf5c-37bcdb0ac813', '0', NULL, '2026-04-19 09:14:55.056283', '2026-04-19 09:14:55.05629', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('old_value', '旧值', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'oldValue', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 156, 2378, '4fc5786e-3719-4782-8524-f297ed756f9f', '0', NULL, '2026-04-19 09:14:55.059493', '2026-04-19 09:14:55.0595', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('new_value', '新值', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'newValue', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 156, 2379, '7045170e-9e2f-4dda-b170-ed62dfef6239', '0', NULL, '2026-04-19 09:14:55.062205', '2026-04-19 09:14:55.06221', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('changed_fields', '变更字段', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'changedFields', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 156, 2380, 'dd466bd6-a76b-44dd-9046-8d5cf80720d3', '0', NULL, '2026-04-19 09:14:55.199108', '2026-04-19 09:14:55.199115', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('ip_address', 'IP地址', 'VARCHAR(45)', '45', '', 'f', 'f', 'f', 'f', 'str', 'ipAddress', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 12, 156, 2381, '2adcce9d-ecba-42ec-a5ed-628652e975cb', '0', NULL, '2026-04-19 09:14:55.201957', '2026-04-19 09:14:55.201964', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('user_agent', '用户代理', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'userAgent', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 13, 156, 2382, 'cda68750-6e05-4f59-9c8e-e8ebcff9c12f', '0', NULL, '2026-04-19 09:14:55.204744', '2026-04-19 09:14:55.20475', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('request_method', '请求方法', 'VARCHAR(10)', '10', '', 'f', 'f', 'f', 'f', 'str', 'requestMethod', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 14, 156, 2383, 'e01504a8-912b-4179-9812-93e0d63cf5e0', '0', NULL, '2026-04-19 09:14:55.207', '2026-04-19 09:14:55.207005', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''success''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 16, 156, 2385, '2d8a1b29-4f4c-43e9-999b-58ea51b109fc', '0', NULL, '2026-04-19 09:14:55.212724', '2026-04-19 09:14:55.212731', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('error_message', '错误信息', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'errorMessage', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 17, 156, 2386, '448ef6b7-b107-40d7-91ff-5ce7c8d3d43f', '0', NULL, '2026-04-19 09:14:55.215521', '2026-04-19 09:14:55.215527', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('execution_time', '执行时间', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'executionTime', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 18, 156, 2387, '8412d19e-ea23-436c-a5d1-8acedb054c0c', '0', NULL, '2026-04-19 09:14:55.217629', '2026-04-19 09:14:55.217633', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('operated_at', '操作时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'operatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 19, 156, 2388, '4bece6d9-2086-4071-841d-5e6fe26eae91', '0', NULL, '2026-04-19 09:14:55.219619', '2026-04-19 09:14:55.219624', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 20, 156, 2389, 'b39b4689-9494-4f88-8c28-27ccd44892fe', '0', NULL, '2026-04-19 09:14:55.221635', '2026-04-19 09:14:55.221639', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_import_records_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 157, 2390, 'ea051a1b-4c8e-4641-9616-40d9c9d4802d', '0', NULL, '2026-04-19 09:14:55.245606', '2026-04-19 09:14:55.245613', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('import_type', '导入类型', 'VARCHAR(30)', '30', '', 'f', 'f', 'f', 'f', 'str', 'importType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 2, 157, 2391, 'e535bfa6-5acf-4ddf-bafd-59ba8fec5dbb', '0', NULL, '2026-04-19 09:14:55.248449', '2026-04-19 09:14:55.248455', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('file_name', '文件名', 'VARCHAR(255)', '255', '', 'f', 'f', 'f', 'f', 'str', 'fileName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 157, 2392, '03253b21-d8c7-4c5f-a0e4-040b7cbbca76', '0', NULL, '2026-04-19 09:14:55.250552', '2026-04-19 09:14:55.250557', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('file_url', '文件URL', 'VARCHAR(500)', '500', '', 'f', 'f', 'f', 'f', 'str', 'fileUrl', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 4, 157, 2393, '0d7feebf-650b-4a2b-ae44-8c49aca33db1', '0', NULL, '2026-04-19 09:14:55.252789', '2026-04-19 09:14:55.252794', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('file_size', '文件大小', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'fileSize', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 157, 2394, 'fea6b6ed-0284-4605-a93c-ff9b083faea5', '0', NULL, '2026-04-19 09:14:55.254858', '2026-04-19 09:14:55.254862', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('total_rows', '总行数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'totalRows', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 157, 2395, '3bf90cd3-aa1f-47ac-99bb-3e80db3f91b0', '0', NULL, '2026-04-19 09:14:55.258348', '2026-04-19 09:14:55.258371', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('success_rows', '成功行数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'successRows', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 157, 2396, '44b0089e-8aa5-45f7-970b-c4f4544a658a', '0', NULL, '2026-04-19 09:14:55.261874', '2026-04-19 09:14:55.261884', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('failed_rows', '失败行数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'failedRows', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 157, 2397, '2e8f4363-2647-497d-9676-b088be0f6753', '0', NULL, '2026-04-19 09:14:55.2654', '2026-04-19 09:14:55.265408', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('duplicate_rows', '重复行数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'duplicateRows', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 157, 2398, 'd6ab4508-a751-4c65-b90d-f387dd66e37c', '0', NULL, '2026-04-19 09:14:55.268069', '2026-04-19 09:14:55.268075', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('error_log', '错误日志', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'errorLog', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 10, 157, 2399, 'eccc0e27-4cd6-4950-846d-b181a6ae51f9', '0', NULL, '2026-04-19 09:14:55.270755', '2026-04-19 09:14:55.270761', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('failed_data', '失败数据', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'failedData', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 157, 2400, '5f3b1a42-8956-4cb5-abdf-4ba153289708', '0', NULL, '2026-04-19 09:14:55.273666', '2026-04-19 09:14:55.273672', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('success_ids', '成功ID列表', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'successIds', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 157, 2401, '071d0baf-35b5-4287-acf0-ef6fd26baffe', '0', NULL, '2026-04-19 09:14:55.276585', '2026-04-19 09:14:55.276592', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''pending''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 13, 157, 2402, 'a169b100-2282-4767-9552-b1d9d6a362ac', '0', NULL, '2026-04-19 09:14:55.278843', '2026-04-19 09:14:55.278848', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('started_at', '开始时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'startedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 14, 157, 2403, '8d950080-d828-464a-90e3-7a525c3a840e', '0', NULL, '2026-04-19 09:14:55.281288', '2026-04-19 09:14:55.281293', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('completed_at', '完成时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'completedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 15, 157, 2404, 'd322046f-95a8-4fad-a76a-1abe45e569d7', '0', NULL, '2026-04-19 09:14:55.283457', '2026-04-19 09:14:55.283461', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 16, 157, 2405, 'df4b0f37-7b88-4007-9f31-cb35f598d605', '0', NULL, '2026-04-19 09:14:55.285589', '2026-04-19 09:14:55.28561', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 17, 157, 2406, '23d23804-1ce7-42dd-8518-ad711a41865d', '0', NULL, '2026-04-19 09:14:55.288407', '2026-04-19 09:14:55.288413', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_opportunity_stages_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 158, 2407, 'eba4773e-444a-449e-935b-da643aa214bf', '0', NULL, '2026-04-19 09:14:55.311455', '2026-04-19 09:14:55.311463', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('stage_code', '阶段编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'stageCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 158, 2408, 'c9f290df-f1fa-45b5-8ed2-5c582fbe084e', '0', NULL, '2026-04-19 09:14:55.314735', '2026-04-19 09:14:55.314741', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('stage_name', '阶段名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'stageName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 158, 2409, '2fca042d-15e9-4ab8-982c-9f1e81b81599', '0', NULL, '2026-04-19 09:14:55.317045', '2026-04-19 09:14:55.317051', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('stage_sequence', '阶段顺序', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'stageSequence', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 158, 2410, '9df1d45a-f536-4b98-b3f3-8655b6cea7e2', '0', NULL, '2026-04-19 09:14:55.319856', '2026-04-19 09:14:55.319862', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('probability', '赢单概率', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'probability', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 158, 2411, '227cbcb1-e457-46c9-abec-162c03c66ef3', '0', NULL, '2026-04-19 09:14:55.323101', '2026-04-19 09:14:55.323108', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('color', '颜色', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'color', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 6, 158, 2412, '72d7f183-452a-4b23-a750-c1e218ff02fa', '0', NULL, '2026-04-19 09:14:55.327753', '2026-04-19 09:14:55.327758', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('stay_limit', '停留限制(天)', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'stayLimit', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 158, 2413, '70189783-adab-4aa2-8dec-f59b414883d1', '0', NULL, '2026-04-19 09:14:55.332498', '2026-04-19 09:14:55.332503', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('stay_limit_action', '超时动作', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'stayLimitAction', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 8, 158, 2414, '87c4c870-d3bb-4251-905b-a3a6b691e51d', '0', NULL, '2026-04-19 09:14:55.336482', '2026-04-19 09:14:55.33649', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('required_fields', '必填字段', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'requiredFields', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 158, 2415, '99922d62-8297-44da-8a0a-7566fbe4b92c', '0', NULL, '2026-04-19 09:14:55.339413', '2026-04-19 09:14:55.339419', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''active''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 10, 158, 2416, '36f9365c-5e73-4445-92e8-e52e5f74a51e', '0', NULL, '2026-04-19 09:14:55.342555', '2026-04-19 09:14:55.342563', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_system', '是否系统内置', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isSystem', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 158, 2417, 'c89edce6-1414-48d5-a510-942eb239129d', '0', NULL, '2026-04-19 09:14:55.345448', '2026-04-19 09:14:55.345454', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_final', '是否终态', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isFinal', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 158, 2418, '8248134d-cffb-4bae-ac86-7f9d11a3d3fa', '0', NULL, '2026-04-19 09:14:55.347578', '2026-04-19 09:14:55.347583', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('final_result', '最终结果', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'finalResult', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 13, 158, 2419, '4b46ca17-1b43-4582-8449-ec91e43b060d', '0', NULL, '2026-04-19 09:14:55.350558', '2026-04-19 09:14:55.350566', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('description', '描述', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'description', 'f', 'f', 'f', 'f', NULL, 'textarea', '', 14, 158, 2420, 'b50a20e4-88a6-40c7-823d-96c5c55d55f7', '0', NULL, '2026-04-19 09:14:55.353574', '2026-04-19 09:14:55.353582', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sort', '排序', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'sort', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 158, 2421, '877b7454-0a49-4ea4-9494-d89551a852b7', '0', NULL, '2026-04-19 09:14:55.356396', '2026-04-19 09:14:55.356403', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 158, 2422, 'e5c40716-4372-49b7-9465-ead994804214', '0', NULL, '2026-04-19 09:14:55.359427', '2026-04-19 09:14:55.359434', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 17, 158, 2423, '7b51d6fa-8a0d-4029-b512-207be125a3e5', '0', NULL, '2026-04-19 09:14:55.362084', '2026-04-19 09:14:55.362089', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_price_tiers_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 159, 2424, '23ffa029-2dce-462d-9adb-515782aeebef', '0', NULL, '2026-04-19 09:14:55.383481', '2026-04-19 09:14:55.383487', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tier_code', '层级编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'tierCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 159, 2425, '5cb677ba-4ede-4d82-9a5b-1c9b936e7b00', '0', NULL, '2026-04-19 09:14:55.386618', '2026-04-19 09:14:55.386625', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tier_name', '层级名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'tierName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 159, 2426, '2779ef21-0218-4fe3-ad62-369fab7061a6', '0', NULL, '2026-04-19 09:14:55.389484', '2026-04-19 09:14:55.389491', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('discount_rate', '折扣率', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'discountRate', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 159, 2427, '724182a7-559e-459b-8f88-71937a564dd0', '0', NULL, '2026-04-19 09:14:55.392551', '2026-04-19 09:14:55.392575', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('min_amount', '最小金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'minAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 159, 2428, '6ffa6f45-dd62-46ee-98be-1cbbb543139f', '0', NULL, '2026-04-19 09:14:55.395102', '2026-04-19 09:14:55.395107', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('max_amount', '最大金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'maxAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 159, 2429, '2918dbe8-bb12-4e83-a9ef-2c36146bf953', '0', NULL, '2026-04-19 09:14:55.397671', '2026-04-19 09:14:55.397678', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_level', '客户等级:A-战略客户,B-重要客户,C-普通客户,D-潜在客户', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'customerLevel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 7, 159, 2430, '65f0cab0-f2e9-4494-bddb-c1817ef45b56', '0', NULL, '2026-04-19 09:14:55.401138', '2026-04-19 09:14:55.401145', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('annual_revenue_min', '最低年营业额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'annualRevenueMin', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 159, 2431, 'f0bd93db-b8cc-424c-9cc2-1c0d2736b077', '0', NULL, '2026-04-19 09:14:55.403349', '2026-04-19 09:14:55.403354', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('order_count_min', '最低订单数', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'orderCountMin', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 159, 2432, '26badc39-e8e4-434b-9d27-dc22ab7af17b', '0', NULL, '2026-04-19 09:14:55.40542', '2026-04-19 09:14:55.405424', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('benefits', '权益说明', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'benefits', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 159, 2433, 'cbf613ef-ec9a-4627-a51a-279e51907f4d', '0', NULL, '2026-04-19 09:14:55.407326', '2026-04-19 09:14:55.40733', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('priority', '优先级:1-低,2-中,3-高,4-紧急', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'priority', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 159, 2434, 'd15eb8c7-8850-4c96-8dd1-5345493d0f5f', '0', NULL, '2026-04-19 09:14:55.40923', '2026-04-19 09:14:55.409234', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''active''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 12, 159, 2435, 'b6e18ed7-212c-4e1b-9c42-92dca159b1d1', '0', NULL, '2026-04-19 09:14:55.411163', '2026-04-19 09:14:55.411167', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('description', '描述', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'description', 'f', 'f', 'f', 'f', NULL, 'textarea', '', 13, 159, 2436, '827b72cf-a149-426c-84f7-5b83aef83a67', '0', NULL, '2026-04-19 09:14:55.414986', '2026-04-19 09:14:55.414993', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 14, 159, 2437, '57ba4ebb-3c2f-4490-89d7-2ce142e926a3', '0', NULL, '2026-04-19 09:14:55.418903', '2026-04-19 09:14:55.418909', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 15, 159, 2438, '9ecca933-a84b-4fff-9330-9221b07d001a', '0', NULL, '2026-04-19 09:14:55.421074', '2026-04-19 09:14:55.421079', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_lead_scores_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 160, 2439, '30ab85a8-e47e-411a-b7b7-0f5723f1a022', '0', NULL, '2026-04-19 09:14:55.442638', '2026-04-19 09:14:55.442645', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('lead_id', '来源线索ID,关联crm_leads', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'leadId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 160, 2440, '804ddee9-4d6c-4f0d-b832-85f0bcf48f8c', '0', NULL, '2026-04-19 09:14:55.445516', '2026-04-19 09:14:55.445522', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('total_score', '总分', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'totalScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 160, 2441, '98f407ce-70bc-49a5-ac97-cc07a77548af', '0', NULL, '2026-04-19 09:14:55.448271', '2026-04-19 09:14:55.448278', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('demographic_score', '人口统计评分', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'demographicScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 160, 2442, 'ef6fc374-00d0-4e36-aec6-4b6ba4f29e6c', '0', NULL, '2026-04-19 09:14:55.450723', '2026-04-19 09:14:55.450729', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('behavior_score', '行为评分', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'behaviorScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 160, 2443, 'e9ae86c0-d28f-4efd-b815-33eab8d9096c', '0', NULL, '2026-04-19 09:14:55.452874', '2026-04-19 09:14:55.452879', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('engagement_score', '参与度评分', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'engagementScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 160, 2444, 'a0707c57-b69b-47a9-80b1-4b359a2eb932', '0', NULL, '2026-04-19 09:14:55.454786', '2026-04-19 09:14:55.454827', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('score_grade', '评分等级', 'VARCHAR(10)', '10', '', 'f', 'f', 'f', 'f', 'str', 'scoreGrade', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 7, 160, 2445, '89cf0e9f-e724-4739-a453-89cff6a2b23e', '0', NULL, '2026-04-19 09:14:55.456829', '2026-04-19 09:14:55.456834', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('score_level', '评分等级', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'scoreLevel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 8, 160, 2446, '2346f3be-d017-4c2d-bdc2-db3ff8b44a90', '0', NULL, '2026-04-19 09:14:55.458664', '2026-04-19 09:14:55.458668', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('score_details', '评分详情', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'scoreDetails', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 160, 2447, 'd0568fb8-8546-4414-8b51-c12264d59855', '0', NULL, '2026-04-19 09:14:55.461412', '2026-04-19 09:14:55.46142', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('last_scored_at', '最后评分时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'lastScoredAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 10, 160, 2448, 'd5d1d1b4-73d8-4eec-8ce9-2a1dee13282b', '0', NULL, '2026-04-19 09:14:55.464587', '2026-04-19 09:14:55.46461', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('next_score_date', '下次评分日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'nextScoreDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 160, 2449, '39acff3d-359d-408c-9c98-bff284458548', '0', NULL, '2026-04-19 09:14:55.468045', '2026-04-19 09:14:55.468053', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_qualified', '是否合格', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isQualified', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 160, 2450, 'acc1408c-60d5-4757-99fa-021e56275def', '0', NULL, '2026-04-19 09:14:55.471387', '2026-04-19 09:14:55.471394', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('qualified_at', '合格时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'qualifiedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 13, 160, 2451, 'c7a0e00a-0324-4af1-bba5-e1d1d0965a1c', '0', NULL, '2026-04-19 09:14:55.474092', '2026-04-19 09:14:55.474098', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('converted_to_opportunity', '是否转商机', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'convertedToOpportunity', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 160, 2452, '355156a3-1dee-44fa-b5fb-32109ff1bfab', '0', NULL, '2026-04-19 09:14:55.477173', '2026-04-19 09:14:55.477181', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 15, 160, 2453, '65d2bea2-f579-427a-bb3b-0bfb5a1f56e4', '0', NULL, '2026-04-19 09:14:55.480488', '2026-04-19 09:14:55.480494', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 160, 2454, '41ee5f65-e596-499e-a3a1-d6008c19fa37', '0', NULL, '2026-04-19 09:14:55.482683', '2026-04-19 09:14:55.482688', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_marketing_channels_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 161, 2455, 'f37f7726-7fe0-40a9-af99-39d0b27e197f', '0', NULL, '2026-04-19 09:14:55.50531', '2026-04-19 09:14:55.505316', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('channel_code', '渠道编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'channelCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 161, 2456, '75945add-0cd7-46bb-95dd-22265c4f327a', '0', NULL, '2026-04-19 09:14:55.507632', '2026-04-19 09:14:55.507637', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('channel_name', '渠道名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'channelName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 161, 2457, 'b5f1bcf5-a557-43a8-bf9e-ede614045ce3', '0', NULL, '2026-04-19 09:14:55.510812', '2026-04-19 09:14:55.510818', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('channel_type', '渠道类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'channelType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 4, 161, 2458, 'fdd18555-fec7-4a33-b6e4-46c12d927f65', '0', NULL, '2026-04-19 09:14:55.51322', '2026-04-19 09:14:55.513225', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('channel_category', '渠道分类', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'channelCategory', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 161, 2459, '21da6bae-f3fd-4431-98bb-ff1250b64713', '0', NULL, '2026-04-19 09:14:55.51528', '2026-04-19 09:14:55.515284', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('parent_id', '父级ID', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'parentId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 161, 2460, '2e7456d8-3acb-4f61-9fb9-93436d4c8ee6', '0', NULL, '2026-04-19 09:14:55.517586', '2026-04-19 09:14:55.517591', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('cost_per_lead', '单线索成本', 'NUMERIC(10, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'costPerLead', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 161, 2461, 'c60397ea-6b5b-448b-af93-d0ba1189c77c', '0', NULL, '2026-04-19 09:14:55.519595', '2026-04-19 09:14:55.519598', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('monthly_budget', '月度预算', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'monthlyBudget', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 161, 2462, '069cc734-ffb3-437c-b2d2-115b4acf8700', '0', NULL, '2026-04-19 09:14:55.52155', '2026-04-19 09:14:55.521554', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('actual_cost', '实际成本', 'NUMERIC(15, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'actualCost', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 161, 2463, 'c7999744-1675-497f-81df-3de0a3157cb5', '0', NULL, '2026-04-19 09:14:55.525156', '2026-04-19 09:14:55.525163', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('total_leads', '总线索数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'totalLeads', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 161, 2464, 'f8bbfd1d-e841-4737-8143-e43e16ba03c4', '0', NULL, '2026-04-19 09:14:55.52835', '2026-04-19 09:14:55.528357', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('qualified_leads', '合格线索数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'qualifiedLeads', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 161, 2465, 'bdee1501-c18e-40fd-859b-2d67f8aabc80', '0', NULL, '2026-04-19 09:14:55.530924', '2026-04-19 09:14:55.53093', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('converted_customers', '转化客户数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'convertedCustomers', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 161, 2466, '40830afc-78a9-4028-ad7f-7199621c1e2d', '0', NULL, '2026-04-19 09:14:55.53368', '2026-04-19 09:14:55.533687', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('total_revenue', '总收入', 'NUMERIC(15, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'totalRevenue', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 161, 2467, '08907d75-918b-4ffa-8b37-fc37e1700fba', '0', NULL, '2026-04-19 09:14:55.537118', '2026-04-19 09:14:55.537124', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('conversion_rate', '转化率', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'conversionRate', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 161, 2468, '90a10d6c-acef-4b13-9151-9408852faf24', '0', NULL, '2026-04-19 09:14:55.539911', '2026-04-19 09:14:55.539918', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('roi', '投资回报率', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'roi', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 161, 2469, '81fcc7d2-8f31-495c-9c09-34fa33e2dbf7', '0', NULL, '2026-04-19 09:14:55.542807', '2026-04-19 09:14:55.542813', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''active''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 16, 161, 2470, 'ba70a37e-20c9-4ad4-831c-e23b70fd6bd2', '0', NULL, '2026-04-19 09:14:55.544815', '2026-04-19 09:14:55.54482', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('description', '描述', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'description', 'f', 'f', 'f', 'f', NULL, 'textarea', '', 17, 161, 2471, 'e4f74196-43da-4fbd-a654-e07f20d017cc', '0', NULL, '2026-04-19 09:14:55.546746', '2026-04-19 09:14:55.54675', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 18, 161, 2472, 'f36f389a-a29a-47c2-b23b-abd9aaabc0f8', '0', NULL, '2026-04-19 09:14:55.548914', '2026-04-19 09:14:55.548919', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 19, 161, 2473, 'a719e843-63d5-4756-aa3e-946d3356931a', '0', NULL, '2026-04-19 09:14:55.550997', '2026-04-19 09:14:55.551002', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_customer_timeline_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 162, 2474, '6784f782-6d04-48ba-92f3-db0ae03ca267', '0', NULL, '2026-04-19 09:14:55.572551', '2026-04-19 09:14:55.572558', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 162, 2475, '4e1c8f3e-a6ee-420d-92ed-3b02bb918faf', '0', NULL, '2026-04-19 09:14:55.575675', '2026-04-19 09:14:55.575681', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('event_type', '事件类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'eventType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 3, 162, 2476, '3b4c7a73-7fdd-49cd-ad4d-d500e84d618a', '0', NULL, '2026-04-19 09:14:55.578403', '2026-04-19 09:14:55.578411', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('event_category', '事件分类', 'VARCHAR(30)', '30', '', 'f', 'f', 'f', 'f', 'str', 'eventCategory', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 162, 2477, 'd05b93d4-5ba5-49eb-8360-dc3b0c0387d6', '0', NULL, '2026-04-19 09:14:55.581314', '2026-04-19 09:14:55.58132', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('title', '职位', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'title', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 162, 2478, '7322f67e-bf15-4b1e-9a31-affdc0ab4d18', '0', NULL, '2026-04-19 09:14:55.583919', '2026-04-19 09:14:55.583944', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('description', '描述', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'description', 'f', 'f', 'f', 'f', NULL, 'textarea', '', 6, 162, 2479, '42364f49-2f35-4688-847b-6c11b282fc6a', '0', NULL, '2026-04-19 09:14:55.586425', '2026-04-19 09:14:55.586431', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('related_type', '关联类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'relatedType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 7, 162, 2480, '78d1fedb-7947-443c-9c62-a1629a161288', '0', NULL, '2026-04-19 09:14:55.588896', '2026-04-19 09:14:55.588902', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('related_id', '关联ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'relatedId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 162, 2481, 'a0fbf20c-0d0b-4119-931f-66fe4802c1d2', '0', NULL, '2026-04-19 09:14:55.591309', '2026-04-19 09:14:55.591317', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('related_name', '关联名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'relatedName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 9, 162, 2482, 'bba5b66c-ce6f-4ca1-b7cb-6520ab197d54', '0', NULL, '2026-04-19 09:14:55.59361', '2026-04-19 09:14:55.593619', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('operator_id', '操作人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'operatorId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 162, 2483, 'd4bebb77-3a7a-4b82-a73c-e081b4c38d53', '0', NULL, '2026-04-19 09:14:55.595549', '2026-04-19 09:14:55.595552', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('operator_name', '操作人名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'operatorName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 11, 162, 2484, 'dd9bf1b9-0e50-4b37-a7a1-806c9d56ff2f', '0', NULL, '2026-04-19 09:14:55.597697', '2026-04-19 09:14:55.597701', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('attachments', '附件', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'attachments', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 162, 2485, '33ca624a-17fa-4c05-aaaa-1f6ffe7ef880', '0', NULL, '2026-04-19 09:14:55.601133', '2026-04-19 09:14:55.60114', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('extra_data', '扩展数据', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'extraData', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 162, 2486, '459920d8-016f-4a67-981c-8ad81b194bd4', '0', NULL, '2026-04-19 09:14:55.604202', '2026-04-19 09:14:55.60421', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 14, 162, 2487, '1c71e41b-0ce5-4f20-8d7d-105173a254c2', '0', NULL, '2026-04-19 09:14:55.606971', '2026-04-19 09:14:55.606979', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_ai_tags_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 163, 2488, 'fa00fb18-96e3-44ea-8ee9-6195b5590860', '0', NULL, '2026-04-19 09:14:55.629683', '2026-04-19 09:14:55.62969', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tag_code', '标签编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'tagCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 163, 2489, '5a2738ff-ef5f-468b-9372-04e1c491cd23', '0', NULL, '2026-04-19 09:14:55.633358', '2026-04-19 09:14:55.633366', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tag_name', '标签名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'tagName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 163, 2490, '43b707b3-3abe-47c4-90ae-cc541420d1a8', '0', NULL, '2026-04-19 09:14:55.63641', '2026-04-19 09:14:55.636416', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('ai_model', 'AI模型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'aiModel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 163, 2491, 'c6bcc7c8-9935-48aa-a724-e61cbad8c504', '0', NULL, '2026-04-19 09:14:55.639079', '2026-04-19 09:14:55.639085', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('ai_prompt', 'AI提示词', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'aiPrompt', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 5, 163, 2492, 'b22738b9-1098-453a-a32c-acae0d663ad1', '0', NULL, '2026-04-19 09:14:55.641708', '2026-04-19 09:14:55.641714', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('confidence_threshold', '置信度阈值', 'NUMERIC(5, 2)', '', '0.80', 'f', 'f', 'f', 'f', 'Decimal', 'confidenceThreshold', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 163, 2493, '09a18297-108d-439f-9ce0-f2b2c9bdbb2a', '0', NULL, '2026-04-19 09:14:55.644171', '2026-04-19 09:14:55.644176', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('applicable_entities', '适用实体', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'applicableEntities', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 163, 2494, '34f39f47-4e3e-4db8-ae24-c8ec0dc96b3e', '0', NULL, '2026-04-19 09:14:55.646304', '2026-04-19 09:14:55.646309', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('usage_count', '使用次数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'usageCount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 163, 2495, '0eeb0bd0-64b1-48c5-b8d1-ffc2575b7f13', '0', NULL, '2026-04-19 09:14:55.649185', '2026-04-19 09:14:55.649191', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('accuracy_rate', '准确率比率', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'accuracyRate', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 163, 2496, '80ef7d15-3a28-43b7-be22-0dc48a2d5964', '0', NULL, '2026-04-19 09:14:55.651915', '2026-04-19 09:14:55.651922', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''active''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 10, 163, 2497, 'a573e5f5-3693-4409-8358-5eb4052d08b2', '0', NULL, '2026-04-19 09:14:55.654188', '2026-04-19 09:14:55.654193', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('description', '描述', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'description', 'f', 'f', 'f', 'f', NULL, 'textarea', '', 11, 163, 2498, 'fafcdb57-75b8-49c3-be86-aac6b2474f27', '0', NULL, '2026-04-19 09:14:55.656099', '2026-04-19 09:14:55.656103', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 12, 163, 2499, '582b1c29-359a-40f4-9478-42f60f39b3b6', '0', NULL, '2026-04-19 09:14:55.658163', '2026-04-19 09:14:55.658167', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 13, 163, 2500, '2ab003ff-fb56-4636-bcdf-c7d7e794642b', '0', NULL, '2026-04-19 09:14:55.659967', '2026-04-19 09:14:55.659971', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_contact_visits_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 164, 2501, '518e7305-7c28-4ae6-8586-313cbf6b47ac', '0', NULL, '2026-04-19 09:14:55.683194', '2026-04-19 09:14:55.6832', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contact_id', '联系人ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'contactId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 164, 2502, 'dd3f1cd3-d71c-4522-988a-1980296fe36c', '0', NULL, '2026-04-19 09:14:55.686316', '2026-04-19 09:14:55.686324', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 164, 2503, '60cd06df-a8a2-4c4e-b794-7ab695cbe5f4', '0', NULL, '2026-04-19 09:14:55.689029', '2026-04-19 09:14:55.689035', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('visit_date', '拜访日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'visitDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 4, 164, 2504, '9ce234cc-73ff-4324-931a-1ed2cf27f702', '0', NULL, '2026-04-19 09:14:55.691121', '2026-04-19 09:14:55.691126', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('visit_type', '拜访类型:1-首次拜访,2-常规拜访,3-回访,4-线上沟通,5-会议', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'visitType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 5, 164, 2505, '4642e4d1-304f-4b66-8514-3dc28e71eb2f', '0', NULL, '2026-04-19 09:14:55.693189', '2026-04-19 09:14:55.693196', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('visit_location', '拜访地点', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'visitLocation', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 6, 164, 2506, '5fcd5849-dc45-4bd7-b42c-2cf6f98e41c9', '0', NULL, '2026-04-19 09:14:55.696586', '2026-04-19 09:14:55.696593', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('visit_duration', '拜访时长', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'visitDuration', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 164, 2507, '2d02edf4-58d9-4c06-9f75-9fdca8aaf702', '0', NULL, '2026-04-19 09:14:55.699304', '2026-04-19 09:14:55.699311', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('visitor_id', '拜访人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'visitorId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 164, 2508, '9cb2684b-f91d-42fc-b91a-d9f625638653', '0', NULL, '2026-04-19 09:14:55.702273', '2026-04-19 09:14:55.70228', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('visitor_name', '拜访人姓名', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'visitorName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 9, 164, 2509, 'e82b6c26-13ea-4c2d-9789-fb943820650e', '0', NULL, '2026-04-19 09:14:55.70513', '2026-04-19 09:14:55.705137', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('attendees', '参与人', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'attendees', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 164, 2510, 'd5588ec0-e0e5-467c-b10f-82aa813cd5fd', '0', NULL, '2026-04-19 09:14:55.707658', '2026-04-19 09:14:55.707663', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('visit_content', '拜访内容', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'visitContent', 'f', 'f', 'f', 'f', 'LIKE', 'editor', '', 11, 164, 2511, 'afcf0bf4-eda6-4fa4-a397-0ae67e82c106', '0', NULL, '2026-04-19 09:14:55.710843', '2026-04-19 09:14:55.710849', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('visit_result', '拜访结果', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'visitResult', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 12, 164, 2512, '74f3b149-b873-43ec-b440-e0c3c388104a', '0', NULL, '2026-04-19 09:14:55.713872', '2026-04-19 09:14:55.713878', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('follow_up_action', '跟进动作', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'followUpAction', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 13, 164, 2513, '82011c69-dd7e-420c-8def-2c3176c18df6', '0', NULL, '2026-04-19 09:14:55.716212', '2026-04-19 09:14:55.716217', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('next_visit_date', '下次拜访日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'nextVisitDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 14, 164, 2514, 'eca3f361-3300-4735-8998-6c95d2bdaca2', '0', NULL, '2026-04-19 09:14:55.718709', '2026-04-19 09:14:55.718715', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('attachments', '附件', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'attachments', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 164, 2515, '46e401bb-3f71-4fcb-9d78-2c76740659f6', '0', NULL, '2026-04-19 09:14:55.721206', '2026-04-19 09:14:55.721212', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 164, 2516, '43a75088-4c18-4ba7-8362-6d311936caea', '0', NULL, '2026-04-19 09:14:55.723295', '2026-04-19 09:14:55.723299', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 17, 164, 2517, 'fd74e6fe-6178-4418-be57-687c08a19d01', '0', NULL, '2026-04-19 09:14:55.726047', '2026-04-19 09:14:55.726066', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 18, 164, 2518, '4049d771-ee25-4dbe-8756-f4a7c2f5dac8', '0', NULL, '2026-04-19 09:14:55.729569', '2026-04-19 09:14:55.729576', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_contact_change_logs_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 165, 2519, 'a0a6b372-0be9-4111-ac3b-5d6eb217c744', '0', NULL, '2026-04-19 09:14:55.754186', '2026-04-19 09:14:55.754192', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contact_id', '联系人ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'contactId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 165, 2520, '31b846b2-f857-4ab8-ac45-b22b065235d9', '0', NULL, '2026-04-19 09:14:55.757423', '2026-04-19 09:14:55.757431', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 165, 2521, '9422e897-045b-4774-bbb9-e9fb257122dd', '0', NULL, '2026-04-19 09:14:55.760533', '2026-04-19 09:14:55.76054', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('field_name', '字段名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'fieldName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 165, 2522, 'e0f6bb31-03f9-4cd7-a877-95f9ad4e0582', '0', NULL, '2026-04-19 09:14:55.763399', '2026-04-19 09:14:55.763406', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('field_label', '字段标签', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'fieldLabel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 165, 2523, 'fff40a81-e1f7-4f1e-8795-08454fa92621', '0', NULL, '2026-04-19 09:14:55.766411', '2026-04-19 09:14:55.766417', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('old_value', '旧值', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'oldValue', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 6, 165, 2524, '2583b857-0afd-4d41-a243-a1ac75747474', '0', NULL, '2026-04-19 09:14:55.769312', '2026-04-19 09:14:55.769318', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('new_value', '新值', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'newValue', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 7, 165, 2525, '9997cc4d-086c-4d0d-9905-1e2f8ff1756e', '0', NULL, '2026-04-19 09:14:55.771779', '2026-04-19 09:14:55.771784', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('change_type', '变更类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'changeType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 8, 165, 2526, 'd3b97b82-37bf-4cac-afc9-1798f479404e', '0', NULL, '2026-04-19 09:14:55.774271', '2026-04-19 09:14:55.774276', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('operator_id', '操作人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'operatorId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 165, 2527, 'b137a8ee-d8c4-421c-be05-505b8bfc2435', '0', NULL, '2026-04-19 09:14:55.777037', '2026-04-19 09:14:55.777043', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('operator_name', '操作人名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'operatorName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 10, 165, 2528, 'ccbabcb0-6acd-4c17-99bb-fb9c584f7dea', '0', NULL, '2026-04-19 09:14:55.779345', '2026-04-19 09:14:55.77935', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('changed_at', '变更时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'changedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 165, 2529, '18bcabff-a994-4018-b0d5-4dcafa0e9b5d', '0', NULL, '2026-04-19 09:14:55.781529', '2026-04-19 09:14:55.781534', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 12, 165, 2530, '6dd1e999-f347-45b9-875d-cc9c77975aeb', '0', NULL, '2026-04-19 09:14:55.783695', '2026-04-19 09:14:55.783701', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_customer_attachments_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 166, 2531, '2f7e13f5-f456-4f44-b8f1-dbfdcc1f1e04', '0', NULL, '2026-04-19 09:14:55.809365', '2026-04-19 09:14:55.809371', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 166, 2532, 'e18ee1ec-f336-485b-8257-4e3640aa1e32', '0', NULL, '2026-04-19 09:14:55.811627', '2026-04-19 09:14:55.811635', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('file_name', '文件名', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'fileName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 166, 2533, '730e2758-3657-4561-926f-dac12ef89e30', '0', NULL, '2026-04-19 09:14:55.813764', '2026-04-19 09:14:55.813768', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('file_path', '文件路径', 'VARCHAR(500)', '500', '', 'f', 'f', 'f', 'f', 'str', 'filePath', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 4, 166, 2534, '33db6e6e-1b71-4e32-86f2-623e06ddde88', '0', NULL, '2026-04-19 09:14:55.815847', '2026-04-19 09:14:55.815852', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('file_type', '文件类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'fileType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 5, 166, 2535, '694bda04-6c20-4385-baeb-7f365bb75f64', '0', NULL, '2026-04-19 09:14:55.818326', '2026-04-19 09:14:55.818332', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('mime_type', 'MIME类型', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'mimeType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 6, 166, 2536, '3f053775-d527-44ae-a71c-0caddda2d7d1', '0', NULL, '2026-04-19 09:14:55.821843', '2026-04-19 09:14:55.82185', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('file_size', '文件大小', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'fileSize', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 166, 2537, 'c2a4df06-bd53-4f83-b173-c1ff4e9356a6', '0', NULL, '2026-04-19 09:14:55.824678', '2026-04-19 09:14:55.824684', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('attachment_type', '附件类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'attachmentType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 8, 166, 2538, '46671f81-0e8e-4bcd-9b73-a2aaf434afba', '0', NULL, '2026-04-19 09:14:55.826832', '2026-04-19 09:14:55.826836', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('uploader_id', '上传人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'uploaderId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 166, 2539, '7b3b265f-cf43-424c-8ce7-4f7f2773e43a', '0', NULL, '2026-04-19 09:14:55.82889', '2026-04-19 09:14:55.828894', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('uploaded_at', '上传时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'uploadedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 10, 166, 2540, '35ea6757-3421-4b7a-8a59-9ce3aed7c66c', '0', NULL, '2026-04-19 09:14:55.830961', '2026-04-19 09:14:55.830965', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 166, 2541, 'ff498a2e-908d-4a80-bba7-abcca4d2870a', '0', NULL, '2026-04-19 09:14:55.833068', '2026-04-19 09:14:55.833072', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 166, 2542, 'bdd19ca8-86fd-4bc4-a523-4d767c8c8191', '0', NULL, '2026-04-19 09:14:55.836083', '2026-04-19 09:14:55.83609', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_pool_transfers_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 167, 2543, '33ff675e-2046-46b4-b6f6-eabbda24b6cf', '0', NULL, '2026-04-19 09:14:55.860107', '2026-04-19 09:14:55.860113', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 167, 2544, 'b7904174-52e6-4992-adff-65edf3fb53c6', '0', NULL, '2026-04-19 09:14:55.862426', '2026-04-19 09:14:55.86243', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('from_pool', '来源公海', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'fromPool', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 167, 2545, '709b50f2-786f-4d1c-97cd-6b3165ab7bbb', '0', NULL, '2026-04-19 09:14:55.864459', '2026-04-19 09:14:55.864464', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('to_pool', '目标公海', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'toPool', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 167, 2546, '6c8a1e25-b479-4fb2-8844-fd526ef3feab', '0', NULL, '2026-04-19 09:14:55.86735', '2026-04-19 09:14:55.867357', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('from_owner_id', '原负责人ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'fromOwnerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 167, 2547, '48f154af-465a-4c40-9c59-1c48771833a6', '0', NULL, '2026-04-19 09:14:55.870856', '2026-04-19 09:14:55.870866', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('to_owner_id', '新负责人ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'toOwnerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 167, 2548, 'cb06549a-6cdf-4a01-9dc6-daf18065248f', '0', NULL, '2026-04-19 09:14:55.874049', '2026-04-19 09:14:55.874057', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('transfer_reason', '转移原因', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'transferReason', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 7, 167, 2549, 'aa4ac36f-733c-4571-8962-ce0e7080afb4', '0', NULL, '2026-04-19 09:14:55.877248', '2026-04-19 09:14:55.877253', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('transfer_type', '转移类型', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'transferType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 8, 167, 2550, '79075f1a-fae2-4ebc-b53f-5bee8b7069a1', '0', NULL, '2026-04-19 09:14:55.879384', '2026-04-19 09:14:55.879389', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('operator_id', '操作人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'operatorId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 167, 2551, 'c10cc6ac-2f86-493d-be0f-3514cc98778f', '0', NULL, '2026-04-19 09:14:55.88157', '2026-04-19 09:14:55.881574', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('transferred_at', '转移时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'transferredAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 10, 167, 2552, '8a64cdfd-f9cf-4f02-a644-dde2209d1dd0', '0', NULL, '2026-04-19 09:14:55.885123', '2026-04-19 09:14:55.885145', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 167, 2553, 'ba1c3dc7-6dcd-41f8-9f61-359995380e31', '0', NULL, '2026-04-19 09:14:55.887333', '2026-04-19 09:14:55.887338', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_followups_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 168, 2554, '2501dbfb-4444-4d9d-856a-fcebd5fdba2b', '0', NULL, '2026-04-19 09:14:55.907702', '2026-04-19 09:14:55.907708', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 168, 2555, '7a862728-1d38-4b88-b54b-def2d8ff303d', '0', NULL, '2026-04-19 09:14:55.90996', '2026-04-19 09:14:55.909964', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contact_id', '联系人ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'contactId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 168, 2556, '80b9dd09-a357-4627-831a-93d06d240e12', '0', NULL, '2026-04-19 09:14:55.911845', '2026-04-19 09:14:55.911849', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('followup_type', '跟进类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'followupType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 4, 168, 2557, '450e273c-e89f-47f9-9f82-b55905704a4e', '0', NULL, '2026-04-19 09:14:55.915432', '2026-04-19 09:14:55.91544', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('followup_date', '跟进日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'followupDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 5, 168, 2558, '759f0d7d-38c9-4a9a-98e3-52e72f6d1d1a', '0', NULL, '2026-04-19 09:14:55.918396', '2026-04-19 09:14:55.918402', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('followup_time', '跟进时间', 'TIME', '', '', 'f', 'f', 'f', 'f', 'time', 'followupTime', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 6, 168, 2559, '50b91639-5454-4a61-9b06-9fdc44524822', '0', NULL, '2026-04-19 09:14:55.921626', '2026-04-19 09:14:55.921633', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('duration', '时长', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'duration', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 168, 2560, '5fef58b4-c93d-4903-8242-7abd99091129', '0', NULL, '2026-04-19 09:14:55.924131', '2026-04-19 09:14:55.924139', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('content', '内容', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'content', 'f', 'f', 'f', 'f', 'LIKE', 'editor', '', 8, 168, 2561, '08e9a060-3cac-40b8-914e-4f8f51ebb842', '0', NULL, '2026-04-19 09:14:55.926572', '2026-04-19 09:14:55.926578', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('result', '结果', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'result', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 9, 168, 2562, 'c73b6ffb-f1d7-4952-9b37-98fe28c29463', '0', NULL, '2026-04-19 09:14:55.929171', '2026-04-19 09:14:55.929177', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('next_followup_date', '下次跟进日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'nextFollowupDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 10, 168, 2563, 'adb9b5cd-9f68-4128-a191-b55970e9f57f', '0', NULL, '2026-04-19 09:14:55.931323', '2026-04-19 09:14:55.931328', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('next_followup_content', '下次跟进内容', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'nextFollowupContent', 'f', 'f', 'f', 'f', 'LIKE', 'editor', '', 11, 168, 2564, '7f14bf98-dbd7-46b2-8b26-219c723fea68', '0', NULL, '2026-04-19 09:14:55.933975', '2026-04-19 09:14:55.933981', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('location', '地点', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'location', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 12, 168, 2565, 'a71c575a-be49-4d0f-bee6-76d859eb0628', '0', NULL, '2026-04-19 09:14:55.93627', '2026-04-19 09:14:55.936275', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('participants', '参与人', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'participants', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 13, 168, 2566, 'b26a0a63-31ac-40a3-a44b-efebea2e9766', '0', NULL, '2026-04-19 09:14:55.938242', '2026-04-19 09:14:55.938246', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('attachments', '附件', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'attachments', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 168, 2567, 'd6af1ed0-4725-407b-8859-21cb7a44e98e', '0', NULL, '2026-04-19 09:14:55.940299', '2026-04-19 09:14:55.940317', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 168, 2568, 'c0ed30bd-349a-42b1-bc6f-8e2e77fcbfa7', '0', NULL, '2026-04-19 09:14:55.942211', '2026-04-19 09:14:55.942215', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 168, 2569, 'd7e1f180-63e0-4f8c-b0bb-9895b43d6648', '0', NULL, '2026-04-19 09:14:55.94542', '2026-04-19 09:14:55.945427', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 17, 168, 2570, 'ccf0d00b-4784-4873-ae9f-8497226840c7', '0', NULL, '2026-04-19 09:14:55.948266', '2026-04-19 09:14:55.948273', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 18, 168, 2571, '04a57d42-236e-4fe0-9050-a31ac88a34b5', '0', NULL, '2026-04-19 09:14:55.951412', '2026-04-19 09:14:55.951419', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_product_categories_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 169, 2572, 'b023d94c-ad88-4e73-abcb-884574d050e5', '0', NULL, '2026-04-19 09:14:55.973303', '2026-04-19 09:14:55.973309', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('category_name', '分类名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'categoryName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 169, 2573, 'ca0f8b5d-80db-4259-b23e-0f3c259758d5', '0', NULL, '2026-04-19 09:14:55.976485', '2026-04-19 09:14:55.976492', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('parent_id', '父级ID', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'parentId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 169, 2574, '4fe4733d-f707-498f-92ab-eadaac1d9f47', '0', NULL, '2026-04-19 09:14:55.979355', '2026-04-19 09:14:55.979361', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('level', '级别', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'level', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 169, 2575, 'efef913b-411b-4cf2-a461-76cc49ab5660', '0', NULL, '2026-04-19 09:14:55.982325', '2026-04-19 09:14:55.982333', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sort', '排序', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'sort', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 169, 2576, 'd2cd2915-ad14-433b-add7-96553600bb04', '0', NULL, '2026-04-19 09:14:55.985653', '2026-04-19 09:14:55.985659', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('icon', '图标', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'icon', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 6, 169, 2577, '89369bf5-9320-4123-a7bf-b8b5a0b11354', '0', NULL, '2026-04-19 09:14:55.987896', '2026-04-19 09:14:55.9879', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('description', '描述', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'description', 'f', 'f', 'f', 'f', NULL, 'textarea', '', 7, 169, 2578, '76741080-8094-4350-87b8-969c3dfbdf01', '0', NULL, '2026-04-19 09:14:55.990729', '2026-04-19 09:14:55.990735', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''active''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 8, 169, 2579, '61380e2f-3b93-47c8-a17f-8beb449e0f8c', '0', NULL, '2026-04-19 09:14:55.993012', '2026-04-19 09:14:55.993017', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 9, 169, 2580, '6a5cc714-a16a-4b99-842a-6fed667dc7c3', '0', NULL, '2026-04-19 09:14:55.995732', '2026-04-19 09:14:55.995739', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 10, 169, 2581, 'd2bbff99-ab05-4a40-a4a7-0865ee16a8ee', '0', NULL, '2026-04-19 09:14:55.997954', '2026-04-19 09:14:55.997958', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_product_price_history_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 170, 2582, 'e15dc6e0-bfdf-4bb6-962f-46ce0c363afe', '0', NULL, '2026-04-19 09:14:56.020202', '2026-04-19 09:14:56.020227', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_id', '产品ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'productId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 170, 2583, 'db737220-1550-49a5-987f-07ac0d65f20f', '0', NULL, '2026-04-19 09:14:56.024465', '2026-04-19 09:14:56.024471', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('old_price', '原价', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'oldPrice', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 170, 2584, '7bdf0d76-14c0-4589-a77e-4e033a593f10', '0', NULL, '2026-04-19 09:14:56.027533', '2026-04-19 09:14:56.02754', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('new_price', '新价', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'newPrice', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 170, 2585, '6338b317-95e5-495f-8d84-483da6d714d5', '0', NULL, '2026-04-19 09:14:56.030279', '2026-04-19 09:14:56.030285', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('price_type', '价格类型', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'priceType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 5, 170, 2586, 'c3c78b8c-44c8-4f18-94b6-07f18ff3b667', '0', NULL, '2026-04-19 09:14:56.032886', '2026-04-19 09:14:56.032893', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('change_reason', '变更原因', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'changeReason', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 6, 170, 2587, 'ed6f058f-851b-48d2-b229-43ecbad7f06c', '0', NULL, '2026-04-19 09:14:56.035385', '2026-04-19 09:14:56.03539', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('approval_status', '审批状态:1-待审批,2-审批中,3-已通过,4-已拒绝,5-已撤销', 'VARCHAR(20)', '20', '''approved''::character varying', 'f', 'f', 'f', 'f', 'str', 'approvalStatus', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 7, 170, 2588, '24525f55-51b2-405a-a54c-9f7daa080f09', '0', NULL, '2026-04-19 09:14:56.038046', '2026-04-19 09:14:56.038061', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('approved_by', '审批人ID,关联sys_users', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'approvedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 170, 2589, '148fdb29-e229-4598-a38b-7f6fe0beca48', '0', NULL, '2026-04-19 09:14:56.040141', '2026-04-19 09:14:56.040145', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('effective_date', '生效日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'effectiveDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 9, 170, 2590, 'b1b26321-6275-412e-9731-f18c954e0bbc', '0', NULL, '2026-04-19 09:14:56.042703', '2026-04-19 09:14:56.042709', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('operator_id', '操作人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'operatorId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 170, 2591, '35b37b43-773d-43ef-a082-f58d648095be', '0', NULL, '2026-04-19 09:14:56.045133', '2026-04-19 09:14:56.045138', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 170, 2592, 'ea22f3a7-5e91-4e84-91f6-2eb038f415f0', '0', NULL, '2026-04-19 09:14:56.047166', '2026-04-19 09:14:56.04717', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_product_price_policies_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 171, 2593, '6a06ee86-d3e7-497e-aa96-b3e497c96628', '0', NULL, '2026-04-19 09:14:56.067668', '2026-04-19 09:14:56.067674', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_id', '产品ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'productId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 171, 2594, '4730d3bf-a1c4-4ef8-bef1-953146f94eee', '0', NULL, '2026-04-19 09:14:56.071407', '2026-04-19 09:14:56.071414', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sku_id', 'SKU ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'skuId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 171, 2595, 'bc49ebe0-c877-4b33-895f-329ba9644f55', '0', NULL, '2026-04-19 09:14:56.074086', '2026-04-19 09:14:56.074092', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('policy_type', '策略类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'policyType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 4, 171, 2596, '13c63f91-c08b-4f5d-b162-3d28484a4a9d', '0', NULL, '2026-04-19 09:14:56.076284', '2026-04-19 09:14:56.076289', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('policy_name', '策略名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'policyName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 171, 2597, 'eafacb3d-b523-4e0f-bf6e-46cd405cbfc7', '0', NULL, '2026-04-19 09:14:56.078357', '2026-04-19 09:14:56.078361', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_level', '客户等级:A-战略客户,B-重要客户,C-普通客户,D-潜在客户', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'customerLevel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 6, 171, 2598, '50e8361c-8e3e-45c6-9007-e1c805efd6f1', '0', NULL, '2026-04-19 09:14:56.080357', '2026-04-19 09:14:56.080362', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 171, 2599, '3d0fb8c6-4c8a-4c28-be5a-83cf5359256f', '0', NULL, '2026-04-19 09:14:56.082314', '2026-04-19 09:14:56.082318', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('min_quantity', '最小数量', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'minQuantity', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 171, 2600, 'fcebb0de-74f5-49bf-97d8-10df1e167f17', '0', NULL, '2026-04-19 09:14:56.08547', '2026-04-19 09:14:56.085476', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('max_quantity', '最大数量', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'maxQuantity', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 171, 2601, 'd7872bec-bf5d-465d-b5cc-806e2ae00fe8', '0', NULL, '2026-04-19 09:14:56.088384', '2026-04-19 09:14:56.088391', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('price', '价格', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'price', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 171, 2602, '5cfe7a7b-8ea6-4833-993d-1dd065317fe5', '0', NULL, '2026-04-19 09:14:56.091466', '2026-04-19 09:14:56.091472', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('discount_rate', '折扣率', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'discountRate', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 171, 2603, 'ee634d9f-6d64-411d-8577-d274435ea017', '0', NULL, '2026-04-19 09:14:56.094297', '2026-04-19 09:14:56.094303', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('valid_from', '生效日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'validFrom', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 12, 171, 2604, 'b02f0c48-3e80-4df4-831c-938fb66c9523', '0', NULL, '2026-04-19 09:14:56.096997', '2026-04-19 09:14:56.097002', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('valid_to', '失效日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'validTo', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 13, 171, 2605, 'e7dd4827-196d-4135-ae2d-742c51e4d317', '0', NULL, '2026-04-19 09:14:56.100206', '2026-04-19 09:14:56.100226', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''active''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 14, 171, 2606, '53ab3b10-2373-469a-8f09-4cadc2455b8c', '0', NULL, '2026-04-19 09:14:56.102544', '2026-04-19 09:14:56.102551', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('priority', '优先级:1-低,2-中,3-高,4-紧急', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'priority', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 171, 2607, 'e3b3bfd3-5c61-4ad3-b4bd-f4a00d3b9310', '0', NULL, '2026-04-19 09:14:56.105115', '2026-04-19 09:14:56.105121', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 16, 171, 2608, 'e70d5173-0364-4131-bc92-c8821b7883ff', '0', NULL, '2026-04-19 09:14:56.107103', '2026-04-19 09:14:56.107107', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 17, 171, 2609, 'cf5bfb9b-4622-4d80-90c4-0d34cd8bd0cb', '0', NULL, '2026-04-19 09:14:56.109236', '2026-04-19 09:14:56.10924', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 18, 171, 2610, '4d4316ab-ef76-4668-8e30-888853fe79c8', '0', NULL, '2026-04-19 09:14:56.111196', '2026-04-19 09:14:56.1112', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 19, 171, 2611, 'd87f3c09-4e48-4429-be63-7c898863ad0e', '0', NULL, '2026-04-19 09:14:56.113245', '2026-04-19 09:14:56.113249', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_leads_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 172, 2612, 'd3bdde3f-fa86-4ce3-a2e5-a2e412288606', '0', NULL, '2026-04-19 09:14:56.139218', '2026-04-19 09:14:56.139229', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('lead_code', '线索编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'leadCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 172, 2613, '3525f7bd-e740-464d-bc4b-4893d57dd1fe', '0', NULL, '2026-04-19 09:14:56.142662', '2026-04-19 09:14:56.142669', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('lead_name', '线索名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'leadName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 172, 2614, '9117be23-3bd6-4203-b84e-38f2a0e835ba', '0', NULL, '2026-04-19 09:14:56.144881', '2026-04-19 09:14:56.144885', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('source', '来源:1-自主开发,2-市场活动,3-转介绍,4-网络推广,5-合作伙伴,6-招投标', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'source', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 172, 2615, '8cf8d4f6-b1d6-4d61-b240-dfeb2920e35b', '0', NULL, '2026-04-19 09:14:56.148178', '2026-04-19 09:14:56.148185', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('campaign_id', '活动ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'campaignId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 172, 2616, '205659c5-fb74-4a1f-8a43-449c4cc8bbdc', '0', NULL, '2026-04-19 09:14:56.150744', '2026-04-19 09:14:56.15075', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('channel', '渠道', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'channel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 6, 172, 2617, '7b1d1593-f053-4924-8885-6489feb9213f', '0', NULL, '2026-04-19 09:14:56.153209', '2026-04-19 09:14:56.153214', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('phone', '电话', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'phone', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 7, 172, 2618, '8beb818f-3ce2-4776-bf03-48080cd89f2e', '0', NULL, '2026-04-19 09:14:56.155307', '2026-04-19 09:14:56.155312', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('email', '邮箱', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'email', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 8, 172, 2619, 'c956b3d0-f188-411b-96af-765eda85ec47', '0', NULL, '2026-04-19 09:14:56.15729', '2026-04-19 09:14:56.157294', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('company', '公司名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'company', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 9, 172, 2620, 'fec50b37-404e-4543-a986-671afd30c4dd', '0', NULL, '2026-04-19 09:14:56.159206', '2026-04-19 09:14:56.15921', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('position', '职位', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'position', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 10, 172, 2621, '9d841fb5-677b-4da0-bfdb-de1d8bc914c4', '0', NULL, '2026-04-19 09:14:56.161108', '2026-04-19 09:14:56.161112', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('score', '评分', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'score', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 172, 2622, 'dc9fa2b9-e465-4826-b35a-289522193289', '0', NULL, '2026-04-19 09:14:56.164679', '2026-04-19 09:14:56.164686', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('grade', '等级', 'VARCHAR(10)', '10', '', 'f', 'f', 'f', 'f', 'str', 'grade', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 12, 172, 2623, 'aaef9fca-d79c-4d56-b778-d0c81f55aa70', '0', NULL, '2026-04-19 09:14:56.167525', '2026-04-19 09:14:56.167531', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''new''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 13, 172, 2624, '9393f852-54cb-4444-8510-468823a88d26', '0', NULL, '2026-04-19 09:14:56.170367', '2026-04-19 09:14:56.170374', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('converted_customer_id', '转化后客户ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'convertedCustomerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 172, 2625, 'dc21f373-93a8-4c00-9a51-b9831b77a25b', '0', NULL, '2026-04-19 09:14:56.173832', '2026-04-19 09:14:56.173839', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('owner_id', '负责人ID,关联sys_users', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'ownerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 172, 2626, '415e4419-5705-46a1-82b8-e3741c2477f2', '0', NULL, '2026-04-19 09:14:56.176276', '2026-04-19 09:14:56.176281', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('assigned_at', '分配时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'assignedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 172, 2627, 'aef81792-f6cd-43d7-888c-5fa5aff2d734', '0', NULL, '2026-04-19 09:14:56.180105', '2026-04-19 09:14:56.180111', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('nurturing_stage', '培育阶段', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'nurturingStage', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 17, 172, 2628, 'a32e8aa1-f6ad-408c-8f9d-c268433ee8a6', '0', NULL, '2026-04-19 09:14:56.182805', '2026-04-19 09:14:56.18281', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('last_nurturing_date', '最后培育日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'lastNurturingDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 18, 172, 2629, 'ad5b5b90-1940-441c-b8f8-df42f6df7aa4', '0', NULL, '2026-04-19 09:14:56.184858', '2026-04-19 09:14:56.184863', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('duplicate_check_key', '查重键', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'duplicateCheckKey', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 19, 172, 2630, '9c9db78a-0388-4bdb-904c-3e3d439c810e', '0', NULL, '2026-04-19 09:14:56.1868', '2026-04-19 09:14:56.186805', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 20, 172, 2631, '29bb465f-9a89-45b8-8796-06c0d0b52e87', '0', NULL, '2026-04-19 09:14:56.188875', '2026-04-19 09:14:56.18888', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 21, 172, 2632, '2649d744-c614-474a-bcba-26974d0b4a66', '0', NULL, '2026-04-19 09:14:56.190849', '2026-04-19 09:14:56.190853', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 22, 172, 2633, 'd56b9c35-18f5-4566-933c-cd8e2a53671b', '0', NULL, '2026-04-19 09:14:56.19387', '2026-04-19 09:14:56.193896', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 23, 172, 2634, '9badf818-f1fb-42e3-bf29-9c9bf3b75c86', '0', NULL, '2026-04-19 09:14:56.196858', '2026-04-19 09:14:56.196871', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 24, 172, 2635, '9fb792c2-6ba2-4200-94b1-40db2b7a1b40', '0', NULL, '2026-04-19 09:14:56.199908', '2026-04-19 09:14:56.199916', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_contract_items_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 173, 2636, 'bdc89546-7eb7-453c-a368-97a803833c5d', '0', NULL, '2026-04-19 09:14:56.222258', '2026-04-19 09:14:56.222272', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contract_id', '合同ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'contractId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 173, 2637, 'b592dd1d-ea2b-434c-bab5-34c5c05c724f', '0', NULL, '2026-04-19 09:14:56.226307', '2026-04-19 09:14:56.226313', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_id', '产品ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'productId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 173, 2638, '24b4eda8-f7a1-4ab3-a6dd-17e7c65fcf2d', '0', NULL, '2026-04-19 09:14:56.229239', '2026-04-19 09:14:56.229248', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_name', '产品名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'productName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 173, 2639, '89816e7f-ff9c-4bca-9d89-971d90738557', '0', NULL, '2026-04-19 09:14:56.23246', '2026-04-19 09:14:56.232486', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_code', '产品编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'productCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 173, 2640, '72504251-06c0-4b07-a3be-00b192125a42', '0', NULL, '2026-04-19 09:14:56.234887', '2026-04-19 09:14:56.234893', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('quantity', '数量', 'NUMERIC(10, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'quantity', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 173, 2641, '6175442a-ee5e-43f5-82f2-0ceb6ee80e87', '0', NULL, '2026-04-19 09:14:56.236958', '2026-04-19 09:14:56.236962', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('unit_price', '单价', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'unitPrice', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 173, 2642, '5a3d21b3-d2b4-4a8c-8d60-827902ce6c96', '0', NULL, '2026-04-19 09:14:56.23964', '2026-04-19 09:14:56.239646', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('discount_rate', '折扣率', 'NUMERIC(5, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'discountRate', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 173, 2643, 'b8416e4d-e050-4576-a41a-61b31769d311', '0', NULL, '2026-04-19 09:14:56.242062', '2026-04-19 09:14:56.242067', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('amount', '金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'amount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 173, 2644, 'f9f50474-59f5-4dc3-a4ff-2fefdbbb737e', '0', NULL, '2026-04-19 09:14:56.244405', '2026-04-19 09:14:56.244413', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('delivery_date', '交付日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'deliveryDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 10, 173, 2645, '4511ed81-02b5-406c-826c-4c0b34eac6b2', '0', NULL, '2026-04-19 09:14:56.247378', '2026-04-19 09:14:56.247384', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('delivery_address', '收货地址', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'deliveryAddress', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 11, 173, 2646, 'd1cd11af-6297-4f4f-8bb8-3d8d96b37452', '0', NULL, '2026-04-19 09:14:56.249925', '2026-04-19 09:14:56.24993', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remark', '备注', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'remark', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 12, 173, 2647, 'f9d1ffc3-316c-4f21-92a4-22b4f3c38dbb', '0', NULL, '2026-04-19 09:14:56.252225', '2026-04-19 09:14:56.252229', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sort', '排序', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'sort', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 173, 2648, '75dadfb9-5359-435b-a294-6dae2eab93ea', '0', NULL, '2026-04-19 09:14:56.254648', '2026-04-19 09:14:56.254654', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 14, 173, 2649, '19e8ffd6-1958-4693-87d6-e418b762a15b', '0', NULL, '2026-04-19 09:14:56.257034', '2026-04-19 09:14:56.257039', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_contracts_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 174, 2650, 'd1c4d531-cfba-49ad-9ea2-74d63748b937', '0', NULL, '2026-04-19 09:14:56.281923', '2026-04-19 09:14:56.281929', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contract_code', '合同编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'contractCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 174, 2651, 'd2bc0cac-6d1c-49ff-aed7-89100e055827', '0', NULL, '2026-04-19 09:14:56.284391', '2026-04-19 09:14:56.284395', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contract_name', '合同名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'contractName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 174, 2652, '5fcce360-acc1-4070-b76f-e49804123b15', '0', NULL, '2026-04-19 09:14:56.287889', '2026-04-19 09:14:56.287895', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 174, 2653, '5a781195-8732-4fe0-aa93-ebfeec867638', '0', NULL, '2026-04-19 09:14:56.290738', '2026-04-19 09:14:56.290744', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('opportunity_id', '商机ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'opportunityId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 174, 2654, '2efa9e1f-41ac-4588-9bcb-64ea82fe0479', '0', NULL, '2026-04-19 09:14:56.293477', '2026-04-19 09:14:56.293483', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('quotation_id', '报价ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'quotationId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 174, 2655, '43ef2d05-9dfc-44f2-9a81-7a4e52240ad3', '0', NULL, '2026-04-19 09:14:56.295647', '2026-04-19 09:14:56.295652', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contract_type', '合同类型:1-销售合同,2-服务合同,3-框架协议,4-续签合同,5-变更协议,6-终止协议', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'contractType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 7, 174, 2656, '51846b16-b10d-4a4c-94ac-20429bf42b7c', '0', NULL, '2026-04-19 09:14:56.298186', '2026-04-19 09:14:56.298191', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('start_date', '开始日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'startDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 8, 174, 2657, '86808109-c7b8-4265-9f0c-8c5fed96ac0d', '0', NULL, '2026-04-19 09:14:56.300641', '2026-04-19 09:14:56.300649', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('end_date', '结束日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'endDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 9, 174, 2658, '72b6d9be-6215-4151-b574-1ab33a1b09fa', '0', NULL, '2026-04-19 09:14:56.303804', '2026-04-19 09:14:56.30381', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('currency', '币种:CNY-人民币,USD-美元,EUR-欧元', 'VARCHAR(10)', '10', '''CNY''::character varying', 'f', 'f', 'f', 'f', 'str', 'currency', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 10, 174, 2659, 'e2a5baf8-9f99-4084-bc2f-eee7df32cd7b', '0', NULL, '2026-04-19 09:14:56.306781', '2026-04-19 09:14:56.306792', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('total_amount', '总金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'totalAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 174, 2660, '60e193bf-c1d8-49c6-89fa-e1abf71c2287', '0', NULL, '2026-04-19 09:14:56.310353', '2026-04-19 09:14:56.31036', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('paid_amount', '已付金额', 'NUMERIC(15, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'paidAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 174, 2661, 'b2a39ce3-73dc-46a9-8e81-392cedcc98a4', '0', NULL, '2026-04-19 09:14:56.313164', '2026-04-19 09:14:56.313169', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('unpaid_amount', '未付金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'unpaidAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 174, 2662, '609631a2-becf-4ee7-9fd7-33270586a4cb', '0', NULL, '2026-04-19 09:14:56.315383', '2026-04-19 09:14:56.315387', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''draft''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 14, 174, 2663, '765ab9cd-41d2-490e-829a-44cf86efb204', '0', NULL, '2026-04-19 09:14:56.318482', '2026-04-19 09:14:56.318488', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('approval_status', '审批状态:1-待审批,2-审批中,3-已通过,4-已拒绝,5-已撤销', 'VARCHAR(20)', '20', '''pending''::character varying', 'f', 'f', 'f', 'f', 'str', 'approvalStatus', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 15, 174, 2664, '44a5aa27-ec74-447d-bd32-c9e5f1154622', '0', NULL, '2026-04-19 09:14:56.320741', '2026-04-19 09:14:56.320745', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('approved_by', '审批人ID,关联sys_users', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'approvedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 16, 174, 2665, '94897bdc-dbf1-4f6f-8d16-da9724e36e90', '0', NULL, '2026-04-19 09:14:56.323615', '2026-04-19 09:14:56.323621', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('approved_at', '审批时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'approvedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 17, 174, 2666, 'e8b87f2b-8eeb-4faa-8daf-74e49f319872', '0', NULL, '2026-04-19 09:14:56.325988', '2026-04-19 09:14:56.325993', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('signed_date', '签约日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'signedDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 18, 174, 2667, 'fe1fba2b-61e3-4780-916c-776ddf50e769', '0', NULL, '2026-04-19 09:14:56.328408', '2026-04-19 09:14:56.328412', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('signed_by_customer', '客户签字人', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'signedByCustomer', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 19, 174, 2668, '12ae114b-d0dc-44c7-bf86-2d06b5fd6e0c', '0', NULL, '2026-04-19 09:14:56.33057', '2026-04-19 09:14:56.330575', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('signed_by_company', '公司签字人', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'signedByCompany', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 20, 174, 2669, '9605ec14-8111-4c18-af1c-2280f5b0177c', '0', NULL, '2026-04-19 09:14:56.334074', '2026-04-19 09:14:56.33408', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contract_file_url', '合同文件URL', 'VARCHAR(500)', '500', '', 'f', 'f', 'f', 'f', 'str', 'contractFileUrl', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 21, 174, 2670, '2964a12d-2d8d-4a4c-b993-89b2954c44f4', '0', NULL, '2026-04-19 09:14:56.336858', '2026-04-19 09:14:56.336864', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('owner_id', '负责人ID,关联sys_users', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'ownerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 22, 174, 2671, 'fbcd1424-77a7-493b-95bb-3c93133215f0', '0', NULL, '2026-04-19 09:14:56.340078', '2026-04-19 09:14:56.340085', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('terms_conditions', '条款条件', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'termsConditions', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 23, 174, 2672, '3642b0ff-5e02-4b02-b05d-ebbc0ac889ab', '0', NULL, '2026-04-19 09:14:56.343027', '2026-04-19 09:14:56.343032', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remark', '备注', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'remark', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 24, 174, 2673, '28ef2d2b-4692-4c04-bd44-db89e76a4350', '0', NULL, '2026-04-19 09:14:56.345336', '2026-04-19 09:14:56.345342', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 25, 174, 2674, '6f28415b-7a11-4eee-a035-23c74d8e9afc', '0', NULL, '2026-04-19 09:14:56.347992', '2026-04-19 09:14:56.347998', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 26, 174, 2675, '40883174-c1f5-4ea3-aa26-69cc60554046', '0', NULL, '2026-04-19 09:14:56.350533', '2026-04-19 09:14:56.350539', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 27, 174, 2676, '6fe9681c-78b5-4137-ab06-dfcd8781985d', '0', NULL, '2026-04-19 09:14:56.352959', '2026-04-19 09:14:56.352964', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 28, 174, 2677, 'edc8c6a8-51d3-4a97-89fb-6c2e20241aa2', '0', NULL, '2026-04-19 09:14:56.355844', '2026-04-19 09:14:56.35585', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 29, 174, 2678, 'de046dfa-4c7e-447b-9493-333e2dbd2109', '0', NULL, '2026-04-19 09:14:56.358288', '2026-04-19 09:14:56.358293', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_orders_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 175, 2679, 'debd982b-1167-46ea-b5c8-497af9b71774', '0', NULL, '2026-04-19 09:14:56.383696', '2026-04-19 09:14:56.383702', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('order_code', '订单编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'orderCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 175, 2680, 'f80f69bc-5d39-43fc-a1eb-53e63a3888ed', '0', NULL, '2026-04-19 09:14:56.386674', '2026-04-19 09:14:56.38668', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contract_id', '合同ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'contractId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 175, 2681, '759a4340-acd1-4160-972b-9ec44a9069c6', '0', NULL, '2026-04-19 09:14:56.389031', '2026-04-19 09:14:56.389037', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 175, 2682, '178a3c6f-a656-438e-b2cd-d0c3f30fd59d', '0', NULL, '2026-04-19 09:14:56.39127', '2026-04-19 09:14:56.391274', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('order_date', '订单日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'orderDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 5, 175, 2683, 'f3f73479-153e-477c-a4ef-be9ec2f9d98e', '0', NULL, '2026-04-19 09:14:56.393411', '2026-04-19 09:14:56.393415', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('expected_delivery_date', '预计交付日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'expectedDeliveryDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 6, 175, 2684, '6a46c4d4-2717-4d7b-9c85-b531d533b33b', '0', NULL, '2026-04-19 09:14:56.397788', '2026-04-19 09:14:56.397794', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('actual_delivery_date', '实际交付日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'actualDeliveryDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 7, 175, 2685, '006b52f8-4ad3-4bbf-a6d6-3cda9f2c8793', '0', NULL, '2026-04-19 09:14:56.401134', '2026-04-19 09:14:56.40114', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('total_amount', '总金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'totalAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 175, 2686, 'aaf3d2c0-f22b-420b-a25b-a626cbb21b69', '0', NULL, '2026-04-19 09:14:56.403527', '2026-04-19 09:14:56.403532', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('paid_amount', '已付金额', 'NUMERIC(15, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'paidAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 175, 2687, 'a647e74b-4660-4448-b06c-aa1eaab3a6b1', '0', NULL, '2026-04-19 09:14:56.405861', '2026-04-19 09:14:56.405865', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('unpaid_amount', '未付金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'unpaidAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 175, 2688, '24f813a5-a527-40c7-8257-9fec648c778a', '0', NULL, '2026-04-19 09:14:56.407981', '2026-04-19 09:14:56.407985', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('order_status', '订单状态:1-待确认,2-已确认,3-生产中,4-已发货,5-已完成,6-已取消', 'VARCHAR(20)', '20', '''pending''::character varying', 'f', 'f', 'f', 'f', 'str', 'orderStatus', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 11, 175, 2689, '9a93fe7a-e017-42ea-b8cc-cb1a70323bd4', '0', NULL, '2026-04-19 09:14:56.411833', '2026-04-19 09:14:56.411841', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('payment_status', '付款状态:1-未付款,2-部分付款,3-已付款,4-退款中,5-已退款', 'VARCHAR(20)', '20', '''unpaid''::character varying', 'f', 'f', 'f', 'f', 'str', 'paymentStatus', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 12, 175, 2690, '7d5bd7eb-a7f2-454e-9141-67000462c838', '0', NULL, '2026-04-19 09:14:56.414989', '2026-04-19 09:14:56.414995', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('owner_id', '负责人ID,关联sys_users', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'ownerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 175, 2691, '6222c617-b6f2-4025-8528-241a6c5e4039', '0', NULL, '2026-04-19 09:14:56.418732', '2026-04-19 09:14:56.41876', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 175, 2692, 'fe5f5eac-04cb-4b62-8e16-70fc56212395', '0', NULL, '2026-04-19 09:14:56.422008', '2026-04-19 09:14:56.422014', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 15, 175, 2693, '68ab905c-ec70-4018-802a-b1ef9859d3ee', '0', NULL, '2026-04-19 09:14:56.425481', '2026-04-19 09:14:56.425506', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 175, 2694, '183afd5d-0e91-495b-aae3-1c2fb6f38867', '0', NULL, '2026-04-19 09:14:56.429197', '2026-04-19 09:14:56.429204', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 175, 2695, '85295fde-67f9-4cc3-bf7e-a7406ff28f57', '0', NULL, '2026-04-19 09:14:56.431516', '2026-04-19 09:14:56.431521', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_deliveries_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 176, 2696, '5e33374a-e571-428c-8109-4202633a5099', '0', NULL, '2026-04-19 09:14:56.455994', '2026-04-19 09:14:56.456', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('order_id', '订单ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'orderId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 176, 2697, 'c5732ad9-e883-42e5-beb6-195428c8230a', '0', NULL, '2026-04-19 09:14:56.458544', '2026-04-19 09:14:56.458549', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('delivery_code', '配送编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'deliveryCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 176, 2698, 'eca77181-40be-4099-a7a1-93eec7b8b03c', '0', NULL, '2026-04-19 09:14:56.460815', '2026-04-19 09:14:56.460819', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('delivery_date', '交付日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'deliveryDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 4, 176, 2699, '818f0911-679f-4192-8af4-fbd55545abff', '0', NULL, '2026-04-19 09:14:56.46346', '2026-04-19 09:14:56.463466', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('delivery_method', '交付方式', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'deliveryMethod', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 176, 2700, 'c2957f34-51ae-4832-9913-659d70e34a4c', '0', NULL, '2026-04-19 09:14:56.466329', '2026-04-19 09:14:56.466334', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('logistics_company', '物流公司', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'logisticsCompany', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 6, 176, 2701, '6d27107f-175d-4f26-b31d-18bff538d5ba', '0', NULL, '2026-04-19 09:14:56.468987', '2026-04-19 09:14:56.468993', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tracking_number', '运单号', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'trackingNumber', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 7, 176, 2702, 'b2272695-b858-414c-83ef-f5c2252f3081', '0', NULL, '2026-04-19 09:14:56.472592', '2026-04-19 09:14:56.472601', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('receiver_name', '收货人姓名', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'receiverName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 8, 176, 2703, '916e59bc-a257-45d0-b2a7-a9498e9fe033', '0', NULL, '2026-04-19 09:14:56.475952', '2026-04-19 09:14:56.47596', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('receiver_signature', '签收人', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'receiverSignature', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 9, 176, 2704, '07f6421b-9971-4ac1-9ff8-ea918d1e408e', '0', NULL, '2026-04-19 09:14:56.479236', '2026-04-19 09:14:56.479243', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('signed_at', '签收时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'signedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 10, 176, 2705, 'd27f9478-ce26-48bd-8364-3766068f2382', '0', NULL, '2026-04-19 09:14:56.482738', '2026-04-19 09:14:56.482744', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('delivery_status', '物流状态', 'VARCHAR(20)', '20', '''pending''::character varying', 'f', 'f', 'f', 'f', 'str', 'deliveryStatus', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 11, 176, 2706, 'a7bf1208-d3be-4b38-b124-28cd6cabc4f4', '0', NULL, '2026-04-19 09:14:56.485297', '2026-04-19 09:14:56.485302', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remark', '备注', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'remark', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 12, 176, 2707, 'e8ea6ea2-9d96-43eb-94ec-ab94d641ab1d', '0', NULL, '2026-04-19 09:14:56.48836', '2026-04-19 09:14:56.488366', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 176, 2708, 'aad1186f-97f5-46ab-aa37-cb208a3cbea7', '0', NULL, '2026-04-19 09:14:56.490842', '2026-04-19 09:14:56.490847', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 14, 176, 2709, '4408daf8-eeef-4c48-a559-68e3a021bb31', '0', NULL, '2026-04-19 09:14:56.493213', '2026-04-19 09:14:56.493217', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 15, 176, 2710, 'f142d1fa-5c1f-41a5-abf1-f07ddc05c2c2', '0', NULL, '2026-04-19 09:14:56.496042', '2026-04-19 09:14:56.496048', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_ai_customer_profiles_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 177, 2711, '5112a8e1-d3a6-4138-a590-0ab6eae064ea', '0', NULL, '2026-04-19 09:14:56.520065', '2026-04-19 09:14:56.520071', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 177, 2712, '29155a73-b379-4e61-8684-1c246ecd7b5e', '0', NULL, '2026-04-19 09:14:56.522511', '2026-04-19 09:14:56.522516', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('overall_score', '综合评分', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'overallScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 177, 2713, '9da23f23-ae25-4593-bedd-3b856ed77541', '0', NULL, '2026-04-19 09:14:56.5253', '2026-04-19 09:14:56.525306', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('purchase_power', '购买力评分', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'purchasePower', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 177, 2714, '17d7d0df-c826-426c-9c7b-5c1b85239fa2', '0', NULL, '2026-04-19 09:14:56.528457', '2026-04-19 09:14:56.528463', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('decision_speed', '决策速度评分', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'decisionSpeed', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 177, 2715, 'ff1b27b2-6b5d-4ebe-a3ba-0a716b06a8f3', '0', NULL, '2026-04-19 09:14:56.530696', '2026-04-19 09:14:56.5307', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tags', '标签', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'tags', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 177, 2716, '46f5979f-afbc-4881-a75c-3c8e3dcf8ab9', '0', NULL, '2026-04-19 09:14:56.533143', '2026-04-19 09:14:56.533151', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('interests', '兴趣标签', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'interests', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 177, 2717, 'b51320cc-6143-4be8-97ce-05323c174d9b', '0', NULL, '2026-04-19 09:14:56.536747', '2026-04-19 09:14:56.53677', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('pain_points', '痛点分析', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'painPoints', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 177, 2718, '5770ddaf-d421-4db5-9ab8-591495a4f342', '0', NULL, '2026-04-19 09:14:56.541366', '2026-04-19 09:14:56.541375', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('engagement_level', '参与度等级', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'engagementLevel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 9, 177, 2719, 'e156491c-83a3-4802-8105-dab3a59fa307', '0', NULL, '2026-04-19 09:14:56.545743', '2026-04-19 09:14:56.545753', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('preferred_contact_method', '首选联系方式', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'preferredContactMethod', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 10, 177, 2720, '25a7d300-2408-4507-8d3b-406965896f65', '0', NULL, '2026-04-19 09:14:56.548781', '2026-04-19 09:14:56.548787', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('best_contact_time', '最佳联系时间', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'bestContactTime', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 11, 177, 2721, '8c71c84d-8368-408e-886b-b1446ee7e02b', '0', NULL, '2026-04-19 09:14:56.552061', '2026-04-19 09:14:56.552068', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('churn_risk', '流失风险等级', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'churnRisk', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 12, 177, 2722, '2853dfc6-1ae6-474f-8382-227f33796585', '0', NULL, '2026-04-19 09:14:56.554563', '2026-04-19 09:14:56.554568', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('upsell_probability', '增购概率', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'upsellProbability', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 177, 2723, 'f7339213-26a3-4ccd-99e1-738f67572524', '0', NULL, '2026-04-19 09:14:56.557299', '2026-04-19 09:14:56.557307', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('next_best_action', '下一步最佳行动', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'nextBestAction', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 14, 177, 2724, '7bf0b078-4031-493f-857d-5f9e337d3ab7', '0', NULL, '2026-04-19 09:14:56.56026', '2026-04-19 09:14:56.56027', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('summary', '摘要', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'summary', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 15, 177, 2725, '5401cf8d-999c-46b6-b96c-bd539fb3c967', '0', NULL, '2026-04-19 09:14:56.562687', '2026-04-19 09:14:56.562692', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('generated_at', '生成时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'generatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 177, 2726, 'db4dfe88-ee63-48c7-b8b9-f2907dfbb25f', '0', NULL, '2026-04-19 09:14:56.56532', '2026-04-19 09:14:56.56533', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 17, 177, 2727, '5b9e6224-9466-4334-b064-d2153ca65bfe', '0', NULL, '2026-04-19 09:14:56.568839', '2026-04-19 09:14:56.568846', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_data_dicts_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 178, 2728, 'ebdb147d-d5ad-496b-9395-dd0a9c29c9f4', '0', NULL, '2026-04-19 09:14:56.595227', '2026-04-19 09:14:56.595233', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('dict_type', '字典类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'dictType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 2, 178, 2729, 'b0589cf7-32e3-4205-8fb7-bddd453385da', '0', NULL, '2026-04-19 09:14:56.598056', '2026-04-19 09:14:56.598062', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('dict_code', '字典编码', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'dictCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 178, 2730, '368b70f7-a247-4198-9e6c-d2e82c131658', '0', NULL, '2026-04-19 09:14:56.601081', '2026-04-19 09:14:56.601107', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('dict_label', '字典标签', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'dictLabel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 178, 2731, '71723da0-147a-4313-a227-2719a0e220c8', '0', NULL, '2026-04-19 09:14:56.604003', '2026-04-19 09:14:56.60401', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('dict_value', '字典值', 'VARCHAR(255)', '255', '', 'f', 'f', 'f', 'f', 'str', 'dictValue', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 178, 2732, '4dd8e8cf-e30f-48cc-8fc3-35e4f8a298c0', '0', NULL, '2026-04-19 09:14:56.606857', '2026-04-19 09:14:56.606863', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('parent_id', '父级ID', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'parentId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 178, 2733, 'da65447a-b0db-48f8-84da-b11b176d31a6', '0', NULL, '2026-04-19 09:14:56.609416', '2026-04-19 09:14:56.609421', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('level', '级别', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'level', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 178, 2734, '57626133-84db-4c4d-8b3d-8043584437bf', '0', NULL, '2026-04-19 09:14:56.613133', '2026-04-19 09:14:56.613145', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_leaf', '是否叶子节点:0-否,1-是', 'BOOLEAN', '', 'true', 'f', 'f', 'f', 'f', 'bool', 'isLeaf', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 178, 2735, '5062114a-504b-427e-b9e5-76260b9c7f32', '0', NULL, '2026-04-19 09:14:56.616497', '2026-04-19 09:14:56.616504', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('dict_sort', '字典排序', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'dictSort', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 178, 2736, '374536a7-fc7b-4d7f-a2e4-ef3d1c68484a', '0', NULL, '2026-04-19 09:14:56.619537', '2026-04-19 09:14:56.619547', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('css_class', 'CSS类名', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'cssClass', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 10, 178, 2737, '282cd155-8d0e-4616-a315-58a6e7310921', '0', NULL, '2026-04-19 09:14:56.623406', '2026-04-19 09:14:56.623413', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('list_class', '列表类名', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'listClass', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 11, 178, 2738, 'fe1dabd7-7b64-41aa-a96a-0960bc6294ef', '0', NULL, '2026-04-19 09:14:56.627044', '2026-04-19 09:14:56.627056', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('color_class', '颜色类名', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'colorClass', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 12, 178, 2739, 'b0b72467-66af-47d3-acc5-3e6bf926c92a', '0', NULL, '2026-04-19 09:14:56.630164', '2026-04-19 09:14:56.630171', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('dict_status', '字典状态', 'VARCHAR(20)', '20', '''active''::character varying', 'f', 'f', 'f', 'f', 'str', 'dictStatus', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 13, 178, 2740, '3ba3157d-27f5-470a-96e3-6ad41b6eb64a', '0', NULL, '2026-04-19 09:14:56.632755', '2026-04-19 09:14:56.632761', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_default', '是否默认:0-否,1-是', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDefault', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 178, 2741, '4df52150-93c1-40be-992e-db0e64603f87', '0', NULL, '2026-04-19 09:14:56.635363', '2026-04-19 09:14:56.635369', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remark', '备注', 'VARCHAR(500)', '500', '', 'f', 'f', 'f', 'f', 'str', 'remark', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 15, 178, 2742, '532087f0-4e0e-47a3-9304-cc145025f5a1', '0', NULL, '2026-04-19 09:14:56.638028', '2026-04-19 09:14:56.638034', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('extra_data', '扩展数据', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'extraData', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 16, 178, 2743, 'ee2b2ee8-d30c-497d-a316-4d3166e7cb2e', '0', NULL, '2026-04-19 09:14:56.640363', '2026-04-19 09:14:56.640368', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 178, 2744, 'fe32aefd-a853-49b7-9887-1a1ec805f9cc', '0', NULL, '2026-04-19 09:14:56.643228', '2026-04-19 09:14:56.643236', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 18, 178, 2745, '9ba8006c-e491-4ca1-8445-4771dd8af20d', '0', NULL, '2026-04-19 09:14:56.646325', '2026-04-19 09:14:56.646331', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 19, 178, 2746, 'd0d81507-3ef2-4867-b932-e5dd0953456e', '0', NULL, '2026-04-19 09:14:56.650119', '2026-04-19 09:14:56.650128', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 20, 178, 2747, '94fee5ba-3bc6-4cdb-968a-ac21ceac09fb', '0', NULL, '2026-04-19 09:14:56.653826', '2026-04-19 09:14:56.653833', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 21, 178, 2748, '01b06c4f-0b9d-452e-93b9-88becd8209a8', '0', NULL, '2026-04-19 09:14:56.65614', '2026-04-19 09:14:56.656145', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_payments_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 179, 2749, '78f835e3-8d4c-4587-b9bd-3a2d16d8dcdb', '0', NULL, '2026-04-19 09:14:56.678776', '2026-04-19 09:14:56.678782', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('payment_code', '收款编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'paymentCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 179, 2750, 'e2f3e033-df5b-41b2-8c10-797d3090a525', '0', NULL, '2026-04-19 09:14:56.682248', '2026-04-19 09:14:56.682258', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contract_id', '合同ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'contractId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 179, 2751, 'f8bcce91-0ea7-468f-8e9e-e9c7f6aaa600', '0', NULL, '2026-04-19 09:14:56.68534', '2026-04-19 09:14:56.685347', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('order_id', '订单ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'orderId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 179, 2752, '9b5fad36-54fb-4e58-838d-c48331a1a4fd', '0', NULL, '2026-04-19 09:14:56.687757', '2026-04-19 09:14:56.687762', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('payment_plan_id', '付款计划ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'paymentPlanId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 179, 2753, '52970b39-5330-4785-a4ee-3add398f71e9', '0', NULL, '2026-04-19 09:14:56.690994', '2026-04-19 09:14:56.691001', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 179, 2754, '9ff928ee-5f29-4661-bc45-622cb5deff22', '0', NULL, '2026-04-19 09:14:56.693521', '2026-04-19 09:14:56.693526', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('payment_amount', '收款金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'paymentAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 179, 2755, 'a6065970-380a-467c-994b-43d6d7fddf86', '0', NULL, '2026-04-19 09:14:56.695497', '2026-04-19 09:14:56.695501', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('payment_method', '付款方式', 'VARCHAR(30)', '30', '', 'f', 'f', 'f', 'f', 'str', 'paymentMethod', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 8, 179, 2756, '8bdd59f9-4adb-490d-aea2-7dd10b150bda', '0', NULL, '2026-04-19 09:14:56.698077', '2026-04-19 09:14:56.698082', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('payment_date', '付款日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'paymentDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 9, 179, 2757, '81ebb2b3-89d2-4c13-ac8d-4efe0ada0e7b', '0', NULL, '2026-04-19 09:14:56.700601', '2026-04-19 09:14:56.700606', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('bank_name', '银行名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'bankName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 10, 179, 2758, '757771e2-3c0b-4347-b41f-f0d0005d139f', '0', NULL, '2026-04-19 09:14:56.702651', '2026-04-19 09:14:56.702655', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('bank_account', '银行账号', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'bankAccount', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 11, 179, 2759, '42a776a3-aba5-442e-8c13-a2c6c038bcbf', '0', NULL, '2026-04-19 09:14:56.704681', '2026-04-19 09:14:56.704684', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('account_name', '账户名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'accountName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 12, 179, 2760, '7e701758-e57c-4913-bfc2-478ac13f7e41', '0', NULL, '2026-04-19 09:14:56.707991', '2026-04-19 09:14:56.707998', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('receipt_number', '收款单号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'receiptNumber', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 13, 179, 2761, '93e25062-9b85-4019-9e55-8ff84afc0480', '0', NULL, '2026-04-19 09:14:56.7107', '2026-04-19 09:14:56.710705', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('receipt_file_url', '收款凭证URL', 'VARCHAR(500)', '500', '', 'f', 'f', 'f', 'f', 'str', 'receiptFileUrl', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 14, 179, 2762, '3faa4dc1-92e2-4496-a3f0-4c4bad1b3ebb', '0', NULL, '2026-04-19 09:14:56.713541', '2026-04-19 09:14:56.713549', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('invoice_id', '发票ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'invoiceId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 179, 2763, 'd113081b-07b5-4582-a9d6-004721cf1242', '0', NULL, '2026-04-19 09:14:56.716694', '2026-04-19 09:14:56.716701', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_invoiced', '是否已开票', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isInvoiced', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 16, 179, 2764, 'bc438684-d008-4233-b499-512408e2e1f2', '0', NULL, '2026-04-19 09:14:56.719115', '2026-04-19 09:14:56.71912', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('payment_status', '付款状态:1-未付款,2-部分付款,3-已付款,4-退款中,5-已退款', 'VARCHAR(20)', '20', '''confirmed''::character varying', 'f', 'f', 'f', 'f', 'str', 'paymentStatus', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 17, 179, 2765, 'c159c5fa-85bd-4754-af4c-e713d942e82e', '0', NULL, '2026-04-19 09:14:56.721651', '2026-04-19 09:14:56.721658', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('confirmed_by', '确认人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'confirmedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 18, 179, 2766, 'ff3b0a40-f7d3-4b6e-8c55-1e7be536a94b', '0', NULL, '2026-04-19 09:14:56.725349', '2026-04-19 09:14:56.725356', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('confirmed_at', '确认时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'confirmedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 19, 179, 2767, '359d9be1-f79c-4d19-9cf4-28690ba88db0', '0', NULL, '2026-04-19 09:14:56.727598', '2026-04-19 09:14:56.727603', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remark', '备注', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'remark', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 20, 179, 2768, '3b8a55e2-5135-4b1e-bde4-69ff56b7d3e3', '0', NULL, '2026-04-19 09:14:56.73033', '2026-04-19 09:14:56.730336', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 21, 179, 2769, '0a5ab4c6-48bc-4827-9f7e-f2b8d925c546', '0', NULL, '2026-04-19 09:14:56.732634', '2026-04-19 09:14:56.732639', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 22, 179, 2770, 'e86f181f-e06e-4841-ab91-396098988320', '0', NULL, '2026-04-19 09:14:56.734623', '2026-04-19 09:14:56.734627', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 23, 179, 2771, '75cf3bf7-22b1-46df-beea-55d3e15fcc60', '0', NULL, '2026-04-19 09:14:56.736647', '2026-04-19 09:14:56.736651', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 24, 179, 2772, 'd55e0e45-6493-43e1-b993-d335cc99c12e', '0', NULL, '2026-04-19 09:14:56.739847', '2026-04-19 09:14:56.739854', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 25, 179, 2773, '8db04d38-972e-464f-8e26-a4f0567bec08', '0', NULL, '2026-04-19 09:14:56.742207', '2026-04-19 09:14:56.742212', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_order_items_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 180, 2774, '9f284e02-d3f0-4373-b23d-35f959c8e8d7', '0', NULL, '2026-04-19 09:14:56.766173', '2026-04-19 09:14:56.766179', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('order_id', '订单ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'orderId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 180, 2775, 'b791dd69-7d9d-42cb-a760-c460d732812e', '0', NULL, '2026-04-19 09:14:56.769003', '2026-04-19 09:14:56.769014', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_id', '产品ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'productId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 180, 2776, 'e432e236-95d3-4367-83ac-9e0e4c8b504e', '0', NULL, '2026-04-19 09:14:56.771191', '2026-04-19 09:14:56.771196', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_code', '产品编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'productCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 180, 2777, 'd0356227-e14d-4016-9d12-8b8599a6c910', '0', NULL, '2026-04-19 09:14:56.773384', '2026-04-19 09:14:56.773388', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_name', '产品名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'productName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 180, 2778, '4d60eda2-e115-4e6f-81a5-369ff929e02a', '0', NULL, '2026-04-19 09:14:56.776275', '2026-04-19 09:14:56.776282', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sku_id', 'SKU ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'skuId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 180, 2779, '2bac4903-7f7c-42a8-8bda-a477739369b8', '0', NULL, '2026-04-19 09:14:56.778514', '2026-04-19 09:14:56.778519', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sku_code', 'SKU编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'skuCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 7, 180, 2780, 'f38b1959-07db-493f-bc82-acc7f32eecc3', '0', NULL, '2026-04-19 09:14:56.780565', '2026-04-19 09:14:56.780569', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('quantity', '数量', 'NUMERIC(10, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'quantity', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 180, 2781, 'ab28b4c7-8469-4283-b7c4-d4c76fef22aa', '0', NULL, '2026-04-19 09:14:56.782556', '2026-04-19 09:14:56.78256', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('unit_price', '单价', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'unitPrice', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 180, 2782, 'c8353e41-7dbf-4ef4-ba42-1fb1f5906746', '0', NULL, '2026-04-19 09:14:56.785727', '2026-04-19 09:14:56.785733', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('discount_rate', '折扣率', 'NUMERIC(5, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'discountRate', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 180, 2783, '2a5ec7f6-0e82-4a98-bcf1-da0116ee8fbc', '0', NULL, '2026-04-19 09:14:56.788418', '2026-04-19 09:14:56.788464', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('discount_amount', '折扣金额', 'NUMERIC(15, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'discountAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 180, 2784, '6877969c-056a-49d5-874d-61c42735d180', '0', NULL, '2026-04-19 09:14:56.791927', '2026-04-19 09:14:56.791936', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tax_rate', '税率', 'NUMERIC(5, 2)', '', '13.00', 'f', 'f', 'f', 'f', 'Decimal', 'taxRate', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 180, 2785, 'c5ae04f6-745c-4684-8766-2119547e7aa4', '0', NULL, '2026-04-19 09:14:56.795113', '2026-04-19 09:14:56.795119', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tax_amount', '税额', 'NUMERIC(15, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'taxAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 180, 2786, '16a4c726-6a51-46bf-b297-219b1ae41550', '0', NULL, '2026-04-19 09:14:56.797704', '2026-04-19 09:14:56.797708', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('amount', '金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'amount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 180, 2787, 'd1aa74b1-23c6-4697-b79f-aa368d45249f', '0', NULL, '2026-04-19 09:14:56.801197', '2026-04-19 09:14:56.801203', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('delivery_date', '交付日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'deliveryDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 15, 180, 2788, 'd407d527-4ce0-4ac7-bee6-1ef79baf6f7b', '0', NULL, '2026-04-19 09:14:56.803676', '2026-04-19 09:14:56.803681', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('delivery_address', '收货地址', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'deliveryAddress', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 16, 180, 2789, 'b651a3d8-b494-40a2-b8f4-04542ee2b53e', '0', NULL, '2026-04-19 09:14:56.806142', '2026-04-19 09:14:56.806147', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('delivered_quantity', '已交付数量', 'NUMERIC(10, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'deliveredQuantity', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 180, 2790, 'f950ec9a-1767-4ced-8c98-72036c61ee2a', '0', NULL, '2026-04-19 09:14:56.809057', '2026-04-19 09:14:56.809062', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('pending_quantity', '待交付数量', 'NUMERIC(10, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'pendingQuantity', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 18, 180, 2791, 'c1550e32-24c7-4532-bc01-5fd1e7731cb5', '0', NULL, '2026-04-19 09:14:56.811263', '2026-04-19 09:14:56.811267', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('production_status', '生产状态', 'VARCHAR(20)', '20', '''pending''::character varying', 'f', 'f', 'f', 'f', 'str', 'productionStatus', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 19, 180, 2792, 'd9811bca-2705-4d2c-8bbb-eb28d7d76eab', '0', NULL, '2026-04-19 09:14:56.814439', '2026-04-19 09:14:56.814461', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('production_note', '生产备注', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'productionNote', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 20, 180, 2793, 'e37412d8-a7e0-4f5e-b576-68a9ed29090a', '0', NULL, '2026-04-19 09:14:56.818017', '2026-04-19 09:14:56.818023', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remark', '备注', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'remark', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 21, 180, 2794, '3e26e5af-c6a2-4dae-9b2a-a55b17a9c5b1', '0', NULL, '2026-04-19 09:14:56.820621', '2026-04-19 09:14:56.820628', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sort', '排序', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'sort', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 22, 180, 2795, 'ea7658e6-535c-42ee-a439-80b8ba3d6173', '0', NULL, '2026-04-19 09:14:56.824067', '2026-04-19 09:14:56.824073', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 23, 180, 2796, '4691d8fe-3752-466e-a192-2487fe22b61f', '0', NULL, '2026-04-19 09:14:56.827225', '2026-04-19 09:14:56.827231', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 24, 180, 2797, '27cd1c5b-a255-48e7-ba14-31d0c6833a0d', '0', NULL, '2026-04-19 09:14:56.830515', '2026-04-19 09:14:56.830521', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 25, 180, 2798, '632522ad-ec66-41c6-ae6d-b6d987b60633', '0', NULL, '2026-04-19 09:14:56.833778', '2026-04-19 09:14:56.833784', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 26, 180, 2799, 'ef9d4d71-9318-4e4d-a63d-8bcfda1b9da2', '0', NULL, '2026-04-19 09:14:56.836044', '2026-04-19 09:14:56.836049', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_contact_relations_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 181, 2800, '624baacf-5fe1-4a8a-82a6-f147182aae7a', '0', NULL, '2026-04-19 09:14:56.860018', '2026-04-19 09:14:56.860024', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contact_id', '联系人ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'contactId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 181, 2801, 'a131ac42-8e3b-424e-954d-c27389333bee', '0', NULL, '2026-04-19 09:14:56.863478', '2026-04-19 09:14:56.863485', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('related_contact_id', '关联联系人ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'relatedContactId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 181, 2802, 'a6358784-3b58-4bbc-9732-cec0bc044e94', '0', NULL, '2026-04-19 09:14:56.866081', '2026-04-19 09:14:56.866093', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('related_entity_type', '关联实体类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'relatedEntityType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 4, 181, 2803, 'efac32c7-58b7-4e52-ac35-83fd0e19b2c1', '0', NULL, '2026-04-19 09:14:56.869632', '2026-04-19 09:14:56.86964', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('related_entity_id', '关联实体ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'relatedEntityId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 181, 2804, 'fc3a3fd1-e07b-4f71-b182-f2ec63102461', '0', NULL, '2026-04-19 09:14:56.872715', '2026-04-19 09:14:56.872721', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('relation_type', '关系类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'relationType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 6, 181, 2805, '6bfd06ec-b560-4c06-ba80-e905e63fe18f', '0', NULL, '2026-04-19 09:14:56.87487', '2026-04-19 09:14:56.874874', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('relation_desc', '关系描述', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'relationDesc', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 7, 181, 2806, 'c506e01f-64a3-4198-8960-00b91d680b7c', '0', NULL, '2026-04-19 09:14:56.877822', '2026-04-19 09:14:56.877828', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('importance', '重要性', 'VARCHAR(20)', '20', '''normal''::character varying', 'f', 'f', 'f', 'f', 'str', 'importance', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 8, 181, 2807, '33cf6b21-c349-4abf-a030-00ec318c6c1d', '0', NULL, '2026-04-19 09:14:56.880085', '2026-04-19 09:14:56.88009', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('decision_role', '决策角色', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'decisionRole', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 9, 181, 2808, '910f10a2-20fb-4a01-b5cd-8a9282398eb6', '0', NULL, '2026-04-19 09:14:56.882305', '2026-04-19 09:14:56.882309', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('influence_level', '影响力等级', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'influenceLevel', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 181, 2809, 'adf05fa3-b4c1-4bba-9466-1c210494756b', '0', NULL, '2026-04-19 09:14:56.884737', '2026-04-19 09:14:56.88475', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''active''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 11, 181, 2810, '410d0588-44cc-40f0-aa16-4a2c4d3890a2', '0', NULL, '2026-04-19 09:14:56.88724', '2026-04-19 09:14:56.887246', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 181, 2811, 'c333b505-9fad-4f61-b77a-af2c0063e2cc', '0', NULL, '2026-04-19 09:14:56.88956', '2026-04-19 09:14:56.889564', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 13, 181, 2812, 'f09b0ad2-9dee-4531-b262-2f2467445234', '0', NULL, '2026-04-19 09:14:56.891841', '2026-04-19 09:14:56.891847', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 181, 2813, '63de3c14-0a93-45cd-9336-7fe312846770', '0', NULL, '2026-04-19 09:14:56.894948', '2026-04-19 09:14:56.894954', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 15, 181, 2814, '3f753b83-5c72-4247-926a-8ad1c497caee', '0', NULL, '2026-04-19 09:14:56.897165', '2026-04-19 09:14:56.897169', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 16, 181, 2815, 'cc45f191-2064-472b-b13d-b6a14e5d407e', '0', NULL, '2026-04-19 09:14:56.899342', '2026-04-19 09:14:56.899346', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_ai_recommendations_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 182, 2816, '5e59ccc0-c021-4797-b8a5-1ed0eb150771', '0', NULL, '2026-04-19 09:14:56.922275', '2026-04-19 09:14:56.922281', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('entity_type', '实体类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'entityType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 2, 182, 2817, '2d6fc0c8-0fa0-4511-9c24-738c255f214b', '0', NULL, '2026-04-19 09:14:56.925172', '2026-04-19 09:14:56.925177', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('entity_id', '实体ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'entityId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 182, 2818, '868212e0-6e02-4d7e-8699-1b9204bdd166', '0', NULL, '2026-04-19 09:14:56.92748', '2026-04-19 09:14:56.927485', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('recommendation_type', '推荐类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'recommendationType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 4, 182, 2819, '0985fd6a-a7a1-4ae3-88db-ea76725f9888', '0', NULL, '2026-04-19 09:14:56.930008', '2026-04-19 09:14:56.930013', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('recommendation_content', '推荐内容', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'recommendationContent', 'f', 'f', 'f', 'f', 'EQ', 'editor', '', 5, 182, 2820, '3d1ad428-e93f-484e-b38f-723a74d88409', '0', NULL, '2026-04-19 09:14:56.932148', '2026-04-19 09:14:56.932172', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('ai_model', 'AI模型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'aiModel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 6, 182, 2821, 'c8dbe895-ff82-4f11-b5a7-093612ccf77c', '0', NULL, '2026-04-19 09:14:56.935069', '2026-04-19 09:14:56.935075', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('confidence', '置信度', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'confidence', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 182, 2822, '3641994a-b811-4c02-89b6-4a01e96cef61', '0', NULL, '2026-04-19 09:14:56.937301', '2026-04-19 09:14:56.937305', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('reasoning', '推理依据', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'reasoning', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 8, 182, 2823, '52cbfa8a-2d8a-4c53-b58f-326bb95b53b5', '0', NULL, '2026-04-19 09:14:56.940253', '2026-04-19 09:14:56.94026', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('user_feedback', '用户反馈', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'userFeedback', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 9, 182, 2824, '2deb04ac-52b5-40c4-8992-d2c1aade0cf7', '0', NULL, '2026-04-19 09:14:56.942898', '2026-04-19 09:14:56.942904', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('feedback_at', '反馈时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'feedbackAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 10, 182, 2825, '77918105-1740-40a9-9888-10a9cf0de7ab', '0', NULL, '2026-04-19 09:14:56.945088', '2026-04-19 09:14:56.945092', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 182, 2826, '25a16629-ed94-4fd9-82e9-af0d8b553626', '0', NULL, '2026-04-19 09:14:56.947322', '2026-04-19 09:14:56.947328', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_customers_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 183, 2827, 'ee789d62-54fa-4aad-bd70-d382af794b2b', '0', NULL, '2026-04-19 09:14:56.969575', '2026-04-19 09:14:56.969581', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_code', '客户编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'customerCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 183, 2828, '3038de83-1f06-44c9-bb90-e929bbe2bc0a', '0', NULL, '2026-04-19 09:14:56.973168', '2026-04-19 09:14:56.973174', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_name', '客户名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'customerName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 183, 2829, 'c69d2ba2-58d6-4944-acc7-f801ff0c72eb', '0', NULL, '2026-04-19 09:14:56.975522', '2026-04-19 09:14:56.975527', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_type', '客户类型:1-企业客户,2-个人客户,3-政府机构,4-事业单位,5-合作伙伴', 'VARCHAR(20)', '20', '''enterprise''::character varying', 'f', 'f', 'f', 'f', 'str', 'customerType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 4, 183, 2830, '22a96591-2a98-4c1f-8ba7-016f1d5af6c1', '0', NULL, '2026-04-19 09:14:56.979139', '2026-04-19 09:14:56.979148', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('industry', '所属行业', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'industry', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 183, 2831, 'bae58e69-4f01-427b-ac10-82b7dcea2e96', '0', NULL, '2026-04-19 09:14:56.982587', '2026-04-19 09:14:56.982593', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('source', '来源:1-自主开发,2-市场活动,3-转介绍,4-网络推广,5-合作伙伴,6-招投标', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'source', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 6, 183, 2832, 'a26f4eb0-770b-4a17-aefa-e42b9add6447', '0', NULL, '2026-04-19 09:14:56.98501', '2026-04-19 09:14:56.985014', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''active''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 7, 183, 2833, '84bc7085-ee82-40e9-8aa6-f409c0ebcec1', '0', NULL, '2026-04-19 09:14:56.987914', '2026-04-19 09:14:56.98792', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('owner_id', '负责人ID,关联sys_users', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'ownerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 183, 2834, '303fc1d4-0acc-4b9a-90e6-09aa2344e0d9', '0', NULL, '2026-04-19 09:14:56.99035', '2026-04-19 09:14:56.990354', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('department_id', '所属部门ID,关联sys_dept', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'departmentId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 183, 2835, '82efd5e6-fb6a-46e7-8869-dd75d5bfa5b2', '0', NULL, '2026-04-19 09:14:56.992526', '2026-04-19 09:14:56.992529', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('lead_id', '来源线索ID,关联crm_leads', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'leadId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 183, 2836, '2356a581-8d0d-4727-8a9d-e56e871cd297', '0', NULL, '2026-04-19 09:14:56.995116', '2026-04-19 09:14:56.995122', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('pool_status', '公海池状态:1-私有,2-公海', 'VARCHAR(20)', '20', '''private''::character varying', 'f', 'f', 'f', 'f', 'str', 'poolStatus', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 11, 183, 2837, '8a43de37-427a-448c-9eb2-e99088c80d72', '0', NULL, '2026-04-19 09:14:56.99765', '2026-04-19 09:14:56.997655', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('last_followup_at', '最后跟进时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'lastFollowupAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 12, 183, 2838, 'bd67acb6-7d06-4dc4-a93b-907b62aaba3c', '0', NULL, '2026-04-19 09:14:56.999741', '2026-04-19 09:14:56.999745', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('next_followup_at', '下次跟进时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'nextFollowupAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 13, 183, 2839, '5ce16686-91cb-4182-a588-9e475eb266fa', '0', NULL, '2026-04-19 09:14:57.002454', '2026-04-19 09:14:57.002459', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 14, 183, 2840, 'ae0567a6-7455-4593-991a-e77880200cb5', '0', NULL, '2026-04-19 09:14:57.005018', '2026-04-19 09:14:57.005022', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 15, 183, 2841, 'aebc18da-0206-455f-aee9-f2f9ccb90038', '0', NULL, '2026-04-19 09:14:57.007195', '2026-04-19 09:14:57.007199', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 16, 183, 2842, 'c54d7325-1829-4df6-876c-8f571c4c8b9a', '0', NULL, '2026-04-19 09:14:57.009397', '2026-04-19 09:14:57.009401', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 183, 2843, 'a272a575-5901-487e-a888-174d47015002', '0', NULL, '2026-04-19 09:14:57.012025', '2026-04-19 09:14:57.012031', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('deleted_at', '删除时间(软删除)', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'deletedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 18, 183, 2844, 'cb10bdda-1a6f-4a0c-b969-5b9f91dfdc4c', '0', NULL, '2026-04-19 09:14:57.015666', '2026-04-19 09:14:57.015672', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_invoices_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 184, 2845, 'b5aca57b-bc13-4489-a3bb-af94d51be858', '0', NULL, '2026-04-19 09:14:57.044506', '2026-04-19 09:14:57.044512', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('invoice_code', '发票编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'invoiceCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 184, 2846, 'f5edbed2-ad14-4410-9809-06f42529d6c0', '0', NULL, '2026-04-19 09:14:57.046824', '2026-04-19 09:14:57.046828', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contract_id', '合同ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'contractId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 184, 2847, '8c99d4cb-4d5a-46ed-afd8-f0ed2c172532', '0', NULL, '2026-04-19 09:14:57.050137', '2026-04-19 09:14:57.050143', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('order_id', '订单ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'orderId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 184, 2848, '0990f0f8-bb7f-42d0-804c-ff61a1a60127', '0', NULL, '2026-04-19 09:14:57.052583', '2026-04-19 09:14:57.052588', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 184, 2849, 'f2d2e38c-8cea-4346-beb3-e99a915016e7', '0', NULL, '2026-04-19 09:14:57.054639', '2026-04-19 09:14:57.054644', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('invoice_type', '发票类型:1-增值税专票,2-增值税普票,3-普通发票', 'VARCHAR(20)', '20', '''standard''::character varying', 'f', 'f', 'f', 'f', 'str', 'invoiceType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 6, 184, 2850, '7cc24d8c-2a33-476a-99f4-8c1171b8d445', '0', NULL, '2026-04-19 09:14:57.057169', '2026-04-19 09:14:57.057174', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('invoice_date', '开票日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'invoiceDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 7, 184, 2851, '25793049-43b2-4659-9791-86b89e798ab3', '0', NULL, '2026-04-19 09:14:57.059553', '2026-04-19 09:14:57.059558', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('due_date', '到期日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'dueDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 8, 184, 2852, '1f835139-a9ca-4d42-a01f-87806bbd655a', '0', NULL, '2026-04-19 09:14:57.061689', '2026-04-19 09:14:57.061694', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('amount', '金额', 'NUMERIC(18, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'amount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 184, 2853, 'ae02a079-416d-4533-97d8-0c806c19fbaa', '0', NULL, '2026-04-19 09:14:57.06362', '2026-04-19 09:14:57.063624', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tax_amount', '税额', 'NUMERIC(18, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'taxAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 184, 2854, 'f0a1ede7-3c49-4463-8344-21af95a8d6e3', '0', NULL, '2026-04-19 09:14:57.06672', '2026-04-19 09:14:57.066727', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('total_amount', '总金额', 'NUMERIC(18, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'totalAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 184, 2855, '01e3bbf8-5e64-48a5-868b-eaa63a4c5c7d', '0', NULL, '2026-04-19 09:14:57.069405', '2026-04-19 09:14:57.06941', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''draft''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 12, 184, 2856, '3844f3b9-b89a-4920-a6c0-2e6d92f3805e', '0', NULL, '2026-04-19 09:14:57.072417', '2026-04-19 09:14:57.072425', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('paid_amount', '已付金额', 'NUMERIC(18, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'paidAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 184, 2857, '59261cc7-19ff-4232-bea0-8d3d9e6b9ae3', '0', NULL, '2026-04-19 09:14:57.075769', '2026-04-19 09:14:57.075775', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('payment_date', '付款日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'paymentDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 14, 184, 2858, '19daf83b-d8cb-4d4f-9741-a5141e6bea05', '0', NULL, '2026-04-19 09:14:57.078253', '2026-04-19 09:14:57.078258', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('notes', '备注说明', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'notes', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 15, 184, 2859, '52cb4a88-ce84-4fdb-bb86-36081a5d6ac9', '0', NULL, '2026-04-19 09:14:57.081172', '2026-04-19 09:14:57.081198', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 184, 2860, '4ec8842a-f818-4421-9be7-cfe5f20129e7', '0', NULL, '2026-04-19 09:14:57.084669', '2026-04-19 09:14:57.084676', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 17, 184, 2861, '562995f1-10b6-45e9-97a7-05d29f81dd32', '0', NULL, '2026-04-19 09:14:57.087676', '2026-04-19 09:14:57.087683', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 18, 184, 2862, '182119c4-53ff-4a48-b32a-ae8a673e8e99', '0', NULL, '2026-04-19 09:14:57.090806', '2026-04-19 09:14:57.090812', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 19, 184, 2863, 'c07136e5-295e-4443-9dd4-f614b7da7e2b', '0', NULL, '2026-04-19 09:14:57.093577', '2026-04-19 09:14:57.093583', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('deleted_at', '删除时间(软删除)', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'deletedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 20, 184, 2864, '181b2e88-0755-49ee-b58d-46c9f32c8b7c', '0', NULL, '2026-04-19 09:14:57.096606', '2026-04-19 09:14:57.096612', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'BIGINT', '', 'nextval(''crm_product_prices_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 185, 2865, '20ddf6f3-6c49-4537-bb6f-748e09ce0151', '0', NULL, '2026-04-19 09:15:05.813124', '2026-04-19 09:15:05.81314', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_id', '产品ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'productId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 185, 2866, 'bd9e2059-d890-4335-8bf3-185e27da09db', '0', NULL, '2026-04-19 09:15:05.815535', '2026-04-19 09:15:05.81554', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sku_id', 'SKU ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'skuId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 185, 2867, 'f4f1de2e-72bd-44c9-a258-411e0fff54eb', '0', NULL, '2026-04-19 09:15:05.818029', '2026-04-19 09:15:05.818034', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('price_type', '价格类型', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'priceType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 4, 185, 2868, '74ab7d60-4cb1-4e6b-95b0-c2649664710f', '0', NULL, '2026-04-19 09:15:05.820312', '2026-04-19 09:15:05.820316', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('price_name', '价格名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'priceName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 185, 2869, '5bd8b2cf-b67f-49fb-8d9c-023ff9175859', '0', NULL, '2026-04-19 09:15:05.822786', '2026-04-19 09:15:05.822792', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('unit_price', '单价', 'NUMERIC(18, 4)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'unitPrice', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 185, 2870, '83e11b04-5862-452c-be54-0990151454f7', '0', NULL, '2026-04-19 09:15:05.825611', '2026-04-19 09:15:05.825617', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('min_quantity', '最小数量', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'minQuantity', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 185, 2871, 'e4740306-1855-41ef-81a0-42c256055990', '0', NULL, '2026-04-19 09:15:05.828083', '2026-04-19 09:15:05.828088', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('max_quantity', '最大数量', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'maxQuantity', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 185, 2872, '1e7c3236-5f2e-4a64-bb4e-12547eebb09a', '0', NULL, '2026-04-19 09:15:05.830351', '2026-04-19 09:15:05.830355', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('effective_from', '生效日期', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'effectiveFrom', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 9, 185, 2873, 'cea4f35e-ef80-4b17-b988-1e6b284c05cd', '0', NULL, '2026-04-19 09:15:05.834114', '2026-04-19 09:15:05.834123', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('effective_to', '失效日期', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'effectiveTo', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 10, 185, 2874, '34b0c084-3f69-48af-8319-996f07b4a6a9', '0', NULL, '2026-04-19 09:15:05.83714', '2026-04-19 09:15:05.837146', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_active', '是否启用:0-否,1-是', 'BOOLEAN', '', 'true', 'f', 'f', 'f', 'f', 'bool', 'isActive', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 185, 2875, '676d857a-4c0d-4ad0-8188-f533827e1e3a', '0', NULL, '2026-04-19 09:15:05.840918', '2026-04-19 09:15:05.840929', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 185, 2876, '7c6b4ad7-9d20-4412-aa15-cb6d548c77e4', '0', NULL, '2026-04-19 09:15:05.845073', '2026-04-19 09:15:05.845079', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('target_year', '目标年份', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'targetYear', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 188, 2918, 'ce85f37f-db7a-4c60-8a9b-773f476453d8', '0', NULL, '2026-04-19 09:15:06.07833', '2026-04-19 09:15:06.078337', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_level', '客户等级:A-战略客户,B-重要客户,C-普通客户,D-潜在客户', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'customerLevel', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 13, 185, 2877, 'ce835592-a53c-42d8-a781-b5d561c7efa0', '0', NULL, '2026-04-19 09:15:05.847709', '2026-04-19 09:15:05.847716', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('quantity_prices', '阶梯价格', 'JSONB', '', '''[]''::jsonb', 'f', 'f', 'f', 'f', 'dict', 'quantityPrices', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 185, 2878, '50fb032e-005b-4c9f-b0a4-563f1a903caf', '0', NULL, '2026-04-19 09:15:05.851858', '2026-04-19 09:15:05.851865', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('approval_status', '审批状态:1-待审批,2-审批中,3-已通过,4-已拒绝,5-已撤销', 'VARCHAR(20)', '20', '''pending''::character varying', 'f', 'f', 'f', 'f', 'str', 'approvalStatus', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 15, 185, 2879, '6e525d55-e8ef-4d08-b05b-f71c8e3e125f', '0', NULL, '2026-04-19 09:15:05.855142', '2026-04-19 09:15:05.855153', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('approved_by', '审批人ID,关联sys_users', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'approvedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 16, 185, 2880, '7552e71d-3cd7-4cbb-a477-578a30655855', '0', NULL, '2026-04-19 09:15:05.859504', '2026-04-19 09:15:05.859535', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('approved_at', '审批时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'approvedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 17, 185, 2881, '8a32811e-031c-42df-a4c8-8392fb68c491', '0', NULL, '2026-04-19 09:15:05.862629', '2026-04-19 09:15:05.862634', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 18, 185, 2882, 'fb2320d1-ee6e-44a4-a31f-198893e85f42', '0', NULL, '2026-04-19 09:15:05.865541', '2026-04-19 09:15:05.865547', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 19, 185, 2883, 'be4f2b18-0455-4187-be74-25ef00ca716e', '0', NULL, '2026-04-19 09:15:05.868425', '2026-04-19 09:15:05.868431', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 20, 185, 2884, '7503a475-7384-459a-abad-40f1b156af72', '0', NULL, '2026-04-19 09:15:05.872534', '2026-04-19 09:15:05.872545', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 21, 185, 2885, '64423f77-7085-4fc9-b9d6-d869ae1a6cd8', '0', NULL, '2026-04-19 09:15:05.876087', '2026-04-19 09:15:05.876093', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('deleted_at', '删除时间(软删除)', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'deletedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 22, 185, 2886, '283ffa34-216f-40d7-8186-1aba69963850', '0', NULL, '2026-04-19 09:15:05.879094', '2026-04-19 09:15:05.879101', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('version', '版本号', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'version', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 23, 185, 2887, 'c056fcdd-c5f0-49ad-b2f9-c02deea7074c', '0', NULL, '2026-04-19 09:15:05.882461', '2026-04-19 09:15:05.882467', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'BIGINT', '', 'nextval(''crm_user_extensions_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 186, 2888, 'ad1f84f0-88f0-4ddf-8eeb-784646140c6e', '0', NULL, '2026-04-19 09:15:05.909766', '2026-04-19 09:15:05.909773', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('user_id', '用户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'userId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 186, 2889, 'fca93f81-6b4e-4a76-a694-63759fa7d92c', '0', NULL, '2026-04-19 09:15:05.913252', '2026-04-19 09:15:05.91326', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sales_area', '销售区域', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'salesArea', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 186, 2890, 'c8b89151-795f-47f3-b468-a87eeaebd131', '0', NULL, '2026-04-19 09:15:05.916974', '2026-04-19 09:15:05.916981', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('team_id', '团队ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'teamId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 186, 2891, '10e76ecd-adaf-4434-bf3c-db0e465922eb', '0', NULL, '2026-04-19 09:15:05.920325', '2026-04-19 09:15:05.920332', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('territory', '领土', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'territory', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 186, 2892, '68493c41-e936-4da6-ada0-bfcc232ee624', '0', NULL, '2026-04-19 09:15:05.924248', '2026-04-19 09:15:05.924255', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sales_targets', '销售目标', 'NUMERIC(18, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'salesTargets', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 186, 2893, '3873a3fa-c41d-47bd-a294-2985c7335d6f', '0', NULL, '2026-04-19 09:15:05.928009', '2026-04-19 09:15:05.928016', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('commission_rate', '佣金比率', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'commissionRate', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 186, 2894, 'f8e7bca0-4374-404e-a762-3e8f0f424a38', '0', NULL, '2026-04-19 09:15:05.931157', '2026-04-19 09:15:05.931182', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('max_discount', '最大折扣', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'maxDiscount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 186, 2895, '2ccaa093-5579-47d6-8aa3-0e6c64ec6774', '0', NULL, '2026-04-19 09:15:05.935907', '2026-04-19 09:15:05.935917', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('manager_id', '经理ID,关联sys_users', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'managerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 186, 2896, '40ddc894-4e2a-4c87-bcfc-fa56e72fd59e', '0', NULL, '2026-04-19 09:15:05.939233', '2026-04-19 09:15:05.939239', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('max_customers', '最大客户数', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'maxCustomers', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 186, 2897, '5399c6ec-0911-4d62-8b0f-db6f39064630', '0', NULL, '2026-04-19 09:15:05.943155', '2026-04-19 09:15:05.943163', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('auto_assign_enabled', '自动分配启用:0-否,1-是', 'BOOLEAN', '', 'true', 'f', 'f', 'f', 'f', 'bool', 'autoAssignEnabled', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 186, 2898, '39521a4b-1c63-4078-838b-4ddb49f1f600', '0', NULL, '2026-04-19 09:15:05.946029', '2026-04-19 09:15:05.946034', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 12, 186, 2899, '8502e7fd-d582-4723-9993-763d8c6d6eb9', '0', NULL, '2026-04-19 09:15:05.949922', '2026-04-19 09:15:05.949932', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 13, 186, 2900, '4d31dcbf-f969-4c4a-8ce5-09892d5caf65', '0', NULL, '2026-04-19 09:15:05.953819', '2026-04-19 09:15:05.953842', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 186, 2901, '753c7ffe-3ace-430a-bfa9-273d7c98a428', '0', NULL, '2026-04-19 09:15:05.958446', '2026-04-19 09:15:05.958453', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 186, 2902, '8ce360f5-236d-4b48-bf2a-900defaa253e', '0', NULL, '2026-04-19 09:15:05.961811', '2026-04-19 09:15:05.961817', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('deleted_at', '删除时间(软删除)', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'deletedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 186, 2903, '6678a3d4-0b5d-47e9-af79-640f7f272b64', '0', NULL, '2026-04-19 09:15:05.96472', '2026-04-19 09:15:05.964727', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('version', '版本号', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'version', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 186, 2904, 'da8e48f7-7e78-42a2-b0af-799b3f33246e', '0', NULL, '2026-04-19 09:15:05.968256', '2026-04-19 09:15:05.968281', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_workflow_rules_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 187, 2905, 'b631e4f1-9e95-4669-acde-810587186c74', '0', NULL, '2026-04-19 09:15:06.000589', '2026-04-19 09:15:06.000598', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('rule_name', '规则名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'ruleName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 187, 2906, '124aad68-3292-4742-aa38-e14f04902409', '0', NULL, '2026-04-19 09:15:06.005911', '2026-04-19 09:15:06.005923', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('rule_type', '规则类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'ruleType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 3, 187, 2907, '2c1ea8e2-8cdf-4207-9292-b937daae4cfd', '0', NULL, '2026-04-19 09:15:06.009267', '2026-04-19 09:15:06.009274', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('trigger_event', '触发事件', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'triggerEvent', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 187, 2908, '74452716-f15f-4c3a-a8b9-fb256cd3c01f', '0', NULL, '2026-04-19 09:15:06.013376', '2026-04-19 09:15:06.013385', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('trigger_condition', '触发条件', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'triggerCondition', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 187, 2909, 'f2e2ffcb-2199-4567-9401-d6668c534004', '0', NULL, '2026-04-19 09:15:06.017044', '2026-04-19 09:15:06.01705', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('action_type', '操作类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'actionType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 6, 187, 2910, 'c5e42d85-fa4c-4b93-9408-f06c3052c11b', '0', NULL, '2026-04-19 09:15:06.021257', '2026-04-19 09:15:06.02127', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('action_config', '动作配置', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'actionConfig', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 187, 2911, '7490219d-fdcb-4b5c-9d45-c444e412b504', '0', NULL, '2026-04-19 09:15:06.025588', '2026-04-19 09:15:06.025595', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('enabled', '是否启用:0-否,1-是', 'BOOLEAN', '', 'true', 'f', 'f', 'f', 'f', 'bool', 'enabled', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 187, 2912, 'c30b1846-5d00-4400-9b05-4d1319d4f4cd', '0', NULL, '2026-04-19 09:15:06.029778', '2026-04-19 09:15:06.029794', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('priority', '优先级:1-低,2-中,3-高,4-紧急', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'priority', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 187, 2913, 'f8c5380b-567c-4679-83e2-dfaff1c6a740', '0', NULL, '2026-04-19 09:15:06.033401', '2026-04-19 09:15:06.033411', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 10, 187, 2914, '01882c25-b7c2-40a6-946b-9d32aec5d3cb', '0', NULL, '2026-04-19 09:15:06.038012', '2026-04-19 09:15:06.03802', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 187, 2915, '7bf702e7-ac41-44ff-ab94-4a3cb759c836', '0', NULL, '2026-04-19 09:15:06.042296', '2026-04-19 09:15:06.042304', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_sales_targets_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 188, 2916, 'cdf3abfe-e8b2-43e0-8ddd-f0b08289e6ab', '0', NULL, '2026-04-19 09:15:06.071891', '2026-04-19 09:15:06.071898', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('owner_id', '负责人ID,关联sys_users', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'ownerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 188, 2917, '32a09fcc-e707-4a15-87e5-d52a93ff6b6d', '0', NULL, '2026-04-19 09:15:06.075321', '2026-04-19 09:15:06.075327', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('target_quarter', '目标季度', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'targetQuarter', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 188, 2919, '54cd8a1f-0978-497a-a4f5-137aca92539e', '0', NULL, '2026-04-19 09:15:06.080991', '2026-04-19 09:15:06.080998', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('target_month', '目标月份', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'targetMonth', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 188, 2920, '88d6f7bc-e799-4915-9713-4595384c51c6', '0', NULL, '2026-04-19 09:15:06.08552', '2026-04-19 09:15:06.085526', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('target_amount', '目标金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'targetAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 188, 2921, '7729f627-3167-451e-a59b-005cb009d2c9', '0', NULL, '2026-04-19 09:15:06.087933', '2026-04-19 09:15:06.087939', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('target_deals', '目标成交数', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'targetDeals', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 188, 2922, '4d9a4d0e-be5b-4258-9bbd-727457e12ef4', '0', NULL, '2026-04-19 09:15:06.091594', '2026-04-19 09:15:06.091603', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('target_new_customers', '目标新客数', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'targetNewCustomers', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 188, 2923, '68137057-dc1f-419c-ba99-b7f852b7d612', '0', NULL, '2026-04-19 09:15:06.095575', '2026-04-19 09:15:06.095583', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('actual_amount', '实际金额', 'NUMERIC(15, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'actualAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 188, 2924, '4da4274f-be60-44ec-a374-648caa7342df', '0', NULL, '2026-04-19 09:15:06.09875', '2026-04-19 09:15:06.098758', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('actual_deals', '实际成交数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'actualDeals', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 188, 2925, '27515692-05ed-4f29-a458-4d3c242369da', '0', NULL, '2026-04-19 09:15:06.101539', '2026-04-19 09:15:06.101545', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('actual_new_customers', '实际新客数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'actualNewCustomers', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 188, 2926, 'cba31ee0-5601-46e5-8086-eaa768f57f65', '0', NULL, '2026-04-19 09:15:06.10385', '2026-04-19 09:15:06.103856', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('completion_rate', '完成比率', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'completionRate', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 188, 2927, '68b2fd9e-4dac-4c98-97f6-140a2df3645e', '0', NULL, '2026-04-19 09:15:06.107711', '2026-04-19 09:15:06.107719', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 188, 2928, '92d322be-d4eb-4185-805b-3558e30588c9', '0', NULL, '2026-04-19 09:15:06.110633', '2026-04-19 09:15:06.11064', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 14, 188, 2929, '0fefe060-4f0f-47ab-9de3-752c87c4e74e', '0', NULL, '2026-04-19 09:15:06.115474', '2026-04-19 09:15:06.115484', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 15, 188, 2930, 'ad76c2b4-96cd-4fed-802c-80072871cb59', '0', NULL, '2026-04-19 09:15:06.118825', '2026-04-19 09:15:06.118834', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'BIGINT', '', 'nextval(''crm_tag_definitions_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 189, 2931, '7dec5cc5-3dc4-4f67-ae33-0a04ddd5a200', '0', NULL, '2026-04-19 09:15:06.143278', '2026-04-19 09:15:06.143285', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tag_code', '标签编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'tagCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 189, 2932, '7e102123-cae7-4086-aa8e-e7551c0b519e', '0', NULL, '2026-04-19 09:15:06.146466', '2026-04-19 09:15:06.146472', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tag_name', '标签名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'tagName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 189, 2933, '11d4266d-7956-4c07-98cb-14e980bbf5f9', '0', NULL, '2026-04-19 09:15:06.148859', '2026-04-19 09:15:06.148864', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tag_type', '标签类型', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'tagType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 4, 189, 2934, '3cdad7b5-bd7d-4baa-9fd9-7657b4330cc8', '0', NULL, '2026-04-19 09:15:06.151094', '2026-04-19 09:15:06.151101', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('category', '分类', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'category', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 189, 2935, '5987c8f6-8116-4fca-8aeb-784c1f5f8278', '0', NULL, '2026-04-19 09:15:06.154648', '2026-04-19 09:15:06.154671', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('color', '颜色', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'color', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 6, 189, 2936, '7fc6b09c-4b7a-4b8d-9009-40f42b94038a', '0', NULL, '2026-04-19 09:15:06.157284', '2026-04-19 09:15:06.15729', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('icon', '图标', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'icon', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 7, 189, 2937, 'b231bf0a-f9fb-429e-8f08-9c29f7210581', '0', NULL, '2026-04-19 09:15:06.161788', '2026-04-19 09:15:06.161799', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('applicable_types', '适用类型', 'ARRAY', '', '''{}''::character varying[]', 'f', 'f', 'f', 'f', 'list', 'applicableTypes', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 189, 2938, 'fcb1d7c8-ef54-4394-9b5d-8c5e93eb6d3c', '0', NULL, '2026-04-19 09:15:06.165161', '2026-04-19 09:15:06.165168', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_multi_select', '是否多选', 'BOOLEAN', '', 'true', 'f', 'f', 'f', 'f', 'bool', 'isMultiSelect', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 189, 2939, '499ae41c-9a5c-47c7-b007-ad40abf639d3', '0', NULL, '2026-04-19 09:15:06.168815', '2026-04-19 09:15:06.168826', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_required', '是否必填', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isRequired', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 189, 2940, '52cfea76-2373-4fba-be27-c6654d5f59ea', '0', NULL, '2026-04-19 09:15:06.172025', '2026-04-19 09:15:06.172031', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('validation_rule', '验证规则', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'validationRule', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 11, 189, 2941, '43eee241-8890-4ff6-8911-a5ae61c4f4b2', '0', NULL, '2026-04-19 09:15:06.174871', '2026-04-19 09:15:06.174879', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''active''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 12, 189, 2942, '46268f96-3c6f-49e9-88b2-d8cbcfc3e757', '0', NULL, '2026-04-19 09:15:06.180435', '2026-04-19 09:15:06.180441', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sort_order', '排序', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'sortOrder', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 189, 2943, '2c58db27-76a0-4efe-88ab-9d921d507ce4', '0', NULL, '2026-04-19 09:15:06.183734', '2026-04-19 09:15:06.183743', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('usage_count', '使用次数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'usageCount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 189, 2944, '0516e287-3ce1-4513-a6a8-e21f86c9a7be', '0', NULL, '2026-04-19 09:15:06.187834', '2026-04-19 09:15:06.187841', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'CURRENT_TIMESTAMP', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 15, 189, 2945, '22798959-eb75-4e00-b909-e8469624c8cc', '0', NULL, '2026-04-19 09:15:06.191981', '2026-04-19 09:15:06.191999', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 189, 2946, 'eba3e01c-d3e8-4b49-94dc-ea40be5b2afd', '0', NULL, '2026-04-19 09:15:06.195627', '2026-04-19 09:15:06.195634', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 189, 2947, '6ccd1b51-f490-4e09-af2b-aabdc0060a23', '0', NULL, '2026-04-19 09:15:06.198248', '2026-04-19 09:15:06.198254', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'BIGINT', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 18, 189, 2948, 'c8a4f16a-58f3-4151-ad6f-332863392902', '0', NULL, '2026-04-19 09:15:06.201765', '2026-04-19 09:15:06.201772', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('deleted_at', '删除时间(软删除)', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'deletedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 19, 189, 2949, '52d819e6-17e1-4124-8d20-14fdaf0e5a12', '0', NULL, '2026-04-19 09:15:06.204522', '2026-04-19 09:15:06.204527', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('version', '版本号', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'version', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 20, 189, 2950, '12d04df2-1fd5-4d13-b28c-c03cdfe62474', '0', NULL, '2026-04-19 09:15:06.207431', '2026-04-19 09:15:06.20744', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_sales_activities_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 190, 2951, '762b065f-0d35-4950-ab20-2f186782321f', '0', NULL, '2026-04-19 09:15:06.235554', '2026-04-19 09:15:06.235562', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 190, 2952, '82c21139-734d-4505-9108-1c1910e10c3b', '0', NULL, '2026-04-19 09:15:06.238301', '2026-04-19 09:15:06.238308', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contact_id', '联系人ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'contactId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 190, 2953, '70506f87-364a-4336-af28-0dec2f14d795', '0', NULL, '2026-04-19 09:15:06.241716', '2026-04-19 09:15:06.241722', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('opportunity_id', '商机ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'opportunityId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 190, 2954, 'a68a1dbf-97b2-4bc8-a4ec-3fe798e58ce6', '0', NULL, '2026-04-19 09:15:06.244258', '2026-04-19 09:15:06.244265', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('activity_type', '活动类型:1-电话,2-邮件,3-拜访,4-会议,5-培训,6-展会', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'activityType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 5, 190, 2955, '78ac1191-e078-48e2-b47e-fb6e73bfc3b6', '0', NULL, '2026-04-19 09:15:06.247298', '2026-04-19 09:15:06.247305', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('subject', '主题', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'subject', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 6, 190, 2956, '6f6ff427-03b8-4ea4-9ed7-c421d484872f', '0', NULL, '2026-04-19 09:15:06.249839', '2026-04-19 09:15:06.249845', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('description', '描述', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'description', 'f', 'f', 'f', 'f', NULL, 'textarea', '', 7, 190, 2957, 'f4134b22-eac1-4fed-be6a-03c99b74572e', '0', NULL, '2026-04-19 09:15:06.252367', '2026-04-19 09:15:06.252373', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('activity_date', '活动日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'activityDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 8, 190, 2958, '880c4d30-4667-4984-8866-147a629dd984', '0', NULL, '2026-04-19 09:15:06.255245', '2026-04-19 09:15:06.25526', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('start_time', '开始时间', 'TIME', '', '', 'f', 'f', 'f', 'f', 'time', 'startTime', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 9, 190, 2959, '2f8dc893-8bd2-4e61-9235-f74dc0b36801', '0', NULL, '2026-04-19 09:15:06.259748', '2026-04-19 09:15:06.259755', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('end_time', '结束时间', 'TIME', '', '', 'f', 'f', 'f', 'f', 'time', 'endTime', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 10, 190, 2960, '99ef9797-860c-47f1-a823-c3221b753bbb', '0', NULL, '2026-04-19 09:15:06.26327', '2026-04-19 09:15:06.263279', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('duration_minutes', '用时(分钟)', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'durationMinutes', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 190, 2961, 'f871d63a-123b-4ac1-9516-6d27f97db360', '0', NULL, '2026-04-19 09:15:06.266289', '2026-04-19 09:15:06.266299', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('participants', '参与人', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'participants', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 190, 2962, '3be42dca-ee8a-47bf-97bb-1d67cb894af6', '0', NULL, '2026-04-19 09:15:06.27018', '2026-04-19 09:15:06.270188', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('outcome', '结果', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'outcome', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 13, 190, 2963, '1bcafebd-7c59-4244-9493-1f459d5bf43f', '0', NULL, '2026-04-19 09:15:06.27542', '2026-04-19 09:15:06.275441', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('next_step', '下一步行动', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'nextStep', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 14, 190, 2964, 'cd88f961-9267-422b-93fa-e947f902d224', '0', NULL, '2026-04-19 09:15:06.279906', '2026-04-19 09:15:06.279913', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('next_follow_date', '下次跟进日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'nextFollowDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 15, 190, 2965, '7c37270c-bd5e-474b-aedd-79978497fa89', '0', NULL, '2026-04-19 09:15:06.282983', '2026-04-19 09:15:06.282989', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('related_customer_id', '关联客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'relatedCustomerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 16, 190, 2966, '16ba3409-7b2c-4a55-addf-e31cef0d78cd', '0', NULL, '2026-04-19 09:15:06.286851', '2026-04-19 09:15:06.28686', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 190, 2967, 'd8115ce5-98ec-4202-a1d8-650ab2f95175', '0', NULL, '2026-04-19 09:15:06.290803', '2026-04-19 09:15:06.290829', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 18, 190, 2968, '95e6fb26-c85b-4fe1-a633-396e8b3551f7', '0', NULL, '2026-04-19 09:15:06.295361', '2026-04-19 09:15:06.295368', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 19, 190, 2969, '2d617ea2-199b-407d-8ad5-9214f53745e3', '0', NULL, '2026-04-19 09:15:06.298058', '2026-04-19 09:15:06.298063', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 20, 190, 2970, '57f0262e-10c0-4789-9a09-6506837ba020', '0', NULL, '2026-04-19 09:15:06.300874', '2026-04-19 09:15:06.300881', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_tasks_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 191, 2971, 'b4100f77-3ad9-4b03-9f2b-ec1e7871b810', '0', NULL, '2026-04-19 09:15:06.329607', '2026-04-19 09:15:06.329614', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('task_type', '任务类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'taskType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 2, 191, 2972, 'd2bda652-431c-48c2-bb8c-889bf58772ac', '0', NULL, '2026-04-19 09:15:06.333119', '2026-04-19 09:15:06.333126', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('title', '职位', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'title', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 191, 2973, 'e053b058-f195-42e5-8e37-670192888382', '0', NULL, '2026-04-19 09:15:06.337813', '2026-04-19 09:15:06.337823', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('description', '描述', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'description', 'f', 'f', 'f', 'f', NULL, 'textarea', '', 4, 191, 2974, '02be88e5-7e96-4694-b0e9-de9e3e26c432', '0', NULL, '2026-04-19 09:15:06.341395', '2026-04-19 09:15:06.341402', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 191, 2975, '3156b45f-1a4c-49a8-a0b1-d2f5136a7422', '0', NULL, '2026-04-19 09:15:06.345161', '2026-04-19 09:15:06.345168', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contact_id', '联系人ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'contactId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 191, 2976, '91467b51-4b38-4451-8f12-e77ded064c46', '0', NULL, '2026-04-19 09:15:06.348313', '2026-04-19 09:15:06.348322', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('opportunity_id', '商机ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'opportunityId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 191, 2977, '68e67833-90a8-4c86-86c4-05ceaed518fb', '0', NULL, '2026-04-19 09:15:06.352441', '2026-04-19 09:15:06.352448', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contract_id', '合同ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'contractId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 191, 2978, 'a19fb1b9-2b86-4b2b-980c-d6e54f50c29c', '0', NULL, '2026-04-19 09:15:06.356143', '2026-04-19 09:15:06.356277', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('assignee_id', '接收人ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'assigneeId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 191, 2979, 'f4a8ccde-545a-42ee-8a25-e82434203285', '0', NULL, '2026-04-19 09:15:06.359001', '2026-04-19 09:15:06.359008', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('assigner_id', '分配人ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'assignerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 191, 2980, 'dfebeaee-b311-4ca1-bbb0-a4ede81dab8e', '0', NULL, '2026-04-19 09:15:06.361646', '2026-04-19 09:15:06.361651', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('due_date', '到期日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'dueDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 191, 2981, 'c2296a37-dfa6-4679-960d-864f8e5e2bc4', '0', NULL, '2026-04-19 09:15:06.363773', '2026-04-19 09:15:06.363777', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('priority', '优先级:1-低,2-中,3-高,4-紧急', 'VARCHAR(20)', '20', '''medium''::character varying', 'f', 'f', 'f', 'f', 'str', 'priority', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 12, 191, 2982, '65b2f24c-1e38-4388-8c28-be1cf5fdb4cc', '0', NULL, '2026-04-19 09:15:06.367165', '2026-04-19 09:15:06.367176', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''pending''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 13, 191, 2983, 'fbc4a452-34d4-42c4-82af-03e55d3c1d3e', '0', NULL, '2026-04-19 09:15:06.369929', '2026-04-19 09:15:06.369935', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('completed_at', '完成时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'completedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 14, 191, 2984, '0b34c80b-b5e8-4ec7-a054-8825df5d0f9d', '0', NULL, '2026-04-19 09:15:06.372539', '2026-04-19 09:15:06.372548', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remind_enabled', '是否启用提醒', 'BOOLEAN', '', 'true', 'f', 'f', 'f', 'f', 'bool', 'remindEnabled', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 191, 2985, '1cf82277-2c77-4d00-b51a-c7876be08a62', '0', NULL, '2026-04-19 09:15:06.375621', '2026-04-19 09:15:06.375628', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remind_before_minutes', '提前提醒分钟数', 'INTEGER', '', '60', 'f', 'f', 'f', 'f', 'int', 'remindBeforeMinutes', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 16, 191, 2986, '79dcec70-dffe-49ef-8cb6-b84552636e10', '0', NULL, '2026-04-19 09:15:06.378265', '2026-04-19 09:15:06.378271', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 17, 191, 2987, '7ee79439-7f8b-4b5c-848a-27d4e7d49b14', '0', NULL, '2026-04-19 09:15:06.380884', '2026-04-19 09:15:06.380893', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 18, 191, 2988, '6345d472-98e8-43b3-ac65-abbf0d4e8fdf', '0', NULL, '2026-04-19 09:15:06.384515', '2026-04-19 09:15:06.384541', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 19, 191, 2989, '232860a5-8b9f-4163-a899-b3a50ad032aa', '0', NULL, '2026-04-19 09:15:06.38778', '2026-04-19 09:15:06.387786', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_workflow_logs_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 192, 2990, '9e7328b6-687f-410e-9811-ceee9f9ceaf0', '0', NULL, '2026-04-19 09:15:06.413328', '2026-04-19 09:15:06.413335', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('rule_id', '规则ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'ruleId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 192, 2991, 'a354122e-d66c-4691-9531-6f562c999e4a', '0', NULL, '2026-04-19 09:15:06.415974', '2026-04-19 09:15:06.415979', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 192, 2992, 'b41c5759-22e9-42f1-8e8a-201324e19217', '0', NULL, '2026-04-19 09:15:06.4184', '2026-04-19 09:15:06.418406', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('opportunity_id', '商机ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'opportunityId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 192, 2993, '4ebc775c-8881-4de8-9b9d-d37da72a3a15', '0', NULL, '2026-04-19 09:15:06.421433', '2026-04-19 09:15:06.421439', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('trigger_data', '触发数据', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'triggerData', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 192, 2994, 'a5079f4d-31b0-4522-9d41-e1745d6557a7', '0', NULL, '2026-04-19 09:15:06.423924', '2026-04-19 09:15:06.42393', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('execution_result', '执行结果', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'executionResult', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 6, 192, 2995, 'b6338e25-f025-4c27-8dda-669cefdce79a', '0', NULL, '2026-04-19 09:15:06.426476', '2026-04-19 09:15:06.426483', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('error_message', '错误信息', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'errorMessage', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 7, 192, 2996, '5dcc54e7-803b-4b49-ae28-18652c93caf9', '0', NULL, '2026-04-19 09:15:06.430628', '2026-04-19 09:15:06.430634', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('executed_at', '执行时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'executedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 8, 192, 2997, 'f95fadb4-2954-40bd-8016-f4852554953c', '0', NULL, '2026-04-19 09:15:06.433617', '2026-04-19 09:15:06.433625', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_products_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 193, 2998, '1936399b-3447-4c3e-b3ce-f9109df24d4f', '0', NULL, '2026-04-19 09:15:06.462178', '2026-04-19 09:15:06.462184', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_code', '产品编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'productCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 193, 2999, '3b97c2ce-9655-494e-a49a-aee3e95c794d', '0', NULL, '2026-04-19 09:15:06.464923', '2026-04-19 09:15:06.464931', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_name', '产品名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'productName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 193, 3000, '07a4a031-b5c1-4254-81cd-3d47be763ddc', '0', NULL, '2026-04-19 09:15:06.467897', '2026-04-19 09:15:06.467904', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('category_id', '分类ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'categoryId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 193, 3001, '6fd8d00d-e4ce-46fb-9207-62e13693ce40', '0', NULL, '2026-04-19 09:15:06.470524', '2026-04-19 09:15:06.470531', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_type', '产品类型:1-硬件,2-软件,3-服务', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'productType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 5, 193, 3002, 'a6c162b0-a49d-4b31-a2de-10234da2a32d', '0', NULL, '2026-04-19 09:15:06.4734', '2026-04-19 09:15:06.473406', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('standard_price', '标准价', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'standardPrice', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 193, 3003, '97748d38-85d5-48ac-9fd3-3573f7f8cf21', '0', NULL, '2026-04-19 09:15:06.476884', '2026-04-19 09:15:06.476891', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('cost_price', '成本价', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'costPrice', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 193, 3004, '8a936332-2f95-406e-a975-81205175f0b2', '0', NULL, '2026-04-19 09:15:06.479502', '2026-04-19 09:15:06.47951', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('min_price', '最低价', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'minPrice', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 193, 3005, 'd5848fc0-3d88-4786-ad2c-798bb4d2df75', '0', NULL, '2026-04-19 09:15:06.482946', '2026-04-19 09:15:06.482953', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('currency', '币种:CNY-人民币,USD-美元,EUR-欧元', 'VARCHAR(10)', '10', '''CNY''::character varying', 'f', 'f', 'f', 'f', 'str', 'currency', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 9, 193, 3006, '1363ec9b-0425-4485-b791-6a86195415fb', '0', NULL, '2026-04-19 09:15:06.485794', '2026-04-19 09:15:06.4858', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('unit', '单位', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'unit', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 10, 193, 3007, '3d2e2031-353a-4c1d-9f2b-cd42403b67df', '0', NULL, '2026-04-19 09:15:06.488713', '2026-04-19 09:15:06.48872', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('specifications', '规格参数', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'specifications', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 11, 193, 3008, 'ddf59828-ccbe-426a-8ab8-d3eac104e32d', '0', NULL, '2026-04-19 09:15:06.492763', '2026-04-19 09:15:06.492771', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('stock_quantity', '库存数量', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'stockQuantity', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 193, 3009, '9484e8ec-c2f6-425e-91ed-6b39f2483bda', '0', NULL, '2026-04-19 09:15:06.496428', '2026-04-19 09:15:06.496435', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('min_stock', '最低库存', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'minStock', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 193, 3010, '772be07e-1881-421a-ba4f-4bfe66d82816', '0', NULL, '2026-04-19 09:15:06.500822', '2026-04-19 09:15:06.500831', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''active''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 14, 193, 3011, '7daa3f39-d663-4a23-8b65-86b6ebf755a4', '0', NULL, '2026-04-19 09:15:06.504882', '2026-04-19 09:15:06.504891', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_featured', '是否推荐', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isFeatured', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 193, 3012, '4ebb06bd-439b-48d4-b3c9-2568dce49e56', '0', NULL, '2026-04-19 09:15:06.509338', '2026-04-19 09:15:06.509346', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('image_url', '图片URL', 'VARCHAR(500)', '500', '', 'f', 'f', 'f', 'f', 'str', 'imageUrl', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 16, 193, 3013, '3428ed6c-fba8-40fc-85c7-f061882b149a', '0', NULL, '2026-04-19 09:15:06.513284', '2026-04-19 09:15:06.513292', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('document_urls', '文档链接', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'documentUrls', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 193, 3014, 'ce8847f3-416b-4980-a8b0-32030a435fb4', '0', NULL, '2026-04-19 09:15:06.516798', '2026-04-19 09:15:06.516804', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 18, 193, 3015, '54ddf472-a5b2-432b-98f9-8b7f83e55c24', '0', NULL, '2026-04-19 09:15:06.520852', '2026-04-19 09:15:06.520861', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 19, 193, 3016, '5999ccb5-45ca-4ae4-b11f-9c74238883c3', '0', NULL, '2026-04-19 09:15:06.524655', '2026-04-19 09:15:06.524662', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 20, 193, 3017, '0dbcfbe7-fbc9-4023-8cc2-87207a1eab48', '0', NULL, '2026-04-19 09:15:06.528048', '2026-04-19 09:15:06.528057', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 21, 193, 3018, '0b69b1b1-4870-4be1-9df3-e8c3ae5a1a43', '0', NULL, '2026-04-19 09:15:06.531135', '2026-04-19 09:15:06.531142', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 22, 193, 3019, 'ba1be890-d460-47f6-a717-4d7491b72ace', '0', NULL, '2026-04-19 09:15:06.533774', '2026-04-19 09:15:06.53378', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_product_skus_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 194, 3020, 'a25cbe37-99e4-4a67-bbcf-c13c158b8b0f', '0', NULL, '2026-04-19 09:15:06.557894', '2026-04-19 09:15:06.557901', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_id', '产品ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'productId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 194, 3021, '2881f647-eb59-44e0-93cc-b72fa3588a3e', '0', NULL, '2026-04-19 09:15:06.561372', '2026-04-19 09:15:06.56138', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sku_code', 'SKU编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'skuCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 194, 3022, '76e309a2-4a10-4f2a-9a55-85cde421d535', '0', NULL, '2026-04-19 09:15:06.565421', '2026-04-19 09:15:06.565429', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sku_name', 'SKU名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'skuName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 194, 3023, '2090d86b-5779-4199-b6ff-43e119b9ef80', '0', NULL, '2026-04-19 09:15:06.569241', '2026-04-19 09:15:06.569254', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('specifications', '规格参数', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'specifications', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 194, 3024, '045e7cc4-da16-4d3f-af3c-c94a2242b5a6', '0', NULL, '2026-04-19 09:15:06.57345', '2026-04-19 09:15:06.573458', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('standard_price', '标准价', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'standardPrice', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 194, 3025, 'e533f86e-65f9-41e1-bfe3-87db6a7e49c2', '0', NULL, '2026-04-19 09:15:06.577164', '2026-04-19 09:15:06.577172', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('cost_price', '成本价', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'costPrice', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 194, 3026, '60cabac7-8089-4e6c-89e0-46bc94f09c59', '0', NULL, '2026-04-19 09:15:06.581447', '2026-04-19 09:15:06.581457', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('stock_quantity', '库存数量', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'stockQuantity', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 194, 3027, '33b68de6-34ef-4d57-bb37-e4b9e8675ab0', '0', NULL, '2026-04-19 09:15:06.587524', '2026-04-19 09:15:06.587548', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('min_stock', '最低库存', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'minStock', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 194, 3028, 'd5f6a807-e98b-4fbe-a100-0d71ecfa2033', '0', NULL, '2026-04-19 09:15:06.591106', '2026-04-19 09:15:06.591113', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''active''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 10, 194, 3029, 'f6ef7b97-8b9d-4f46-99b5-ff89b2301374', '0', NULL, '2026-04-19 09:15:06.594933', '2026-04-19 09:15:06.594941', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_default', '是否默认:0-否,1-是', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDefault', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 194, 3030, 'a25ec959-4b20-4c2f-83a1-7211f82fa742', '0', NULL, '2026-04-19 09:15:06.597736', '2026-04-19 09:15:06.597742', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 194, 3031, '6bfd37d6-97be-49cc-874e-2dda50080297', '0', NULL, '2026-04-19 09:15:06.601889', '2026-04-19 09:15:06.601896', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 13, 194, 3032, '817b58ed-959d-4c69-87bb-4ea5001026fa', '0', NULL, '2026-04-19 09:15:06.604827', '2026-04-19 09:15:06.604837', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 14, 194, 3033, 'a4d14d5c-f710-4589-b1f1-09b7c7b1c160', '0', NULL, '2026-04-19 09:15:06.608762', '2026-04-19 09:15:06.60877', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 194, 3034, 'd5600e7b-e94b-48dd-9411-946211c89d34', '0', NULL, '2026-04-19 09:15:06.611729', '2026-04-19 09:15:06.611736', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_satisfaction_surveys_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 195, 3035, '2934ac15-40e2-4ba7-bd38-7ce0f3e0f851', '0', NULL, '2026-04-19 09:15:06.643223', '2026-04-19 09:15:06.64323', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 195, 3036, '8f0648ff-9486-41e1-88d2-687fc28077b9', '0', NULL, '2026-04-19 09:15:06.647063', '2026-04-19 09:15:06.647074', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('survey_type', '调查类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'surveyType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 3, 195, 3037, '1fd48d0e-abe0-49da-b7b6-f760b1ba8b8d', '0', NULL, '2026-04-19 09:15:06.650752', '2026-04-19 09:15:06.65076', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('survey_date', '调查日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'surveyDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 4, 195, 3038, '1fee9a03-40fb-46ce-9d60-3e1447e9a6fd', '0', NULL, '2026-04-19 09:15:06.654553', '2026-04-19 09:15:06.65456', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('overall_score', '综合评分', 'NUMERIC(3, 1)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'overallScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 195, 3039, '42f308da-250b-4a5f-852f-b743da5bb486', '0', NULL, '2026-04-19 09:15:06.65759', '2026-04-19 09:15:06.657597', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_quality_score', '产品质量评分', 'NUMERIC(3, 1)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'productQualityScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 195, 3040, 'b9d1cd96-d6dc-4193-a188-f77de28e6765', '0', NULL, '2026-04-19 09:15:06.660846', '2026-04-19 09:15:06.660854', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('service_score', '服务评分', 'NUMERIC(3, 1)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'serviceScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 195, 3041, '0a184b17-9ef5-463d-ac4f-da3ebd61f913', '0', NULL, '2026-04-19 09:15:06.664438', '2026-04-19 09:15:06.664444', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('delivery_score', '交付评分', 'NUMERIC(3, 1)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'deliveryScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 195, 3042, '64ffbce9-ec5f-462e-aede-1db40ca203be', '0', NULL, '2026-04-19 09:15:06.66772', '2026-04-19 09:15:06.667726', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('communication_score', '沟通评分', 'NUMERIC(3, 1)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'communicationScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 195, 3043, '2606eb10-2134-4720-a476-a208de776bdf', '0', NULL, '2026-04-19 09:15:06.670912', '2026-04-19 09:15:06.670918', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('strengths', '优势分析', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'strengths', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 10, 195, 3044, 'b2033f33-a72f-4a2b-a7ae-0699219dd47c', '0', NULL, '2026-04-19 09:15:06.673286', '2026-04-19 09:15:06.673291', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('weaknesses', '劣势分析', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'weaknesses', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 11, 195, 3045, '7d2964d5-629f-4af8-857e-8282161a775f', '0', NULL, '2026-04-19 09:15:06.675587', '2026-04-19 09:15:06.675592', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('suggestions', '改进建议', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'suggestions', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 12, 195, 3046, '592c8cc7-3935-45e2-8391-b4407c33e39f', '0', NULL, '2026-04-19 09:15:06.679508', '2026-04-19 09:15:06.679516', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('nps_score', 'NPS评分', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'npsScore', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 195, 3047, 'dc0b3269-4116-41d8-9806-349676d80eae', '0', NULL, '2026-04-19 09:15:06.682207', '2026-04-19 09:15:06.682213', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''completed''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 14, 195, 3048, 'a97925ff-9495-46ab-a932-2415fe37fbe6', '0', NULL, '2026-04-19 09:15:06.685755', '2026-04-19 09:15:06.685763', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 195, 3049, 'b8a70aa4-7bde-4c99-b5e8-05e4741f0278', '0', NULL, '2026-04-19 09:15:06.68925', '2026-04-19 09:15:06.689257', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 195, 3050, '1e903ae3-66c0-409c-83b2-ff2cdab61255', '0', NULL, '2026-04-19 09:15:06.691771', '2026-04-19 09:15:06.691783', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 17, 195, 3051, 'b10b0f31-27a4-4850-8074-4ef16fd19f01', '0', NULL, '2026-04-19 09:15:06.695003', '2026-04-19 09:15:06.69501', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 18, 195, 3052, '9a07aa5a-d1f4-4264-9ccf-b274f18c7f76', '0', NULL, '2026-04-19 09:15:06.697524', '2026-04-19 09:15:06.69753', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_renewals_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 196, 3053, 'bf2fb0c6-b23b-4317-a1a4-3bf5917f0474', '0', NULL, '2026-04-19 09:15:06.719358', '2026-04-19 09:15:06.719366', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 196, 3054, '96eb6969-437e-471e-be59-5767cf510b2c', '0', NULL, '2026-04-19 09:15:06.721885', '2026-04-19 09:15:06.7219', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('renewal_type', '续约类型', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'renewalType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 3, 196, 3055, '8bbf148c-d04c-49b5-8c55-28f491c8e44d', '0', NULL, '2026-04-19 09:15:06.724012', '2026-04-19 09:15:06.724034', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('current_contract_id', '当前合同ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'currentContractId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 196, 3056, '9546cab0-a8fc-4656-a7a9-88672af18311', '0', NULL, '2026-04-19 09:15:06.726623', '2026-04-19 09:15:06.72663', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('new_contract_id', '新合同ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'newContractId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 196, 3057, 'cc111f9f-53d4-4fcf-991a-4c4d18e9e008', '0', NULL, '2026-04-19 09:15:06.729151', '2026-04-19 09:15:06.729157', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('current_amount', '当前金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'currentAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 196, 3058, 'e5cc4428-762b-4a85-b124-ffecd2e61751', '0', NULL, '2026-04-19 09:15:06.731679', '2026-04-19 09:15:06.731685', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('new_amount', '新金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'newAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 196, 3059, '418d2daa-f512-4b9c-a89b-728c2a597194', '0', NULL, '2026-04-19 09:15:06.733941', '2026-04-19 09:15:06.733946', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('increase_amount', '增加金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'increaseAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 196, 3060, '82b13967-1670-4cda-a0fa-12132963ee1d', '0', NULL, '2026-04-19 09:15:06.73606', '2026-04-19 09:15:06.736064', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contract_start_date', '合同开始日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'contractStartDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 9, 196, 3061, 'bc41647a-d6db-44bf-acde-544ce7af3b66', '0', NULL, '2026-04-19 09:15:06.738142', '2026-04-19 09:15:06.738146', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('contract_end_date', '合同结束日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'contractEndDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 10, 196, 3062, '2bdab2c5-1976-4c7c-ac09-c946e753fe0f', '0', NULL, '2026-04-19 09:15:06.740427', '2026-04-19 09:15:06.740433', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('renewal_date', '续约日期', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'renewalDate', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 196, 3063, '0346d7aa-9d0a-437c-9dc0-abb3498ceed3', '0', NULL, '2026-04-19 09:15:06.742982', '2026-04-19 09:15:06.742988', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''pending''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 12, 196, 3064, 'c2dba0dc-31eb-4e21-98be-df813755a843', '0', NULL, '2026-04-19 09:15:06.745525', '2026-04-19 09:15:06.745531', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('owner_id', '负责人ID,关联sys_users', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'ownerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 196, 3065, '92dbc976-2b6c-4248-b52e-2881c90ae102', '0', NULL, '2026-04-19 09:15:06.748059', '2026-04-19 09:15:06.748064', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remark', '备注', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'remark', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 14, 196, 3066, 'd1e95e20-1bdb-43ac-9d94-7c343467c607', '0', NULL, '2026-04-19 09:15:06.750318', '2026-04-19 09:15:06.750322', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 15, 196, 3067, '31b0f25a-f55d-4154-ae21-3235a9f5a60d', '0', NULL, '2026-04-19 09:15:06.752433', '2026-04-19 09:15:06.752438', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 16, 196, 3068, '9da900f6-4249-4eac-b36f-2c14d6bf9795', '0', NULL, '2026-04-19 09:15:06.754487', '2026-04-19 09:15:06.754492', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 196, 3069, 'f9388e91-c49c-4151-8047-af2594669446', '0', NULL, '2026-04-19 09:15:06.757973', '2026-04-19 09:15:06.75798', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 18, 196, 3070, '686f7350-74e4-414b-9d4c-96cee5994738', '0', NULL, '2026-04-19 09:15:06.76063', '2026-04-19 09:15:06.760637', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 19, 196, 3071, '3eb89b50-5d8c-409c-bc32-84775be2bfd4', '0', NULL, '2026-04-19 09:15:06.763788', '2026-04-19 09:15:06.763795', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_report_instances_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 197, 3072, 'a83c2157-39e8-4137-aef3-31073728c728', '0', NULL, '2026-04-19 09:15:06.784335', '2026-04-19 09:15:06.78434', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('template_id', '模板ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'templateId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 197, 3073, 'bbef3a6b-c346-48ed-899b-449d4af33b97', '0', NULL, '2026-04-19 09:15:06.788981', '2026-04-19 09:15:06.78899', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('generated_by', '生成人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'generatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 197, 3074, '83539656-0fe8-4c8a-9c5d-208860a0bce9', '0', NULL, '2026-04-19 09:15:06.791812', '2026-04-19 09:15:06.791819', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('generated_at', '生成时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'generatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 4, 197, 3075, 'da11426d-0028-46be-8c67-dafa670a57fa', '0', NULL, '2026-04-19 09:15:06.795356', '2026-04-19 09:15:06.795364', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('filter_params', '过滤参数', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'filterParams', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 197, 3076, '40eb5eb0-9e08-4c39-9eb3-4576caa328f0', '0', NULL, '2026-04-19 09:15:06.798429', '2026-04-19 09:15:06.798436', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('result_data', '结果数据', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'resultData', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 197, 3077, 'bd112d7e-314a-48dc-8e95-4d34e7c6d856', '0', NULL, '2026-04-19 09:15:06.801166', '2026-04-19 09:15:06.801171', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('total_rows', '总行数', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'totalRows', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 197, 3078, 'bf241f99-2dc1-4b4c-a41f-5a791b072a64', '0', NULL, '2026-04-19 09:15:06.803449', '2026-04-19 09:15:06.803454', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('file_url', '文件URL', 'VARCHAR(500)', '500', '', 'f', 'f', 'f', 'f', 'str', 'fileUrl', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 8, 197, 3079, '18ae0e98-7131-45c4-a9a1-9567f800f22c', '0', NULL, '2026-04-19 09:15:06.805694', '2026-04-19 09:15:06.805698', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''completed''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 9, 197, 3080, '191cbeb1-f65b-4ce6-b9df-7a565b262550', '0', NULL, '2026-04-19 09:15:06.80845', '2026-04-19 09:15:06.808457', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('error_message', '错误信息', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'errorMessage', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 10, 197, 3081, 'e6f8899a-4826-4dbf-b66d-365ea7cb9074', '0', NULL, '2026-04-19 09:15:06.811385', '2026-04-19 09:15:06.81139', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('execution_time', '执行时间', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'executionTime', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 197, 3082, '8a7b3f90-0db3-499c-a4ab-785c2d18fcfd', '0', NULL, '2026-04-19 09:15:06.813889', '2026-04-19 09:15:06.813894', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_tags_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 198, 3083, '7a33766f-1d3a-4f93-9ec5-e784383dea11', '0', NULL, '2026-04-19 09:15:06.837216', '2026-04-19 09:15:06.837223', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tag_name', '标签名称', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'tagName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 198, 3084, '0d65e3cc-6cf4-4945-ac03-123c58397f21', '0', NULL, '2026-04-19 09:15:06.840728', '2026-04-19 09:15:06.840734', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tag_category', '标签分类', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'tagCategory', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 198, 3085, '418ff610-19b9-4a90-96ce-15ce42442f0b', '0', NULL, '2026-04-19 09:15:06.891892', '2026-04-19 09:15:06.891899', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tag_color', '标签颜色', 'VARCHAR(20)', '20', '', 'f', 'f', 'f', 'f', 'str', 'tagColor', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 198, 3086, 'bfddb845-5b2e-43d2-a569-2e02ea1c0a7a', '0', NULL, '2026-04-19 09:15:06.895171', '2026-04-19 09:15:06.895182', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tag_icon', '标签图标', 'VARCHAR(100)', '100', '', 'f', 'f', 'f', 'f', 'str', 'tagIcon', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 198, 3087, '5b5337f2-b67f-4e8c-abcc-128c610d1135', '0', NULL, '2026-04-19 09:15:06.89892', '2026-04-19 09:15:06.898943', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('description', '描述', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'description', 'f', 'f', 'f', 'f', NULL, 'textarea', '', 6, 198, 3088, '06f17d26-2a21-4688-8c5b-eb92b15c3f6d', '0', NULL, '2026-04-19 09:15:06.902394', '2026-04-19 09:15:06.902402', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('ai_accuracy', 'AI准确率', 'NUMERIC(5, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'aiAccuracy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 198, 3089, '89a1bc1b-c4cc-42a0-a548-76f4b6adc435', '0', NULL, '2026-04-19 09:15:06.905815', '2026-04-19 09:15:06.905821', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('usage_count', '使用次数', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'usageCount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 198, 3090, '579fdd76-bba2-488c-9073-f8fd7e3cef3b', '0', NULL, '2026-04-19 09:15:06.908435', '2026-04-19 09:15:06.90844', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''active''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 9, 198, 3091, '6e821105-61b5-4965-8084-27aabfc16b83', '0', NULL, '2026-04-19 09:15:06.911377', '2026-04-19 09:15:06.911384', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sort', '排序', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'sort', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 198, 3092, 'e7520708-f9a4-4a3c-b064-985cc0c9c465', '0', NULL, '2026-04-19 09:15:06.91424', '2026-04-19 09:15:06.914246', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 198, 3093, '58b64898-7b46-4437-9c70-169d0ec82808', '0', NULL, '2026-04-19 09:15:06.91691', '2026-04-19 09:15:06.916917', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 12, 198, 3094, '2fd1b122-d990-4177-965b-196c3c9badb8', '0', NULL, '2026-04-19 09:15:06.920273', '2026-04-19 09:15:06.92028', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_quotations_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 199, 3095, '4b4edeb3-ffe5-475f-8895-319c80dc458a', '0', NULL, '2026-04-19 09:15:06.943792', '2026-04-19 09:15:06.943799', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('quotation_code', '报价编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'quotationCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 199, 3096, '0af70bde-77e4-4a66-adad-243b79889f91', '0', NULL, '2026-04-19 09:15:06.946438', '2026-04-19 09:15:06.946445', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('quotation_name', '报价名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'quotationName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 199, 3097, '4d6bbf91-9591-44e7-a626-4d7e8638217f', '0', NULL, '2026-04-19 09:15:06.950131', '2026-04-19 09:15:06.950138', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('customer_id', '客户ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'customerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 199, 3098, 'e8ce3509-f80c-462d-9d4b-e4b59aa8c85b', '0', NULL, '2026-04-19 09:15:06.953244', '2026-04-19 09:15:06.95325', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('opportunity_id', '商机ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'opportunityId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 199, 3099, 'e4a75584-c75e-402e-ad4b-a4eab05061c9', '0', NULL, '2026-04-19 09:15:06.955855', '2026-04-19 09:15:06.955864', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('valid_until', '有效期至', 'DATE', '', '', 'f', 'f', 'f', 'f', 'date', 'validUntil', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 6, 199, 3100, 'b8ae0723-2fcb-43a0-97ea-57e833a83feb', '0', NULL, '2026-04-19 09:15:06.958953', '2026-04-19 09:15:06.958959', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('currency', '币种:CNY-人民币,USD-美元,EUR-欧元', 'VARCHAR(10)', '10', '''CNY''::character varying', 'f', 'f', 'f', 'f', 'str', 'currency', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 7, 199, 3101, 'e428a463-0d45-4023-ab3b-bfedee6c7985', '0', NULL, '2026-04-19 09:15:06.961982', '2026-04-19 09:15:06.961989', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('exchange_rate', '汇率', 'NUMERIC(10, 4)', '', '1.0000', 'f', 'f', 'f', 'f', 'Decimal', 'exchangeRate', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 199, 3102, 'e41dd321-0236-4044-a076-e8c75c4aec66', '0', NULL, '2026-04-19 09:15:06.965319', '2026-04-19 09:15:06.965325', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('subtotal', '小计', 'NUMERIC(15, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'subtotal', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 199, 3103, 'af586d2e-9798-4737-9419-8858c9068293', '0', NULL, '2026-04-19 09:15:06.968067', '2026-04-19 09:15:06.968073', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('discount_rate', '折扣率', 'NUMERIC(5, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'discountRate', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 199, 3104, '404896b3-5e73-40b4-9625-02518ebade93', '0', NULL, '2026-04-19 09:15:06.970505', '2026-04-19 09:15:06.97051', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('discount_amount', '折扣金额', 'NUMERIC(15, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'discountAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 199, 3105, 'af6ed0d9-e923-4939-b402-33b463adbfed', '0', NULL, '2026-04-19 09:15:06.973831', '2026-04-19 09:15:06.973837', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tax_rate', '税率', 'NUMERIC(5, 2)', '', '13.00', 'f', 'f', 'f', 'f', 'Decimal', 'taxRate', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 12, 199, 3106, '338b80c3-cfb9-460e-b8c7-ed1f3349d79d', '0', NULL, '2026-04-19 09:15:06.976128', '2026-04-19 09:15:06.976132', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('tax_amount', '税额', 'NUMERIC(15, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'taxAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 13, 199, 3107, '5067ac08-3ed9-4d46-a95f-f8cf731ad628', '0', NULL, '2026-04-19 09:15:06.978512', '2026-04-19 09:15:06.978516', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('total_amount', '总金额', 'NUMERIC(15, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'totalAmount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 14, 199, 3108, '8e568a21-2e2e-42c6-825f-89f1ce3c6356', '0', NULL, '2026-04-19 09:15:06.981494', '2026-04-19 09:15:06.9815', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''draft''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 15, 199, 3109, '19ae292a-af52-4ecd-859b-99f38e493009', '0', NULL, '2026-04-19 09:15:06.984025', '2026-04-19 09:15:06.98403', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('approval_status', '审批状态:1-待审批,2-审批中,3-已通过,4-已拒绝,5-已撤销', 'VARCHAR(20)', '20', '''pending''::character varying', 'f', 'f', 'f', 'f', 'str', 'approvalStatus', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 16, 199, 3110, '8ada7594-cdcc-47fd-aeb9-a12ee70f97fe', '0', NULL, '2026-04-19 09:15:06.986508', '2026-04-19 09:15:06.986513', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('approved_by', '审批人ID,关联sys_users', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'approvedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 17, 199, 3111, '1cb2ee41-5582-40eb-a25a-17b9a908ae17', '0', NULL, '2026-04-19 09:15:06.991', '2026-04-19 09:15:06.991006', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('approved_at', '审批时间', 'TIMESTAMP', '', '', 'f', 'f', 'f', 'f', 'datetime', 'approvedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 18, 199, 3112, 'ec0a74b2-b854-496c-a49a-faa85e94e3fc', '0', NULL, '2026-04-19 09:15:06.994136', '2026-04-19 09:15:06.994143', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('converted_contract_id', '转化合同ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'convertedContractId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 19, 199, 3113, 'fbd1a06f-be36-4d58-b723-39d4cf51b9d0', '0', NULL, '2026-04-19 09:15:06.997901', '2026-04-19 09:15:06.997908', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('terms_conditions', '条款条件', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'termsConditions', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 20, 199, 3114, 'aedf7cf9-1248-4053-b1d4-1946851cf828', '0', NULL, '2026-04-19 09:15:07.00074', '2026-04-19 09:15:07.000746', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remark', '备注', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'remark', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 21, 199, 3115, '0e6aff54-2d55-4978-b5e6-df307da11c7e', '0', NULL, '2026-04-19 09:15:07.003438', '2026-04-19 09:15:07.003445', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_by', '创建人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'createdBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 22, 199, 3116, 'b231890f-e815-4846-866f-7f22b6f68901', '0', NULL, '2026-04-19 09:15:07.008241', '2026-04-19 09:15:07.008248', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 23, 199, 3117, '2feb223f-a515-4b7f-a5be-efd54bbffab2', '0', NULL, '2026-04-19 09:15:07.011209', '2026-04-19 09:15:07.011215', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_by', '更新人ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'updatedBy', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 24, 199, 3118, '53996498-2ccb-4e80-8a40-c60be37e750b', '0', NULL, '2026-04-19 09:15:07.013962', '2026-04-19 09:15:07.013968', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 25, 199, 3119, '35ae0291-8073-4b15-939f-661ff3c1fe6d', '0', NULL, '2026-04-19 09:15:07.016277', '2026-04-19 09:15:07.016282', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_deleted', '逻辑删除标记:0-未删除,1-已删除', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isDeleted', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 26, 199, 3120, '0e1c5e3d-b3c8-497d-8751-c14a7c5b698d', '0', NULL, '2026-04-19 09:15:07.018457', '2026-04-19 09:15:07.018462', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_quotation_items_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 200, 3121, 'f79adfcf-f464-4b80-83d0-01dfed3c3863', '0', NULL, '2026-04-19 09:15:07.041661', '2026-04-19 09:15:07.041667', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('quotation_id', '报价ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'quotationId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 2, 200, 3122, '0405263a-4033-42af-acbb-ebcfb9c1ff5f', '0', NULL, '2026-04-19 09:15:07.044674', '2026-04-19 09:15:07.04468', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_id', '产品ID', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'productId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 3, 200, 3123, '2f2ca255-0b2d-4b5a-abb3-d87effa43f66', '0', NULL, '2026-04-19 09:15:07.047032', '2026-04-19 09:15:07.047037', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_name', '产品名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'productName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 4, 200, 3124, 'f557cf31-5444-4a5a-8e08-69899202c5c5', '0', NULL, '2026-04-19 09:15:07.049438', '2026-04-19 09:15:07.049448', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('product_code', '产品编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'productCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 5, 200, 3125, '6498e972-52eb-49a0-bef9-c6ddce21fd00', '0', NULL, '2026-04-19 09:15:07.052959', '2026-04-19 09:15:07.052966', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('quantity', '数量', 'NUMERIC(10, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'quantity', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 200, 3126, '949c2dfc-d054-40fe-b240-ae0c53776a62', '0', NULL, '2026-04-19 09:15:07.055943', '2026-04-19 09:15:07.055951', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('unit_price', '单价', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'unitPrice', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 200, 3127, 'fd4788a1-07b9-4c17-8021-cdc95dbc7a93', '0', NULL, '2026-04-19 09:15:07.059387', '2026-04-19 09:15:07.059394', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('discount_rate', '折扣率', 'NUMERIC(5, 2)', '', '0', 'f', 'f', 'f', 'f', 'Decimal', 'discountRate', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 200, 3128, '3f61a641-e242-4131-9ed9-4d201f63de33', '0', NULL, '2026-04-19 09:15:07.062425', '2026-04-19 09:15:07.062431', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('amount', '金额', 'NUMERIC(15, 2)', '', '', 'f', 'f', 'f', 'f', 'Decimal', 'amount', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 200, 3129, '45ac005e-99a4-48dd-b09b-638e662d53fe', '0', NULL, '2026-04-19 09:15:07.065199', '2026-04-19 09:15:07.065218', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remark', '备注', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'remark', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 10, 200, 3130, '26ab22d8-3b09-45af-be33-e6be7a7a3a8e', '0', NULL, '2026-04-19 09:15:07.067832', '2026-04-19 09:15:07.067838', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('sort', '排序', 'INTEGER', '', '0', 'f', 'f', 'f', 'f', 'int', 'sort', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 200, 3131, '956732ff-6e0d-4480-ae44-64e3ace44ef1', '0', NULL, '2026-04-19 09:15:07.07009', '2026-04-19 09:15:07.070095', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 12, 200, 3132, '8b34effd-f87b-4cb9-9512-bd0050ac422e', '0', NULL, '2026-04-19 09:15:07.073064', '2026-04-19 09:15:07.07307', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_workflow_approvals_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 201, 3133, 'a31b9fa8-0c82-4b9d-ae5e-330a4d71452a', '0', NULL, '2026-04-19 09:15:07.0984', '2026-04-19 09:15:07.098406', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('workflow_type', '工作流类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'workflowType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 2, 201, 3134, 'eda1333d-aae6-4ce6-bf72-73364b6c8a97', '0', NULL, '2026-04-19 09:15:07.100892', '2026-04-19 09:15:07.100896', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('related_type', '关联类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'relatedType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 3, 201, 3135, 'ec6484aa-9e94-47af-a07b-878db78c6a67', '0', NULL, '2026-04-19 09:15:07.103246', '2026-04-19 09:15:07.103251', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('related_id', '关联ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'relatedId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 4, 201, 3136, '2334254e-b08f-4922-bde1-282fe55ed2ed', '0', NULL, '2026-04-19 09:15:07.106138', '2026-04-19 09:15:07.106143', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('current_step', '当前步骤', 'INTEGER', '', '1', 'f', 'f', 'f', 'f', 'int', 'currentStep', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 201, 3137, '8ec90ac1-d84d-4387-836a-80b84442c00f', '0', NULL, '2026-04-19 09:15:07.108942', '2026-04-19 09:15:07.108948', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('total_steps', '总步骤数', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'totalSteps', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 201, 3138, 'c4f6b958-8c48-4d70-b2ab-d27795cc7d07', '0', NULL, '2026-04-19 09:15:07.111091', '2026-04-19 09:15:07.111095', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''pending''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 7, 201, 3139, '2a6c40f0-6417-4b10-b402-e1c096a1723e', '0', NULL, '2026-04-19 09:15:07.11511', '2026-04-19 09:15:07.115117', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('initiator_id', '发起人ID,关联对应表', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'initiatorId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 201, 3140, '61083e93-8b23-4462-b43b-0158bca6a92f', '0', NULL, '2026-04-19 09:15:07.117848', '2026-04-19 09:15:07.117854', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('initiated_at', '发起时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'initiatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 9, 201, 3141, '6226f54b-d979-464f-98eb-fa764dad7f68', '0', NULL, '2026-04-19 09:15:07.121314', '2026-04-19 09:15:07.121322', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('remark', '备注', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'remark', 'f', 'f', 'f', 'f', 'LIKE', 'textarea', '', 10, 201, 3142, 'b90b8687-2431-4bcf-845c-ab314febeaac', '0', NULL, '2026-04-19 09:15:07.124609', '2026-04-19 09:15:07.124615', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 11, 201, 3143, '5c000f21-1e10-47d0-938d-89d2b4dc6e4b', '0', NULL, '2026-04-19 09:15:07.126914', '2026-04-19 09:15:07.126919', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 12, 201, 3144, 'b20757bc-2877-4151-9b2d-2f3e39a06016', '0', NULL, '2026-04-19 09:15:07.12949', '2026-04-19 09:15:07.129496', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('id', '主键ID', 'INTEGER', '', 'nextval(''crm_report_templates_id_seq''::regclass)', 'f', 'f', 'f', 'f', 'int', 'id', 'f', 'f', 'f', 'f', NULL, 'input', '', 1, 202, 3145, '828fc20a-6138-4d90-8c9c-88cb7bf1f1e6', '0', NULL, '2026-04-19 09:15:07.156432', '2026-04-19 09:15:07.156438', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('template_code', '模板编号', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'templateCode', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 2, 202, 3146, 'dc332b9a-1f71-45ee-b6b1-3c3c1cda7070', '0', NULL, '2026-04-19 09:15:07.160367', '2026-04-19 09:15:07.160375', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('template_name', '模板名称', 'VARCHAR(200)', '200', '', 'f', 'f', 'f', 'f', 'str', 'templateName', 'f', 'f', 'f', 'f', 'LIKE', 'input', '', 3, 202, 3147, '67823ad9-9638-4844-a62b-7b9e001f7cfc', '0', NULL, '2026-04-19 09:15:07.163128', '2026-04-19 09:15:07.163134', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('report_type', '报表类型', 'VARCHAR(50)', '50', '', 'f', 'f', 'f', 'f', 'str', 'reportType', 'f', 'f', 'f', 'f', 'LIKE', 'select', '', 4, 202, 3148, '96442da6-f8c2-44ce-a55e-6b0e6349ba58', '0', NULL, '2026-04-19 09:15:07.165799', '2026-04-19 09:15:07.165805', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('query_config', '查询配置', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'queryConfig', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 5, 202, 3149, '9c5fb902-0612-4e3b-9460-2ebcd06c8ce3', '0', NULL, '2026-04-19 09:15:07.169978', '2026-04-19 09:15:07.169989', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('chart_config', '图表配置', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'chartConfig', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 6, 202, 3150, 'fe670de5-296b-4f6e-bbf3-ce70777bafbe', '0', NULL, '2026-04-19 09:15:07.172811', '2026-04-19 09:15:07.172817', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('columns_config', '列配置', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'columnsConfig', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 7, 202, 3151, '8fb7090c-c044-4faa-9cbb-aac28debef66', '0', NULL, '2026-04-19 09:15:07.176964', '2026-04-19 09:15:07.176971', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('filter_config', '过滤配置', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'filterConfig', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 8, 202, 3152, '83ab36ba-1b1f-46f8-838a-be864c283e54', '0', NULL, '2026-04-19 09:15:07.17972', '2026-04-19 09:15:07.179725', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('owner_id', '负责人ID,关联sys_users', 'INTEGER', '', '', 'f', 'f', 'f', 'f', 'int', 'ownerId', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 9, 202, 3153, '3d305f26-1938-483f-b219-1de6da35b528', '0', NULL, '2026-04-19 09:15:07.182394', '2026-04-19 09:15:07.182405', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('is_public', '是否公开', 'BOOLEAN', '', 'false', 'f', 'f', 'f', 'f', 'bool', 'isPublic', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 10, 202, 3154, 'df37fabd-7202-4d18-a9dd-43f5900007a6', '0', NULL, '2026-04-19 09:15:07.18618', '2026-04-19 09:15:07.186186', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('shared_roles', '共享角色', 'JSON', '', '', 'f', 'f', 'f', 'f', 'dict', 'sharedRoles', 'f', 'f', 'f', 'f', 'EQ', 'input', '', 11, 202, 3155, '54d49272-286b-41b2-870d-b62d99a92f8f', '0', NULL, '2026-04-19 09:15:07.188973', '2026-04-19 09:15:07.188979', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('status', '状态:1-潜在,2-意向,3-正式,4-休眠,5-流失', 'VARCHAR(20)', '20', '''active''::character varying', 'f', 'f', 'f', 'f', 'str', 'status', 'f', 'f', 'f', 'f', 'LIKE', 'radio', '', 12, 202, 3156, '631ce796-5db2-4b42-a6ee-e231e2b026e5', '0', NULL, '2026-04-19 09:15:07.192489', '2026-04-19 09:15:07.192496', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('description', '描述', 'TEXT', '', '', 'f', 'f', 'f', 'f', 'str', 'description', 'f', 'f', 'f', 'f', NULL, 'textarea', '', 13, 202, 3157, 'fb6663b3-d452-40bd-8610-1785a839e354', '0', NULL, '2026-04-19 09:15:07.195214', '2026-04-19 09:15:07.19522', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('created_at', '创建时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'createdAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 14, 202, 3158, '43ed473b-62fa-47fb-b1ea-ce503fa46f3d', '0', NULL, '2026-04-19 09:15:07.197956', '2026-04-19 09:15:07.197962', 1, 1, '0');
+INSERT INTO "public"."gen_table_column" VALUES ('updated_at', '更新时间', 'TIMESTAMP', '', 'now()', 'f', 'f', 'f', 'f', 'datetime', 'updatedAt', 'f', 'f', 'f', 'f', 'EQ', 'datetime', '', 15, 202, 3159, '77a50884-ebda-4be4-b6d2-e7bd49cc2303', '0', NULL, '2026-04-19 09:15:07.200605', '2026-04-19 09:15:07.200611', 1, 1, '0');
+
+-- ----------------------------
+-- Table structure for sys_dept
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."sys_dept";
+CREATE TABLE "public"."sys_dept" (
+  "name" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "order" int4 NOT NULL,
+  "code" varchar(16) COLLATE "pg_catalog"."default" NOT NULL,
+  "leader" varchar(32) COLLATE "pg_catalog"."default",
+  "phone" varchar(11) COLLATE "pg_catalog"."default",
+  "email" varchar(64) COLLATE "pg_catalog"."default",
+  "parent_id" int4,
+  "id" int4 NOT NULL DEFAULT nextval('sys_dept_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL
+)
+;
+COMMENT ON COLUMN "public"."sys_dept"."name" IS '部门名称';
+COMMENT ON COLUMN "public"."sys_dept"."order" IS '显示排序';
+COMMENT ON COLUMN "public"."sys_dept"."code" IS '部门编码';
+COMMENT ON COLUMN "public"."sys_dept"."leader" IS '部门负责人';
+COMMENT ON COLUMN "public"."sys_dept"."phone" IS '手机';
+COMMENT ON COLUMN "public"."sys_dept"."email" IS '邮箱';
+COMMENT ON COLUMN "public"."sys_dept"."parent_id" IS '父级部门ID';
+COMMENT ON COLUMN "public"."sys_dept"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."sys_dept"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."sys_dept"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."sys_dept"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."sys_dept"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."sys_dept"."updated_time" IS '更新时间';
+COMMENT ON TABLE "public"."sys_dept" IS '部门表';
+
+-- ----------------------------
+-- Records of sys_dept
+-- ----------------------------
+INSERT INTO "public"."sys_dept" VALUES ('集团总公司', 1, 'GROUP', '部门负责人', '1582112620', 'deptadmin@example.com', NULL, 1, '5bc572a7-8aa6-4dba-94e1-81f48733b168', '0', '集团总公司', '2026-04-17 23:04:51.826744', '2026-04-17 23:04:51.826776');
+
+-- ----------------------------
+-- Table structure for sys_dict_data
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."sys_dict_data";
+CREATE TABLE "public"."sys_dict_data" (
+  "dict_sort" int4 NOT NULL,
+  "dict_label" varchar(255) COLLATE "pg_catalog"."default" NOT NULL,
+  "dict_value" varchar(255) COLLATE "pg_catalog"."default" NOT NULL,
+  "css_class" varchar(255) COLLATE "pg_catalog"."default",
+  "list_class" varchar(255) COLLATE "pg_catalog"."default",
+  "is_default" bool NOT NULL,
+  "dict_type" varchar(255) COLLATE "pg_catalog"."default" NOT NULL,
+  "dict_type_id" int4 NOT NULL,
+  "id" int4 NOT NULL DEFAULT nextval('sys_dict_data_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL
+)
+;
+COMMENT ON COLUMN "public"."sys_dict_data"."dict_sort" IS '字典排序';
+COMMENT ON COLUMN "public"."sys_dict_data"."dict_label" IS '字典标签';
+COMMENT ON COLUMN "public"."sys_dict_data"."dict_value" IS '字典键值';
+COMMENT ON COLUMN "public"."sys_dict_data"."css_class" IS '样式属性（其他样式扩展）';
+COMMENT ON COLUMN "public"."sys_dict_data"."list_class" IS '表格回显样式';
+COMMENT ON COLUMN "public"."sys_dict_data"."is_default" IS '是否默认（True是 False否）';
+COMMENT ON COLUMN "public"."sys_dict_data"."dict_type" IS '字典类型';
+COMMENT ON COLUMN "public"."sys_dict_data"."dict_type_id" IS '字典类型ID';
+COMMENT ON COLUMN "public"."sys_dict_data"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."sys_dict_data"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."sys_dict_data"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."sys_dict_data"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."sys_dict_data"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."sys_dict_data"."updated_time" IS '更新时间';
+COMMENT ON TABLE "public"."sys_dict_data" IS '字典数据表';
+
+-- ----------------------------
+-- Records of sys_dict_data
+-- ----------------------------
+INSERT INTO "public"."sys_dict_data" VALUES (1, '男', '0', 'blue', NULL, 'f', 'sys_user_sex', 1, 1, '3315c56f-023e-4a46-bb55-156aeffce5e5', '0', '性别男', '2026-04-17 23:04:51.872927', '2026-04-17 23:04:51.872936');
+INSERT INTO "public"."sys_dict_data" VALUES (2, '女', '1', 'pink', NULL, 'f', 'sys_user_sex', 1, 2, '59383483-fc54-484f-8983-d4b633d5d194', '0', '性别女', '2026-04-17 23:04:51.872946', '2026-04-17 23:04:51.872947');
+INSERT INTO "public"."sys_dict_data" VALUES (3, '未知', '2', 'red', NULL, 'f', 'sys_user_sex', 1, 3, 'b00ee942-880e-418a-b560-e8731bf6147f', '0', '性别未知', '2026-04-17 23:04:51.872955', '2026-04-17 23:04:51.872956');
+INSERT INTO "public"."sys_dict_data" VALUES (1, '是', '1', '', 'primary', 'f', 'sys_yes_no', 2, 4, '86b445d1-ccd7-4925-b8a9-c8ceaf862665', '0', '是', '2026-04-17 23:04:51.872962', '2026-04-17 23:04:51.872963');
+INSERT INTO "public"."sys_dict_data" VALUES (2, '否', '0', '', 'danger', 'f', 'sys_yes_no', 2, 5, '7bd76398-dacf-400b-af93-c5ab81583380', '0', '否', '2026-04-17 23:04:51.87297', '2026-04-17 23:04:51.872971');
+INSERT INTO "public"."sys_dict_data" VALUES (1, '启用', '1', '', 'primary', 'f', 'sys_common_status', 3, 6, 'ebc3aec5-d890-492c-82ef-e78d0fde8442', '0', '启用状态', '2026-04-17 23:04:51.872978', '2026-04-17 23:04:51.872979');
+INSERT INTO "public"."sys_dict_data" VALUES (2, '停用', '0', '', 'danger', 'f', 'sys_common_status', 3, 7, '1ab58d18-0b5a-4080-a381-889bbcdc5184', '0', '停用状态', '2026-04-17 23:04:51.872985', '2026-04-17 23:04:51.872987');
+INSERT INTO "public"."sys_dict_data" VALUES (1, '通知', '1', 'blue', 'warning', 'f', 'sys_notice_type', 4, 8, '3827c7eb-0761-4931-9321-69366d69f303', '0', '通知', '2026-04-17 23:04:51.872993', '2026-04-17 23:04:51.872994');
+INSERT INTO "public"."sys_dict_data" VALUES (2, '公告', '2', 'orange', 'success', 'f', 'sys_notice_type', 4, 9, '8652a8bb-842d-4ebb-86fa-b21dcd1ee213', '0', '公告', '2026-04-17 23:04:51.873001', '2026-04-17 23:04:51.873002');
+INSERT INTO "public"."sys_dict_data" VALUES (99, '其他', '0', '', 'info', 'f', 'sys_oper_type', 5, 10, 'ca17f1ba-f32b-483c-b096-4fbb85f470a3', '0', '其他操作', '2026-04-17 23:04:51.873008', '2026-04-17 23:04:51.873024');
+INSERT INTO "public"."sys_dict_data" VALUES (1, '新增', '1', '', 'info', 'f', 'sys_oper_type', 5, 11, 'e3c6008c-7075-4257-a535-1c2782387b5c', '0', '新增操作', '2026-04-17 23:04:51.873031', '2026-04-17 23:04:51.873032');
+INSERT INTO "public"."sys_dict_data" VALUES (2, '修改', '2', '', 'info', 'f', 'sys_oper_type', 5, 12, '493f7cdd-c7e3-4de3-8dfd-9939943c777c', '0', '修改操作', '2026-04-17 23:04:51.873038', '2026-04-17 23:04:51.873039');
+INSERT INTO "public"."sys_dict_data" VALUES (3, '删除', '3', '', 'danger', 'f', 'sys_oper_type', 5, 13, '11b36e16-8e71-44ac-8a42-70f21b5af4fe', '0', '删除操作', '2026-04-17 23:04:51.873046', '2026-04-17 23:04:51.873047');
+INSERT INTO "public"."sys_dict_data" VALUES (4, '分配权限', '4', '', 'primary', 'f', 'sys_oper_type', 5, 14, 'd888c955-a685-4901-8c8c-56b61a6d0bd3', '0', '授权操作', '2026-04-17 23:04:51.873054', '2026-04-17 23:04:51.873055');
+INSERT INTO "public"."sys_dict_data" VALUES (5, '导出', '5', '', 'warning', 'f', 'sys_oper_type', 5, 15, '8fa6afde-b771-45cd-80ef-b9824c4b25ce', '0', '导出操作', '2026-04-17 23:04:51.873061', '2026-04-17 23:04:51.873062');
+INSERT INTO "public"."sys_dict_data" VALUES (6, '导入', '6', '', 'warning', 'f', 'sys_oper_type', 5, 16, 'ea7e8d65-870c-4557-bead-7bf5a72bc106', '0', '导入操作', '2026-04-17 23:04:51.873069', '2026-04-17 23:04:51.87307');
+INSERT INTO "public"."sys_dict_data" VALUES (7, '强退', '7', '', 'danger', 'f', 'sys_oper_type', 5, 17, '0fc0d525-1d79-424d-af6e-22649647750c', '0', '强退操作', '2026-04-17 23:04:51.873078', '2026-04-17 23:04:51.873079');
+INSERT INTO "public"."sys_dict_data" VALUES (8, '生成代码', '8', '', 'warning', 'f', 'sys_oper_type', 5, 18, '264579b5-b4ca-4beb-a6b5-7a65ea02fea5', '0', '生成操作', '2026-04-17 23:04:51.873085', '2026-04-17 23:04:51.873087');
+INSERT INTO "public"."sys_dict_data" VALUES (9, '清空数据', '9', '', 'danger', 'f', 'sys_oper_type', 5, 19, '6b0eeb96-f9cc-491b-9f2b-afb5cee21a49', '0', '清空操作', '2026-04-17 23:04:51.873094', '2026-04-17 23:04:51.873095');
+INSERT INTO "public"."sys_dict_data" VALUES (1, '默认(Memory)', 'default', '', NULL, 'f', 'sys_job_store', 6, 20, 'ce4b8906-2337-4a0c-a474-f112560389e7', '0', '默认分组', '2026-04-17 23:04:51.873103', '2026-04-17 23:04:51.873104');
+INSERT INTO "public"."sys_dict_data" VALUES (2, '数据库(Sqlalchemy)', 'sqlalchemy', '', NULL, 'f', 'sys_job_store', 6, 21, 'a8e43bf5-fa37-406f-82b5-b005a8d8af52', '0', '数据库分组', '2026-04-17 23:04:51.873112', '2026-04-17 23:04:51.873113');
+INSERT INTO "public"."sys_dict_data" VALUES (3, '数据库(Redis)', 'redis', '', NULL, 'f', 'sys_job_store', 6, 22, '20987184-1d30-4f5d-a2a9-db4f8c81dbbc', '0', 'reids分组', '2026-04-17 23:04:51.87312', '2026-04-17 23:04:51.873121');
+INSERT INTO "public"."sys_dict_data" VALUES (1, '线程池', 'default', '', NULL, 'f', 'sys_job_executor', 7, 23, 'ce287697-4574-41ee-ac1d-7ffbacabc613', '0', '线程池', '2026-04-17 23:04:51.873128', '2026-04-17 23:04:51.873129');
+INSERT INTO "public"."sys_dict_data" VALUES (2, '进程池', 'processpool', '', NULL, 'f', 'sys_job_executor', 7, 24, 'ac0afe24-f29a-4f0b-99c4-e58874fd82a4', '0', '进程池', '2026-04-17 23:04:51.873136', '2026-04-17 23:04:51.873137');
+INSERT INTO "public"."sys_dict_data" VALUES (1, '演示函数', 'scheduler_test.job', '', NULL, 'f', 'sys_job_function', 8, 25, 'd0494598-8e00-4281-a2e6-c7bbeee40d9e', '0', '演示函数', '2026-04-17 23:04:51.873143', '2026-04-17 23:04:51.873145');
+INSERT INTO "public"."sys_dict_data" VALUES (1, '指定日期(date)', 'date', '', NULL, 'f', 'sys_job_trigger', 9, 26, '760487a1-a9e2-4bde-ad11-add471d16e93', '0', '指定日期任务触发器', '2026-04-17 23:04:51.873152', '2026-04-17 23:04:51.873153');
+INSERT INTO "public"."sys_dict_data" VALUES (2, '间隔触发器(interval)', 'interval', '', NULL, 'f', 'sys_job_trigger', 9, 27, 'c2a1c9f2-1754-45c3-ac82-6c0647c03027', '0', '间隔触发器任务触发器', '2026-04-17 23:04:51.873159', '2026-04-17 23:04:51.87316');
+INSERT INTO "public"."sys_dict_data" VALUES (3, 'cron表达式', 'cron', '', NULL, 'f', 'sys_job_trigger', 9, 28, '5a4802e9-0514-4a30-9f2c-4c2ac35f75b1', '0', '间隔触发器任务触发器', '2026-04-17 23:04:51.873167', '2026-04-17 23:04:51.873168');
+INSERT INTO "public"."sys_dict_data" VALUES (1, '默认(default)', 'default', '', NULL, 'f', 'sys_list_class', 10, 29, 'c0e131d7-016f-47a1-8cd8-e15b6b72d7d6', '0', '默认表格回显样式', '2026-04-17 23:04:51.873175', '2026-04-17 23:04:51.873176');
+INSERT INTO "public"."sys_dict_data" VALUES (2, '主要(primary)', 'primary', '', NULL, 'f', 'sys_list_class', 10, 30, '651c1d2e-7cbe-49dd-9cbd-94880b748021', '0', '主要表格回显样式', '2026-04-17 23:04:51.873183', '2026-04-17 23:04:51.873185');
+INSERT INTO "public"."sys_dict_data" VALUES (3, '成功(success)', 'success', '', NULL, 'f', 'sys_list_class', 10, 31, '5597aeaa-5372-4326-bc5d-03aec85f21c7', '0', '成功表格回显样式', '2026-04-17 23:04:51.873191', '2026-04-17 23:04:51.873192');
+INSERT INTO "public"."sys_dict_data" VALUES (4, '信息(info)', 'info', '', NULL, 'f', 'sys_list_class', 10, 32, '56ade6ab-1a98-40d3-bae4-08b0cced65e6', '0', '信息表格回显样式', '2026-04-17 23:04:51.873199', '2026-04-17 23:04:51.8732');
+INSERT INTO "public"."sys_dict_data" VALUES (5, '警告(warning)', 'warning', '', NULL, 'f', 'sys_list_class', 10, 33, '83c7715c-77cb-42d4-889d-888b10db1480', '0', '警告表格回显样式', '2026-04-17 23:04:51.873208', '2026-04-17 23:04:51.873209');
+INSERT INTO "public"."sys_dict_data" VALUES (6, '危险(danger)', 'danger', '', NULL, 'f', 'sys_list_class', 10, 34, 'aeb33d14-e22a-49c8-8313-6c0b38e45a1e', '0', '危险表格回显样式', '2026-04-17 23:04:51.873216', '2026-04-17 23:04:51.873217');
+
+-- ----------------------------
+-- Table structure for sys_dict_type
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."sys_dict_type";
+CREATE TABLE "public"."sys_dict_type" (
+  "dict_name" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "dict_type" varchar(255) COLLATE "pg_catalog"."default" NOT NULL,
+  "id" int4 NOT NULL DEFAULT nextval('sys_dict_type_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL
+)
+;
+COMMENT ON COLUMN "public"."sys_dict_type"."dict_name" IS '字典名称';
+COMMENT ON COLUMN "public"."sys_dict_type"."dict_type" IS '字典类型';
+COMMENT ON COLUMN "public"."sys_dict_type"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."sys_dict_type"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."sys_dict_type"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."sys_dict_type"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."sys_dict_type"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."sys_dict_type"."updated_time" IS '更新时间';
+COMMENT ON TABLE "public"."sys_dict_type" IS '字典类型表';
+
+-- ----------------------------
+-- Records of sys_dict_type
+-- ----------------------------
+INSERT INTO "public"."sys_dict_type" VALUES ('用户性别', 'sys_user_sex', 1, '0c52e07c-c3f8-4fc0-b5b6-ad8c8cba0ee4', '0', '用户性别列表', '2026-04-17 23:04:51.856654', '2026-04-17 23:04:51.856663');
+INSERT INTO "public"."sys_dict_type" VALUES ('系统是否', 'sys_yes_no', 2, 'caa3e733-5356-430f-8d22-529223d48fcc', '0', '系统是否列表', '2026-04-17 23:04:51.856673', '2026-04-17 23:04:51.856674');
+INSERT INTO "public"."sys_dict_type" VALUES ('系统状态', 'sys_common_status', 3, '6a39dc01-c48f-43ed-8f6f-7f97c36de4f4', '0', '系统状态', '2026-04-17 23:04:51.856681', '2026-04-17 23:04:51.856682');
+INSERT INTO "public"."sys_dict_type" VALUES ('通知类型', 'sys_notice_type', 4, '6b6f71e4-a53d-4804-9ec7-b0a4ae1d0903', '0', '通知类型列表', '2026-04-17 23:04:51.856689', '2026-04-17 23:04:51.85669');
+INSERT INTO "public"."sys_dict_type" VALUES ('操作类型', 'sys_oper_type', 5, 'e7299f7f-efe8-4e7e-a126-6ceab9c2b923', '0', '操作类型列表', '2026-04-17 23:04:51.856696', '2026-04-17 23:04:51.856698');
+INSERT INTO "public"."sys_dict_type" VALUES ('任务存储器', 'sys_job_store', 6, '51724fe6-1312-4fdb-9ff0-c33d3283c023', '0', '任务分组列表', '2026-04-17 23:04:51.856704', '2026-04-17 23:04:51.856705');
+INSERT INTO "public"."sys_dict_type" VALUES ('任务执行器', 'sys_job_executor', 7, 'a6ff5c6c-bac0-4d18-8616-123f63b2ef73', '0', '任务执行器列表', '2026-04-17 23:04:51.856712', '2026-04-17 23:04:51.856713');
+INSERT INTO "public"."sys_dict_type" VALUES ('任务函数', 'sys_job_function', 8, '194da7d8-e583-4c00-9a8c-bec902f2d604', '0', '任务函数列表', '2026-04-17 23:04:51.856719', '2026-04-17 23:04:51.85672');
+INSERT INTO "public"."sys_dict_type" VALUES ('任务触发器', 'sys_job_trigger', 9, '8974f37d-38ce-4f9c-af03-032d9e308b85', '0', '任务触发器列表', '2026-04-17 23:04:51.856727', '2026-04-17 23:04:51.856728');
+INSERT INTO "public"."sys_dict_type" VALUES ('表格回显样式', 'sys_list_class', 10, '4d755b13-f8dd-4059-8293-77e475619481', '0', '表格回显样式列表', '2026-04-17 23:04:51.856735', '2026-04-17 23:04:51.856736');
+
+-- ----------------------------
+-- Table structure for sys_log
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."sys_log";
+CREATE TABLE "public"."sys_log" (
+  "type" int4 NOT NULL,
+  "request_path" varchar(255) COLLATE "pg_catalog"."default" NOT NULL,
+  "request_method" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "request_payload" text COLLATE "pg_catalog"."default",
+  "request_ip" varchar(50) COLLATE "pg_catalog"."default",
+  "login_location" varchar(255) COLLATE "pg_catalog"."default",
+  "request_os" varchar(64) COLLATE "pg_catalog"."default",
+  "request_browser" varchar(64) COLLATE "pg_catalog"."default",
+  "response_code" int4 NOT NULL,
+  "response_json" text COLLATE "pg_catalog"."default",
+  "process_time" varchar(20) COLLATE "pg_catalog"."default",
+  "id" int4 NOT NULL DEFAULT nextval('sys_log_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL,
+  "created_id" int4,
+  "updated_id" int4
+)
+;
+COMMENT ON COLUMN "public"."sys_log"."type" IS '日志类型(1登录日志 2操作日志)';
+COMMENT ON COLUMN "public"."sys_log"."request_path" IS '请求路径';
+COMMENT ON COLUMN "public"."sys_log"."request_method" IS '请求方式';
+COMMENT ON COLUMN "public"."sys_log"."request_payload" IS '请求体';
+COMMENT ON COLUMN "public"."sys_log"."request_ip" IS '请求IP地址';
+COMMENT ON COLUMN "public"."sys_log"."login_location" IS '登录位置';
+COMMENT ON COLUMN "public"."sys_log"."request_os" IS '操作系统';
+COMMENT ON COLUMN "public"."sys_log"."request_browser" IS '浏览器';
+COMMENT ON COLUMN "public"."sys_log"."response_code" IS '响应状态码';
+COMMENT ON COLUMN "public"."sys_log"."response_json" IS '响应体';
+COMMENT ON COLUMN "public"."sys_log"."process_time" IS '处理时间';
+COMMENT ON COLUMN "public"."sys_log"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."sys_log"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."sys_log"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."sys_log"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."sys_log"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."sys_log"."updated_time" IS '更新时间';
+COMMENT ON COLUMN "public"."sys_log"."created_id" IS '创建人ID';
+COMMENT ON COLUMN "public"."sys_log"."updated_id" IS '更新人ID';
+COMMENT ON TABLE "public"."sys_log" IS '系统日志表';
+
+-- ----------------------------
+-- Records of sys_log
+-- ----------------------------
+INSERT INTO "public"."sys_log" VALUES (1, '/system/auth/login', 'POST', 'username: admin
+password: 123456
+captcha: 4
+captcha_key: 6ccf354fb7dc4891ade8b5d9618ddbe9
+remember: true
+login_type: PC端', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"登录成功","data":{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJcdThkODVcdTdlYTdcdTdiYTFcdTc0MDZcdTU0NThcIixcInNlc3Npb25faWRcIjpcImUzZmI5NjhkLTJhYjUtNDNmMy1iYmViLThmYzY4ZTFlYzc2OVwiLFwidXNlcl9pZFwiOjEsXCJ1c2VyX25hbWVcIjpcImFkbWluXCIsXCJpcGFkZHJcIjpcIjE3Mi4yMC4wLjFcIixcImxvZ2luX2xvY2F0aW9uXCI6XCJcdTUxODVcdTdmNTFJUFwiLFwib3NcIjpcIldpbmRvd3NcIixcImJyb3dzZXJcIjpcIkNocm9tZVwiLFwibG9naW5fdGltZVwiOlwiMjAyNi0wNC0xOCAwMTozNjo0MFwiLFwibG9naW5fdHlwZVwiOlwiUENcdTdhZWZcIn0iLCJpc19yZWZyZXNoIjpmYWxzZSwiZXhwIjoxNzc2NTA2ODAyfQ.FJrdaj4fAJkmlZjJvRZCeOhzHq6WNNDb-BpEjPGMFIk","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJcdThkODVcdTdlYTdcdTdiYTFcdTc0MDZcdTU0NThcIixcInNlc3Npb25faWRcIjpcImUzZmI5NjhkLTJhYjUtNDNmMy1iYmViLThmYzY4ZTFlYzc2OVwiLFwidXNlcl9pZFwiOjEsXCJ1c2VyX25hbWVcIjpcImFkbWluXCIsXCJpcGFkZHJcIjpcIjE3Mi4yMC4wLjFcIixcImxvZ2luX2xvY2F0aW9uXCI6XCJcdTUxODVcdTdmNTFJUFwiLFwib3NcIjpcIldpbmRvd3NcIixcImJyb3dzZXJcIjpcIkNocm9tZVwiLFwibG9naW5fdGltZVwiOlwiMjAyNi0wNC0xOCAwMTozNjo0MFwiLFwibG9naW5fdHlwZVwiOlwiUENcdTdhZWZcIn0iLCJpc19yZWZyZXNoIjp0cnVlLCJleHAiOjE3NzY1MDY4MDJ9.LWpJdZSY9ewhgT47Q2M1aw_JSZn9v_O3fyLAr_OCSe0","token_type":"bearer","expires_in":1800},"status_code":200,"success":true}', '3.00s', 1, 'feece19c-8b9e-447a-9a84-000d3a00c805', '0', '登录', '2026-04-18 09:36:42.923535', '2026-04-18 09:36:42.923543', NULL, NULL);
+INSERT INTO "public"."sys_log" VALUES (2, '/generator/gencode/import', 'POST', '{"body": ["crm_ai_customer_profiles"]}', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"导入表结构成功","data":true,"status_code":200,"success":true}', '0.49s', 2, '70f7f6c2-2015-4ead-b999-130777df9f76', '0', '导入表结构', '2026-04-18 09:43:59.908672', '2026-04-18 09:43:59.908682', 1, 1);
+INSERT INTO "public"."sys_log" VALUES (1, '/system/auth/login', 'POST', 'username: admin
+password: 123456
+captcha: 21
+captcha_key: 8db79a5dad3447a2a1a3e78c3d114a6d
+remember: true
+login_type: PC端', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"登录成功","data":{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJcdThkODVcdTdlYTdcdTdiYTFcdTc0MDZcdTU0NThcIixcInNlc3Npb25faWRcIjpcIjFhZGM1MWQ2LWY4ZGItNGRkNi05N2MzLTE0MmM1ZjU4MmU3OVwiLFwidXNlcl9pZFwiOjEsXCJ1c2VyX25hbWVcIjpcImFkbWluXCIsXCJpcGFkZHJcIjpcIjE3Mi4yMC4wLjFcIixcImxvZ2luX2xvY2F0aW9uXCI6XCJcdTUxODVcdTdmNTFJUFwiLFwib3NcIjpcIldpbmRvd3NcIixcImJyb3dzZXJcIjpcIkNocm9tZVwiLFwibG9naW5fdGltZVwiOlwiMjAyNi0wNC0xOCAwMjo1NjowMlwiLFwibG9naW5fdHlwZVwiOlwiUENcdTdhZWZcIn0iLCJpc19yZWZyZXNoIjpmYWxzZSwiZXhwIjoxNzc2NTExNTYyfQ.u0uEF_FOzUijxHO9MyVy6MdTY9cwfhXlW23o6QJIO84","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJcdThkODVcdTdlYTdcdTdiYTFcdTc0MDZcdTU0NThcIixcInNlc3Npb25faWRcIjpcIjFhZGM1MWQ2LWY4ZGItNGRkNi05N2MzLTE0MmM1ZjU4MmU3OVwiLFwidXNlcl9pZFwiOjEsXCJ1c2VyX25hbWVcIjpcImFkbWluXCIsXCJpcGFkZHJcIjpcIjE3Mi4yMC4wLjFcIixcImxvZ2luX2xvY2F0aW9uXCI6XCJcdTUxODVcdTdmNTFJUFwiLFwib3NcIjpcIldpbmRvd3NcIixcImJyb3dzZXJcIjpcIkNocm9tZVwiLFwibG9naW5fdGltZVwiOlwiMjAyNi0wNC0xOCAwMjo1NjowMlwiLFwibG9naW5fdHlwZVwiOlwiUENcdTdhZWZcIn0iLCJpc19yZWZyZXNoIjp0cnVlLCJleHAiOjE3NzY1MTE1NjJ9.spl5Nr6ZXKkcJh4mL2yR97l2s6F97-nL2DiSmnQBtW4","token_type":"bearer","expires_in":1800},"status_code":200,"success":true}', '0.47s', 3, '9880b248-ec4f-4b28-942a-7e93e926fbfd', '0', '登录', '2026-04-18 10:56:02.339107', '2026-04-18 10:56:02.339115', NULL, NULL);
+INSERT INTO "public"."sys_log" VALUES (2, '/generator/gencode/import', 'POST', '{"body": ["crm_customer_activities", "crm_customer_addresses", "crm_customer_attachments"]}', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"导入表结构成功","data":true,"status_code":200,"success":true}', '0.68s', 4, '3145b2ae-3c84-484e-bb7b-0b2fc0edc175', '0', '导入表结构', '2026-04-18 11:04:46.08949', '2026-04-18 11:04:46.089498', 1, 1);
+INSERT INTO "public"."sys_log" VALUES (2, '/system/auth/logout', 'POST', '{"body": {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJcdThkODVcdTdlYTdcdTdiYTFcdTc0MDZcdTU0NThcIixcInNlc3Npb25faWRcIjpcIjFhZGM1MWQ2LWY4ZGItNGRkNi05N2MzLTE0MmM1ZjU4MmU3OVwiLFwidXNlcl9pZFwiOjEsXCJ1c2VyX25hbWVcIjpcImFkbWluXCIsXCJpcGFkZHJcIjpcIjE3Mi4yMC4wLjFcIixcImxvZ2luX2xvY2F0aW9uXCI6XCJcdTUxODVcdTdmNTFJUFwiLFwib3NcIjpcIldpbmRvd3NcIixcImJyb3dzZXJcIjpcIkNocm9tZVwiLFwibG9naW5fdGltZVwiOlwiMjAyNi0wNC0xOCAwMjo1NjowMlwiLFwibG9naW5fdHlwZVwiOlwiUENcdTdhZWZcIn0iLCJpc19yZWZyZXNoIjpmYWxzZSwiZXhwIjoxNzc2NTExNTYyfQ.u0uEF_FOzUijxHO9MyVy6MdTY9cwfhXlW23o6QJIO84"}}', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"退出成功","data":null,"status_code":200,"success":true}', '0.08s', 5, '8ea0ae08-963b-4ff0-bfae-9b7a887a6446', '0', '退出登录', '2026-04-18 11:05:06.242018', '2026-04-18 11:05:06.242026', 1, 1);
+INSERT INTO "public"."sys_log" VALUES (1, '/system/auth/login', 'POST', 'username: admin
+password: 123456
+captcha: 5
+captcha_key: 67e103865baa429880ebbe9b5d76ac56
+remember: true
+login_type: PC端', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"登录成功","data":{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJcdThkODVcdTdlYTdcdTdiYTFcdTc0MDZcdTU0NThcIixcInNlc3Npb25faWRcIjpcIjhhYzJiZDdmLWMyZGEtNGUxOS1iMGM2LTk3Nzc5MjY5MzM1NVwiLFwidXNlcl9pZFwiOjEsXCJ1c2VyX25hbWVcIjpcImFkbWluXCIsXCJpcGFkZHJcIjpcIjE3Mi4yMC4wLjFcIixcImxvZ2luX2xvY2F0aW9uXCI6XCJcdTUxODVcdTdmNTFJUFwiLFwib3NcIjpcIldpbmRvd3NcIixcImJyb3dzZXJcIjpcIkNocm9tZVwiLFwibG9naW5fdGltZVwiOlwiMjAyNi0wNC0xOCAwMzowNToxMlwiLFwibG9naW5fdHlwZVwiOlwiUENcdTdhZWZcIn0iLCJpc19yZWZyZXNoIjpmYWxzZSwiZXhwIjoxNzc2NTEyMTEyfQ.FcBAa13Lvi69fi1F75YOXTvnFxExYkNqzU3f36-qrWQ","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJcdThkODVcdTdlYTdcdTdiYTFcdTc0MDZcdTU0NThcIixcInNlc3Npb25faWRcIjpcIjhhYzJiZDdmLWMyZGEtNGUxOS1iMGM2LTk3Nzc5MjY5MzM1NVwiLFwidXNlcl9pZFwiOjEsXCJ1c2VyX25hbWVcIjpcImFkbWluXCIsXCJpcGFkZHJcIjpcIjE3Mi4yMC4wLjFcIixcImxvZ2luX2xvY2F0aW9uXCI6XCJcdTUxODVcdTdmNTFJUFwiLFwib3NcIjpcIldpbmRvd3NcIixcImJyb3dzZXJcIjpcIkNocm9tZVwiLFwibG9naW5fdGltZVwiOlwiMjAyNi0wNC0xOCAwMzowNToxMlwiLFwibG9naW5fdHlwZVwiOlwiUENcdTdhZWZcIn0iLCJpc19yZWZyZXNoIjp0cnVlLCJleHAiOjE3NzY1MTIxMTJ9.4Mpb5TUkYut_5Kr6Bs3Jx04YzREQSzeHkgLqnP0MvAQ","token_type":"bearer","expires_in":1800},"status_code":200,"success":true}', '0.96s', 6, '2a85e3c0-5bbb-4730-ae9e-67b3e7413450', '0', '登录', '2026-04-18 11:05:12.572824', '2026-04-18 11:05:12.572833', NULL, NULL);
+INSERT INTO "public"."sys_log" VALUES (2, '/generator/gencode/import', 'POST', '{"body": ["crm_customer_change_logs", "crm_customer_duplicate_logs", "crm_customer_health", "crm_customer_health_scores", "crm_customer_pool_logs", "crm_customer_profiles", "crm_customer_satisfaction_surveys", "crm_customer_tags", "crm_customer_timeline", "crm_customers"]}', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"导入表结构成功","data":true,"status_code":200,"success":true}', '0.97s', 7, '4aff40dc-caec-493c-9be8-2f37da3363af', '0', '导入表结构', '2026-04-18 11:05:54.672138', '2026-04-18 11:05:54.672146', 1, 1);
+INSERT INTO "public"."sys_log" VALUES (2, '/generator/gencode/delete', 'DELETE', '{"body": [66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 47, 46, 45, 39]}', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"删除业务表信息成功","data":null,"status_code":200,"success":true}', '0.16s', 8, 'a03e46c9-2852-495e-b15f-16891c2995e4', '0', '删除业务表信息', '2026-04-18 11:06:49.672439', '2026-04-18 11:06:49.67245', 1, 1);
+INSERT INTO "public"."sys_log" VALUES (2, '/generator/gencode/import', 'POST', '{"body": ["crm_ai_customer_profiles", "crm_ai_recommendations", "crm_ai_tags", "crm_campaign_leads", "crm_campaigns", "crm_contact_change_logs", "crm_contact_relations", "crm_contact_visits", "crm_contacts", "crm_contract_invoices", "crm_contract_items", "crm_contracts", "crm_customer_activities", "crm_customer_addresses", "crm_customer_attachments", "crm_customer_change_logs", "crm_customer_duplicate_logs", "crm_customer_health", "crm_customer_health_scores", "crm_customer_pool_logs", "crm_customer_profiles", "crm_customer_satisfaction_surveys", "crm_customer_tags", "crm_customer_timeline", "crm_customers", "crm_data_dicts", "crm_deliveries", "crm_follow_records", "crm_followups", "crm_import_records", "crm_invoices", "crm_joint_followups", "crm_lead_scores", "crm_leads", "crm_marketing_campaigns", "crm_marketing_channels", "crm_notifications", "crm_operation_logs", "crm_opportunities", "crm_opportunity_products", "crm_opportunity_stages", "crm_order_items", "crm_orders", "crm_payments", "crm_pool_transfers", "crm_price_tiers", "crm_product_categories", "crm_product_documents", "crm_product_price_history", "crm_product_price_policies"]}', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"导入表结构成功","data":true,"status_code":200,"success":true}', '3.97s', 9, '0377f23a-ee06-4a2b-8158-0ae6fa97e9ec', '0', '导入表结构', '2026-04-18 11:07:33.228995', '2026-04-18 11:07:33.229001', 1, 1);
+INSERT INTO "public"."sys_log" VALUES (2, '/generator/gencode/import', 'POST', '{"body": ["crm_product_prices", "crm_product_skus", "crm_products", "crm_quotation_items", "crm_quotations", "crm_renewals", "crm_report_instances", "crm_report_templates", "crm_sales_activities", "crm_sales_targets", "crm_satisfaction_surveys", "crm_tag_definitions", "crm_tags", "crm_tasks", "crm_user_extensions", "crm_workflow_approvals", "crm_workflow_logs", "crm_workflow_rules"]}', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"导入表结构成功","data":true,"status_code":200,"success":true}', '1.68s', 10, '48dceaac-9744-4cba-9f6c-69bc200561c1', '0', '导入表结构', '2026-04-18 11:07:42.485812', '2026-04-18 11:07:42.485819', 1, 1);
+INSERT INTO "public"."sys_log" VALUES (2, '/system/auth/logout', 'POST', '{"body": {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJcdThkODVcdTdlYTdcdTdiYTFcdTc0MDZcdTU0NThcIixcInNlc3Npb25faWRcIjpcIjhhYzJiZDdmLWMyZGEtNGUxOS1iMGM2LTk3Nzc5MjY5MzM1NVwiLFwidXNlcl9pZFwiOjEsXCJ1c2VyX25hbWVcIjpcImFkbWluXCIsXCJpcGFkZHJcIjpcIjE3Mi4yMC4wLjFcIixcImxvZ2luX2xvY2F0aW9uXCI6XCJcdTUxODVcdTdmNTFJUFwiLFwib3NcIjpcIldpbmRvd3NcIixcImJyb3dzZXJcIjpcIkNocm9tZVwiLFwibG9naW5fdGltZVwiOlwiMjAyNi0wNC0xOCAwMzowNToxMlwiLFwibG9naW5fdHlwZVwiOlwiUENcdTdhZWZcIn0iLCJpc19yZWZyZXNoIjpmYWxzZSwiZXhwIjoxNzc2NTEyMTEyfQ.FcBAa13Lvi69fi1F75YOXTvnFxExYkNqzU3f36-qrWQ"}}', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"退出成功","data":null,"status_code":200,"success":true}', '0.05s', 11, '44a31730-6c6d-4152-93a1-04557846ee58', '0', '退出登录', '2026-04-18 11:31:37.977912', '2026-04-18 11:31:37.977919', 1, 1);
+INSERT INTO "public"."sys_log" VALUES (1, '/system/auth/login', 'POST', 'username: admin
+password: 123456
+captcha: 48
+captcha_key: ede5b90560c240bfa0cb1d515647d8c8
+remember: true
+login_type: PC端', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"登录成功","data":{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJcdThkODVcdTdlYTdcdTdiYTFcdTc0MDZcdTU0NThcIixcInNlc3Npb25faWRcIjpcImI2YWM4MzFiLWUxNjktNGM3Mi04ODUzLTMxNTFmYmMxNGM5OVwiLFwidXNlcl9pZFwiOjEsXCJ1c2VyX25hbWVcIjpcImFkbWluXCIsXCJpcGFkZHJcIjpcIjE3Mi4yMC4wLjFcIixcImxvZ2luX2xvY2F0aW9uXCI6XCJcdTUxODVcdTdmNTFJUFwiLFwib3NcIjpcIldpbmRvd3NcIixcImJyb3dzZXJcIjpcIkNocm9tZVwiLFwibG9naW5fdGltZVwiOlwiMjAyNi0wNC0xOCAwMzozMTo1NlwiLFwibG9naW5fdHlwZVwiOlwiUENcdTdhZWZcIn0iLCJpc19yZWZyZXNoIjpmYWxzZSwiZXhwIjoxNzc2NTEzNzE2fQ.WizQc13V_qM2RSdCPncpVVBbOo9zQYsYs-tEg3QKUQE","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJcdThkODVcdTdlYTdcdTdiYTFcdTc0MDZcdTU0NThcIixcInNlc3Npb25faWRcIjpcImI2YWM4MzFiLWUxNjktNGM3Mi04ODUzLTMxNTFmYmMxNGM5OVwiLFwidXNlcl9pZFwiOjEsXCJ1c2VyX25hbWVcIjpcImFkbWluXCIsXCJpcGFkZHJcIjpcIjE3Mi4yMC4wLjFcIixcImxvZ2luX2xvY2F0aW9uXCI6XCJcdTUxODVcdTdmNTFJUFwiLFwib3NcIjpcIldpbmRvd3NcIixcImJyb3dzZXJcIjpcIkNocm9tZVwiLFwibG9naW5fdGltZVwiOlwiMjAyNi0wNC0xOCAwMzozMTo1NlwiLFwibG9naW5fdHlwZVwiOlwiUENcdTdhZWZcIn0iLCJpc19yZWZyZXNoIjp0cnVlLCJleHAiOjE3NzY1MTM3MTZ9.otLMeWmk8YhoRV2CkuPXLGKLHOhkHO_QdPXbhxQW_mA","token_type":"bearer","expires_in":1800},"status_code":200,"success":true}', '0.84s', 12, 'd3557883-b341-499b-a0c0-7de01791166a', '0', '登录', '2026-04-18 11:31:56.901101', '2026-04-18 11:31:56.901109', NULL, NULL);
+INSERT INTO "public"."sys_log" VALUES (1, '/system/auth/login', 'POST', 'username: admin
+password: 123456
+captcha: 8
+captcha_key: 0cdbd8ec9da043c4845f640c94c7804d
+remember: true
+login_type: PC端', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"登录成功","data":{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJcdThkODVcdTdlYTdcdTdiYTFcdTc0MDZcdTU0NThcIixcInNlc3Npb25faWRcIjpcIjM0ZmVmZmFhLTQ1YjctNGRlZC05YzQzLTU5YjE3ZjAwMDZjMVwiLFwidXNlcl9pZFwiOjEsXCJ1c2VyX25hbWVcIjpcImFkbWluXCIsXCJpcGFkZHJcIjpcIjE3Mi4yMC4wLjFcIixcImxvZ2luX2xvY2F0aW9uXCI6XCJcdTUxODVcdTdmNTFJUFwiLFwib3NcIjpcIldpbmRvd3NcIixcImJyb3dzZXJcIjpcIkNocm9tZVwiLFwibG9naW5fdGltZVwiOlwiMjAyNi0wNC0xOCAwNTozMjo1NlwiLFwibG9naW5fdHlwZVwiOlwiUENcdTdhZWZcIn0iLCJpc19yZWZyZXNoIjpmYWxzZSwiZXhwIjoxNzc2NTIwOTc2fQ.7TPkfuvndZxF31aFVziehqAFcWM_HJ6BwTZs1xCsM44","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJcdThkODVcdTdlYTdcdTdiYTFcdTc0MDZcdTU0NThcIixcInNlc3Npb25faWRcIjpcIjM0ZmVmZmFhLTQ1YjctNGRlZC05YzQzLTU5YjE3ZjAwMDZjMVwiLFwidXNlcl9pZFwiOjEsXCJ1c2VyX25hbWVcIjpcImFkbWluXCIsXCJpcGFkZHJcIjpcIjE3Mi4yMC4wLjFcIixcImxvZ2luX2xvY2F0aW9uXCI6XCJcdTUxODVcdTdmNTFJUFwiLFwib3NcIjpcIldpbmRvd3NcIixcImJyb3dzZXJcIjpcIkNocm9tZVwiLFwibG9naW5fdGltZVwiOlwiMjAyNi0wNC0xOCAwNTozMjo1NlwiLFwibG9naW5fdHlwZVwiOlwiUENcdTdhZWZcIn0iLCJpc19yZWZyZXNoIjp0cnVlLCJleHAiOjE3NzY1MjA5NzZ9.LQBL1jT9qzecm1Oqtn-3SEC9vbv7HmrDvG2tdxMCbRI","token_type":"bearer","expires_in":1800},"status_code":200,"success":true}', '0.46s', 13, '12cda490-bb57-4ccb-a759-e7aa80fe3529', '0', '登录', '2026-04-18 13:32:56.546798', '2026-04-18 13:32:56.546805', NULL, NULL);
+INSERT INTO "public"."sys_log" VALUES (2, '/generator/gencode/delete', 'DELETE', '{"body": [134, 133, 132, 131, 130, 129, 128, 127, 126, 125, 124, 123, 122, 121, 120, 119, 118, 117, 116, 115, 114, 113, 112, 111, 110, 109, 108, 107, 106, 105, 104, 103, 102, 101, 100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85]}', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"删除业务表信息成功","data":null,"status_code":200,"success":true}', '0.60s', 14, 'bb8285c9-0519-44bb-b31f-e5a9c66fe96c', '0', '删除业务表信息', '2026-04-18 13:42:13.586734', '2026-04-18 13:42:13.586742', 1, 1);
+INSERT INTO "public"."sys_log" VALUES (2, '/generator/gencode/delete', 'DELETE', '{"body": [84, 83, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67]}', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"删除业务表信息成功","data":null,"status_code":200,"success":true}', '0.16s', 15, '2323e1e1-7e7f-469f-9de6-f20801bdcebf', '0', '删除业务表信息', '2026-04-18 13:42:17.246185', '2026-04-18 13:42:17.246194', 1, 1);
+INSERT INTO "public"."sys_log" VALUES (1, '/system/auth/login', 'POST', 'username: admin
+password: 123456
+captcha: 64
+captcha_key: b037acd25a414c0aa1a9b906cea0f2b9
+remember: true
+login_type: PC端', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"登录成功","data":{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJcdThkODVcdTdlYTdcdTdiYTFcdTc0MDZcdTU0NThcIixcInNlc3Npb25faWRcIjpcImQzYjI2MjllLTQ0ZmItNDc4NS04NTdmLTEwNTI5MTNlNDhhY1wiLFwidXNlcl9pZFwiOjEsXCJ1c2VyX25hbWVcIjpcImFkbWluXCIsXCJpcGFkZHJcIjpcIjE3Mi4yMC4wLjFcIixcImxvZ2luX2xvY2F0aW9uXCI6XCJcdTUxODVcdTdmNTFJUFwiLFwib3NcIjpcIldpbmRvd3NcIixcImJyb3dzZXJcIjpcIkNocm9tZVwiLFwibG9naW5fdGltZVwiOlwiMjAyNi0wNC0xOSAwMToxNDoyOVwiLFwibG9naW5fdHlwZVwiOlwiUENcdTdhZWZcIn0iLCJpc19yZWZyZXNoIjpmYWxzZSwiZXhwIjoxNzc2NTkxODY5fQ.BCW3fT-0O5PNu3J71mDJHRRHeM6OZ1BY8nFqI81i8eI","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJcdThkODVcdTdlYTdcdTdiYTFcdTc0MDZcdTU0NThcIixcInNlc3Npb25faWRcIjpcImQzYjI2MjllLTQ0ZmItNDc4NS04NTdmLTEwNTI5MTNlNDhhY1wiLFwidXNlcl9pZFwiOjEsXCJ1c2VyX25hbWVcIjpcImFkbWluXCIsXCJpcGFkZHJcIjpcIjE3Mi4yMC4wLjFcIixcImxvZ2luX2xvY2F0aW9uXCI6XCJcdTUxODVcdTdmNTFJUFwiLFwib3NcIjpcIldpbmRvd3NcIixcImJyb3dzZXJcIjpcIkNocm9tZVwiLFwibG9naW5fdGltZVwiOlwiMjAyNi0wNC0xOSAwMToxNDoyOVwiLFwibG9naW5fdHlwZVwiOlwiUENcdTdhZWZcIn0iLCJpc19yZWZyZXNoIjp0cnVlLCJleHAiOjE3NzY1OTE4Njl9.jKw7TfPJ_eO7XsAZR9uGTjSieGiZ2Z180tOKzPVwDTk","token_type":"bearer","expires_in":1800},"status_code":200,"success":true}', '0.63s', 16, '4c60028d-5c99-4dab-b9a3-db67aa2622d2', '0', '登录', '2026-04-19 09:14:29.617621', '2026-04-19 09:14:29.617629', NULL, NULL);
+INSERT INTO "public"."sys_log" VALUES (2, '/generator/gencode/import', 'POST', '{"body": ["crm_ai_customer_profiles", "crm_ai_recommendations", "crm_ai_tags", "crm_campaign_leads", "crm_campaigns", "crm_contact_change_logs", "crm_contact_relations", "crm_contact_visits", "crm_contacts", "crm_contract_invoices", "crm_contract_items", "crm_contracts", "crm_customer_activities", "crm_customer_addresses", "crm_customer_attachments", "crm_customer_change_logs", "crm_customer_duplicate_logs", "crm_customer_health", "crm_customer_health_scores", "crm_customer_pool_logs", "crm_customer_profiles", "crm_customer_satisfaction_surveys", "crm_customer_tags", "crm_customer_timeline", "crm_customers", "crm_data_dicts", "crm_deliveries", "crm_follow_records", "crm_followups", "crm_import_records", "crm_invoices", "crm_joint_followups", "crm_lead_scores", "crm_leads", "crm_marketing_campaigns", "crm_marketing_channels", "crm_notifications", "crm_operation_logs", "crm_opportunities", "crm_opportunity_products", "crm_opportunity_stages", "crm_order_items", "crm_orders", "crm_payments", "crm_pool_transfers", "crm_price_tiers", "crm_product_categories", "crm_product_documents", "crm_product_price_history", "crm_product_price_policies"]}', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"导入表结构成功","data":true,"status_code":200,"success":true}', '4.34s', 17, 'f08a059c-24af-4162-90cf-974514a0f2ce', '0', '导入表结构', '2026-04-19 09:14:57.167622', '2026-04-19 09:14:57.167628', 1, 1);
+INSERT INTO "public"."sys_log" VALUES (2, '/generator/gencode/import', 'POST', '{"body": ["crm_product_prices", "crm_product_skus", "crm_products", "crm_quotation_items", "crm_quotations", "crm_renewals", "crm_report_instances", "crm_report_templates", "crm_sales_activities", "crm_sales_targets", "crm_satisfaction_surveys", "crm_tag_definitions", "crm_tags", "crm_tasks", "crm_user_extensions", "crm_workflow_approvals", "crm_workflow_logs", "crm_workflow_rules"]}', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"导入表结构成功","data":true,"status_code":200,"success":true}', '1.70s', 18, 'd26439d8-c1c8-46ab-9a5b-34c5a3bbf4f9', '0', '导入表结构', '2026-04-19 09:15:07.226532', '2026-04-19 09:15:07.226539', 1, 1);
+INSERT INTO "public"."sys_log" VALUES (2, '/generator/gencode/batch/output', 'PATCH', '{"body": ["crm_report_templates", "crm_workflow_approvals", "crm_quotation_items", "crm_quotations", "crm_tags", "crm_report_instances", "crm_renewals", "crm_satisfaction_surveys", "crm_product_skus", "crm_products"]}', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{}', '0.84s', 19, '7afb1edd-d220-429c-89e8-a43c6c50f055', '0', '批量生成代码', '2026-04-19 09:15:23.216269', '2026-04-19 09:15:23.216275', 1, 1);
+INSERT INTO "public"."sys_log" VALUES (2, '/generator/gencode/update/183', 'PUT', '请求参数过长', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"编辑业务表信息成功","data":{"id":183,"uuid":"ffac2c6f-c05a-4474-b64a-6d73334a47f1","status":"0","description":"联系人管理模块 ，crm_contacts (客户中心的子模块)","created_time":"2026-04-19 09:14:56","updated_time":"2026-04-19 10:13:39","table_name":"crm_customers","table_comment":"客户中心","class_name":"CrmCustomers","package_name":"module_crm_customers","module_name":"crm_customers","business_name":"crm_customers","function_name":"Customers","sub_table_name":null,"sub_table_fk_name":null,"parent_menu_id":null,"columns":[{"id":2827,"uuid":"ee789d62-54fa-4aad-bd70-d382af794b2b","status":"0","description":null,"created_time":"2026-04-19 09:14:56","updated_time":"2026-04-19 09:14:56","table_id":183,"column_name":"id","column_comment":"主键ID","column_type":"INTEGER","column_length":"","column_default":"nextval(''crm_customers_id_seq''::regclass)","is_pk":true,"is_increment":true,"is_nullable":false,"is_unique":false,"python_type":"int","python_field":"id","is_insert":false,"is_edit":false,"is_list":false,"is_query":false,"query_type":null,"html_type":"input","dict_type":"","sort":1,"super_column":"0"},{"id":2828,"uuid":"3038de83-1f06-44c9-bb90-e929bbe2bc0a","status":"0","description":null,"created_time":"2026-04-19 09:14:56","updated_time":"2026-04-19 09:14:56","table_id":183,"column_name":"customer_code","column_comment":"客户编号","column_type":"VARCHAR(50)","column_length":"50","column_default":"","is_pk":false,"is_increment":false,"is_nullable":false,"is_unique":true,"python_type":"str","python_field":"customerCode","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"LIKE","html_type":"input","dict_type":"","sort":2,"super_column":"0"},{"id":2829,"uuid":"c69d2ba2-58d6-4944-acc7-f801ff0c72eb","status":"0","description":null,"created_time":"2026-04-19 09:14:56","updated_time":"2026-04-19 09:14:56","table_id":183,"column_name":"customer_name","column_comment":"客户名称","column_type":"VARCHAR(200)","column_length":"200","column_default":"","is_pk":false,"is_increment":false,"is_nullable":false,"is_unique":false,"python_type":"str","python_field":"customerName","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"LIKE","html_type":"input","dict_type":"","sort":3,"super_column":"0"},{"id":2830,"uuid":"22a96591-2a98-4c1f-8ba7-016f1d5af6c1","status":"0","description":null,"created_time":"2026-04-19 09:14:56","updated_time":"2026-04-19 09:14:56","table_id":183,"column_name":"customer_type","column_comment":"客户类型:1-企业客户,2-个人客户,3-政府机构,4-事业单位,5-合作伙伴","column_type":"VARCHAR(20)","column_length":"20","column_default":"''enterprise''::character varying","is_pk":false,"is_increment":false,"is_nullable":true,"is_unique":false,"python_type":"str","python_field":"customerType","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"LIKE","html_type":"select","dict_type":"","sort":4,"super_column":"0"},{"id":2831,"uuid":"bae58e69-4f01-427b-ac10-82b7dcea2e96","status":"0","description":null,"created_time":"2026-04-19 09:14:56","updated_time":"2026-04-19 09:14:56","table_id":183,"column_name":"industry","column_comment":"所属行业","column_type":"VARCHAR(100)","column_length":"100","column_default":"","is_pk":false,"is_increment":false,"is_nullable":true,"is_unique":false,"python_type":"str","python_field":"industry","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"LIKE","html_type":"input","dict_type":"","sort":5,"super_column":"0"},{"id":2832,"uuid":"a26f4eb0-770b-4a17-aefa-e42b9add6447","status":"0","description":null,"created_time":"2026-04-19 09:14:56","updated_time":"2026-04-19 09:14:56","table_id":183,"column_name":"source","column_comment":"来源:1-自主开发,2-市场活动,3-转介绍,4-网络推广,5-合作伙伴,6-招投标","column_type":"VARCHAR(50)","column_length":"50","column_default":"","is_pk":false,"is_increment":false,"is_nullable":true,"is_unique":false,"python_type":"str","python_field":"source","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"LIKE","html_type":"input","dict_type":"","sort":6,"super_column":"0"},{"id":2833,"uuid":"84bc7085-ee82-40e9-8aa6-f409c0ebcec1","status":"0","description":null,"created_time":"2026-04-19 09:14:56","updated_time":"2026-04-19 09:14:56","table_id":183,"column_name":"status","column_comment":"状态:1-潜在,2-意向,3-正式,4-休眠,5-流失","column_type":"VARCHAR(20)","column_length":"20","column_default":"''active''::character varying","is_pk":false,"is_increment":false,"is_nullable":true,"is_unique":false,"python_type":"str","python_field":"status","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"LIKE","html_type":"radio","dict_type":"","sort":7,"super_column":"0"},{"id":2834,"uuid":"303fc1d4-0acc-4b9a-90e6-09aa2344e0d9","status":"0","description":null,"created_time":"2026-04-19 09:14:56","updated_time":"2026-04-19 09:14:56","table_id":183,"column_name":"owner_id","column_comment":"负责人ID,关联sys_users","column_type":"INTEGER","column_length":"","column_default":"","is_pk":false,"is_increment":false,"is_nullable":true,"is_unique":false,"python_type":"int","python_field":"ownerId","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"EQ","html_type":"input","dict_type":"","sort":8,"super_column":"0"},{"id":2835,"uuid":"82efd5e6-fb6a-46e7-8869-dd75d5bfa5b2","status":"0","description":null,"created_time":"2026-04-19 09:14:56","updated_time":"2026-04-19 09:14:56","table_id":183,"column_name":"department_id","column_comment":"所属部门ID,关联sys_dept","column_type":"INTEGER","column_length":"","column_default":"","is_pk":false,"is_increment":false,"is_nullable":true,"is_unique":false,"python_type":"int","python_field":"departmentId","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"EQ","html_type":"input","dict_type":"","sort":9,"super_column":"0"},{"id":2836,"uuid":"2356a581-8d0d-4727-8a9d-e56e871cd297","status":"0","description":null,"created_time":"2026-04-19 09:14:56","updated_time":"2026-04-19 09:14:56","table_id":183,"column_name":"lead_id","column_comment":"来源线索ID,关联crm_leads","column_type":"INTEGER","column_length":"","column_default":"","is_pk":false,"is_increment":false,"is_nullable":true,"is_unique":false,"python_type":"int","python_field":"leadId","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"EQ","html_type":"input","dict_type":"","sort":10,"super_column":"0"},{"id":2837,"uuid":"8a43de37-427a-448c-9eb2-e99088c80d72","status":"0","description":null,"created_time":"2026-04-19 09:14:56","updated_time":"2026-04-19 09:14:56","table_id":183,"column_name":"pool_status","column_comment":"公海池状态:1-私有,2-公海","column_type":"VARCHAR(20)","column_length":"20","column_default":"''private''::character varying","is_pk":false,"is_increment":false,"is_nullable":true,"is_unique":false,"python_type":"str","python_field":"poolStatus","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"LIKE","html_type":"radio","dict_type":"","sort":11,"super_column":"0"},{"id":2838,"uuid":"bd67acb6-7d06-4dc4-a93b-907b62aaba3c","status":"0","description":null,"created_time":"2026-04-19 09:14:56","updated_time":"2026-04-19 09:14:56","table_id":183,"column_name":"last_followup_at","column_comment":"最后跟进时间","column_type":"TIMESTAMP","column_length":"","column_default":"","is_pk":false,"is_increment":false,"is_nullable":true,"is_unique":false,"python_type":"datetime","python_field":"lastFollowupAt","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"EQ","html_type":"datetime","dict_type":"","sort":12,"super_column":"0"},{"id":2839,"uuid":"5ce16686-91cb-4182-a588-9e475eb266fa","status":"0","description":null,"created_time":"2026-04-19 09:14:57","updated_time":"2026-04-19 09:14:57","table_id":183,"column_name":"next_followup_at","column_comment":"下次跟进时间","column_type":"TIMESTAMP","column_length":"","column_default":"","is_pk":false,"is_increment":false,"is_nullable":true,"is_unique":false,"python_type":"datetime","python_field":"nextFollowupAt","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"EQ","html_type":"datetime","dict_type":"","sort":13,"super_column":"0"},{"id":2840,"uuid":"ae0567a6-7455-4593-991a-e77880200cb5","status":"0","description":null,"created_time":"2026-04-19 09:14:57","updated_time":"2026-04-19 09:14:57","table_id":183,"column_name":"created_at","column_comment":"创建时间","column_type":"TIMESTAMP","column_length":"","column_default":"CURRENT_TIMESTAMP","is_pk":false,"is_increment":false,"is_nullable":true,"is_unique":false,"python_type":"datetime","python_field":"createdAt","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"EQ","html_type":"datetime","dict_type":"","sort":14,"super_column":"0"},{"id":2841,"uuid":"aebc18da-0206-455f-aee9-f2f9ccb90038","status":"0","description":null,"created_time":"2026-04-19 09:14:57","updated_time":"2026-04-19 09:14:57","table_id":183,"column_name":"updated_at","column_comment":"更新时间","column_type":"TIMESTAMP","column_length":"","column_default":"CURRENT_TIMESTAMP","is_pk":false,"is_increment":false,"is_nullable":true,"is_unique":false,"python_type":"datetime","python_field":"updatedAt","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"EQ","html_type":"datetime","dict_type":"","sort":15,"super_column":"0"},{"id":2842,"uuid":"c54d7325-1829-4df6-876c-8f571c4c8b9a","status":"0","description":null,"created_time":"2026-04-19 09:14:57","updated_time":"2026-04-19 09:14:57","table_id":183,"column_name":"created_by","column_comment":"创建人ID","column_type":"INTEGER","column_length":"","column_default":"","is_pk":false,"is_increment":false,"is_nullable":true,"is_unique":false,"python_type":"int","python_field":"createdBy","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"EQ","html_type":"input","dict_type":"","sort":16,"super_column":"0"},{"id":2843,"uuid":"a272a575-5901-487e-a888-174d47015002","status":"0","description":null,"created_time":"2026-04-19 09:14:57","updated_time":"2026-04-19 09:14:57","table_id":183,"column_name":"updated_by","column_comment":"更新人ID","column_type":"INTEGER","column_length":"","column_default":"","is_pk":false,"is_increment":false,"is_nullable":true,"is_unique":false,"python_type":"int","python_field":"updatedBy","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"EQ","html_type":"input","dict_type":"","sort":17,"super_column":"0"},{"id":2844,"uuid":"cb10bdda-1a6f-4a0c-b969-5b9f91dfdc4c","status":"0","description":null,"created_time":"2026-04-19 09:14:57","updated_time":"2026-04-19 09:14:57","table_id":183,"column_name":"deleted_at","column_comment":"删除时间(软删除)","column_type":"TIMESTAMP","column_length":"","column_default":"","is_pk":false,"is_increment":false,"is_nullable":true,"is_unique":false,"python_type":"datetime","python_field":"deletedAt","is_insert":true,"is_edit":true,"is_list":true,"is_query":true,"query_type":"EQ","html_type":"datetime","dict_type":"","sort":18,"super_column":"0"}],"pk_column":{"id":2827,"uuid":"ee789d62-54fa-4aad-bd70-d382af794b2b","status":"0","description":null,"created_time":"2026-04-19 09:14:56","updated_time":"2026-04-19 09:14:56","table_id":183,"column_name":"id","column_comment":"主键ID","column_type":"INTEGER","column_length":"","column_default":"nextval(''crm_customers_id_seq''::regclass)","is_pk":true,"is_increment":true,"is_nullable":false,"is_unique":false,"python_type":"int","python_field":"id","is_insert":false,"is_edit":false,"is_list":false,"is_query":false,"query_type":null,"html_type":"input","dict_type":"","sort":1,"super_column":"0"},"sub_table":null,"sub":false,"master_sub_hint":null},"status_code":200,"success":true}', '1.12s', 20, 'ba359d7d-0f3e-48d7-80b1-289b50a1113b', '0', '编辑业务表信息', '2026-04-19 10:13:40.807303', '2026-04-19 10:13:40.807311', 1, 1);
+INSERT INTO "public"."sys_log" VALUES (1, '/system/auth/login', 'POST', 'username: admin
+password: 123456
+captcha: 2
+captcha_key: 45395ea775604f63a21221dc910e3320
+remember: true
+login_type: PC端', '172.20.0.1', '内网IP', 'Windows', 'Chrome', 200, '{"code":0,"msg":"登录成功","data":{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJcdThkODVcdTdlYTdcdTdiYTFcdTc0MDZcdTU0NThcIixcInNlc3Npb25faWRcIjpcIjAzZjg5ZjEwLTEyYTctNDc5ZS05Zjc3LWM1NzU5Y2FmNWEyOFwiLFwidXNlcl9pZFwiOjEsXCJ1c2VyX25hbWVcIjpcImFkbWluXCIsXCJpcGFkZHJcIjpcIjE3Mi4yMC4wLjFcIixcImxvZ2luX2xvY2F0aW9uXCI6XCJcdTUxODVcdTdmNTFJUFwiLFwib3NcIjpcIldpbmRvd3NcIixcImJyb3dzZXJcIjpcIkNocm9tZVwiLFwibG9naW5fdGltZVwiOlwiMjAyNi0wNC0xOSAwMjo1MzowMlwiLFwibG9naW5fdHlwZVwiOlwiUENcdTdhZWZcIn0iLCJpc19yZWZyZXNoIjpmYWxzZSwiZXhwIjoxNzc2NTk3NzgyfQ.jh_XhG4bHMD6wVcF59trKZSw-W05bsRc_M0xPLz1vZ8","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJcdThkODVcdTdlYTdcdTdiYTFcdTc0MDZcdTU0NThcIixcInNlc3Npb25faWRcIjpcIjAzZjg5ZjEwLTEyYTctNDc5ZS05Zjc3LWM1NzU5Y2FmNWEyOFwiLFwidXNlcl9pZFwiOjEsXCJ1c2VyX25hbWVcIjpcImFkbWluXCIsXCJpcGFkZHJcIjpcIjE3Mi4yMC4wLjFcIixcImxvZ2luX2xvY2F0aW9uXCI6XCJcdTUxODVcdTdmNTFJUFwiLFwib3NcIjpcIldpbmRvd3NcIixcImJyb3dzZXJcIjpcIkNocm9tZVwiLFwibG9naW5fdGltZVwiOlwiMjAyNi0wNC0xOSAwMjo1MzowMlwiLFwibG9naW5fdHlwZVwiOlwiUENcdTdhZWZcIn0iLCJpc19yZWZyZXNoIjp0cnVlLCJleHAiOjE3NzY1OTc3ODJ9.Bwh-c9KkJjqQQlmh3YJYe9qm9B0nth_uqec96eI9FvE","token_type":"bearer","expires_in":1800},"status_code":200,"success":true}', '0.93s', 21, '29c8a748-794f-4317-ae00-9608248bd07a', '0', '登录', '2026-04-19 10:53:03.510334', '2026-04-19 10:53:03.510343', NULL, NULL);
+
+-- ----------------------------
+-- Table structure for sys_menu
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."sys_menu";
+CREATE TABLE "public"."sys_menu" (
+  "name" varchar(50) COLLATE "pg_catalog"."default" NOT NULL,
+  "type" int4 NOT NULL,
+  "order" int4 NOT NULL,
+  "permission" varchar(100) COLLATE "pg_catalog"."default",
+  "icon" varchar(50) COLLATE "pg_catalog"."default",
+  "route_name" varchar(100) COLLATE "pg_catalog"."default",
+  "route_path" varchar(200) COLLATE "pg_catalog"."default",
+  "component_path" varchar(200) COLLATE "pg_catalog"."default",
+  "redirect" varchar(200) COLLATE "pg_catalog"."default",
+  "hidden" bool NOT NULL,
+  "keep_alive" bool NOT NULL,
+  "always_show" bool NOT NULL,
+  "title" varchar(50) COLLATE "pg_catalog"."default",
+  "params" json,
+  "affix" bool NOT NULL,
+  "parent_id" int4,
+  "id" int4 NOT NULL DEFAULT nextval('sys_menu_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL
+)
+;
+COMMENT ON COLUMN "public"."sys_menu"."name" IS '菜单名称';
+COMMENT ON COLUMN "public"."sys_menu"."type" IS '菜单类型(1:目录 2:菜单 3:按钮/权限 4:链接)';
+COMMENT ON COLUMN "public"."sys_menu"."order" IS '显示排序';
+COMMENT ON COLUMN "public"."sys_menu"."permission" IS '权限标识(如:module_system:user:query)';
+COMMENT ON COLUMN "public"."sys_menu"."icon" IS '菜单图标';
+COMMENT ON COLUMN "public"."sys_menu"."route_name" IS '路由名称';
+COMMENT ON COLUMN "public"."sys_menu"."route_path" IS '路由路径';
+COMMENT ON COLUMN "public"."sys_menu"."component_path" IS '组件路径';
+COMMENT ON COLUMN "public"."sys_menu"."redirect" IS '重定向地址';
+COMMENT ON COLUMN "public"."sys_menu"."hidden" IS '是否隐藏(True:隐藏 False:显示)';
+COMMENT ON COLUMN "public"."sys_menu"."keep_alive" IS '是否缓存(True:是 False:否)';
+COMMENT ON COLUMN "public"."sys_menu"."always_show" IS '是否始终显示(True:是 False:否)';
+COMMENT ON COLUMN "public"."sys_menu"."title" IS '菜单标题';
+COMMENT ON COLUMN "public"."sys_menu"."params" IS '路由参数(JSON对象)';
+COMMENT ON COLUMN "public"."sys_menu"."affix" IS '是否固定标签页(True:是 False:否)';
+COMMENT ON COLUMN "public"."sys_menu"."parent_id" IS '父菜单ID';
+COMMENT ON COLUMN "public"."sys_menu"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."sys_menu"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."sys_menu"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."sys_menu"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."sys_menu"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."sys_menu"."updated_time" IS '更新时间';
+COMMENT ON TABLE "public"."sys_menu" IS '菜单表';
+
+-- ----------------------------
+-- Records of sys_menu
+-- ----------------------------
+INSERT INTO "public"."sys_menu" VALUES ('仪表盘', 1, 1, '', 'client', 'Dashboard', '/dashboard', NULL, '/dashboard/workplace', 'f', 'f', 'f', '仪表盘', 'null', 'f', NULL, 1, '6a0c8aad-76f8-4663-98f1-bb5111d2ee94', '0', '初始化数据', '2026-04-17 23:04:51.695433', '2026-04-17 23:04:51.695447');
+INSERT INTO "public"."sys_menu" VALUES ('系统管理', 1, 2, NULL, 'system', 'System', '/system', NULL, '/system/menu', 'f', 'f', 'f', '系统管理', 'null', 'f', NULL, 2, '1c6390db-85b4-4d48-8594-01c392f8c71a', '0', '初始化数据', '2026-04-17 23:04:51.695465', '2026-04-17 23:04:51.695467');
+INSERT INTO "public"."sys_menu" VALUES ('监控管理', 1, 3, NULL, 'monitor', 'Monitor', '/monitor', NULL, '/monitor/online', 'f', 'f', 'f', '监控管理', 'null', 'f', NULL, 3, '927be1cb-96fa-44c6-b1cf-bb661b773d7d', '0', '初始化数据', '2026-04-17 23:04:51.69548', '2026-04-17 23:04:51.695483');
+INSERT INTO "public"."sys_menu" VALUES ('接口管理', 1, 4, NULL, 'document', 'Common', '/common', NULL, '/common/docs', 'f', 'f', 'f', '接口管理', 'null', 'f', NULL, 4, '31e63c52-ba55-4d31-8bc5-f5c8643ab8e6', '0', '初始化数据', '2026-04-17 23:04:51.695495', '2026-04-17 23:04:51.695497');
+INSERT INTO "public"."sys_menu" VALUES ('代码管理', 1, 5, NULL, 'code', 'Generator', '/generator', NULL, '/generator/gencode', 'f', 'f', 'f', '代码管理', 'null', 'f', NULL, 5, 'b264361b-6a82-406a-ae18-9f3555139901', '0', '代码管理', '2026-04-17 23:04:51.695509', '2026-04-17 23:04:51.695511');
+INSERT INTO "public"."sys_menu" VALUES ('应用管理', 1, 6, NULL, 'el-icon-ShoppingBag', 'Application', '/application', NULL, '/application/portal', 'f', 'f', 'f', '应用管理', 'null', 'f', NULL, 6, 'c95d48a7-6d42-48d9-a06f-ec0062cd3927', '0', '初始化数据', '2026-04-17 23:04:51.695522', '2026-04-17 23:04:51.695524');
+INSERT INTO "public"."sys_menu" VALUES ('AI管理', 1, 7, NULL, 'el-icon-ChatLineSquare', 'AI', '/ai', NULL, '/ai/chat', 'f', 'f', 'f', 'AI管理', 'null', 'f', NULL, 7, '79e9ef2a-d598-4087-9c87-1f93abeac782', '0', 'AI管理', '2026-04-17 23:04:51.695539', '2026-04-17 23:04:51.695541');
+INSERT INTO "public"."sys_menu" VALUES ('任务管理', 1, 8, NULL, 'el-icon-SetUp', 'Task', '/task', NULL, '/task/cronjob/job', 'f', 'f', 'f', '任务管理', 'null', 'f', NULL, 8, 'e6714788-7962-4ede-a525-68f8ff43adba', '0', '任务管理', '2026-04-17 23:04:51.695552', '2026-04-17 23:04:51.695554');
+INSERT INTO "public"."sys_menu" VALUES ('案例管理', 1, 9, NULL, 'menu', 'Example', '/example', NULL, '/example/demo', 'f', 'f', 'f', '案例管理', 'null', 'f', NULL, 9, 'af1149f3-59cc-41f9-84d6-5b69edf676e2', '0', '案例管理', '2026-04-17 23:04:51.695565', '2026-04-17 23:04:51.695568');
+INSERT INTO "public"."sys_menu" VALUES ('工作台', 2, 1, 'dashboard:workplace:query', 'el-icon-PieChart', 'Workplace', '/dashboard/workplace', 'dashboard/workplace', NULL, 'f', 'f', 'f', '工作台', 'null', 'f', 1, 10, '140fb59b-795c-4797-9f66-4f868525bc1c', '0', '初始化数据', '2026-04-17 23:04:51.710231', '2026-04-17 23:04:51.710245');
+INSERT INTO "public"."sys_menu" VALUES ('菜单管理', 2, 1, 'module_system:menu:query', 'menu', 'Menu', '/system/menu', 'module_system/menu/index', NULL, 'f', 'f', 'f', '菜单管理', 'null', 'f', 2, 11, '4b187586-7aeb-4843-a316-e77848a34a3f', '0', '初始化数据', '2026-04-17 23:04:51.710265', '2026-04-17 23:04:51.710268');
+INSERT INTO "public"."sys_menu" VALUES ('部门管理', 2, 2, 'module_system:dept:query', 'tree', 'Dept', '/system/dept', 'module_system/dept/index', NULL, 'f', 'f', 'f', '部门管理', 'null', 'f', 2, 12, 'aca372e7-6e1c-4f50-a4a7-e00f3b8d4e4c', '0', '初始化数据', '2026-04-17 23:04:51.710283', '2026-04-17 23:04:51.710286');
+INSERT INTO "public"."sys_menu" VALUES ('岗位管理', 2, 3, 'module_system:position:query', 'el-icon-Coordinate', 'Position', '/system/position', 'module_system/position/index', NULL, 'f', 'f', 'f', '岗位管理', 'null', 'f', 2, 13, 'f52889ad-0e15-413c-a456-83962ebb7058', '0', '初始化数据', '2026-04-17 23:04:51.710302', '2026-04-17 23:04:51.710307');
+INSERT INTO "public"."sys_menu" VALUES ('角色管理', 2, 4, 'module_system:role:query', 'role', 'Role', '/system/role', 'module_system/role/index', NULL, 'f', 'f', 'f', '角色管理', 'null', 'f', 2, 14, 'fb0d829a-61cf-4006-8f1f-613d64774a70', '0', '初始化数据', '2026-04-17 23:04:51.710326', '2026-04-17 23:04:51.710327');
+INSERT INTO "public"."sys_menu" VALUES ('用户管理', 2, 5, 'module_system:user:query', 'el-icon-User', 'User', '/system/user', 'module_system/user/index', NULL, 'f', 'f', 'f', '用户管理', 'null', 'f', 2, 15, '3f79c764-63bf-41c2-8553-6baf5ce8f250', '0', '初始化数据', '2026-04-17 23:04:51.710342', '2026-04-17 23:04:51.710346');
+INSERT INTO "public"."sys_menu" VALUES ('日志管理', 2, 6, 'module_system:log:query', 'el-icon-Aim', 'Log', '/system/log', 'module_system/log/index', NULL, 'f', 'f', 'f', '日志管理', 'null', 'f', 2, 16, '4e12d426-823e-4511-a21b-092564bfbe60', '0', '初始化数据', '2026-04-17 23:04:51.710371', '2026-04-17 23:04:51.710374');
+INSERT INTO "public"."sys_menu" VALUES ('公告管理', 2, 7, 'module_system:notice:query', 'bell', 'Notice', '/system/notice', 'module_system/notice/index', NULL, 'f', 'f', 'f', '公告管理', 'null', 'f', 2, 17, '205ec4b2-9ccd-4c14-b6a3-d9520c92abca', '0', '初始化数据', '2026-04-17 23:04:51.710394', '2026-04-17 23:04:51.710398');
+INSERT INTO "public"."sys_menu" VALUES ('参数管理', 2, 8, 'module_system:param:query', 'setting', 'Params', '/system/param', 'module_system/param/index', NULL, 'f', 'f', 'f', '参数管理', 'null', 'f', 2, 18, '413c0eec-f67e-420d-b0b4-d04b4cbea313', '0', '初始化数据', '2026-04-17 23:04:51.710413', '2026-04-17 23:04:51.710414');
+INSERT INTO "public"."sys_menu" VALUES ('字典管理', 2, 9, 'module_system:dict_type:query', 'dict', 'Dict', '/system/dict', 'module_system/dict/index', NULL, 'f', 'f', 'f', '字典管理', 'null', 'f', 2, 19, '23f30e88-8998-46fe-aa91-b9e822e3106b', '0', '初始化数据', '2026-04-17 23:04:51.710422', '2026-04-17 23:04:51.710423');
+INSERT INTO "public"."sys_menu" VALUES ('租户管理', 2, 10, 'module_system:tenant:query', 'el-icon-DataBoard', 'Tenant', '/system/tenant', 'module_system/tenant/index', NULL, 'f', 'f', 'f', '租户管理', 'null', 'f', 2, 20, '537f27a4-84c3-4181-96a6-7e4850e033f9', '0', '初始化数据', '2026-04-17 23:04:51.71043', '2026-04-17 23:04:51.710431');
+INSERT INTO "public"."sys_menu" VALUES ('在线用户', 2, 1, 'module_monitor:online:query', 'el-icon-Headset', 'MonitorOnline', '/monitor/online', 'module_monitor/online/index', NULL, 'f', 'f', 'f', '在线用户', 'null', 'f', 3, 21, '6bfd1b23-6970-4345-a220-2f7d16117ab7', '0', '初始化数据', '2026-04-17 23:04:51.710438', '2026-04-17 23:04:51.710439');
+INSERT INTO "public"."sys_menu" VALUES ('服务器监控', 2, 2, 'module_monitor:server:query', 'el-icon-Odometer', 'MonitorServer', '/monitor/server', 'module_monitor/server/index', NULL, 'f', 'f', 'f', '服务器监控', 'null', 'f', 3, 22, '0c3d3372-f52d-4ffb-8056-ca7827054625', '0', '初始化数据', '2026-04-17 23:04:51.710447', '2026-04-17 23:04:51.710448');
+INSERT INTO "public"."sys_menu" VALUES ('缓存监控', 2, 3, 'module_monitor:cache:query', 'el-icon-Stopwatch', 'MonitorCache', '/monitor/cache', 'module_monitor/cache/index', NULL, 'f', 'f', 'f', '缓存监控', 'null', 'f', 3, 23, '48d2ca27-9650-4123-b918-fb97fe06d3e8', '0', '初始化数据', '2026-04-17 23:04:51.710456', '2026-04-17 23:04:51.710457');
+INSERT INTO "public"."sys_menu" VALUES ('文件管理', 2, 4, 'module_monitor:resource:query', 'el-icon-Files', 'Resource', '/monitor/resource', 'module_monitor/resource/index', NULL, 'f', 'f', 'f', '文件管理', 'null', 'f', 3, 24, '9e7ce889-259e-4ef3-b42c-256651d4e129', '0', '初始化数据', '2026-04-17 23:04:51.710464', '2026-04-17 23:04:51.710465');
+INSERT INTO "public"."sys_menu" VALUES ('Swagger文档', 4, 1, 'module_common:docs:query', 'api', 'Docs', '/common/docs', 'module_common/docs/index', NULL, 'f', 'f', 'f', 'Swagger文档', 'null', 'f', 4, 25, 'ebbee5b9-4b83-45b8-a2f8-75a6bc3baec7', '0', '初始化数据', '2026-04-17 23:04:51.710473', '2026-04-17 23:04:51.710475');
+INSERT INTO "public"."sys_menu" VALUES ('Redoc文档', 4, 2, 'module_common:redoc:query', 'el-icon-Document', 'Redoc', '/common/redoc', 'module_common/redoc/index', NULL, 'f', 'f', 'f', 'Redoc文档', 'null', 'f', 4, 26, '7bfc4f86-2894-4a1f-b6e8-e01b8606017d', '0', '初始化数据', '2026-04-17 23:04:51.710495', '2026-04-17 23:04:51.710498');
+INSERT INTO "public"."sys_menu" VALUES ('LangJin文档', 4, 3, 'module_common:ljdoc:query', 'el-icon-Document', 'Ljdoc', '/common/ljdoc', 'module_common/ljdoc/index', NULL, 'f', 'f', 'f', 'LangJin文档', 'null', 'f', 4, 27, '4d087eb9-9958-4e2d-91ed-ebbf153c3dab', '0', '初始化数据', '2026-04-17 23:04:51.710515', '2026-04-17 23:04:51.710519');
+INSERT INTO "public"."sys_menu" VALUES ('代码生成', 2, 1, 'module_generator:gencode:query', 'code', 'GenCode', '/generator/gencode', 'module_generator/gencode/index', NULL, 'f', 'f', 'f', '代码生成', 'null', 'f', 5, 28, '0b9ee2ee-3a3b-4389-b7cc-4184af249b97', '0', '代码生成', '2026-04-17 23:04:51.710536', '2026-04-17 23:04:51.710538');
+INSERT INTO "public"."sys_menu" VALUES ('插件市场', 2, 1, 'module_application:portal:query', 'el-icon-ShoppingCartFull', 'PortalApp', '/application/portal', 'module_application/portal/index', NULL, 'f', 'f', 'f', '插件市场', 'null', 'f', 6, 29, 'e779a698-2ac8-478b-af8b-555ee05b0e9a', '0', '初始化数据', '2026-04-17 23:04:51.710595', '2026-04-17 23:04:51.710599');
+INSERT INTO "public"."sys_menu" VALUES ('AI智能助手', 2, 1, 'module_ai:chat:query', 'el-icon-ChatDotRound', 'Chat', '/ai/chat', 'module_ai/chat/index', NULL, 'f', 'f', 'f', 'AI智能助手', 'null', 'f', 7, 30, 'fb486988-e7a6-40d9-8c93-289f9026f307', '0', 'AI智能助手', '2026-04-17 23:04:51.710622', '2026-04-17 23:04:51.710625');
+INSERT INTO "public"."sys_menu" VALUES ('会话记忆', 2, 2, 'module_ai:chat:query', 'el-icon-ChatLineSquare', 'Memory', '/ai/memory', 'module_ai/memory/index', NULL, 'f', 'f', 'f', '会话记忆', 'null', 'f', 7, 31, '2306a93a-e892-4345-b474-cf217e436542', '0', '会话记忆管理', '2026-04-17 23:04:51.710635', '2026-04-17 23:04:51.710637');
+INSERT INTO "public"."sys_menu" VALUES ('定时任务', 1, 1, NULL, 'el-icon-Timer', 'Cronjob', '/task/cronjob', NULL, '/task/cronjob/job', 'f', 'f', 'f', '定时任务', 'null', 'f', 8, 32, '2b411b81-8685-4514-8cb3-35d4bf104cc4', '0', 'APScheduler 调度器与任务节点', '2026-04-17 23:04:51.710644', '2026-04-17 23:04:51.710645');
+INSERT INTO "public"."sys_menu" VALUES ('工作流', 1, 2, NULL, 'el-icon-SetUp', 'WorkflowMgr', '/task/workflow-mgr', NULL, '/task/workflow/definition', 'f', 'f', 'f', '工作流', 'null', 'f', 8, 33, 'dd4b7f62-4fcc-46a8-b1b5-b9242fea3afe', '0', '流程编排与编排节点类型', '2026-04-17 23:04:51.710652', '2026-04-17 23:04:51.710653');
+INSERT INTO "public"."sys_menu" VALUES ('示例管理', 2, 1, 'module_example:demo:query', 'menu', 'Demo', '/example/demo', 'module_example/demo/index', NULL, 'f', 'f', 'f', '示例管理', 'null', 'f', 9, 34, 'dcdf4721-a1e2-4cfe-b722-d9e4086d517b', '0', '示例管理', '2026-04-17 23:04:51.71066', '2026-04-17 23:04:51.710661');
+INSERT INTO "public"."sys_menu" VALUES ('二级目录', 1, 2, NULL, 'menu', 'DemoDir', '/example/demo-group', NULL, '/example/demo-group/demo01', 'f', 'f', 'f', '二级目录', 'null', 'f', 9, 35, '37e240d7-0819-467c-8160-ec9714a167c5', '0', '二级目录（含三级菜单）', '2026-04-17 23:04:51.710668', '2026-04-17 23:04:51.710669');
+INSERT INTO "public"."sys_menu" VALUES ('创建菜单', 3, 1, 'module_system:menu:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建菜单', 'null', 'f', 11, 36, '72e5709b-53cf-4a53-99d2-323746320026', '0', '初始化数据', '2026-04-17 23:04:51.732133', '2026-04-17 23:04:51.732145');
+INSERT INTO "public"."sys_menu" VALUES ('修改菜单', 3, 2, 'module_system:menu:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '修改菜单', 'null', 'f', 11, 37, '8d2ed626-c2ab-4ae8-8d40-c35d98ae1877', '0', '初始化数据', '2026-04-17 23:04:51.732161', '2026-04-17 23:04:51.732163');
+INSERT INTO "public"."sys_menu" VALUES ('删除菜单', 3, 3, 'module_system:menu:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除菜单', 'null', 'f', 11, 38, '74b26129-c8aa-4aa3-bd32-b475756d9562', '0', '初始化数据', '2026-04-17 23:04:51.732175', '2026-04-17 23:04:51.732178');
+INSERT INTO "public"."sys_menu" VALUES ('批量修改菜单状态', 3, 4, 'module_system:menu:patch', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '批量修改菜单状态', 'null', 'f', 11, 39, '2733e543-edf1-488d-9e8f-e934f2e9c2e9', '0', '初始化数据', '2026-04-17 23:04:51.73219', '2026-04-17 23:04:51.732192');
+INSERT INTO "public"."sys_menu" VALUES ('详情菜单', 3, 5, 'module_system:menu:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '详情菜单', 'null', 'f', 11, 40, 'c1e63c29-b80c-49f9-9728-f9f47256c0ff', '0', '初始化数据', '2026-04-17 23:04:51.732205', '2026-04-17 23:04:51.732207');
+INSERT INTO "public"."sys_menu" VALUES ('查询菜单', 3, 6, 'module_system:menu:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询菜单', 'null', 'f', 11, 41, 'c040bd8a-5e00-4ac7-ae97-1fa39f3df649', '0', '初始化数据', '2026-04-17 23:04:51.732219', '2026-04-17 23:04:51.732222');
+INSERT INTO "public"."sys_menu" VALUES ('创建部门', 3, 1, 'module_system:dept:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建部门', 'null', 'f', 12, 42, 'cbe2d5e4-9e8e-4b2a-9226-2ec76252348a', '0', '初始化数据', '2026-04-17 23:04:51.732234', '2026-04-17 23:04:51.732236');
+INSERT INTO "public"."sys_menu" VALUES ('修改部门', 3, 2, 'module_system:dept:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '修改部门', 'null', 'f', 12, 43, '80db84a7-c121-4fa9-a7ce-f374292176a5', '0', '初始化数据', '2026-04-17 23:04:51.732248', '2026-04-17 23:04:51.73225');
+INSERT INTO "public"."sys_menu" VALUES ('删除部门', 3, 3, 'module_system:dept:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除部门', 'null', 'f', 12, 44, '1a5ebba1-a23c-4f95-ac6d-f00e24e4af1f', '0', '初始化数据', '2026-04-17 23:04:51.732262', '2026-04-17 23:04:51.732264');
+INSERT INTO "public"."sys_menu" VALUES ('批量修改部门状态', 3, 4, 'module_system:dept:patch', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '批量修改部门状态', 'null', 'f', 12, 45, 'f1347a56-8a38-4948-b1cf-45be794a9068', '0', '初始化数据', '2026-04-17 23:04:51.732276', '2026-04-17 23:04:51.732279');
+INSERT INTO "public"."sys_menu" VALUES ('详情部门', 3, 5, 'module_system:dept:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '详情部门', 'null', 'f', 12, 46, 'ef7bbcd3-aca4-4a2b-bdf1-b824ad172e82', '0', '初始化数据', '2026-04-17 23:04:51.732291', '2026-04-17 23:04:51.732293');
+INSERT INTO "public"."sys_menu" VALUES ('查询部门', 3, 6, 'module_system:dept:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询部门', 'null', 'f', 12, 47, '7f1e9c19-6d4b-441e-9f79-6c7b037a4ea3', '0', '初始化数据', '2026-04-17 23:04:51.732305', '2026-04-17 23:04:51.732308');
+INSERT INTO "public"."sys_menu" VALUES ('创建岗位', 3, 1, 'module_system:position:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建岗位', 'null', 'f', 13, 48, 'ec87fe83-8b36-4239-a484-ecdcb4b96362', '0', '初始化数据', '2026-04-17 23:04:51.73232', '2026-04-17 23:04:51.732322');
+INSERT INTO "public"."sys_menu" VALUES ('修改岗位', 3, 2, 'module_system:position:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '修改岗位', 'null', 'f', 13, 49, '23f69fe7-ab30-4646-a6b8-0636cd6e170b', '0', '初始化数据', '2026-04-17 23:04:51.732334', '2026-04-17 23:04:51.732336');
+INSERT INTO "public"."sys_menu" VALUES ('删除岗位', 3, 3, 'module_system:position:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '修改岗位', 'null', 'f', 13, 50, 'af1bc809-8d6a-4daf-866c-45bcc17dd6b4', '0', '初始化数据', '2026-04-17 23:04:51.732357', '2026-04-17 23:04:51.732359');
+INSERT INTO "public"."sys_menu" VALUES ('批量修改岗位状态', 3, 4, 'module_system:position:patch', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '批量修改岗位状态', 'null', 'f', 13, 51, '83b660d1-b448-4be4-9997-c00f4e52ce6f', '0', '初始化数据', '2026-04-17 23:04:51.732372', '2026-04-17 23:04:51.732374');
+INSERT INTO "public"."sys_menu" VALUES ('岗位导出', 3, 5, 'module_system:position:export', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '岗位导出', 'null', 'f', 13, 52, '5bed574a-f521-478a-ac1e-57fef6e8dcd1', '0', '初始化数据', '2026-04-17 23:04:51.732386', '2026-04-17 23:04:51.732388');
+INSERT INTO "public"."sys_menu" VALUES ('详情岗位', 3, 6, 'module_system:position:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '详情岗位', 'null', 'f', 13, 53, '3e874fdc-9512-476a-a818-a85eae05abad', '0', '初始化数据', '2026-04-17 23:04:51.7324', '2026-04-17 23:04:51.732402');
+INSERT INTO "public"."sys_menu" VALUES ('查询岗位', 3, 7, 'module_system:position:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询岗位', 'null', 'f', 13, 54, 'e5454369-17ef-4f5c-903c-2ce8898f30ca', '0', '初始化数据', '2026-04-17 23:04:51.732415', '2026-04-17 23:04:51.732417');
+INSERT INTO "public"."sys_menu" VALUES ('创建角色', 3, 1, 'module_system:role:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建角色', 'null', 'f', 14, 55, 'f9e4e42b-1969-406c-861d-e38df3a5e23e', '0', '初始化数据', '2026-04-17 23:04:51.732429', '2026-04-17 23:04:51.732431');
+INSERT INTO "public"."sys_menu" VALUES ('修改角色', 3, 2, 'module_system:role:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '修改角色', 'null', 'f', 14, 56, '1d8dbfc6-5953-4eaf-b412-c465b07e39c3', '0', '初始化数据', '2026-04-17 23:04:51.732443', '2026-04-17 23:04:51.732445');
+INSERT INTO "public"."sys_menu" VALUES ('删除角色', 3, 3, 'module_system:role:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除角色', 'null', 'f', 14, 57, '9fe3d7fb-aa57-4ffb-8910-467e988f13f4', '0', '初始化数据', '2026-04-17 23:04:51.732457', '2026-04-17 23:04:51.73246');
+INSERT INTO "public"."sys_menu" VALUES ('批量修改角色状态', 3, 4, 'module_system:role:patch', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '批量修改角色状态', 'null', 'f', 14, 58, 'c24f5f57-bd6d-483d-9b77-280ccc9dcb65', '0', '初始化数据', '2026-04-17 23:04:51.732472', '2026-04-17 23:04:51.732474');
+INSERT INTO "public"."sys_menu" VALUES ('角色导出', 3, 5, 'module_system:role:export', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '角色导出', 'null', 'f', 14, 59, 'e08e1234-04e8-4d4a-a9ba-d5bc80e10407', '0', '初始化数据', '2026-04-17 23:04:51.732486', '2026-04-17 23:04:51.732489');
+INSERT INTO "public"."sys_menu" VALUES ('详情角色', 3, 6, 'module_system:role:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '详情角色', 'null', 'f', 14, 60, 'c40e1e7c-3020-4646-9089-48f145f4e01d', '0', '初始化数据', '2026-04-17 23:04:51.732501', '2026-04-17 23:04:51.732503');
+INSERT INTO "public"."sys_menu" VALUES ('查询角色', 3, 7, 'module_system:role:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询角色', 'null', 'f', 14, 61, '1264b3f9-bc23-43d1-82e7-a8f6a4790663', '0', '初始化数据', '2026-04-17 23:04:51.732515', '2026-04-17 23:04:51.732517');
+INSERT INTO "public"."sys_menu" VALUES ('分配权限', 3, 8, 'module_system:role:permission', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '分配权限', 'null', 'f', 14, 62, '4b89285f-8fce-4ba9-b325-b99f5b18089b', '0', '初始化数据', '2026-04-17 23:04:51.732529', '2026-04-17 23:04:51.732531');
+INSERT INTO "public"."sys_menu" VALUES ('创建用户', 3, 1, 'module_system:user:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建用户', 'null', 'f', 15, 63, 'daaf08b8-3457-430c-b9ff-a8c5f4854588', '0', '初始化数据', '2026-04-17 23:04:51.732546', '2026-04-17 23:04:51.732548');
+INSERT INTO "public"."sys_menu" VALUES ('修改用户', 3, 2, 'module_system:user:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '修改用户', 'null', 'f', 15, 64, '29e96595-97c9-4ed0-8b78-d1583fd8e2ea', '0', '初始化数据', '2026-04-17 23:04:51.73256', '2026-04-17 23:04:51.732562');
+INSERT INTO "public"."sys_menu" VALUES ('删除用户', 3, 3, 'module_system:user:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除用户', 'null', 'f', 15, 65, 'cae1ba5e-08a7-4b2e-9aa4-63052cebaacd', '0', '初始化数据', '2026-04-17 23:04:51.732574', '2026-04-17 23:04:51.732576');
+INSERT INTO "public"."sys_menu" VALUES ('批量修改用户状态', 3, 4, 'module_system:user:patch', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '批量修改用户状态', 'null', 'f', 15, 66, '57effa82-071f-4931-bf82-181bce8c1992', '0', '初始化数据', '2026-04-17 23:04:51.732588', '2026-04-17 23:04:51.73259');
+INSERT INTO "public"."sys_menu" VALUES ('导出用户', 3, 5, 'module_system:user:export', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '导出用户', 'null', 'f', 15, 67, '5aec7b39-475c-4351-bee7-67149c7ee6b9', '0', '初始化数据', '2026-04-17 23:04:51.732602', '2026-04-17 23:04:51.732604');
+INSERT INTO "public"."sys_menu" VALUES ('导入用户', 3, 6, 'module_system:user:import', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '导入用户', 'null', 'f', 15, 68, '59a4bd36-06af-4932-af4c-89349a52ac89', '0', '初始化数据', '2026-04-17 23:04:51.732624', '2026-04-17 23:04:51.732626');
+INSERT INTO "public"."sys_menu" VALUES ('下载用户导入模板', 3, 7, 'module_system:user:download', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '下载用户导入模板', 'null', 'f', 15, 69, '611c147c-d17c-4692-a323-9ba8389a72fb', '0', '初始化数据', '2026-04-17 23:04:51.732639', '2026-04-17 23:04:51.732642');
+INSERT INTO "public"."sys_menu" VALUES ('详情用户', 3, 8, 'module_system:user:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '详情用户', 'null', 'f', 15, 70, 'ece5d28a-dc67-4d7c-b56d-03b073cbf2ee', '0', '初始化数据', '2026-04-17 23:04:51.732654', '2026-04-17 23:04:51.732656');
+INSERT INTO "public"."sys_menu" VALUES ('查询用户', 3, 9, 'module_system:user:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询用户', 'null', 'f', 15, 71, 'f4d5ae1c-d71e-4f7c-a38e-fe16cbc26420', '0', '初始化数据', '2026-04-17 23:04:51.732669', '2026-04-17 23:04:51.732672');
+INSERT INTO "public"."sys_menu" VALUES ('日志删除', 3, 1, 'module_system:log:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '日志删除', 'null', 'f', 16, 72, 'daf460e9-fa40-446f-b89d-a5898c6c4661', '0', '初始化数据', '2026-04-17 23:04:51.732684', '2026-04-17 23:04:51.732686');
+INSERT INTO "public"."sys_menu" VALUES ('日志导出', 3, 2, 'module_system:log:export', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '日志导出', 'null', 'f', 16, 73, '593a2f1c-ad84-41c2-b0a9-81d310fe2ee8', '0', '初始化数据', '2026-04-17 23:04:51.732698', '2026-04-17 23:04:51.7327');
+INSERT INTO "public"."sys_menu" VALUES ('日志详情', 3, 3, 'module_system:log:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '日志详情', 'null', 'f', 16, 74, '723db152-e229-4c12-89b4-900352d321b3', '0', '初始化数据', '2026-04-17 23:04:51.732712', '2026-04-17 23:04:51.732715');
+INSERT INTO "public"."sys_menu" VALUES ('查询日志', 3, 4, 'module_system:log:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询日志', 'null', 'f', 16, 75, '6904e0ec-f06a-490e-87a4-05954d90694a', '0', '初始化数据', '2026-04-17 23:04:51.732727', '2026-04-17 23:04:51.732729');
+INSERT INTO "public"."sys_menu" VALUES ('公告创建', 3, 1, 'module_system:notice:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '公告创建', 'null', 'f', 17, 76, '711a7c4a-ffbb-4f00-9274-441a9407965f', '0', '初始化数据', '2026-04-17 23:04:51.732741', '2026-04-17 23:04:51.732744');
+INSERT INTO "public"."sys_menu" VALUES ('公告修改', 3, 2, 'module_system:notice:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '修改用户', 'null', 'f', 17, 77, 'c40b8720-ca9b-4c6f-aab5-6de1851780e8', '0', '初始化数据', '2026-04-17 23:04:51.732756', '2026-04-17 23:04:51.732758');
+INSERT INTO "public"."sys_menu" VALUES ('公告删除', 3, 3, 'module_system:notice:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '公告删除', 'null', 'f', 17, 78, '1e84a27b-ac4e-4b4a-8366-f225fce051a9', '0', '初始化数据', '2026-04-17 23:04:51.732771', '2026-04-17 23:04:51.732773');
+INSERT INTO "public"."sys_menu" VALUES ('公告导出', 3, 4, 'module_system:notice:export', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '公告导出', 'null', 'f', 17, 79, 'fc617d76-646c-4d5c-9b75-13f05b4fae5f', '0', '初始化数据', '2026-04-17 23:04:51.732785', '2026-04-17 23:04:51.732787');
+INSERT INTO "public"."sys_menu" VALUES ('公告批量修改状态', 3, 5, 'module_system:notice:patch', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '公告批量修改状态', 'null', 'f', 17, 80, '759c7847-f015-4f57-a7de-1716b347f0ee', '0', '初始化数据', '2026-04-17 23:04:51.732834', '2026-04-17 23:04:51.732838');
+INSERT INTO "public"."sys_menu" VALUES ('公告详情', 3, 6, 'module_system:notice:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '公告详情', 'null', 'f', 17, 81, 'a8814ce2-5a51-4ce7-917a-7519cac4b83d', '0', '初始化数据', '2026-04-17 23:04:51.732853', '2026-04-17 23:04:51.732855');
+INSERT INTO "public"."sys_menu" VALUES ('查询公告', 3, 5, 'module_system:notice:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询公告', 'null', 'f', 17, 82, 'e92b9995-eb86-4379-b5fa-4c717e554430', '0', '初始化数据', '2026-04-17 23:04:51.732868', '2026-04-17 23:04:51.73287');
+INSERT INTO "public"."sys_menu" VALUES ('创建参数', 3, 1, 'module_system:param:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建参数', 'null', 'f', 18, 83, 'd4a50ddb-ca52-45e9-8931-315e2d3609ca', '0', '初始化数据', '2026-04-17 23:04:51.732882', '2026-04-17 23:04:51.732884');
+INSERT INTO "public"."sys_menu" VALUES ('修改参数', 3, 2, 'module_system:param:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '修改参数', 'null', 'f', 18, 84, 'efac02a6-f7d1-4670-ac22-02aff196a942', '0', '初始化数据', '2026-04-17 23:04:51.732897', '2026-04-17 23:04:51.732899');
+INSERT INTO "public"."sys_menu" VALUES ('删除参数', 3, 3, 'module_system:param:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除参数', 'null', 'f', 18, 85, '5c1a4ec5-9559-486f-b346-42b334c451c1', '0', '初始化数据', '2026-04-17 23:04:51.732911', '2026-04-17 23:04:51.732913');
+INSERT INTO "public"."sys_menu" VALUES ('导出参数', 3, 4, 'module_system:param:export', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '导出参数', 'null', 'f', 18, 86, 'bfbfc210-8f9d-4724-bcab-0493c08e39fc', '0', '初始化数据', '2026-04-17 23:04:51.732925', '2026-04-17 23:04:51.732927');
+INSERT INTO "public"."sys_menu" VALUES ('参数上传', 3, 5, 'module_system:param:upload', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '参数上传', 'null', 'f', 18, 87, 'a9757c53-d498-4813-9d45-0d2465c0a01b', '0', '初始化数据', '2026-04-17 23:04:51.732939', '2026-04-17 23:04:51.732941');
+INSERT INTO "public"."sys_menu" VALUES ('参数详情', 3, 6, 'module_system:param:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '参数详情', 'null', 'f', 18, 88, 'c2506d2f-8d06-46a0-a45b-907b32ad8e10', '0', '初始化数据', '2026-04-17 23:04:51.732953', '2026-04-17 23:04:51.732955');
+INSERT INTO "public"."sys_menu" VALUES ('查询参数', 3, 7, 'module_system:param:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询参数', 'null', 'f', 18, 89, '3422a156-c144-4b67-944c-47995efa0727', '0', '初始化数据', '2026-04-17 23:04:51.732967', '2026-04-17 23:04:51.732969');
+INSERT INTO "public"."sys_menu" VALUES ('创建字典类型', 3, 1, 'module_system:dict_type:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建字典类型', 'null', 'f', 19, 90, '6940ec72-13c7-492b-ae19-b1894e79e237', '0', '初始化数据', '2026-04-17 23:04:51.732998', '2026-04-17 23:04:51.733006');
+INSERT INTO "public"."sys_menu" VALUES ('修改字典类型', 3, 2, 'module_system:dict_type:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '修改字典类型', 'null', 'f', 19, 91, '23854ac2-792a-4c8e-b342-ea3776a972b6', '0', '初始化数据', '2026-04-17 23:04:51.733021', '2026-04-17 23:04:51.733024');
+INSERT INTO "public"."sys_menu" VALUES ('删除字典类型', 3, 3, 'module_system:dict_type:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除字典类型', 'null', 'f', 19, 92, '74429216-87b6-4683-bb85-75fb9600d095', '0', '初始化数据', '2026-04-17 23:04:51.733048', '2026-04-17 23:04:51.733051');
+INSERT INTO "public"."sys_menu" VALUES ('导出字典类型', 3, 4, 'module_system:dict_type:export', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '导出字典类型', 'null', 'f', 19, 93, '50647b97-6af4-4041-80db-55b07e355e85', '0', '初始化数据', '2026-04-17 23:04:51.733065', '2026-04-17 23:04:51.733067');
+INSERT INTO "public"."sys_menu" VALUES ('批量修改字典状态', 3, 5, 'module_system:dict_type:patch', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '导出字典类型', 'null', 'f', 19, 94, '7b5c3dd5-0ccf-4dc0-ab32-dbe719c23f38', '0', '初始化数据', '2026-04-17 23:04:51.733081', '2026-04-17 23:04:51.733083');
+INSERT INTO "public"."sys_menu" VALUES ('字典数据查询', 3, 6, 'module_system:dict_data:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '字典数据查询', 'null', 'f', 19, 95, '612b1bbf-5a1a-4464-bad2-02f5bed6db2e', '0', '初始化数据', '2026-04-17 23:04:51.733096', '2026-04-17 23:04:51.733098');
+INSERT INTO "public"."sys_menu" VALUES ('创建字典数据', 3, 7, 'module_system:dict_data:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建字典数据', 'null', 'f', 19, 96, '457194bf-4744-484c-82ae-23556cb628ae', '0', '初始化数据', '2026-04-17 23:04:51.73311', '2026-04-17 23:04:51.733113');
+INSERT INTO "public"."sys_menu" VALUES ('修改字典数据', 3, 8, 'module_system:dict_data:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '修改字典数据', 'null', 'f', 19, 97, '7bc9f792-aff8-401f-95dc-d50449cfc37c', '0', '初始化数据', '2026-04-17 23:04:51.733125', '2026-04-17 23:04:51.733127');
+INSERT INTO "public"."sys_menu" VALUES ('删除字典数据', 3, 9, 'module_system:dict_data:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除字典数据', 'null', 'f', 19, 98, 'cb056f0d-1d6f-4ab6-a643-20f966de3533', '0', '初始化数据', '2026-04-17 23:04:51.73314', '2026-04-17 23:04:51.733142');
+INSERT INTO "public"."sys_menu" VALUES ('导出字典数据', 3, 10, 'module_system:dict_data:export', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '导出字典数据', 'null', 'f', 19, 99, 'b4a3141b-4857-4811-8617-ddd180092d15', '0', '初始化数据', '2026-04-17 23:04:51.733155', '2026-04-17 23:04:51.733157');
+INSERT INTO "public"."sys_menu" VALUES ('批量修改字典数据状态', 3, 11, 'module_system:dict_data:patch', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '批量修改字典数据状态', 'null', 'f', 19, 100, 'f6a5e105-58ac-462f-9bf5-46b6a9578e71', '0', '初始化数据', '2026-04-17 23:04:51.733169', '2026-04-17 23:04:51.733172');
+INSERT INTO "public"."sys_menu" VALUES ('详情字典类型', 3, 12, 'module_system:dict_type:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '详情字典类型', 'null', 'f', 19, 101, '63d7cf73-ac04-4e6a-8b6d-df721842548b', '0', '初始化数据', '2026-04-17 23:04:51.733184', '2026-04-17 23:04:51.733187');
+INSERT INTO "public"."sys_menu" VALUES ('查询字典类型', 3, 13, 'module_system:dict_type:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询字典类型', 'null', 'f', 19, 102, '6600ed00-389e-491a-8b2e-20e10d423c59', '0', '初始化数据', '2026-04-17 23:04:51.7332', '2026-04-17 23:04:51.733202');
+INSERT INTO "public"."sys_menu" VALUES ('详情字典数据', 3, 14, 'module_system:dict_data:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '详情字典数据', 'null', 'f', 19, 103, '2b611215-53f2-4a04-811b-4e350bcb8de8', '0', '初始化数据', '2026-04-17 23:04:51.733215', '2026-04-17 23:04:51.733217');
+INSERT INTO "public"."sys_menu" VALUES ('创建租户', 3, 1, 'module_system:tenant:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建租户', 'null', 'f', 20, 104, 'c7d88d08-e7c4-4fe5-b697-46632a9f71ab', '0', '初始化数据', '2026-04-17 23:04:51.73323', '2026-04-17 23:04:51.733232');
+INSERT INTO "public"."sys_menu" VALUES ('修改租户', 3, 2, 'module_system:tenant:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '修改租户', 'null', 'f', 20, 105, '1ee2192b-7259-493a-b943-72fd88aefdc2', '0', '初始化数据', '2026-04-17 23:04:51.733244', '2026-04-17 23:04:51.733247');
+INSERT INTO "public"."sys_menu" VALUES ('删除租户', 3, 3, 'module_system:tenant:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除租户', 'null', 'f', 20, 106, 'b8737142-8c3b-4531-b42d-5b30a81ee408', '0', '初始化数据', '2026-04-17 23:04:51.733259', '2026-04-17 23:04:51.733261');
+INSERT INTO "public"."sys_menu" VALUES ('批量修改租户状态', 3, 4, 'module_system:tenant:patch', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '批量修改租户状态', 'null', 'f', 20, 107, 'cf9ad07a-acfc-40fa-93c3-0161814f90b1', '0', '初始化数据', '2026-04-17 23:04:51.733274', '2026-04-17 23:04:51.733276');
+INSERT INTO "public"."sys_menu" VALUES ('租户详情', 3, 5, 'module_system:tenant:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '租户详情', 'null', 'f', 20, 108, 'e5c2614f-49f8-4905-98c1-5037c0c6307d', '0', '初始化数据', '2026-04-17 23:04:51.733289', '2026-04-17 23:04:51.733291');
+INSERT INTO "public"."sys_menu" VALUES ('查询租户', 3, 6, 'module_system:tenant:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询租户', 'null', 'f', 20, 109, '2cde1720-aeb0-4617-8ceb-0693951e183b', '0', '初始化数据', '2026-04-17 23:04:51.733304', '2026-04-17 23:04:51.733306');
+INSERT INTO "public"."sys_menu" VALUES ('在线用户强制下线', 3, 1, 'module_monitor:online:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '在线用户强制下线', 'null', 'f', 21, 110, '5c4f52ad-84d3-404f-8a57-53e53c025172', '0', '初始化数据', '2026-04-17 23:04:51.733325', '2026-04-17 23:04:51.733327');
+INSERT INTO "public"."sys_menu" VALUES ('清除缓存', 3, 1, 'module_monitor:cache:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '清除缓存', 'null', 'f', 23, 111, '26d1daec-d199-4993-b3c3-73fc70aeb29c', '0', '初始化数据', '2026-04-17 23:04:51.733339', '2026-04-17 23:04:51.733341');
+INSERT INTO "public"."sys_menu" VALUES ('文件上传', 3, 1, 'module_monitor:resource:upload', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '文件上传', 'null', 'f', 24, 112, '11382148-aa12-4596-924b-15a1f9b14270', '0', '初始化数据', '2026-04-17 23:04:51.733355', '2026-04-17 23:04:51.733357');
+INSERT INTO "public"."sys_menu" VALUES ('文件下载', 3, 2, 'module_monitor:resource:download', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '文件下载', 'null', 'f', 24, 113, '7248616a-49d0-41fe-81d6-007846d1a517', '0', '初始化数据', '2026-04-17 23:04:51.733369', '2026-04-17 23:04:51.733372');
+INSERT INTO "public"."sys_menu" VALUES ('文件删除', 3, 3, 'module_monitor:resource:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '文件删除', 'null', 'f', 24, 114, 'cb70cf83-2676-45b4-a080-06d6a469829b', '0', '初始化数据', '2026-04-17 23:04:51.733384', '2026-04-17 23:04:51.733386');
+INSERT INTO "public"."sys_menu" VALUES ('文件移动', 3, 4, 'module_monitor:resource:move', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '文件移动', 'null', 'f', 24, 115, '860864c3-af8d-4b4f-af5f-15d055db066e', '0', '初始化数据', '2026-04-17 23:04:51.733399', '2026-04-17 23:04:51.733401');
+INSERT INTO "public"."sys_menu" VALUES ('文件复制', 3, 5, 'module_monitor:resource:copy', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '文件复制', 'null', 'f', 24, 116, '5d95323e-fd44-4bad-a40e-ee570398c804', '0', '初始化数据', '2026-04-17 23:04:51.733413', '2026-04-17 23:04:51.733415');
+INSERT INTO "public"."sys_menu" VALUES ('文件重命名', 3, 6, 'module_monitor:resource:rename', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '文件重命名', 'null', 'f', 24, 117, '2ab32569-575d-40df-888e-fa07bad0fc0d', '0', '初始化数据', '2026-04-17 23:04:51.733428', '2026-04-17 23:04:51.73343');
+INSERT INTO "public"."sys_menu" VALUES ('创建目录', 3, 7, 'module_monitor:resource:create_dir', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建目录', 'null', 'f', 24, 118, '0cdffd93-6e6c-4a43-90ac-3044154568d3', '0', '初始化数据', '2026-04-17 23:04:51.733444', '2026-04-17 23:04:51.733446');
+INSERT INTO "public"."sys_menu" VALUES ('导出文件列表', 3, 9, 'module_monitor:resource:export', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '导出文件列表', 'null', 'f', 24, 119, 'e45d57fb-b821-4c20-bb9f-f5b01e705b38', '0', '初始化数据', '2026-04-17 23:04:51.733463', '2026-04-17 23:04:51.733465');
+INSERT INTO "public"."sys_menu" VALUES ('查询代码生成业务表列表', 3, 1, 'module_generator:gencode:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询代码生成业务表列表', 'null', 'f', 28, 120, '0bc2a49f-f721-4951-8bfd-591186a2b8a6', '0', '查询代码生成业务表列表', '2026-04-17 23:04:51.733479', '2026-04-17 23:04:51.733481');
+INSERT INTO "public"."sys_menu" VALUES ('创建表结构', 3, 2, 'module_generator:gencode:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建表结构', 'null', 'f', 28, 121, '4a862b67-1230-4c71-a812-22b7e3911d83', '0', '创建表结构', '2026-04-17 23:04:51.733494', '2026-04-17 23:04:51.733496');
+INSERT INTO "public"."sys_menu" VALUES ('编辑业务表信息', 3, 3, 'module_generator:gencode:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '编辑业务表信息', 'null', 'f', 28, 122, 'b6a56a6c-fe3f-44bb-b428-c487de746da0', '0', '编辑业务表信息', '2026-04-17 23:04:51.733509', '2026-04-17 23:04:51.733512');
+INSERT INTO "public"."sys_menu" VALUES ('删除业务表信息', 3, 4, 'module_generator:gencode:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除业务表信息', 'null', 'f', 28, 123, '3b9cfe75-3618-4275-b71e-9b2b89f1b94b', '0', '删除业务表信息', '2026-04-17 23:04:51.733524', '2026-04-17 23:04:51.733526');
+INSERT INTO "public"."sys_menu" VALUES ('导入表结构', 3, 5, 'module_generator:gencode:import', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '导入表结构', 'null', 'f', 28, 124, 'a2f311c9-653e-44a2-b3ab-c97859c46b80', '0', '导入表结构', '2026-04-17 23:04:51.733539', '2026-04-17 23:04:51.733542');
+INSERT INTO "public"."sys_menu" VALUES ('批量生成代码', 3, 6, 'module_generator:gencode:operate', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '批量生成代码', 'null', 'f', 28, 125, '99419d50-7308-4798-aa84-24f9d4d6a558', '0', '批量生成代码', '2026-04-17 23:04:51.733555', '2026-04-17 23:04:51.733557');
+INSERT INTO "public"."sys_menu" VALUES ('生成代码到指定路径', 3, 7, 'module_generator:gencode:code', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '生成代码到指定路径', 'null', 'f', 28, 126, 'df80c3bb-cc13-434e-880f-2ca9d25ad173', '0', '生成代码到指定路径', '2026-04-17 23:04:51.73357', '2026-04-17 23:04:51.733572');
+INSERT INTO "public"."sys_menu" VALUES ('查询数据库表列表', 3, 8, 'module_generator:dblist:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询数据库表列表', 'null', 'f', 28, 127, '0c83487b-8251-4031-a232-1abfe24cc459', '0', '查询数据库表列表', '2026-04-17 23:04:51.733586', '2026-04-17 23:04:51.733589');
+INSERT INTO "public"."sys_menu" VALUES ('同步数据库', 3, 9, 'module_generator:db:sync', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '同步数据库', 'null', 'f', 28, 128, 'a23647fe-46c1-442a-935b-a658e2718c6e', '0', '同步数据库', '2026-04-17 23:04:51.733679', '2026-04-17 23:04:51.733689');
+INSERT INTO "public"."sys_menu" VALUES ('创建插件', 3, 1, 'module_application:portal:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建插件', 'null', 'f', 29, 129, 'e9ea0122-a582-42ee-936b-233411e3a419', '0', '初始化数据', '2026-04-17 23:04:51.73371', '2026-04-17 23:04:51.733714');
+INSERT INTO "public"."sys_menu" VALUES ('修改插件', 3, 2, 'module_application:portal:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '修改插件', 'null', 'f', 29, 130, '0c9da174-404a-4e97-856b-e6c56aa979a0', '0', '初始化数据', '2026-04-17 23:04:51.733734', '2026-04-17 23:04:51.733737');
+INSERT INTO "public"."sys_menu" VALUES ('删除插件', 3, 3, 'module_application:portal:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除插件', 'null', 'f', 29, 131, '23831164-b51b-4000-9b00-e29a8747e43a', '0', '初始化数据', '2026-04-17 23:04:51.733755', '2026-04-17 23:04:51.733759');
+INSERT INTO "public"."sys_menu" VALUES ('批量修改插件状态', 3, 4, 'module_application:portal:patch', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '批量修改应用状态', 'null', 'f', 29, 132, 'c84e11b5-7644-47eb-8352-fc1659ca3175', '0', '初始化数据', '2026-04-17 23:04:51.733774', '2026-04-17 23:04:51.733776');
+INSERT INTO "public"."sys_menu" VALUES ('详情插件', 3, 5, 'module_application:portal:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '详情插件', 'null', 'f', 29, 133, 'c076091e-ac98-4946-9c07-3db0614c191c', '0', '初始化数据', '2026-04-17 23:04:51.733788', '2026-04-17 23:04:51.73379');
+INSERT INTO "public"."sys_menu" VALUES ('查询插件', 3, 6, 'module_application:portal:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询插件', 'null', 'f', 29, 134, '52448406-f66d-4df8-849e-dd499a1fbcc3', '0', '查询插件', '2026-04-17 23:04:51.733875', '2026-04-17 23:04:51.73388');
+INSERT INTO "public"."sys_menu" VALUES ('AI对话', 3, 1, 'module_ai:chat:ws', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', 'AI对话', 'null', 'f', 30, 135, '04a6c164-9661-4b6b-be4d-e847b6dedf1b', '0', 'AI对话', '2026-04-17 23:04:51.733902', '2026-04-17 23:04:51.733905');
+INSERT INTO "public"."sys_menu" VALUES ('查询会话', 3, 2, 'module_ai:chat:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询会话', 'null', 'f', 30, 136, '5c808415-fdee-49e1-bd20-de66433e9e7c', '0', '查询会话', '2026-04-17 23:04:51.733924', '2026-04-17 23:04:51.733964');
+INSERT INTO "public"."sys_menu" VALUES ('会话详情', 3, 3, 'module_ai:chat:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '会话详情', 'null', 'f', 30, 137, '6e1235e0-8709-49f0-aee6-2a43ec64b35c', '0', '会话详情', '2026-04-17 23:04:51.733991', '2026-04-17 23:04:51.733993');
+INSERT INTO "public"."sys_menu" VALUES ('创建会话', 3, 4, 'module_ai:chat:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建会话', 'null', 'f', 30, 138, '16911e2c-f69a-45c5-8ba1-9d09f190ba74', '0', '创建会话', '2026-04-17 23:04:51.734011', '2026-04-17 23:04:51.734014');
+INSERT INTO "public"."sys_menu" VALUES ('更新会话', 3, 5, 'module_ai:chat:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '更新会话', 'null', 'f', 30, 139, 'eb555660-19d4-42eb-afaf-11ee2322467d', '0', '更新会话', '2026-04-17 23:04:51.734028', '2026-04-17 23:04:51.73403');
+INSERT INTO "public"."sys_menu" VALUES ('删除会话', 3, 6, 'module_ai:chat:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除会话', 'null', 'f', 30, 140, '04633208-6814-40d9-b5c9-dada8d46d747', '0', '删除会话', '2026-04-17 23:04:51.734048', '2026-04-17 23:04:51.734051');
+INSERT INTO "public"."sys_menu" VALUES ('查询会话记忆', 3, 1, 'module_ai:chat:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询会话记忆', 'null', 'f', 31, 141, 'f5dc1894-5818-48d7-bb61-3dcb379e6673', '0', '查询会话记忆', '2026-04-17 23:04:51.734069', '2026-04-17 23:04:51.734073');
+INSERT INTO "public"."sys_menu" VALUES ('会话记忆详情', 3, 2, 'module_ai:chat:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '会话记忆详情', 'null', 'f', 31, 142, 'f9f558e8-3964-4e5c-a54a-d52ceb1b3b6c', '0', '会话记忆详情', '2026-04-17 23:04:51.734091', '2026-04-17 23:04:51.734094');
+INSERT INTO "public"."sys_menu" VALUES ('删除会话记忆', 3, 3, 'module_ai:chat:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除会话记忆', 'null', 'f', 31, 143, '1f09f708-9ad8-4984-835e-f041d07fd812', '0', '删除会话记忆', '2026-04-17 23:04:51.734111', '2026-04-17 23:04:51.734114');
+INSERT INTO "public"."sys_menu" VALUES ('调度器监控', 2, 1, 'module_task:cronjob:job:query', 'el-icon-DataLine', 'Job', '/task/cronjob/job', 'module_task/cronjob/job/index', NULL, 'f', 'f', 'f', '调度器监控', 'null', 'f', 32, 144, 'c36e4089-b3a4-461d-895a-635c28437641', '0', '调度器监控', '2026-04-17 23:04:51.734131', '2026-04-17 23:04:51.734134');
+INSERT INTO "public"."sys_menu" VALUES ('节点管理', 2, 2, 'module_task:cronjob:node:query', 'el-icon-Postcard', 'Node', '/task/cronjob/node', 'module_task/cronjob/node/index', NULL, 'f', 'f', 'f', '节点管理', 'null', 'f', 32, 145, 'b3dea690-a4ee-427f-83d1-295660701407', '0', '节点管理', '2026-04-17 23:04:51.734151', '2026-04-17 23:04:51.734155');
+INSERT INTO "public"."sys_menu" VALUES ('流程编排', 2, 1, 'module_task:workflow:definition:query', 'el-icon-SetUp', 'Workflow', '/task/workflow/definition', 'module_task/workflow/definition/index', NULL, 'f', 'f', 'f', '流程编排', 'null', 'f', 33, 146, '441f3b9f-0d51-43a0-8105-6f7204d4054e', '0', 'Vue Flow 画布与发布执行', '2026-04-17 23:04:51.734171', '2026-04-17 23:04:51.734175');
+INSERT INTO "public"."sys_menu" VALUES ('编排节点类型', 2, 2, 'module_task:workflow:node-type:query', 'el-icon-Grid', 'WorkflowNodeType', '/task/workflow/node-type', 'module_task/workflow/node-type/index', NULL, 'f', 'f', 'f', '编排节点类型', 'null', 'f', 33, 147, 'fee2c8da-5e07-40b2-b936-815f479f5953', '0', '画布节点类型与 Prefect 执行逻辑', '2026-04-17 23:04:51.73419', '2026-04-17 23:04:51.734192');
+INSERT INTO "public"."sys_menu" VALUES ('创建示例', 3, 1, 'module_example:demo:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建示例', 'null', 'f', 34, 148, '47c6b29b-f46c-4231-ac55-4e168d2ef7e5', '0', '初始化数据', '2026-04-17 23:04:51.734205', '2026-04-17 23:04:51.734207');
+INSERT INTO "public"."sys_menu" VALUES ('更新示例', 3, 2, 'module_example:demo:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '更新示例', 'null', 'f', 34, 149, '2b5ffb8e-d15c-4977-af55-62b34ce99f87', '0', '初始化数据', '2026-04-17 23:04:51.73422', '2026-04-17 23:04:51.734223');
+INSERT INTO "public"."sys_menu" VALUES ('删除示例', 3, 3, 'module_example:demo:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除示例', 'null', 'f', 34, 150, '9f51296d-a446-44f2-b8dc-68d1a426577e', '0', '初始化数据', '2026-04-17 23:04:51.734235', '2026-04-17 23:04:51.734237');
+INSERT INTO "public"."sys_menu" VALUES ('批量修改示例状态', 3, 4, 'module_example:demo:patch', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '批量修改示例状态', 'null', 'f', 34, 151, '16d0a292-ff16-4875-8436-bfacc0e7dba3', '0', '初始化数据', '2026-04-17 23:04:51.73425', '2026-04-17 23:04:51.734252');
+INSERT INTO "public"."sys_menu" VALUES ('导出示例', 3, 5, 'module_example:demo:export', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '导出示例', 'null', 'f', 34, 152, '52af7632-cceb-4248-9b7a-b9b018439ee7', '0', '初始化数据', '2026-04-17 23:04:51.734264', '2026-04-17 23:04:51.734266');
+INSERT INTO "public"."sys_menu" VALUES ('导入示例', 3, 6, 'module_example:demo:import', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '导入示例', 'null', 'f', 34, 153, 'e10ebcd2-1a13-47e7-95e6-42a8d50ff5e0', '0', '初始化数据', '2026-04-17 23:04:51.734305', '2026-04-17 23:04:51.734309');
+INSERT INTO "public"."sys_menu" VALUES ('下载导入示例模版', 3, 7, 'module_example:demo:download', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '下载导入示例模版', 'null', 'f', 34, 154, 'd1126bc9-1c03-4bc6-8d38-de4c3ce40a04', '0', '初始化数据', '2026-04-17 23:04:51.734328', '2026-04-17 23:04:51.734332');
+INSERT INTO "public"."sys_menu" VALUES ('详情示例', 3, 8, 'module_example:demo:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '详情示例', 'null', 'f', 34, 155, 'de0cd2d6-8889-4eb1-a0bd-b5f9a52f3a5e', '0', '初始化数据', '2026-04-17 23:04:51.73435', '2026-04-17 23:04:51.734353');
+INSERT INTO "public"."sys_menu" VALUES ('查询示例', 3, 9, 'module_example:demo:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询示例', 'null', 'f', 34, 156, 'e40fa8ae-3b38-4274-a0cf-b014955e5c69', '0', '初始化数据', '2026-04-17 23:04:51.73437', '2026-04-17 23:04:51.734373');
+INSERT INTO "public"."sys_menu" VALUES ('三级菜单', 2, 1, 'module_example:demo01:query', 'menu', 'Demo01', '/example/demo-group/demo01', 'module_example/demo01/index', NULL, 'f', 'f', 'f', '三级菜单', 'null', 'f', 35, 157, '9e53f6b1-b945-4561-b4df-a9d0a70b678a', '0', '示例01管理', '2026-04-17 23:04:51.734396', '2026-04-17 23:04:51.734398');
+INSERT INTO "public"."sys_menu" VALUES ('查询调度器', 3, 1, 'module_task:cronjob:job:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询调度器', 'null', 'f', 144, 158, 'e0840aa9-e248-4289-955e-9085852fee3e', '0', '查询调度器', '2026-04-17 23:04:51.771353', '2026-04-17 23:04:51.771373');
+INSERT INTO "public"."sys_menu" VALUES ('控制调度器', 3, 2, 'module_task:cronjob:job:scheduler', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '控制调度器', 'null', 'f', 144, 159, '576e96aa-b102-4043-987e-7ae28477f9b5', '0', '控制调度器', '2026-04-17 23:04:51.771382', '2026-04-17 23:04:51.771383');
+INSERT INTO "public"."sys_menu" VALUES ('操作任务', 3, 3, 'module_task:cronjob:job:task', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '操作任务', 'null', 'f', 144, 160, '9e832c42-a972-4823-b5bb-5948bae7c2ec', '0', '操作任务', '2026-04-17 23:04:51.77139', '2026-04-17 23:04:51.771391');
+INSERT INTO "public"."sys_menu" VALUES ('删除执行日志', 3, 4, 'module_task:cronjob:job:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除执行日志', 'null', 'f', 144, 161, 'c5c895be-350a-4325-9819-1913a7b0dbe9', '0', '删除执行日志', '2026-04-17 23:04:51.771397', '2026-04-17 23:04:51.771398');
+INSERT INTO "public"."sys_menu" VALUES ('详情执行日志', 3, 5, 'module_task:cronjob:job:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '详情执行日志', 'null', 'f', 144, 162, '72fdacd2-d6da-4de8-bcbf-d1b62dc833af', '0', '详情执行日志', '2026-04-17 23:04:51.771405', '2026-04-17 23:04:51.771406');
+INSERT INTO "public"."sys_menu" VALUES ('创建节点', 3, 1, 'module_task:cronjob:node:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建节点', 'null', 'f', 145, 163, '2f708f2c-7447-47de-a0a5-f8ef8268c121', '0', '创建节点', '2026-04-17 23:04:51.771412', '2026-04-17 23:04:51.771413');
+INSERT INTO "public"."sys_menu" VALUES ('调试节点', 3, 2, 'module_task:cronjob:node:execute', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '调试节点', 'null', 'f', 145, 164, '2547ca52-95ff-43d4-8c32-2cbde7ca812e', '0', '调试节点', '2026-04-17 23:04:51.771419', '2026-04-17 23:04:51.77142');
+INSERT INTO "public"."sys_menu" VALUES ('修改节点', 3, 3, 'module_task:cronjob:node:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '修改节点', 'null', 'f', 145, 165, '0efc3442-f3d9-4cfc-a78f-e832b18d1010', '0', '修改节点', '2026-04-17 23:04:51.771428', '2026-04-17 23:04:51.771429');
+INSERT INTO "public"."sys_menu" VALUES ('删除节点', 3, 4, 'module_task:cronjob:node:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除节点', 'null', 'f', 145, 166, '6289c715-28bb-44ad-ade5-756c174dfbe2', '0', '删除节点', '2026-04-17 23:04:51.771435', '2026-04-17 23:04:51.771436');
+INSERT INTO "public"."sys_menu" VALUES ('详情节点', 3, 5, 'module_task:cronjob:node:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '详情节点', 'null', 'f', 145, 167, 'b9252524-b953-4cf9-ade7-01e4bf570052', '0', '详情节点', '2026-04-17 23:04:51.771442', '2026-04-17 23:04:51.771443');
+INSERT INTO "public"."sys_menu" VALUES ('查询节点', 3, 6, 'module_task:cronjob:node:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询节点', 'null', 'f', 145, 168, '36fd0dc8-24e3-42bb-9788-882f416ff5e7', '0', '查询节点', '2026-04-17 23:04:51.771449', '2026-04-17 23:04:51.77145');
+INSERT INTO "public"."sys_menu" VALUES ('创建流程', 3, 1, 'module_task:workflow:definition:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建流程', 'null', 'f', 146, 169, 'd3494f33-a0ef-4462-be1a-4dd2fa76eaa9', '0', '创建流程', '2026-04-17 23:04:51.771457', '2026-04-17 23:04:51.771458');
+INSERT INTO "public"."sys_menu" VALUES ('执行流程', 3, 2, 'module_task:workflow:definition:execute', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '执行流程', 'null', 'f', 146, 170, 'd98c7497-9c68-4d39-8add-226d63d02818', '0', '执行流程', '2026-04-17 23:04:51.771464', '2026-04-17 23:04:51.771465');
+INSERT INTO "public"."sys_menu" VALUES ('修改流程', 3, 3, 'module_task:workflow:definition:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '修改流程', 'null', 'f', 146, 171, 'd18c7ff1-4ccb-4474-9e14-dde7b102bb8a', '0', '修改流程', '2026-04-17 23:04:51.771471', '2026-04-17 23:04:51.771472');
+INSERT INTO "public"."sys_menu" VALUES ('删除流程', 3, 4, 'module_task:workflow:definition:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除流程', 'null', 'f', 146, 172, 'ff2abc4b-f0cc-4f2f-a02f-038df9338752', '0', '删除流程', '2026-04-17 23:04:51.771479', '2026-04-17 23:04:51.77148');
+INSERT INTO "public"."sys_menu" VALUES ('详情流程', 3, 5, 'module_task:workflow:definition:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '详情流程', 'null', 'f', 146, 173, '65c097d9-5cf5-43a4-85cd-73475b3a24ab', '0', '详情流程', '2026-04-17 23:04:51.771486', '2026-04-17 23:04:51.771487');
+INSERT INTO "public"."sys_menu" VALUES ('查询流程', 3, 6, 'module_task:workflow:definition:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询流程', 'null', 'f', 146, 174, 'dce029fb-fd58-4bc9-a19a-37c09206da84', '0', '查询流程', '2026-04-17 23:04:51.771493', '2026-04-17 23:04:51.771494');
+INSERT INTO "public"."sys_menu" VALUES ('创建编排节点类型', 3, 1, 'module_task:workflow:node-type:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建编排节点类型', 'null', 'f', 147, 175, '55e195e2-5873-4e18-a743-2cc3bd630b46', '0', '创建编排节点类型', '2026-04-17 23:04:51.771517', '2026-04-17 23:04:51.771518');
+INSERT INTO "public"."sys_menu" VALUES ('修改编排节点类型', 3, 2, 'module_task:workflow:node-type:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '修改编排节点类型', 'null', 'f', 147, 176, '56bf9ce2-358e-4a7b-979f-9270e018e415', '0', '修改编排节点类型', '2026-04-17 23:04:51.771525', '2026-04-17 23:04:51.771526');
+INSERT INTO "public"."sys_menu" VALUES ('删除编排节点类型', 3, 3, 'module_task:workflow:node-type:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除编排节点类型', 'null', 'f', 147, 177, 'a425bebc-cabd-4218-9a2f-839297e310ee', '0', '删除编排节点类型', '2026-04-17 23:04:51.771532', '2026-04-17 23:04:51.771533');
+INSERT INTO "public"."sys_menu" VALUES ('详情编排节点类型', 3, 4, 'module_task:workflow:node-type:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '详情编排节点类型', 'null', 'f', 147, 178, 'e1dc6a80-b559-4361-bd0c-8b8479ae0b88', '0', '详情编排节点类型', '2026-04-17 23:04:51.77154', '2026-04-17 23:04:51.771541');
+INSERT INTO "public"."sys_menu" VALUES ('查询编排节点类型', 3, 5, 'module_task:workflow:node-type:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询编排节点类型', 'null', 'f', 147, 179, 'bb7f71d0-ffdb-46d6-aafe-8491b38cf887', '0', '查询编排节点类型', '2026-04-17 23:04:51.771547', '2026-04-17 23:04:51.771548');
+INSERT INTO "public"."sys_menu" VALUES ('创建示例01', 3, 1, 'module_example:demo01:create', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '创建示例01', 'null', 'f', 157, 180, '49c9d42a-6e68-40b4-9da2-582a40ac3e52', '0', '初始化数据', '2026-04-17 23:04:51.771554', '2026-04-17 23:04:51.771555');
+INSERT INTO "public"."sys_menu" VALUES ('更新示例01', 3, 2, 'module_example:demo01:update', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '更新示例01', 'null', 'f', 157, 181, 'e3894259-1567-4b7f-9fa0-055260149c54', '0', '初始化数据', '2026-04-17 23:04:51.771561', '2026-04-17 23:04:51.771562');
+INSERT INTO "public"."sys_menu" VALUES ('删除示例01', 3, 3, 'module_example:demo01:delete', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '删除示例01', 'null', 'f', 157, 182, '090231e4-05aa-4b23-83f1-c128db542ea4', '0', '初始化数据', '2026-04-17 23:04:51.771569', '2026-04-17 23:04:51.77157');
+INSERT INTO "public"."sys_menu" VALUES ('批量修改示例01状态', 3, 4, 'module_example:demo01:patch', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '批量修改示例01状态', 'null', 'f', 157, 183, '3d22c473-c282-4086-ae33-db5e03e4facf', '0', '初始化数据', '2026-04-17 23:04:51.771576', '2026-04-17 23:04:51.771577');
+INSERT INTO "public"."sys_menu" VALUES ('导出示例01', 3, 5, 'module_example:demo01:export', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '导出示例01', 'null', 'f', 157, 184, '710658ff-335c-4ae0-9898-d6337cb0b5cf', '0', '初始化数据', '2026-04-17 23:04:51.771584', '2026-04-17 23:04:51.771585');
+INSERT INTO "public"."sys_menu" VALUES ('导入示例01', 3, 6, 'module_example:demo01:import', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '导入示例01', 'null', 'f', 157, 185, '0eac7b69-cccc-4bfa-a6f9-0eca98873bce', '0', '初始化数据', '2026-04-17 23:04:51.771591', '2026-04-17 23:04:51.771592');
+INSERT INTO "public"."sys_menu" VALUES ('下载导入示例01模版', 3, 7, 'module_example:demo01:download', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '下载导入示例01模版', 'null', 'f', 157, 186, '96c10ced-873d-41a6-9311-980973d9bb12', '0', '初始化数据', '2026-04-17 23:04:51.771598', '2026-04-17 23:04:51.7716');
+INSERT INTO "public"."sys_menu" VALUES ('详情示例01', 3, 8, 'module_example:demo01:detail', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '详情示例01', 'null', 'f', 157, 187, 'da8a7d66-c546-47f1-bd6a-b5ac66eb984f', '0', '初始化数据', '2026-04-17 23:04:51.771606', '2026-04-17 23:04:51.771607');
+INSERT INTO "public"."sys_menu" VALUES ('查询示例01', 3, 9, 'module_example:demo01:query', NULL, NULL, NULL, NULL, NULL, 'f', 'f', 'f', '查询示例01', 'null', 'f', 157, 188, '8d3012ae-d719-4500-90a2-b053bba4bb9e', '0', '初始化数据', '2026-04-17 23:04:51.771613', '2026-04-17 23:04:51.771614');
+
+-- ----------------------------
+-- Table structure for sys_notice
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."sys_notice";
+CREATE TABLE "public"."sys_notice" (
+  "notice_title" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "notice_type" varchar(1) COLLATE "pg_catalog"."default" NOT NULL,
+  "notice_content" text COLLATE "pg_catalog"."default",
+  "id" int4 NOT NULL DEFAULT nextval('sys_notice_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL,
+  "created_id" int4,
+  "updated_id" int4
+)
+;
+COMMENT ON COLUMN "public"."sys_notice"."notice_title" IS '公告标题';
+COMMENT ON COLUMN "public"."sys_notice"."notice_type" IS '公告类型(1通知 2公告)';
+COMMENT ON COLUMN "public"."sys_notice"."notice_content" IS '公告内容';
+COMMENT ON COLUMN "public"."sys_notice"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."sys_notice"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."sys_notice"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."sys_notice"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."sys_notice"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."sys_notice"."updated_time" IS '更新时间';
+COMMENT ON COLUMN "public"."sys_notice"."created_id" IS '创建人ID';
+COMMENT ON COLUMN "public"."sys_notice"."updated_id" IS '更新人ID';
+COMMENT ON TABLE "public"."sys_notice" IS '通知公告表';
+
+-- ----------------------------
+-- Records of sys_notice
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for sys_param
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."sys_param";
+CREATE TABLE "public"."sys_param" (
+  "config_name" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "config_key" varchar(500) COLLATE "pg_catalog"."default" NOT NULL,
+  "config_value" varchar(500) COLLATE "pg_catalog"."default",
+  "config_type" bool,
+  "id" int4 NOT NULL DEFAULT nextval('sys_param_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL
+)
+;
+COMMENT ON COLUMN "public"."sys_param"."config_name" IS '参数名称';
+COMMENT ON COLUMN "public"."sys_param"."config_key" IS '参数键名';
+COMMENT ON COLUMN "public"."sys_param"."config_value" IS '参数键值';
+COMMENT ON COLUMN "public"."sys_param"."config_type" IS '系统内置(True:是 False:否)';
+COMMENT ON COLUMN "public"."sys_param"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."sys_param"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."sys_param"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."sys_param"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."sys_param"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."sys_param"."updated_time" IS '更新时间';
+COMMENT ON TABLE "public"."sys_param" IS '系统参数表';
+
+-- ----------------------------
+-- Records of sys_param
+-- ----------------------------
+INSERT INTO "public"."sys_param" VALUES ('网站名称', 'sys_web_title', 'FastApiAdmin', 'f', 1, '6421c614-affb-4f9a-be78-775d610afcfe', '0', '初始化数据', '2026-04-17 23:04:51.808552', '2026-04-17 23:04:51.808561');
+INSERT INTO "public"."sys_param" VALUES ('网站描述', 'sys_web_description', 'FastApiAdmin 是完全开源的权限管理系统', 'f', 2, 'b7d92ae4-7259-4d69-b7d2-0c367bf7d452', '0', '初始化数据', '2026-04-17 23:04:51.808569', '2026-04-17 23:04:51.80857');
+INSERT INTO "public"."sys_param" VALUES ('网页图标', 'sys_web_favicon', 'https://service.fastapiadmin.com/api/v1/static/image/favicon.png', 'f', 3, 'df01f0e2-b887-46a6-b5bf-7b70b082458e', '0', '初始化数据', '2026-04-17 23:04:51.808577', '2026-04-17 23:04:51.808578');
+INSERT INTO "public"."sys_param" VALUES ('网站Logo', 'sys_web_logo', 'https://service.fastapiadmin.com/api/v1/static/image/logo.png', 'f', 4, 'e47b0cb6-9046-4dea-967a-dd3d73835c79', '0', '初始化数据', '2026-04-17 23:04:51.808583', '2026-04-17 23:04:51.808584');
+INSERT INTO "public"."sys_param" VALUES ('登录背景', 'sys_login_background', 'https://service.fastapiadmin.com/api/v1/static/image/background.svg', 'f', 5, '19b00d07-a4c8-4039-93f7-3dd32245a5b6', '0', '初始化数据', '2026-04-17 23:04:51.80859', '2026-04-17 23:04:51.808591');
+INSERT INTO "public"."sys_param" VALUES ('版权信息', 'sys_web_copyright', 'Copyright © 2025-2026 service.fastapiadmin.com 版权所有', 'f', 6, '71283fa0-226f-4cca-af14-6a5721ffad73', '0', '初始化数据', '2026-04-17 23:04:51.808597', '2026-04-17 23:04:51.808598');
+INSERT INTO "public"."sys_param" VALUES ('备案信息', 'sys_keep_record', '陕ICP备2025069493号-1', 'f', 7, '690deee5-0e9e-40c0-a688-8d7384b68965', '0', '初始化数据', '2026-04-17 23:04:51.808604', '2026-04-17 23:04:51.808605');
+INSERT INTO "public"."sys_param" VALUES ('帮助文档', 'sys_help_doc', 'https://service.fastapiadmin.com', 'f', 8, '24b3d504-626e-40f5-b100-fbf358a31bf8', '0', '初始化数据', '2026-04-17 23:04:51.80861', '2026-04-17 23:04:51.808611');
+INSERT INTO "public"."sys_param" VALUES ('隐私政策', 'sys_web_privacy', 'https://github.com/fastapiadmin/FastapiAdmin/blob/master/LICENSE', 'f', 9, '3f03373e-f48f-41c3-baeb-b849813a85b7', '0', '初始化数据', '2026-04-17 23:04:51.808617', '2026-04-17 23:04:51.808618');
+INSERT INTO "public"."sys_param" VALUES ('用户协议', 'sys_web_clause', 'https://github.com/fastapiadmin/FastapiAdmin/blob/master/LICENSE', 'f', 10, '19417603-667c-4a60-9aba-3b5a705e8c71', '0', '初始化数据', '2026-04-17 23:04:51.808624', '2026-04-17 23:04:51.808625');
+INSERT INTO "public"."sys_param" VALUES ('源码代码', 'sys_git_code', 'https://github.com/fastapiadmin/FastapiAdmin.git', 'f', 11, '97205001-211b-492f-a6d4-52868a3b0657', '0', '初始化数据', '2026-04-17 23:04:51.808631', '2026-04-17 23:04:51.808632');
+INSERT INTO "public"."sys_param" VALUES ('项目版本', 'sys_web_version', '2.0.0', 'f', 12, 'c5465110-38ce-4666-8aa3-feba4dd98307', '0', '初始化数据', '2026-04-17 23:04:51.808638', '2026-04-17 23:04:51.808639');
+INSERT INTO "public"."sys_param" VALUES ('演示模式启用', 'demo_enable', 'false', 'f', 13, 'e059373a-adef-42a5-80b2-4449cf6082b0', '0', '初始化数据', '2026-04-17 23:04:51.808644', '2026-04-17 23:04:51.808645');
+INSERT INTO "public"."sys_param" VALUES ('演示访问IP白名单', 'ip_white_list', '["127.0.0.1"]', 'f', 14, '99e80d98-8f49-4c82-8d64-62a9d25aa6a2', '0', '初始化数据', '2026-04-17 23:04:51.808651', '2026-04-17 23:04:51.808652');
+INSERT INTO "public"."sys_param" VALUES ('接口白名单', 'white_api_list_path', '["/api/v1/system/auth/login", "/api/v1/system/auth/token/refresh", "/api/v1/system/auth/captcha/get", "/api/v1/system/auth/logout", "/api/v1/system/config/info", "/api/v1/system/user/current/info", "/api/v1/system/notice/available", "/api/v1/system/auth/auto-login/users", "/api/v1/system/auth/auto-login/token", "/api/v1/system/auth/auto-login"]', 'f', 15, '37e726de-8b8d-40ed-8984-64d990af117a', '0', '初始化数据', '2026-04-17 23:04:51.808658', '2026-04-17 23:04:51.808659');
+INSERT INTO "public"."sys_param" VALUES ('访问IP黑名单', 'ip_black_list', '[]', 'f', 16, '15816d26-44a4-4c22-b3e7-f29ac3a6b7aa', '0', '初始化数据', '2026-04-17 23:04:51.808664', '2026-04-17 23:04:51.808665');
+INSERT INTO "public"."sys_param" VALUES ('调度器状态', 'scheduler_status', 'stopped', 'f', 17, 'ed15249c-a4f7-41fd-a6fa-7af2e1978db7', '0', NULL, '2026-04-18 10:59:49.695451', '2026-04-18 10:59:49.695458');
+
+-- ----------------------------
+-- Table structure for sys_position
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."sys_position";
+CREATE TABLE "public"."sys_position" (
+  "name" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "order" int4 NOT NULL,
+  "id" int4 NOT NULL DEFAULT nextval('sys_position_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL,
+  "created_id" int4,
+  "updated_id" int4
+)
+;
+COMMENT ON COLUMN "public"."sys_position"."name" IS '岗位名称';
+COMMENT ON COLUMN "public"."sys_position"."order" IS '显示排序';
+COMMENT ON COLUMN "public"."sys_position"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."sys_position"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."sys_position"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."sys_position"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."sys_position"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."sys_position"."updated_time" IS '更新时间';
+COMMENT ON COLUMN "public"."sys_position"."created_id" IS '创建人ID';
+COMMENT ON COLUMN "public"."sys_position"."updated_id" IS '更新人ID';
+COMMENT ON TABLE "public"."sys_position" IS '岗位表';
+
+-- ----------------------------
+-- Records of sys_position
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for sys_role
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."sys_role";
+CREATE TABLE "public"."sys_role" (
+  "name" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "code" varchar(16) COLLATE "pg_catalog"."default" NOT NULL,
+  "order" int4 NOT NULL,
+  "data_scope" int4 NOT NULL,
+  "id" int4 NOT NULL DEFAULT nextval('sys_role_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL
+)
+;
+COMMENT ON COLUMN "public"."sys_role"."name" IS '角色名称';
+COMMENT ON COLUMN "public"."sys_role"."code" IS '角色编码';
+COMMENT ON COLUMN "public"."sys_role"."order" IS '显示排序';
+COMMENT ON COLUMN "public"."sys_role"."data_scope" IS '数据权限范围(1:仅本人 2:本部门 3:本部门及以下 4:全部 5:自定义)';
+COMMENT ON COLUMN "public"."sys_role"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."sys_role"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."sys_role"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."sys_role"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."sys_role"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."sys_role"."updated_time" IS '更新时间';
+COMMENT ON TABLE "public"."sys_role" IS '角色表';
+
+-- ----------------------------
+-- Records of sys_role
+-- ----------------------------
+INSERT INTO "public"."sys_role" VALUES ('管理员角色', 'ADMIN', 1, 4, 1, '06ab825d-2ef7-445f-8395-b027f411deec', '0', '初始化角色', '2026-04-17 23:04:51.83997', '2026-04-17 23:04:51.839979');
+
+-- ----------------------------
+-- Table structure for sys_role_depts
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."sys_role_depts";
+CREATE TABLE "public"."sys_role_depts" (
+  "role_id" int4 NOT NULL,
+  "dept_id" int4 NOT NULL
+)
+;
+COMMENT ON COLUMN "public"."sys_role_depts"."role_id" IS '角色ID';
+COMMENT ON COLUMN "public"."sys_role_depts"."dept_id" IS '部门ID';
+COMMENT ON TABLE "public"."sys_role_depts" IS '角色部门关联表';
+
+-- ----------------------------
+-- Records of sys_role_depts
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for sys_role_menus
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."sys_role_menus";
+CREATE TABLE "public"."sys_role_menus" (
+  "role_id" int4 NOT NULL,
+  "menu_id" int4 NOT NULL
+)
+;
+COMMENT ON COLUMN "public"."sys_role_menus"."role_id" IS '角色ID';
+COMMENT ON COLUMN "public"."sys_role_menus"."menu_id" IS '菜单ID';
+COMMENT ON TABLE "public"."sys_role_menus" IS '角色菜单关联表';
+
+-- ----------------------------
+-- Records of sys_role_menus
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for sys_tenant
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."sys_tenant";
+CREATE TABLE "public"."sys_tenant" (
+  "name" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "code" varchar(100) COLLATE "pg_catalog"."default" NOT NULL,
+  "start_time" timestamp(6),
+  "end_time" timestamp(6),
+  "id" int4 NOT NULL DEFAULT nextval('sys_tenant_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL
+)
+;
+COMMENT ON COLUMN "public"."sys_tenant"."name" IS '租户名称';
+COMMENT ON COLUMN "public"."sys_tenant"."code" IS '租户编码';
+COMMENT ON COLUMN "public"."sys_tenant"."start_time" IS '开始时间';
+COMMENT ON COLUMN "public"."sys_tenant"."end_time" IS '结束时间';
+COMMENT ON COLUMN "public"."sys_tenant"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."sys_tenant"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."sys_tenant"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."sys_tenant"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."sys_tenant"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."sys_tenant"."updated_time" IS '更新时间';
+COMMENT ON TABLE "public"."sys_tenant" IS '租户表';
+
+-- ----------------------------
+-- Records of sys_tenant
+-- ----------------------------
+INSERT INTO "public"."sys_tenant" VALUES ('系统租户', 'system', NULL, NULL, 1, '97e21de9-89ef-4df5-be06-8d9c91461424', '0', '平台默认租户，id 固定为 1', '2026-04-17 23:04:51.634777', '2026-04-17 23:04:51.634786');
+
+-- ----------------------------
+-- Table structure for sys_user
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."sys_user";
+CREATE TABLE "public"."sys_user" (
+  "username" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "password" varchar(255) COLLATE "pg_catalog"."default" NOT NULL,
+  "name" varchar(32) COLLATE "pg_catalog"."default" NOT NULL,
+  "mobile" varchar(11) COLLATE "pg_catalog"."default",
+  "email" varchar(64) COLLATE "pg_catalog"."default",
+  "gender" varchar(1) COLLATE "pg_catalog"."default",
+  "avatar" varchar(255) COLLATE "pg_catalog"."default",
+  "is_superuser" bool NOT NULL,
+  "last_login" timestamptz(6),
+  "gitee_login" varchar(32) COLLATE "pg_catalog"."default",
+  "github_login" varchar(32) COLLATE "pg_catalog"."default",
+  "wx_login" varchar(32) COLLATE "pg_catalog"."default",
+  "qq_login" varchar(32) COLLATE "pg_catalog"."default",
+  "dept_id" int4,
+  "id" int4 NOT NULL DEFAULT nextval('sys_user_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL,
+  "tenant_id" int4 NOT NULL,
+  "created_id" int4,
+  "updated_id" int4
+)
+;
+COMMENT ON COLUMN "public"."sys_user"."username" IS '用户名/登录账号';
+COMMENT ON COLUMN "public"."sys_user"."password" IS '密码哈希';
+COMMENT ON COLUMN "public"."sys_user"."name" IS '昵称';
+COMMENT ON COLUMN "public"."sys_user"."mobile" IS '手机号';
+COMMENT ON COLUMN "public"."sys_user"."email" IS '邮箱';
+COMMENT ON COLUMN "public"."sys_user"."gender" IS '性别(0:男 1:女 2:未知)';
+COMMENT ON COLUMN "public"."sys_user"."avatar" IS '头像URL地址';
+COMMENT ON COLUMN "public"."sys_user"."is_superuser" IS '是否超管';
+COMMENT ON COLUMN "public"."sys_user"."last_login" IS '最后登录时间';
+COMMENT ON COLUMN "public"."sys_user"."gitee_login" IS 'Gitee登录';
+COMMENT ON COLUMN "public"."sys_user"."github_login" IS 'Github登录';
+COMMENT ON COLUMN "public"."sys_user"."wx_login" IS '微信登录';
+COMMENT ON COLUMN "public"."sys_user"."qq_login" IS 'QQ登录';
+COMMENT ON COLUMN "public"."sys_user"."dept_id" IS '部门ID';
+COMMENT ON COLUMN "public"."sys_user"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."sys_user"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."sys_user"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."sys_user"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."sys_user"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."sys_user"."updated_time" IS '更新时间';
+COMMENT ON COLUMN "public"."sys_user"."tenant_id" IS '租户ID';
+COMMENT ON COLUMN "public"."sys_user"."created_id" IS '创建人ID';
+COMMENT ON COLUMN "public"."sys_user"."updated_id" IS '更新人ID';
+COMMENT ON TABLE "public"."sys_user" IS '用户表';
+
+-- ----------------------------
+-- Records of sys_user
+-- ----------------------------
+INSERT INTO "public"."sys_user" VALUES ('admin', '$2b$12$e2IJgS/cvHgJ0H3G7Xa08OXoXnk6N/NX3IZRtubBDElA0VLZhkNOa', '超级管理员', NULL, NULL, '0', 'https://service.fastapiadmin.com/api/v1/static/image/avatar.png', 'f', '2026-04-19 10:53:02.938213+08', NULL, NULL, NULL, NULL, 1, 1, 'b4ec5407-daf3-49bc-b14b-97808cb0cce2', '0', '超级管理员', '2026-04-17 23:04:51.90215', '2026-04-19 10:53:02.954902', 1, NULL, NULL);
+
+-- ----------------------------
+-- Table structure for sys_user_positions
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."sys_user_positions";
+CREATE TABLE "public"."sys_user_positions" (
+  "user_id" int4 NOT NULL,
+  "position_id" int4 NOT NULL
+)
+;
+COMMENT ON COLUMN "public"."sys_user_positions"."user_id" IS '用户ID';
+COMMENT ON COLUMN "public"."sys_user_positions"."position_id" IS '岗位ID';
+COMMENT ON TABLE "public"."sys_user_positions" IS '用户岗位关联表';
+
+-- ----------------------------
+-- Records of sys_user_positions
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for sys_user_roles
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."sys_user_roles";
+CREATE TABLE "public"."sys_user_roles" (
+  "user_id" int4 NOT NULL,
+  "role_id" int4 NOT NULL
+)
+;
+COMMENT ON COLUMN "public"."sys_user_roles"."user_id" IS '用户ID';
+COMMENT ON COLUMN "public"."sys_user_roles"."role_id" IS '角色ID';
+COMMENT ON TABLE "public"."sys_user_roles" IS '用户角色关联表';
+
+-- ----------------------------
+-- Records of sys_user_roles
+-- ----------------------------
+INSERT INTO "public"."sys_user_roles" VALUES (1, 1);
+
+-- ----------------------------
+-- Table structure for task_job
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."task_job";
+CREATE TABLE "public"."task_job" (
+  "job_id" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "job_name" varchar(128) COLLATE "pg_catalog"."default",
+  "trigger_type" varchar(32) COLLATE "pg_catalog"."default",
+  "status" varchar(16) COLLATE "pg_catalog"."default" NOT NULL,
+  "next_run_time" varchar(64) COLLATE "pg_catalog"."default",
+  "job_state" text COLLATE "pg_catalog"."default",
+  "result" text COLLATE "pg_catalog"."default",
+  "error" text COLLATE "pg_catalog"."default",
+  "id" int4 NOT NULL DEFAULT nextval('task_job_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL
+)
+;
+COMMENT ON COLUMN "public"."task_job"."job_id" IS '任务ID';
+COMMENT ON COLUMN "public"."task_job"."job_name" IS '任务名称';
+COMMENT ON COLUMN "public"."task_job"."trigger_type" IS '触发方式: cron/interval/date/manual';
+COMMENT ON COLUMN "public"."task_job"."status" IS '执行状态';
+COMMENT ON COLUMN "public"."task_job"."next_run_time" IS '下次执行时间';
+COMMENT ON COLUMN "public"."task_job"."job_state" IS '任务状态信息';
+COMMENT ON COLUMN "public"."task_job"."result" IS '执行结果';
+COMMENT ON COLUMN "public"."task_job"."error" IS '错误信息';
+COMMENT ON COLUMN "public"."task_job"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."task_job"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."task_job"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."task_job"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."task_job"."updated_time" IS '更新时间';
+COMMENT ON TABLE "public"."task_job" IS '任务执行日志表';
+
+-- ----------------------------
+-- Records of task_job
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for task_node
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."task_node";
+CREATE TABLE "public"."task_node" (
+  "name" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "code" varchar(32) COLLATE "pg_catalog"."default" NOT NULL,
+  "jobstore" varchar(64) COLLATE "pg_catalog"."default",
+  "executor" varchar(64) COLLATE "pg_catalog"."default",
+  "trigger" varchar(64) COLLATE "pg_catalog"."default",
+  "trigger_args" text COLLATE "pg_catalog"."default",
+  "func" text COLLATE "pg_catalog"."default",
+  "args" text COLLATE "pg_catalog"."default",
+  "kwargs" text COLLATE "pg_catalog"."default",
+  "coalesce" bool,
+  "max_instances" int4,
+  "start_date" varchar(64) COLLATE "pg_catalog"."default",
+  "end_date" varchar(64) COLLATE "pg_catalog"."default",
+  "id" int4 NOT NULL DEFAULT nextval('task_node_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL,
+  "created_id" int4,
+  "updated_id" int4
+)
+;
+COMMENT ON COLUMN "public"."task_node"."name" IS '节点名称';
+COMMENT ON COLUMN "public"."task_node"."code" IS '节点编码';
+COMMENT ON COLUMN "public"."task_node"."jobstore" IS '存储器';
+COMMENT ON COLUMN "public"."task_node"."executor" IS '执行器';
+COMMENT ON COLUMN "public"."task_node"."trigger" IS '触发器';
+COMMENT ON COLUMN "public"."task_node"."trigger_args" IS '触发器参数';
+COMMENT ON COLUMN "public"."task_node"."func" IS '代码块';
+COMMENT ON COLUMN "public"."task_node"."args" IS '位置参数';
+COMMENT ON COLUMN "public"."task_node"."kwargs" IS '关键字参数';
+COMMENT ON COLUMN "public"."task_node"."coalesce" IS '是否合并运行';
+COMMENT ON COLUMN "public"."task_node"."max_instances" IS '最大实例数';
+COMMENT ON COLUMN "public"."task_node"."start_date" IS '开始时间';
+COMMENT ON COLUMN "public"."task_node"."end_date" IS '结束时间';
+COMMENT ON COLUMN "public"."task_node"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."task_node"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."task_node"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."task_node"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."task_node"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."task_node"."updated_time" IS '更新时间';
+COMMENT ON COLUMN "public"."task_node"."created_id" IS '创建人ID';
+COMMENT ON COLUMN "public"."task_node"."updated_id" IS '更新人ID';
+COMMENT ON TABLE "public"."task_node" IS '节点类型表';
+
+-- ----------------------------
+-- Records of task_node
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for task_workflow
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."task_workflow";
+CREATE TABLE "public"."task_workflow" (
+  "name" varchar(128) COLLATE "pg_catalog"."default" NOT NULL,
+  "code" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "workflow_status" varchar(32) COLLATE "pg_catalog"."default" NOT NULL,
+  "nodes" json,
+  "edges" json,
+  "id" int4 NOT NULL DEFAULT nextval('task_workflow_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL,
+  "created_id" int4,
+  "updated_id" int4
+)
+;
+COMMENT ON COLUMN "public"."task_workflow"."name" IS '流程名称';
+COMMENT ON COLUMN "public"."task_workflow"."code" IS '流程编码';
+COMMENT ON COLUMN "public"."task_workflow"."workflow_status" IS '流程状态: draft/published/archived';
+COMMENT ON COLUMN "public"."task_workflow"."nodes" IS 'Vue Flow nodes JSON';
+COMMENT ON COLUMN "public"."task_workflow"."edges" IS 'Vue Flow edges JSON';
+COMMENT ON COLUMN "public"."task_workflow"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."task_workflow"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."task_workflow"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."task_workflow"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."task_workflow"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."task_workflow"."updated_time" IS '更新时间';
+COMMENT ON COLUMN "public"."task_workflow"."created_id" IS '创建人ID';
+COMMENT ON COLUMN "public"."task_workflow"."updated_id" IS '更新人ID';
+COMMENT ON TABLE "public"."task_workflow" IS '工作流定义表';
+
+-- ----------------------------
+-- Records of task_workflow
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for task_workflow_node_type
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."task_workflow_node_type";
+CREATE TABLE "public"."task_workflow_node_type" (
+  "name" varchar(128) COLLATE "pg_catalog"."default" NOT NULL,
+  "code" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "category" varchar(32) COLLATE "pg_catalog"."default" NOT NULL,
+  "func" text COLLATE "pg_catalog"."default" NOT NULL,
+  "args" text COLLATE "pg_catalog"."default",
+  "kwargs" text COLLATE "pg_catalog"."default",
+  "sort_order" int4 NOT NULL,
+  "is_active" bool NOT NULL,
+  "id" int4 NOT NULL DEFAULT nextval('task_workflow_node_type_id_seq'::regclass),
+  "uuid" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "status" varchar(10) COLLATE "pg_catalog"."default" NOT NULL,
+  "description" text COLLATE "pg_catalog"."default",
+  "created_time" timestamp(6) NOT NULL,
+  "updated_time" timestamp(6) NOT NULL,
+  "created_id" int4,
+  "updated_id" int4
+)
+;
+COMMENT ON COLUMN "public"."task_workflow_node_type"."name" IS '显示名称';
+COMMENT ON COLUMN "public"."task_workflow_node_type"."code" IS '节点编码，对应画布 node.type';
+COMMENT ON COLUMN "public"."task_workflow_node_type"."category" IS '分类: trigger/action/condition/control';
+COMMENT ON COLUMN "public"."task_workflow_node_type"."func" IS 'Python 代码块，须定义 handler(*args,**kwargs)';
+COMMENT ON COLUMN "public"."task_workflow_node_type"."args" IS '默认位置参数，逗号分隔';
+COMMENT ON COLUMN "public"."task_workflow_node_type"."kwargs" IS '默认关键字参数 JSON';
+COMMENT ON COLUMN "public"."task_workflow_node_type"."sort_order" IS '排序';
+COMMENT ON COLUMN "public"."task_workflow_node_type"."is_active" IS '是否启用';
+COMMENT ON COLUMN "public"."task_workflow_node_type"."id" IS '主键ID';
+COMMENT ON COLUMN "public"."task_workflow_node_type"."uuid" IS 'UUID全局唯一标识';
+COMMENT ON COLUMN "public"."task_workflow_node_type"."status" IS '状态(0:正常 1:禁用)';
+COMMENT ON COLUMN "public"."task_workflow_node_type"."description" IS '备注/描述';
+COMMENT ON COLUMN "public"."task_workflow_node_type"."created_time" IS '创建时间';
+COMMENT ON COLUMN "public"."task_workflow_node_type"."updated_time" IS '更新时间';
+COMMENT ON COLUMN "public"."task_workflow_node_type"."created_id" IS '创建人ID';
+COMMENT ON COLUMN "public"."task_workflow_node_type"."updated_id" IS '更新人ID';
+COMMENT ON TABLE "public"."task_workflow_node_type" IS '工作流编排节点类型（非定时任务节点）';
+
+-- ----------------------------
+-- Records of task_workflow_node_type
+-- ----------------------------
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."app_portal_id_seq"
+OWNED BY "public"."app_portal"."id";
+SELECT setval('"public"."app_portal_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_ai_customer_profiles_id_seq"
+OWNED BY "public"."crm_ai_customer_profiles"."id";
+SELECT setval('"public"."crm_ai_customer_profiles_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_ai_recommendations_id_seq"
+OWNED BY "public"."crm_ai_recommendations"."id";
+SELECT setval('"public"."crm_ai_recommendations_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_ai_tags_id_seq"
+OWNED BY "public"."crm_ai_tags"."id";
+SELECT setval('"public"."crm_ai_tags_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_campaign_leads_id_seq"
+OWNED BY "public"."crm_campaign_leads"."id";
+SELECT setval('"public"."crm_campaign_leads_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_campaigns_id_seq"
+OWNED BY "public"."crm_campaigns"."id";
+SELECT setval('"public"."crm_campaigns_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_contact_change_logs_id_seq"
+OWNED BY "public"."crm_contact_change_logs"."id";
+SELECT setval('"public"."crm_contact_change_logs_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_contact_relations_id_seq"
+OWNED BY "public"."crm_contact_relations"."id";
+SELECT setval('"public"."crm_contact_relations_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_contact_visits_id_seq"
+OWNED BY "public"."crm_contact_visits"."id";
+SELECT setval('"public"."crm_contact_visits_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_contacts_id_seq"
+OWNED BY "public"."crm_contacts"."id";
+SELECT setval('"public"."crm_contacts_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_contract_invoices_id_seq"
+OWNED BY "public"."crm_contract_invoices"."id";
+SELECT setval('"public"."crm_contract_invoices_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_contract_items_id_seq"
+OWNED BY "public"."crm_contract_items"."id";
+SELECT setval('"public"."crm_contract_items_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_contracts_id_seq"
+OWNED BY "public"."crm_contracts"."id";
+SELECT setval('"public"."crm_contracts_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_customer_activities_id_seq"
+OWNED BY "public"."crm_customer_activities"."id";
+SELECT setval('"public"."crm_customer_activities_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_customer_addresses_id_seq"
+OWNED BY "public"."crm_customer_addresses"."id";
+SELECT setval('"public"."crm_customer_addresses_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_customer_attachments_id_seq"
+OWNED BY "public"."crm_customer_attachments"."id";
+SELECT setval('"public"."crm_customer_attachments_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_customer_change_logs_id_seq"
+OWNED BY "public"."crm_customer_change_logs"."id";
+SELECT setval('"public"."crm_customer_change_logs_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_customer_duplicate_logs_id_seq"
+OWNED BY "public"."crm_customer_duplicate_logs"."id";
+SELECT setval('"public"."crm_customer_duplicate_logs_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_customer_health_id_seq"
+OWNED BY "public"."crm_customer_health"."id";
+SELECT setval('"public"."crm_customer_health_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_customer_health_scores_id_seq"
+OWNED BY "public"."crm_customer_health_scores"."id";
+SELECT setval('"public"."crm_customer_health_scores_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_customer_pool_logs_id_seq"
+OWNED BY "public"."crm_customer_pool_logs"."id";
+SELECT setval('"public"."crm_customer_pool_logs_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_customer_profiles_id_seq"
+OWNED BY "public"."crm_customer_profiles"."id";
+SELECT setval('"public"."crm_customer_profiles_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_customer_satisfaction_surveys_id_seq"
+OWNED BY "public"."crm_customer_satisfaction_surveys"."id";
+SELECT setval('"public"."crm_customer_satisfaction_surveys_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_customer_tags_id_seq"
+OWNED BY "public"."crm_customer_tags"."id";
+SELECT setval('"public"."crm_customer_tags_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_customer_timeline_id_seq"
+OWNED BY "public"."crm_customer_timeline"."id";
+SELECT setval('"public"."crm_customer_timeline_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_customers_id_seq"
+OWNED BY "public"."crm_customers"."id";
+SELECT setval('"public"."crm_customers_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_data_dicts_id_seq"
+OWNED BY "public"."crm_data_dicts"."id";
+SELECT setval('"public"."crm_data_dicts_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_deliveries_id_seq"
+OWNED BY "public"."crm_deliveries"."id";
+SELECT setval('"public"."crm_deliveries_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_follow_records_id_seq"
+OWNED BY "public"."crm_follow_records"."id";
+SELECT setval('"public"."crm_follow_records_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_followups_id_seq"
+OWNED BY "public"."crm_followups"."id";
+SELECT setval('"public"."crm_followups_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_import_records_id_seq"
+OWNED BY "public"."crm_import_records"."id";
+SELECT setval('"public"."crm_import_records_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_invoices_id_seq"
+OWNED BY "public"."crm_invoices"."id";
+SELECT setval('"public"."crm_invoices_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_joint_followups_id_seq"
+OWNED BY "public"."crm_joint_followups"."id";
+SELECT setval('"public"."crm_joint_followups_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_lead_scores_id_seq"
+OWNED BY "public"."crm_lead_scores"."id";
+SELECT setval('"public"."crm_lead_scores_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_leads_id_seq"
+OWNED BY "public"."crm_leads"."id";
+SELECT setval('"public"."crm_leads_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_marketing_campaigns_id_seq"
+OWNED BY "public"."crm_marketing_campaigns"."id";
+SELECT setval('"public"."crm_marketing_campaigns_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_marketing_channels_id_seq"
+OWNED BY "public"."crm_marketing_channels"."id";
+SELECT setval('"public"."crm_marketing_channels_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_notifications_id_seq"
+OWNED BY "public"."crm_notifications"."id";
+SELECT setval('"public"."crm_notifications_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_operation_logs_id_seq"
+OWNED BY "public"."crm_operation_logs"."id";
+SELECT setval('"public"."crm_operation_logs_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_opportunities_id_seq"
+OWNED BY "public"."crm_opportunities"."id";
+SELECT setval('"public"."crm_opportunities_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_opportunity_products_id_seq"
+OWNED BY "public"."crm_opportunity_products"."id";
+SELECT setval('"public"."crm_opportunity_products_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_opportunity_stages_id_seq"
+OWNED BY "public"."crm_opportunity_stages"."id";
+SELECT setval('"public"."crm_opportunity_stages_id_seq"', 6, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_order_items_id_seq"
+OWNED BY "public"."crm_order_items"."id";
+SELECT setval('"public"."crm_order_items_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_orders_id_seq"
+OWNED BY "public"."crm_orders"."id";
+SELECT setval('"public"."crm_orders_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_payments_id_seq"
+OWNED BY "public"."crm_payments"."id";
+SELECT setval('"public"."crm_payments_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_pool_transfers_id_seq"
+OWNED BY "public"."crm_pool_transfers"."id";
+SELECT setval('"public"."crm_pool_transfers_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_price_tiers_id_seq"
+OWNED BY "public"."crm_price_tiers"."id";
+SELECT setval('"public"."crm_price_tiers_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_product_categories_id_seq"
+OWNED BY "public"."crm_product_categories"."id";
+SELECT setval('"public"."crm_product_categories_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_product_documents_id_seq"
+OWNED BY "public"."crm_product_documents"."id";
+SELECT setval('"public"."crm_product_documents_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_product_price_history_id_seq"
+OWNED BY "public"."crm_product_price_history"."id";
+SELECT setval('"public"."crm_product_price_history_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_product_price_policies_id_seq"
+OWNED BY "public"."crm_product_price_policies"."id";
+SELECT setval('"public"."crm_product_price_policies_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_product_prices_id_seq"
+OWNED BY "public"."crm_product_prices"."id";
+SELECT setval('"public"."crm_product_prices_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_product_skus_id_seq"
+OWNED BY "public"."crm_product_skus"."id";
+SELECT setval('"public"."crm_product_skus_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_products_id_seq"
+OWNED BY "public"."crm_products"."id";
+SELECT setval('"public"."crm_products_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_quotation_items_id_seq"
+OWNED BY "public"."crm_quotation_items"."id";
+SELECT setval('"public"."crm_quotation_items_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_quotations_id_seq"
+OWNED BY "public"."crm_quotations"."id";
+SELECT setval('"public"."crm_quotations_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_renewals_id_seq"
+OWNED BY "public"."crm_renewals"."id";
+SELECT setval('"public"."crm_renewals_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_report_instances_id_seq"
+OWNED BY "public"."crm_report_instances"."id";
+SELECT setval('"public"."crm_report_instances_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_report_templates_id_seq"
+OWNED BY "public"."crm_report_templates"."id";
+SELECT setval('"public"."crm_report_templates_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_sales_activities_id_seq"
+OWNED BY "public"."crm_sales_activities"."id";
+SELECT setval('"public"."crm_sales_activities_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_sales_targets_id_seq"
+OWNED BY "public"."crm_sales_targets"."id";
+SELECT setval('"public"."crm_sales_targets_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_satisfaction_surveys_id_seq"
+OWNED BY "public"."crm_satisfaction_surveys"."id";
+SELECT setval('"public"."crm_satisfaction_surveys_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_tag_definitions_id_seq"
+OWNED BY "public"."crm_tag_definitions"."id";
+SELECT setval('"public"."crm_tag_definitions_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_tags_id_seq"
+OWNED BY "public"."crm_tags"."id";
+SELECT setval('"public"."crm_tags_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_tasks_id_seq"
+OWNED BY "public"."crm_tasks"."id";
+SELECT setval('"public"."crm_tasks_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_user_extensions_id_seq"
+OWNED BY "public"."crm_user_extensions"."id";
+SELECT setval('"public"."crm_user_extensions_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_workflow_approvals_id_seq"
+OWNED BY "public"."crm_workflow_approvals"."id";
+SELECT setval('"public"."crm_workflow_approvals_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_workflow_logs_id_seq"
+OWNED BY "public"."crm_workflow_logs"."id";
+SELECT setval('"public"."crm_workflow_logs_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."crm_workflow_rules_id_seq"
+OWNED BY "public"."crm_workflow_rules"."id";
+SELECT setval('"public"."crm_workflow_rules_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."gen_demo01_id_seq"
+OWNED BY "public"."gen_demo01"."id";
+SELECT setval('"public"."gen_demo01_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."gen_demo_id_seq"
+OWNED BY "public"."gen_demo"."id";
+SELECT setval('"public"."gen_demo_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."gen_table_column_id_seq"
+OWNED BY "public"."gen_table_column"."id";
+SELECT setval('"public"."gen_table_column_id_seq"', 3159, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."gen_table_id_seq"
+OWNED BY "public"."gen_table"."id";
+SELECT setval('"public"."gen_table_id_seq"', 202, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."sys_dept_id_seq"
+OWNED BY "public"."sys_dept"."id";
+SELECT setval('"public"."sys_dept_id_seq"', 1, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."sys_dict_data_id_seq"
+OWNED BY "public"."sys_dict_data"."id";
+SELECT setval('"public"."sys_dict_data_id_seq"', 34, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."sys_dict_type_id_seq"
+OWNED BY "public"."sys_dict_type"."id";
+SELECT setval('"public"."sys_dict_type_id_seq"', 10, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."sys_log_id_seq"
+OWNED BY "public"."sys_log"."id";
+SELECT setval('"public"."sys_log_id_seq"', 21, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."sys_menu_id_seq"
+OWNED BY "public"."sys_menu"."id";
+SELECT setval('"public"."sys_menu_id_seq"', 188, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."sys_notice_id_seq"
+OWNED BY "public"."sys_notice"."id";
+SELECT setval('"public"."sys_notice_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."sys_param_id_seq"
+OWNED BY "public"."sys_param"."id";
+SELECT setval('"public"."sys_param_id_seq"', 17, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."sys_position_id_seq"
+OWNED BY "public"."sys_position"."id";
+SELECT setval('"public"."sys_position_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."sys_role_id_seq"
+OWNED BY "public"."sys_role"."id";
+SELECT setval('"public"."sys_role_id_seq"', 1, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."sys_tenant_id_seq"
+OWNED BY "public"."sys_tenant"."id";
+SELECT setval('"public"."sys_tenant_id_seq"', 1, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."sys_user_id_seq"
+OWNED BY "public"."sys_user"."id";
+SELECT setval('"public"."sys_user_id_seq"', 1, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."task_job_id_seq"
+OWNED BY "public"."task_job"."id";
+SELECT setval('"public"."task_job_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."task_node_id_seq"
+OWNED BY "public"."task_node"."id";
+SELECT setval('"public"."task_node_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."task_workflow_id_seq"
+OWNED BY "public"."task_workflow"."id";
+SELECT setval('"public"."task_workflow_id_seq"', 1, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."task_workflow_node_type_id_seq"
+OWNED BY "public"."task_workflow_node_type"."id";
+SELECT setval('"public"."task_workflow_node_type_id_seq"', 1, false);
+
+-- ----------------------------
+-- Indexes structure for table app_portal
+-- ----------------------------
+CREATE INDEX "ix_app_portal_created_id" ON "public"."app_portal" USING btree (
+  "created_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_app_portal_created_time" ON "public"."app_portal" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_app_portal_id" ON "public"."app_portal" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_app_portal_status" ON "public"."app_portal" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_app_portal_tenant_id" ON "public"."app_portal" USING btree (
+  "tenant_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_app_portal_updated_id" ON "public"."app_portal" USING btree (
+  "updated_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_app_portal_updated_time" ON "public"."app_portal" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_app_portal_uuid" ON "public"."app_portal" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table app_portal
+-- ----------------------------
+ALTER TABLE "public"."app_portal" ADD CONSTRAINT "app_portal_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table apscheduler_jobs
+-- ----------------------------
+CREATE INDEX "ix_apscheduler_jobs_next_run_time" ON "public"."apscheduler_jobs" USING btree (
+  "next_run_time" "pg_catalog"."float8_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table apscheduler_jobs
+-- ----------------------------
+ALTER TABLE "public"."apscheduler_jobs" ADD CONSTRAINT "apscheduler_jobs_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_ai_customer_profiles
+-- ----------------------------
+CREATE INDEX "idx_crm_ai_customer_profiles_customer_id" ON "public"."crm_ai_customer_profiles" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_ai_profiles_customer" ON "public"."crm_ai_customer_profiles" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_ai_profiles_score" ON "public"."crm_ai_customer_profiles" USING btree (
+  "overall_score" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_ai_customer_profiles
+-- ----------------------------
+ALTER TABLE "public"."crm_ai_customer_profiles" ADD CONSTRAINT "crm_ai_customer_profiles_customer_id_key" UNIQUE ("customer_id");
+
+-- ----------------------------
+-- Primary Key structure for table crm_ai_customer_profiles
+-- ----------------------------
+ALTER TABLE "public"."crm_ai_customer_profiles" ADD CONSTRAINT "crm_ai_customer_profiles_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_ai_recommendations
+-- ----------------------------
+CREATE INDEX "idx_crm_ai_recommendations_entity" ON "public"."crm_ai_recommendations" USING btree (
+  "entity_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST,
+  "entity_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "created_at" "pg_catalog"."timestamp_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_ai_recommendations_entity_id" ON "public"."crm_ai_recommendations" USING btree (
+  "entity_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_ai_recommendations_type" ON "public"."crm_ai_recommendations" USING btree (
+  "recommendation_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_ai_recommendations
+-- ----------------------------
+ALTER TABLE "public"."crm_ai_recommendations" ADD CONSTRAINT "crm_ai_recommendations_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Uniques structure for table crm_ai_tags
+-- ----------------------------
+ALTER TABLE "public"."crm_ai_tags" ADD CONSTRAINT "crm_ai_tags_tag_code_key" UNIQUE ("tag_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_ai_tags
+-- ----------------------------
+ALTER TABLE "public"."crm_ai_tags" ADD CONSTRAINT "crm_ai_tags_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_campaign_leads
+-- ----------------------------
+CREATE INDEX "idx_campaign_leads_campaign" ON "public"."crm_campaign_leads" USING btree (
+  "campaign_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_campaign_leads_converted" ON "public"."crm_campaign_leads" USING btree (
+  "is_converted" "pg_catalog"."bool_ops" ASC NULLS LAST
+) WHERE is_converted = true;
+CREATE INDEX "idx_campaign_leads_engagement" ON "public"."crm_campaign_leads" USING btree (
+  "engagement_score" "pg_catalog"."numeric_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_campaign_leads_lead" ON "public"."crm_campaign_leads" USING btree (
+  "lead_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_campaign_leads_campaign" ON "public"."crm_campaign_leads" USING btree (
+  "campaign_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_campaign_leads_campaign_id" ON "public"."crm_campaign_leads" USING btree (
+  "campaign_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_campaign_leads_converted_customer_id" ON "public"."crm_campaign_leads" USING btree (
+  "converted_customer_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_campaign_leads_lead" ON "public"."crm_campaign_leads" USING btree (
+  "lead_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_campaign_leads_lead_id" ON "public"."crm_campaign_leads" USING btree (
+  "lead_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_campaign_leads
+-- ----------------------------
+ALTER TABLE "public"."crm_campaign_leads" ADD CONSTRAINT "uk_campaign_lead" UNIQUE ("campaign_id", "lead_id", "deleted_at");
+
+-- ----------------------------
+-- Primary Key structure for table crm_campaign_leads
+-- ----------------------------
+ALTER TABLE "public"."crm_campaign_leads" ADD CONSTRAINT "crm_campaign_leads_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_campaigns
+-- ----------------------------
+CREATE INDEX "idx_crm_campaigns_code" ON "public"."crm_campaigns" USING btree (
+  "campaign_code" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_campaigns_dates" ON "public"."crm_campaigns" USING btree (
+  "planned_start_date" "pg_catalog"."date_ops" ASC NULLS LAST,
+  "planned_end_date" "pg_catalog"."date_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_campaigns_department_id" ON "public"."crm_campaigns" USING btree (
+  "department_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_campaigns_owner" ON "public"."crm_campaigns" USING btree (
+  "owner_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_campaigns_owner_id" ON "public"."crm_campaigns" USING btree (
+  "owner_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_campaigns_related_campaign_id" ON "public"."crm_campaigns" USING btree (
+  "related_campaign_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_campaigns_status" ON "public"."crm_campaigns" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_campaigns_type" ON "public"."crm_campaigns" USING btree (
+  "campaign_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_campaigns
+-- ----------------------------
+ALTER TABLE "public"."crm_campaigns" ADD CONSTRAINT "crm_campaigns_campaign_code_key" UNIQUE ("campaign_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_campaigns
+-- ----------------------------
+ALTER TABLE "public"."crm_campaigns" ADD CONSTRAINT "crm_campaigns_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_contact_change_logs
+-- ----------------------------
+CREATE INDEX "idx_crm_contact_change_logs_contact" ON "public"."crm_contact_change_logs" USING btree (
+  "contact_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "changed_at" "pg_catalog"."timestamp_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_contact_change_logs_contact_id" ON "public"."crm_contact_change_logs" USING btree (
+  "contact_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contact_change_logs_customer" ON "public"."crm_contact_change_logs" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contact_change_logs_customer_id" ON "public"."crm_contact_change_logs" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contact_change_logs_operator_id" ON "public"."crm_contact_change_logs" USING btree (
+  "operator_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_contact_change_logs
+-- ----------------------------
+ALTER TABLE "public"."crm_contact_change_logs" ADD CONSTRAINT "crm_contact_change_logs_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_contact_relations
+-- ----------------------------
+CREATE INDEX "idx_crm_contact_relations_contact" ON "public"."crm_contact_relations" USING btree (
+  "contact_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contact_relations_contact_id" ON "public"."crm_contact_relations" USING btree (
+  "contact_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contact_relations_deleted" ON "public"."crm_contact_relations" USING btree (
+  "deleted_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contact_relations_entity" ON "public"."crm_contact_relations" USING btree (
+  "related_entity_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST,
+  "related_entity_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contact_relations_related" ON "public"."crm_contact_relations" USING btree (
+  "related_contact_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contact_relations_related_contact_id" ON "public"."crm_contact_relations" USING btree (
+  "related_contact_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contact_relations_related_entity_id" ON "public"."crm_contact_relations" USING btree (
+  "related_entity_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contact_relations_type" ON "public"."crm_contact_relations" USING btree (
+  "relation_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_contact_relations
+-- ----------------------------
+ALTER TABLE "public"."crm_contact_relations" ADD CONSTRAINT "crm_contact_relations_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_contact_visits
+-- ----------------------------
+CREATE INDEX "idx_crm_contact_visits_contact" ON "public"."crm_contact_visits" USING btree (
+  "contact_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "visit_date" "pg_catalog"."date_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_contact_visits_contact_id" ON "public"."crm_contact_visits" USING btree (
+  "contact_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contact_visits_customer" ON "public"."crm_contact_visits" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "visit_date" "pg_catalog"."date_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_contact_visits_customer_id" ON "public"."crm_contact_visits" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contact_visits_deleted" ON "public"."crm_contact_visits" USING btree (
+  "deleted_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contact_visits_visitor" ON "public"."crm_contact_visits" USING btree (
+  "visitor_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contact_visits_visitor_id" ON "public"."crm_contact_visits" USING btree (
+  "visitor_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_contact_visits
+-- ----------------------------
+ALTER TABLE "public"."crm_contact_visits" ADD CONSTRAINT "crm_contact_visits_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_contacts
+-- ----------------------------
+CREATE INDEX "idx_crm_contacts_customer" ON "public"."crm_contacts" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "is_deleted" "pg_catalog"."bool_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contacts_customer_id" ON "public"."crm_contacts" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contacts_name" ON "public"."crm_contacts" USING btree (
+  "contact_name" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contacts_primary" ON "public"."crm_contacts" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "is_primary" "pg_catalog"."bool_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_contacts
+-- ----------------------------
+ALTER TABLE "public"."crm_contacts" ADD CONSTRAINT "crm_contacts_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_contract_invoices
+-- ----------------------------
+CREATE INDEX "idx_crm_contract_invoices_contract" ON "public"."crm_contract_invoices" USING btree (
+  "contract_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contract_invoices_contract_id" ON "public"."crm_contract_invoices" USING btree (
+  "contract_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contract_invoices_date" ON "public"."crm_contract_invoices" USING btree (
+  "invoice_date" "pg_catalog"."date_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contract_invoices_payment_plan_id" ON "public"."crm_contract_invoices" USING btree (
+  "payment_plan_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contract_invoices_status" ON "public"."crm_contract_invoices" USING btree (
+  "invoice_status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_contract_invoices
+-- ----------------------------
+ALTER TABLE "public"."crm_contract_invoices" ADD CONSTRAINT "crm_contract_invoices_invoice_code_key" UNIQUE ("invoice_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_contract_invoices
+-- ----------------------------
+ALTER TABLE "public"."crm_contract_invoices" ADD CONSTRAINT "crm_contract_invoices_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_contract_items
+-- ----------------------------
+CREATE INDEX "idx_crm_contract_items_contract" ON "public"."crm_contract_items" USING btree (
+  "contract_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contract_items_contract_id" ON "public"."crm_contract_items" USING btree (
+  "contract_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contract_items_product" ON "public"."crm_contract_items" USING btree (
+  "product_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contract_items_product_id" ON "public"."crm_contract_items" USING btree (
+  "product_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_contract_items
+-- ----------------------------
+ALTER TABLE "public"."crm_contract_items" ADD CONSTRAINT "crm_contract_items_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_contracts
+-- ----------------------------
+CREATE INDEX "idx_contracts_customer" ON "public"."crm_contracts" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_contracts_opportunity" ON "public"."crm_contracts" USING btree (
+  "opportunity_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contracts_code" ON "public"."crm_contracts" USING btree (
+  "contract_code" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contracts_customer" ON "public"."crm_contracts" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contracts_customer_id" ON "public"."crm_contracts" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contracts_dates" ON "public"."crm_contracts" USING btree (
+  "start_date" "pg_catalog"."date_ops" ASC NULLS LAST,
+  "end_date" "pg_catalog"."date_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contracts_opportunity_id" ON "public"."crm_contracts" USING btree (
+  "opportunity_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contracts_owner" ON "public"."crm_contracts" USING btree (
+  "owner_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contracts_owner_id" ON "public"."crm_contracts" USING btree (
+  "owner_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_contracts_quotation_id" ON "public"."crm_contracts" USING btree (
+  "quotation_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_contracts
+-- ----------------------------
+ALTER TABLE "public"."crm_contracts" ADD CONSTRAINT "crm_contracts_contract_code_key" UNIQUE ("contract_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_contracts
+-- ----------------------------
+ALTER TABLE "public"."crm_contracts" ADD CONSTRAINT "crm_contracts_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_customer_activities
+-- ----------------------------
+CREATE INDEX "idx_crm_activities_customer" ON "public"."crm_customer_activities" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "activity_date" "pg_catalog"."timestamp_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_activities_operator" ON "public"."crm_customer_activities" USING btree (
+  "operator_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_activities_type" ON "public"."crm_customer_activities" USING btree (
+  "activity_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_activities_customer_id" ON "public"."crm_customer_activities" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_activities_operator_id" ON "public"."crm_customer_activities" USING btree (
+  "operator_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_activities_related_id" ON "public"."crm_customer_activities" USING btree (
+  "related_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_customer_activities
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_activities" ADD CONSTRAINT "crm_customer_activities_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_customer_addresses
+-- ----------------------------
+CREATE INDEX "idx_crm_customer_addresses_customer" ON "public"."crm_customer_addresses" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "address_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_addresses_customer_id" ON "public"."crm_customer_addresses" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_addresses_default" ON "public"."crm_customer_addresses" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "is_default" "pg_catalog"."bool_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_customer_addresses
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_addresses" ADD CONSTRAINT "crm_customer_addresses_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_customer_attachments
+-- ----------------------------
+CREATE INDEX "idx_crm_customer_attachments_customer" ON "public"."crm_customer_attachments" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "attachment_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_attachments_customer_id" ON "public"."crm_customer_attachments" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_attachments_uploader" ON "public"."crm_customer_attachments" USING btree (
+  "uploader_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_attachments_uploader_id" ON "public"."crm_customer_attachments" USING btree (
+  "uploader_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_customer_attachments
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_attachments" ADD CONSTRAINT "crm_customer_attachments_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_customer_change_logs
+-- ----------------------------
+CREATE INDEX "idx_crm_customer_change_logs_customer" ON "public"."crm_customer_change_logs" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "changed_at" "pg_catalog"."timestamp_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_customer_change_logs_customer_id" ON "public"."crm_customer_change_logs" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_change_logs_field" ON "public"."crm_customer_change_logs" USING btree (
+  "field_name" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_change_logs_operator" ON "public"."crm_customer_change_logs" USING btree (
+  "operator_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_change_logs_operator_id" ON "public"."crm_customer_change_logs" USING btree (
+  "operator_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_customer_change_logs
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_change_logs" ADD CONSTRAINT "crm_customer_change_logs_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_customer_duplicate_logs
+-- ----------------------------
+CREATE INDEX "idx_crm_customer_duplicate_logs_a" ON "public"."crm_customer_duplicate_logs" USING btree (
+  "customer_a_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_duplicate_logs_b" ON "public"."crm_customer_duplicate_logs" USING btree (
+  "customer_b_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_duplicate_logs_customer_a_id" ON "public"."crm_customer_duplicate_logs" USING btree (
+  "customer_a_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_duplicate_logs_customer_b_id" ON "public"."crm_customer_duplicate_logs" USING btree (
+  "customer_b_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_duplicate_logs_type" ON "public"."crm_customer_duplicate_logs" USING btree (
+  "collision_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_customer_duplicate_logs
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_duplicate_logs" ADD CONSTRAINT "crm_customer_duplicate_logs_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_customer_health
+-- ----------------------------
+CREATE INDEX "idx_crm_customer_health_customer_id" ON "public"."crm_customer_health" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_health_customer" ON "public"."crm_customer_health" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_health_level" ON "public"."crm_customer_health" USING btree (
+  "health_level" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_health_renewal" ON "public"."crm_customer_health" USING btree (
+  "renewal_status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST,
+  "contract_end_date" "pg_catalog"."date_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_health_score" ON "public"."crm_customer_health" USING btree (
+  "health_score" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_customer_health
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_health" ADD CONSTRAINT "crm_customer_health_customer_id_key" UNIQUE ("customer_id");
+
+-- ----------------------------
+-- Primary Key structure for table crm_customer_health
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_health" ADD CONSTRAINT "crm_customer_health_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_customer_health_scores
+-- ----------------------------
+CREATE INDEX "idx_crm_customer_health_scores_customer" ON "public"."crm_customer_health_scores" USING btree (
+  "customer_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_health_scores_customer_id" ON "public"."crm_customer_health_scores" USING btree (
+  "customer_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_health_scores_date" ON "public"."crm_customer_health_scores" USING btree (
+  "score_date" "pg_catalog"."date_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_health_scores_deleted" ON "public"."crm_customer_health_scores" USING btree (
+  "deleted_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_health_scores_level" ON "public"."crm_customer_health_scores" USING btree (
+  "health_level" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_customer_health_scores
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_health_scores" ADD CONSTRAINT "crm_customer_health_scores_customer_id_score_date_key" UNIQUE ("customer_id", "score_date");
+
+-- ----------------------------
+-- Checks structure for table crm_customer_health_scores
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_health_scores" ADD CONSTRAINT "crm_customer_health_scores_overall_score_check" CHECK (overall_score >= 0 AND overall_score <= 100);
+
+-- ----------------------------
+-- Primary Key structure for table crm_customer_health_scores
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_health_scores" ADD CONSTRAINT "crm_customer_health_scores_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_customer_pool_logs
+-- ----------------------------
+CREATE INDEX "idx_crm_customer_pool_logs_action" ON "public"."crm_customer_pool_logs" USING btree (
+  "action_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_pool_logs_customer" ON "public"."crm_customer_pool_logs" USING btree (
+  "customer_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_pool_logs_customer_id" ON "public"."crm_customer_pool_logs" USING btree (
+  "customer_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_pool_logs_date" ON "public"."crm_customer_pool_logs" USING btree (
+  "action_date" "pg_catalog"."timestamptz_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_pool_logs_from_dept_id" ON "public"."crm_customer_pool_logs" USING btree (
+  "from_dept_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_pool_logs_from_user" ON "public"."crm_customer_pool_logs" USING btree (
+  "from_user_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_pool_logs_from_user_id" ON "public"."crm_customer_pool_logs" USING btree (
+  "from_user_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_pool_logs_operator_id" ON "public"."crm_customer_pool_logs" USING btree (
+  "operator_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_pool_logs_to_dept_id" ON "public"."crm_customer_pool_logs" USING btree (
+  "to_dept_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_pool_logs_to_user" ON "public"."crm_customer_pool_logs" USING btree (
+  "to_user_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_pool_logs_to_user_id" ON "public"."crm_customer_pool_logs" USING btree (
+  "to_user_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_customer_pool_logs
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_pool_logs" ADD CONSTRAINT "crm_customer_pool_logs_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_customer_profiles
+-- ----------------------------
+CREATE INDEX "idx_crm_customer_profiles_churn" ON "public"."crm_customer_profiles" USING btree (
+  "churn_probability" "pg_catalog"."numeric_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_profiles_customer" ON "public"."crm_customer_profiles" USING btree (
+  "customer_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_profiles_customer_id" ON "public"."crm_customer_profiles" USING btree (
+  "customer_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_profiles_ltv" ON "public"."crm_customer_profiles" USING btree (
+  "lifetime_value" "pg_catalog"."numeric_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_customer_profiles
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_profiles" ADD CONSTRAINT "crm_customer_profiles_customer_id_key" UNIQUE ("customer_id");
+
+-- ----------------------------
+-- Primary Key structure for table crm_customer_profiles
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_profiles" ADD CONSTRAINT "crm_customer_profiles_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_customer_satisfaction_surveys
+-- ----------------------------
+CREATE INDEX "idx_crm_customer_satisfaction_surveys_contact_id" ON "public"."crm_customer_satisfaction_surveys" USING btree (
+  "contact_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_satisfaction_surveys_customer" ON "public"."crm_customer_satisfaction_surveys" USING btree (
+  "customer_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_satisfaction_surveys_customer_id" ON "public"."crm_customer_satisfaction_surveys" USING btree (
+  "customer_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_satisfaction_surveys_dates" ON "public"."crm_customer_satisfaction_surveys" USING btree (
+  "sent_date" "pg_catalog"."date_ops" ASC NULLS LAST,
+  "completed_date" "pg_catalog"."date_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_satisfaction_surveys_nps" ON "public"."crm_customer_satisfaction_surveys" USING btree (
+  "nps_score" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_satisfaction_surveys_order_id" ON "public"."crm_customer_satisfaction_surveys" USING btree (
+  "order_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_satisfaction_surveys_project_id" ON "public"."crm_customer_satisfaction_surveys" USING btree (
+  "project_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_satisfaction_surveys_type" ON "public"."crm_customer_satisfaction_surveys" USING btree (
+  "survey_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_customer_satisfaction_surveys
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_satisfaction_surveys" ADD CONSTRAINT "crm_customer_satisfaction_surveys_survey_code_key" UNIQUE ("survey_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_customer_satisfaction_surveys
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_satisfaction_surveys" ADD CONSTRAINT "crm_customer_satisfaction_surveys_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_customer_tags
+-- ----------------------------
+CREATE INDEX "idx_crm_customer_tags_customer" ON "public"."crm_customer_tags" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_tags_customer_id" ON "public"."crm_customer_tags" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_tags_source" ON "public"."crm_customer_tags" USING btree (
+  "tag_source" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_tags_tag" ON "public"."crm_customer_tags" USING btree (
+  "tag_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_tags_tag_id" ON "public"."crm_customer_tags" USING btree (
+  "tag_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_customer_tags
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_tags" ADD CONSTRAINT "crm_customer_tags_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_customer_timeline
+-- ----------------------------
+CREATE INDEX "idx_crm_customer_timeline_customer" ON "public"."crm_customer_timeline" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "created_at" "pg_catalog"."timestamp_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_customer_timeline_customer_id" ON "public"."crm_customer_timeline" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_timeline_operator_id" ON "public"."crm_customer_timeline" USING btree (
+  "operator_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_timeline_related" ON "public"."crm_customer_timeline" USING btree (
+  "related_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST,
+  "related_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_timeline_related_id" ON "public"."crm_customer_timeline" USING btree (
+  "related_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customer_timeline_type" ON "public"."crm_customer_timeline" USING btree (
+  "event_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_customer_timeline
+-- ----------------------------
+ALTER TABLE "public"."crm_customer_timeline" ADD CONSTRAINT "crm_customer_timeline_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_customers
+-- ----------------------------
+CREATE INDEX "idx_crm_customers_churn" ON "public"."crm_customers" USING btree (
+  "churn_risk" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customers_department_id" ON "public"."crm_customers" USING btree (
+  "department_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customers_health" ON "public"."crm_customers" USING btree (
+  "health_score" "pg_catalog"."numeric_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customers_lead_id" ON "public"."crm_customers" USING btree (
+  "lead_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customers_level" ON "public"."crm_customers" USING btree (
+  "customer_level" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customers_owner_id" ON "public"."crm_customers" USING btree (
+  "owner_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customers_parent" ON "public"."crm_customers" USING btree (
+  "parent_customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customers_protection" ON "public"."crm_customers" USING btree (
+  "protection_deadline" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customers_scale" ON "public"."crm_customers" USING btree (
+  "scale" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customers_segment" ON "public"."crm_customers" USING btree (
+  "customer_segment" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_customers_status" ON "public"."crm_customers" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_customers_lead" ON "public"."crm_customers" USING btree (
+  "lead_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_customers_owner" ON "public"."crm_customers" USING btree (
+  "owner_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_customers
+-- ----------------------------
+ALTER TABLE "public"."crm_customers" ADD CONSTRAINT "crm_customers_customer_code_key" UNIQUE ("customer_code");
+
+-- ----------------------------
+-- Checks structure for table crm_customers
+-- ----------------------------
+ALTER TABLE "public"."crm_customers" ADD CONSTRAINT "crm_customers_rating_check" CHECK (rating >= 1 AND rating <= 5);
+
+-- ----------------------------
+-- Primary Key structure for table crm_customers
+-- ----------------------------
+ALTER TABLE "public"."crm_customers" ADD CONSTRAINT "crm_customers_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_data_dicts
+-- ----------------------------
+CREATE INDEX "idx_crm_data_dicts_code" ON "public"."crm_data_dicts" USING btree (
+  "dict_code" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_data_dicts_deleted" ON "public"."crm_data_dicts" USING btree (
+  "deleted_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_data_dicts_parent" ON "public"."crm_data_dicts" USING btree (
+  "parent_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_data_dicts_parent_id" ON "public"."crm_data_dicts" USING btree (
+  "parent_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_data_dicts_type" ON "public"."crm_data_dicts" USING btree (
+  "dict_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST,
+  "dict_status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "uk_crm_data_dicts_type_code" ON "public"."crm_data_dicts" USING btree (
+  "dict_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST,
+  "dict_code" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+) WHERE is_deleted = false;
+
+-- ----------------------------
+-- Primary Key structure for table crm_data_dicts
+-- ----------------------------
+ALTER TABLE "public"."crm_data_dicts" ADD CONSTRAINT "crm_data_dicts_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_deliveries
+-- ----------------------------
+CREATE INDEX "idx_crm_deliveries_code" ON "public"."crm_deliveries" USING btree (
+  "delivery_code" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_deliveries_date" ON "public"."crm_deliveries" USING btree (
+  "delivery_date" "pg_catalog"."date_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_deliveries_order" ON "public"."crm_deliveries" USING btree (
+  "order_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_deliveries_order_id" ON "public"."crm_deliveries" USING btree (
+  "order_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_deliveries_status" ON "public"."crm_deliveries" USING btree (
+  "delivery_status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_deliveries
+-- ----------------------------
+ALTER TABLE "public"."crm_deliveries" ADD CONSTRAINT "crm_deliveries_delivery_code_key" UNIQUE ("delivery_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_deliveries
+-- ----------------------------
+ALTER TABLE "public"."crm_deliveries" ADD CONSTRAINT "crm_deliveries_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_follow_records
+-- ----------------------------
+CREATE INDEX "idx_crm_follow_records_contact_id" ON "public"."crm_follow_records" USING btree (
+  "contact_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_follow_records_customer" ON "public"."crm_follow_records" USING btree (
+  "customer_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_follow_records_customer_id" ON "public"."crm_follow_records" USING btree (
+  "customer_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_follow_records_date" ON "public"."crm_follow_records" USING btree (
+  "created_at" "pg_catalog"."timestamptz_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_follow_records_opportunity" ON "public"."crm_follow_records" USING btree (
+  "opportunity_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_follow_records_opportunity_id" ON "public"."crm_follow_records" USING btree (
+  "opportunity_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_follow_records_owner" ON "public"."crm_follow_records" USING btree (
+  "created_by" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_follow_records_type" ON "public"."crm_follow_records" USING btree (
+  "follow_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_follow_records
+-- ----------------------------
+ALTER TABLE "public"."crm_follow_records" ADD CONSTRAINT "crm_follow_records_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_followups
+-- ----------------------------
+CREATE INDEX "idx_crm_followups_contact_id" ON "public"."crm_followups" USING btree (
+  "contact_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_followups_creator" ON "public"."crm_followups" USING btree (
+  "created_by" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_followups_customer" ON "public"."crm_followups" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "followup_date" "pg_catalog"."date_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_followups_customer_id" ON "public"."crm_followups" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_followups_date" ON "public"."crm_followups" USING btree (
+  "followup_date" "pg_catalog"."date_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_followups_type" ON "public"."crm_followups" USING btree (
+  "followup_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_followups
+-- ----------------------------
+ALTER TABLE "public"."crm_followups" ADD CONSTRAINT "crm_followups_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_import_records
+-- ----------------------------
+CREATE INDEX "idx_crm_import_records_creator" ON "public"."crm_import_records" USING btree (
+  "created_by" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "created_at" "pg_catalog"."timestamp_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_import_records_status" ON "public"."crm_import_records" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_import_records_type" ON "public"."crm_import_records" USING btree (
+  "import_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST,
+  "created_at" "pg_catalog"."timestamp_ops" DESC NULLS FIRST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_import_records
+-- ----------------------------
+ALTER TABLE "public"."crm_import_records" ADD CONSTRAINT "crm_import_records_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_invoices
+-- ----------------------------
+CREATE INDEX "idx_crm_invoices_contract_id" ON "public"."crm_invoices" USING btree (
+  "contract_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_invoices_customer_id" ON "public"."crm_invoices" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_invoices_order_id" ON "public"."crm_invoices" USING btree (
+  "order_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_invoices_contract" ON "public"."crm_invoices" USING btree (
+  "contract_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_invoices_customer" ON "public"."crm_invoices" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_invoices
+-- ----------------------------
+ALTER TABLE "public"."crm_invoices" ADD CONSTRAINT "crm_invoices_invoice_code_key" UNIQUE ("invoice_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_invoices
+-- ----------------------------
+ALTER TABLE "public"."crm_invoices" ADD CONSTRAINT "crm_invoices_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_joint_followups
+-- ----------------------------
+CREATE INDEX "idx_crm_joint_followups_opportunity" ON "public"."crm_joint_followups" USING btree (
+  "opportunity_id" "pg_catalog"."int8_ops" ASC NULLS LAST,
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_joint_followups_opportunity_id" ON "public"."crm_joint_followups" USING btree (
+  "opportunity_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_joint_followups_user" ON "public"."crm_joint_followups" USING btree (
+  "user_id" "pg_catalog"."int8_ops" ASC NULLS LAST,
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_joint_followups_user_id" ON "public"."crm_joint_followups" USING btree (
+  "user_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_joint_followups_active" ON "public"."crm_joint_followups" USING btree (
+  "opportunity_id" "pg_catalog"."int8_ops" ASC NULLS LAST,
+  "user_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+) WHERE status::text = 'active'::text AND deleted_at IS NULL;
+CREATE INDEX "idx_joint_followups_opportunity" ON "public"."crm_joint_followups" USING btree (
+  "opportunity_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_joint_followups_role" ON "public"."crm_joint_followups" USING btree (
+  "role_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_joint_followups_status" ON "public"."crm_joint_followups" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_joint_followups_user" ON "public"."crm_joint_followups" USING btree (
+  "user_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_joint_followups
+-- ----------------------------
+ALTER TABLE "public"."crm_joint_followups" ADD CONSTRAINT "uk_joint_followup" UNIQUE ("opportunity_id", "user_id", "deleted_at");
+
+-- ----------------------------
+-- Primary Key structure for table crm_joint_followups
+-- ----------------------------
+ALTER TABLE "public"."crm_joint_followups" ADD CONSTRAINT "crm_joint_followups_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_lead_scores
+-- ----------------------------
+CREATE INDEX "idx_crm_lead_scores_grade" ON "public"."crm_lead_scores" USING btree (
+  "score_grade" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_lead_scores_lead" ON "public"."crm_lead_scores" USING btree (
+  "lead_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_lead_scores_lead_id" ON "public"."crm_lead_scores" USING btree (
+  "lead_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_lead_scores_qualified" ON "public"."crm_lead_scores" USING btree (
+  "is_qualified" "pg_catalog"."bool_ops" ASC NULLS LAST,
+  "qualified_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_lead_scores_total" ON "public"."crm_lead_scores" USING btree (
+  "total_score" "pg_catalog"."int4_ops" DESC NULLS FIRST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_lead_scores
+-- ----------------------------
+ALTER TABLE "public"."crm_lead_scores" ADD CONSTRAINT "crm_lead_scores_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_leads
+-- ----------------------------
+CREATE INDEX "idx_crm_leads_campaign_id" ON "public"."crm_leads" USING btree (
+  "campaign_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_leads_code" ON "public"."crm_leads" USING btree (
+  "lead_code" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_leads_converted_customer_id" ON "public"."crm_leads" USING btree (
+  "converted_customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_leads_duplicate" ON "public"."crm_leads" USING btree (
+  "duplicate_check_key" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_leads_owner" ON "public"."crm_leads" USING btree (
+  "owner_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_leads_owner_id" ON "public"."crm_leads" USING btree (
+  "owner_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_leads_score" ON "public"."crm_leads" USING btree (
+  "score" "pg_catalog"."int4_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_leads_source" ON "public"."crm_leads" USING btree (
+  "source" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_leads_status" ON "public"."crm_leads" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST,
+  "is_deleted" "pg_catalog"."bool_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_leads
+-- ----------------------------
+ALTER TABLE "public"."crm_leads" ADD CONSTRAINT "crm_leads_lead_code_key" UNIQUE ("lead_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_leads
+-- ----------------------------
+ALTER TABLE "public"."crm_leads" ADD CONSTRAINT "crm_leads_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_marketing_campaigns
+-- ----------------------------
+CREATE INDEX "idx_crm_marketing_campaigns_deleted" ON "public"."crm_marketing_campaigns" USING btree (
+  "deleted_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_marketing_campaigns_owner_id" ON "public"."crm_marketing_campaigns" USING btree (
+  "owner_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_marketing_campaigns
+-- ----------------------------
+ALTER TABLE "public"."crm_marketing_campaigns" ADD CONSTRAINT "crm_marketing_campaigns_campaign_code_key" UNIQUE ("campaign_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_marketing_campaigns
+-- ----------------------------
+ALTER TABLE "public"."crm_marketing_campaigns" ADD CONSTRAINT "crm_marketing_campaigns_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_marketing_channels
+-- ----------------------------
+CREATE INDEX "idx_crm_marketing_channels_deleted" ON "public"."crm_marketing_channels" USING btree (
+  "deleted_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_marketing_channels_parent" ON "public"."crm_marketing_channels" USING btree (
+  "parent_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_marketing_channels_parent_id" ON "public"."crm_marketing_channels" USING btree (
+  "parent_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_marketing_channels_type" ON "public"."crm_marketing_channels" USING btree (
+  "channel_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST,
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_marketing_channels
+-- ----------------------------
+ALTER TABLE "public"."crm_marketing_channels" ADD CONSTRAINT "crm_marketing_channels_channel_code_key" UNIQUE ("channel_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_marketing_channels
+-- ----------------------------
+ALTER TABLE "public"."crm_marketing_channels" ADD CONSTRAINT "crm_marketing_channels_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_notifications
+-- ----------------------------
+CREATE INDEX "idx_crm_notifications_related_id" ON "public"."crm_notifications" USING btree (
+  "related_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_notifications_type" ON "public"."crm_notifications" USING btree (
+  "notification_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_notifications_user" ON "public"."crm_notifications" USING btree (
+  "user_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "is_read" "pg_catalog"."bool_ops" ASC NULLS LAST,
+  "sent_at" "pg_catalog"."timestamp_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_notifications_user_id" ON "public"."crm_notifications" USING btree (
+  "user_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_notifications
+-- ----------------------------
+ALTER TABLE "public"."crm_notifications" ADD CONSTRAINT "crm_notifications_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_operation_logs
+-- ----------------------------
+CREATE INDEX "idx_crm_operation_logs_module" ON "public"."crm_operation_logs" USING btree (
+  "module" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST,
+  "action" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_operation_logs_status" ON "public"."crm_operation_logs" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_operation_logs_target" ON "public"."crm_operation_logs" USING btree (
+  "target_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST,
+  "target_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_operation_logs_target_id" ON "public"."crm_operation_logs" USING btree (
+  "target_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_operation_logs_time" ON "public"."crm_operation_logs" USING btree (
+  "operated_at" "pg_catalog"."timestamp_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_operation_logs_user" ON "public"."crm_operation_logs" USING btree (
+  "user_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "operated_at" "pg_catalog"."timestamp_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_operation_logs_user_id" ON "public"."crm_operation_logs" USING btree (
+  "user_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_operation_logs
+-- ----------------------------
+ALTER TABLE "public"."crm_operation_logs" ADD CONSTRAINT "crm_operation_logs_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_opportunities
+-- ----------------------------
+CREATE INDEX "idx_crm_opportunities_close_date" ON "public"."crm_opportunities" USING btree (
+  "expected_close_date" "pg_catalog"."date_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_opportunities_code" ON "public"."crm_opportunities" USING btree (
+  "opportunity_code" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_opportunities_customer" ON "public"."crm_opportunities" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "is_deleted" "pg_catalog"."bool_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_opportunities_customer_id" ON "public"."crm_opportunities" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_opportunities_owner" ON "public"."crm_opportunities" USING btree (
+  "owner_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_opportunities_owner_id" ON "public"."crm_opportunities" USING btree (
+  "owner_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_opportunities_stage" ON "public"."crm_opportunities" USING btree (
+  "stage" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_opportunities_customer" ON "public"."crm_opportunities" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_opportunities
+-- ----------------------------
+ALTER TABLE "public"."crm_opportunities" ADD CONSTRAINT "crm_opportunities_opportunity_code_key" UNIQUE ("opportunity_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_opportunities
+-- ----------------------------
+ALTER TABLE "public"."crm_opportunities" ADD CONSTRAINT "crm_opportunities_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_opportunity_products
+-- ----------------------------
+CREATE INDEX "idx_crm_opportunity_products_opportunity" ON "public"."crm_opportunity_products" USING btree (
+  "opportunity_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_opportunity_products_opportunity_id" ON "public"."crm_opportunity_products" USING btree (
+  "opportunity_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_opportunity_products_product" ON "public"."crm_opportunity_products" USING btree (
+  "product_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_opportunity_products_product_id" ON "public"."crm_opportunity_products" USING btree (
+  "product_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_opp_products_amount" ON "public"."crm_opportunity_products" USING btree (
+  "estimated_amount" "pg_catalog"."numeric_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_opp_products_opportunity" ON "public"."crm_opportunity_products" USING btree (
+  "opportunity_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_opp_products_product" ON "public"."crm_opportunity_products" USING btree (
+  "product_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_opportunity_products
+-- ----------------------------
+ALTER TABLE "public"."crm_opportunity_products" ADD CONSTRAINT "uk_opportunity_product" UNIQUE ("opportunity_id", "product_id", "deleted_at");
+
+-- ----------------------------
+-- Primary Key structure for table crm_opportunity_products
+-- ----------------------------
+ALTER TABLE "public"."crm_opportunity_products" ADD CONSTRAINT "crm_opportunity_products_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_opportunity_stages
+-- ----------------------------
+CREATE INDEX "idx_crm_opportunity_stages_deleted" ON "public"."crm_opportunity_stages" USING btree (
+  "deleted_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_opportunity_stages_sequence" ON "public"."crm_opportunity_stages" USING btree (
+  "stage_sequence" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_opportunity_stages_status" ON "public"."crm_opportunity_stages" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_opportunity_stages
+-- ----------------------------
+ALTER TABLE "public"."crm_opportunity_stages" ADD CONSTRAINT "crm_opportunity_stages_stage_code_key" UNIQUE ("stage_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_opportunity_stages
+-- ----------------------------
+ALTER TABLE "public"."crm_opportunity_stages" ADD CONSTRAINT "crm_opportunity_stages_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_order_items
+-- ----------------------------
+CREATE INDEX "idx_crm_order_items_delivery" ON "public"."crm_order_items" USING btree (
+  "delivery_date" "pg_catalog"."date_ops" ASC NULLS LAST,
+  "production_status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_order_items_order" ON "public"."crm_order_items" USING btree (
+  "order_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_order_items_order_id" ON "public"."crm_order_items" USING btree (
+  "order_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_order_items_product" ON "public"."crm_order_items" USING btree (
+  "product_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_order_items_product_id" ON "public"."crm_order_items" USING btree (
+  "product_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_order_items_sku" ON "public"."crm_order_items" USING btree (
+  "sku_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_order_items_sku_id" ON "public"."crm_order_items" USING btree (
+  "sku_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_order_items
+-- ----------------------------
+ALTER TABLE "public"."crm_order_items" ADD CONSTRAINT "crm_order_items_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_orders
+-- ----------------------------
+CREATE INDEX "idx_crm_orders_code" ON "public"."crm_orders" USING btree (
+  "order_code" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_orders_contract" ON "public"."crm_orders" USING btree (
+  "contract_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_orders_contract_id" ON "public"."crm_orders" USING btree (
+  "contract_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_orders_customer" ON "public"."crm_orders" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "order_date" "pg_catalog"."date_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_orders_customer_id" ON "public"."crm_orders" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_orders_owner_id" ON "public"."crm_orders" USING btree (
+  "owner_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_orders_status" ON "public"."crm_orders" USING btree (
+  "order_status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST,
+  "payment_status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_orders_contract" ON "public"."crm_orders" USING btree (
+  "contract_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_orders_customer" ON "public"."crm_orders" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_orders
+-- ----------------------------
+ALTER TABLE "public"."crm_orders" ADD CONSTRAINT "crm_orders_order_code_key" UNIQUE ("order_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_orders
+-- ----------------------------
+ALTER TABLE "public"."crm_orders" ADD CONSTRAINT "crm_orders_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_payments
+-- ----------------------------
+CREATE INDEX "idx_crm_payments_code" ON "public"."crm_payments" USING btree (
+  "payment_code" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_payments_contract" ON "public"."crm_payments" USING btree (
+  "contract_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "payment_date" "pg_catalog"."date_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_payments_contract_id" ON "public"."crm_payments" USING btree (
+  "contract_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_payments_customer" ON "public"."crm_payments" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "payment_date" "pg_catalog"."date_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_payments_customer_id" ON "public"."crm_payments" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_payments_date" ON "public"."crm_payments" USING btree (
+  "payment_date" "pg_catalog"."date_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_payments_invoice_id" ON "public"."crm_payments" USING btree (
+  "invoice_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_payments_method" ON "public"."crm_payments" USING btree (
+  "payment_method" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_payments_order" ON "public"."crm_payments" USING btree (
+  "order_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_payments_order_id" ON "public"."crm_payments" USING btree (
+  "order_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_payments_payment_plan_id" ON "public"."crm_payments" USING btree (
+  "payment_plan_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_payments_plan" ON "public"."crm_payments" USING btree (
+  "payment_plan_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_payments_status" ON "public"."crm_payments" USING btree (
+  "payment_status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_payments_order" ON "public"."crm_payments" USING btree (
+  "order_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_payments
+-- ----------------------------
+ALTER TABLE "public"."crm_payments" ADD CONSTRAINT "crm_payments_payment_code_key" UNIQUE ("payment_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_payments
+-- ----------------------------
+ALTER TABLE "public"."crm_payments" ADD CONSTRAINT "crm_payments_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_pool_transfers
+-- ----------------------------
+CREATE INDEX "idx_crm_pool_transfers_customer" ON "public"."crm_pool_transfers" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_pool_transfers_customer_id" ON "public"."crm_pool_transfers" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_pool_transfers_from_owner_id" ON "public"."crm_pool_transfers" USING btree (
+  "from_owner_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_pool_transfers_operator" ON "public"."crm_pool_transfers" USING btree (
+  "operator_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_pool_transfers_operator_id" ON "public"."crm_pool_transfers" USING btree (
+  "operator_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_pool_transfers_time" ON "public"."crm_pool_transfers" USING btree (
+  "transferred_at" "pg_catalog"."timestamp_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_pool_transfers_to_owner_id" ON "public"."crm_pool_transfers" USING btree (
+  "to_owner_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_pool_transfers
+-- ----------------------------
+ALTER TABLE "public"."crm_pool_transfers" ADD CONSTRAINT "crm_pool_transfers_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_price_tiers
+-- ----------------------------
+CREATE INDEX "idx_crm_price_tiers_code" ON "public"."crm_price_tiers" USING btree (
+  "tier_code" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_price_tiers_deleted" ON "public"."crm_price_tiers" USING btree (
+  "deleted_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_price_tiers_level" ON "public"."crm_price_tiers" USING btree (
+  "customer_level" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_price_tiers
+-- ----------------------------
+ALTER TABLE "public"."crm_price_tiers" ADD CONSTRAINT "crm_price_tiers_tier_code_key" UNIQUE ("tier_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_price_tiers
+-- ----------------------------
+ALTER TABLE "public"."crm_price_tiers" ADD CONSTRAINT "crm_price_tiers_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_product_categories
+-- ----------------------------
+CREATE INDEX "idx_crm_product_categories_deleted" ON "public"."crm_product_categories" USING btree (
+  "deleted_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_categories_level" ON "public"."crm_product_categories" USING btree (
+  "level" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_categories_parent" ON "public"."crm_product_categories" USING btree (
+  "parent_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_categories_parent_id" ON "public"."crm_product_categories" USING btree (
+  "parent_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_product_categories
+-- ----------------------------
+ALTER TABLE "public"."crm_product_categories" ADD CONSTRAINT "crm_product_categories_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_product_documents
+-- ----------------------------
+CREATE INDEX "idx_crm_product_documents_product" ON "public"."crm_product_documents" USING btree (
+  "product_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "is_latest" "pg_catalog"."bool_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_documents_product_id" ON "public"."crm_product_documents" USING btree (
+  "product_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_documents_sku_id" ON "public"."crm_product_documents" USING btree (
+  "sku_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_documents_type" ON "public"."crm_product_documents" USING btree (
+  "doc_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_product_documents
+-- ----------------------------
+ALTER TABLE "public"."crm_product_documents" ADD CONSTRAINT "crm_product_documents_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_product_price_history
+-- ----------------------------
+CREATE INDEX "idx_crm_product_price_history_operator" ON "public"."crm_product_price_history" USING btree (
+  "operator_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_price_history_operator_id" ON "public"."crm_product_price_history" USING btree (
+  "operator_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_price_history_product" ON "public"."crm_product_price_history" USING btree (
+  "product_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "effective_date" "pg_catalog"."date_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_product_price_history_product_id" ON "public"."crm_product_price_history" USING btree (
+  "product_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_product_price_history
+-- ----------------------------
+ALTER TABLE "public"."crm_product_price_history" ADD CONSTRAINT "crm_product_price_history_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_product_price_policies
+-- ----------------------------
+CREATE INDEX "idx_crm_product_price_policies_customer" ON "public"."crm_product_price_policies" USING btree (
+  "customer_level" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST,
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_price_policies_customer_id" ON "public"."crm_product_price_policies" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_price_policies_deleted" ON "public"."crm_product_price_policies" USING btree (
+  "deleted_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_price_policies_product" ON "public"."crm_product_price_policies" USING btree (
+  "product_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_price_policies_product_id" ON "public"."crm_product_price_policies" USING btree (
+  "product_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_price_policies_sku_id" ON "public"."crm_product_price_policies" USING btree (
+  "sku_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_price_policies_type" ON "public"."crm_product_price_policies" USING btree (
+  "policy_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_product_price_policies
+-- ----------------------------
+ALTER TABLE "public"."crm_product_price_policies" ADD CONSTRAINT "crm_product_price_policies_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_product_prices
+-- ----------------------------
+CREATE INDEX "idx_crm_product_prices_customer" ON "public"."crm_product_prices" USING btree (
+  "customer_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_prices_customer_id" ON "public"."crm_product_prices" USING btree (
+  "customer_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_prices_effective" ON "public"."crm_product_prices" USING btree (
+  "effective_from" "pg_catalog"."timestamptz_ops" ASC NULLS LAST,
+  "effective_to" "pg_catalog"."timestamptz_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_prices_product" ON "public"."crm_product_prices" USING btree (
+  "product_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_prices_product_id" ON "public"."crm_product_prices" USING btree (
+  "product_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_prices_sku" ON "public"."crm_product_prices" USING btree (
+  "sku_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_prices_sku_id" ON "public"."crm_product_prices" USING btree (
+  "sku_id" "pg_catalog"."int8_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_prices_type" ON "public"."crm_product_prices" USING btree (
+  "price_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_product_prices
+-- ----------------------------
+ALTER TABLE "public"."crm_product_prices" ADD CONSTRAINT "crm_product_prices_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_product_skus
+-- ----------------------------
+CREATE INDEX "idx_crm_product_skus_code" ON "public"."crm_product_skus" USING btree (
+  "sku_code" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_skus_product" ON "public"."crm_product_skus" USING btree (
+  "product_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_product_skus_product_id" ON "public"."crm_product_skus" USING btree (
+  "product_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_product_skus
+-- ----------------------------
+ALTER TABLE "public"."crm_product_skus" ADD CONSTRAINT "crm_product_skus_sku_code_key" UNIQUE ("sku_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_product_skus
+-- ----------------------------
+ALTER TABLE "public"."crm_product_skus" ADD CONSTRAINT "crm_product_skus_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_products
+-- ----------------------------
+CREATE INDEX "idx_crm_products_category" ON "public"."crm_products" USING btree (
+  "category_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_products_category_id" ON "public"."crm_products" USING btree (
+  "category_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_products_code" ON "public"."crm_products" USING btree (
+  "product_code" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_products_name" ON "public"."crm_products" USING btree (
+  "product_name" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_products_type" ON "public"."crm_products" USING btree (
+  "product_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_products
+-- ----------------------------
+ALTER TABLE "public"."crm_products" ADD CONSTRAINT "crm_products_product_code_key" UNIQUE ("product_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_products
+-- ----------------------------
+ALTER TABLE "public"."crm_products" ADD CONSTRAINT "crm_products_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_quotation_items
+-- ----------------------------
+CREATE INDEX "idx_crm_quotation_items_product_id" ON "public"."crm_quotation_items" USING btree (
+  "product_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_quotation_items_quotation" ON "public"."crm_quotation_items" USING btree (
+  "quotation_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_quotation_items_quotation_id" ON "public"."crm_quotation_items" USING btree (
+  "quotation_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_quotation_items
+-- ----------------------------
+ALTER TABLE "public"."crm_quotation_items" ADD CONSTRAINT "crm_quotation_items_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_quotations
+-- ----------------------------
+CREATE INDEX "idx_crm_quotations_code" ON "public"."crm_quotations" USING btree (
+  "quotation_code" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_quotations_converted_contract_id" ON "public"."crm_quotations" USING btree (
+  "converted_contract_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_quotations_customer" ON "public"."crm_quotations" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_quotations_customer_id" ON "public"."crm_quotations" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_quotations_opportunity_id" ON "public"."crm_quotations" USING btree (
+  "opportunity_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_quotations_status" ON "public"."crm_quotations" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_quotations
+-- ----------------------------
+ALTER TABLE "public"."crm_quotations" ADD CONSTRAINT "crm_quotations_quotation_code_key" UNIQUE ("quotation_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_quotations
+-- ----------------------------
+ALTER TABLE "public"."crm_quotations" ADD CONSTRAINT "crm_quotations_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_renewals
+-- ----------------------------
+CREATE INDEX "idx_crm_renewals_current_contract_id" ON "public"."crm_renewals" USING btree (
+  "current_contract_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_renewals_customer" ON "public"."crm_renewals" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_renewals_customer_id" ON "public"."crm_renewals" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_renewals_dates" ON "public"."crm_renewals" USING btree (
+  "contract_end_date" "pg_catalog"."date_ops" ASC NULLS LAST,
+  "renewal_date" "pg_catalog"."date_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_renewals_new_contract_id" ON "public"."crm_renewals" USING btree (
+  "new_contract_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_renewals_owner_id" ON "public"."crm_renewals" USING btree (
+  "owner_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_renewals_status" ON "public"."crm_renewals" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_renewals
+-- ----------------------------
+ALTER TABLE "public"."crm_renewals" ADD CONSTRAINT "crm_renewals_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_report_instances
+-- ----------------------------
+CREATE INDEX "idx_crm_report_instances_creator" ON "public"."crm_report_instances" USING btree (
+  "generated_by" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "generated_at" "pg_catalog"."timestamp_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_report_instances_template" ON "public"."crm_report_instances" USING btree (
+  "template_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "generated_at" "pg_catalog"."timestamp_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_report_instances_template_id" ON "public"."crm_report_instances" USING btree (
+  "template_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_report_instances
+-- ----------------------------
+ALTER TABLE "public"."crm_report_instances" ADD CONSTRAINT "crm_report_instances_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_report_templates
+-- ----------------------------
+CREATE INDEX "idx_crm_report_templates_owner_id" ON "public"."crm_report_templates" USING btree (
+  "owner_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_report_templates
+-- ----------------------------
+ALTER TABLE "public"."crm_report_templates" ADD CONSTRAINT "crm_report_templates_template_code_key" UNIQUE ("template_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_report_templates
+-- ----------------------------
+ALTER TABLE "public"."crm_report_templates" ADD CONSTRAINT "crm_report_templates_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_sales_activities
+-- ----------------------------
+CREATE INDEX "idx_crm_sales_activities_contact_id" ON "public"."crm_sales_activities" USING btree (
+  "contact_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_sales_activities_creator" ON "public"."crm_sales_activities" USING btree (
+  "created_by" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "activity_date" "pg_catalog"."date_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_sales_activities_customer" ON "public"."crm_sales_activities" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "activity_date" "pg_catalog"."date_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_sales_activities_customer_id" ON "public"."crm_sales_activities" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_sales_activities_opportunity_id" ON "public"."crm_sales_activities" USING btree (
+  "opportunity_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_sales_activities_related_customer_id" ON "public"."crm_sales_activities" USING btree (
+  "related_customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_sales_activities_type" ON "public"."crm_sales_activities" USING btree (
+  "activity_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_sales_activities
+-- ----------------------------
+ALTER TABLE "public"."crm_sales_activities" ADD CONSTRAINT "crm_sales_activities_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_sales_targets
+-- ----------------------------
+CREATE INDEX "idx_crm_sales_targets_deleted" ON "public"."crm_sales_targets" USING btree (
+  "deleted_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_sales_targets_owner_id" ON "public"."crm_sales_targets" USING btree (
+  "owner_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_targets_owner" ON "public"."crm_sales_targets" USING btree (
+  "owner_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "target_year" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_targets_period" ON "public"."crm_sales_targets" USING btree (
+  "target_year" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "target_quarter" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "target_month" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_sales_targets
+-- ----------------------------
+ALTER TABLE "public"."crm_sales_targets" ADD CONSTRAINT "crm_sales_targets_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_satisfaction_surveys
+-- ----------------------------
+CREATE INDEX "idx_crm_satisfaction_surveys_customer" ON "public"."crm_satisfaction_surveys" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "survey_date" "pg_catalog"."date_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_satisfaction_surveys_customer_id" ON "public"."crm_satisfaction_surveys" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_satisfaction_surveys_date" ON "public"."crm_satisfaction_surveys" USING btree (
+  "survey_date" "pg_catalog"."date_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_satisfaction_surveys_deleted" ON "public"."crm_satisfaction_surveys" USING btree (
+  "deleted_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_satisfaction_surveys
+-- ----------------------------
+ALTER TABLE "public"."crm_satisfaction_surveys" ADD CONSTRAINT "crm_satisfaction_surveys_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_tag_definitions
+-- ----------------------------
+CREATE INDEX "idx_crm_tag_definitions_category" ON "public"."crm_tag_definitions" USING btree (
+  "category" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_tag_definitions_code" ON "public"."crm_tag_definitions" USING btree (
+  "tag_code" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_tag_definitions_type" ON "public"."crm_tag_definitions" USING btree (
+  "tag_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_tag_definitions
+-- ----------------------------
+ALTER TABLE "public"."crm_tag_definitions" ADD CONSTRAINT "crm_tag_definitions_tag_code_key" UNIQUE ("tag_code");
+
+-- ----------------------------
+-- Primary Key structure for table crm_tag_definitions
+-- ----------------------------
+ALTER TABLE "public"."crm_tag_definitions" ADD CONSTRAINT "crm_tag_definitions_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_tags
+-- ----------------------------
+CREATE INDEX "idx_crm_tags_category" ON "public"."crm_tags" USING btree (
+  "tag_category" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_tags_deleted" ON "public"."crm_tags" USING btree (
+  "deleted_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_tags_name" ON "public"."crm_tags" USING btree (
+  "tag_name" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_tags
+-- ----------------------------
+ALTER TABLE "public"."crm_tags" ADD CONSTRAINT "crm_tags_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_tasks
+-- ----------------------------
+CREATE INDEX "idx_crm_tasks_assignee" ON "public"."crm_tasks" USING btree (
+  "assignee_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST,
+  "due_date" "pg_catalog"."date_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_tasks_assignee_id" ON "public"."crm_tasks" USING btree (
+  "assignee_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_tasks_assigner_id" ON "public"."crm_tasks" USING btree (
+  "assigner_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_tasks_contact_id" ON "public"."crm_tasks" USING btree (
+  "contact_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_tasks_contract_id" ON "public"."crm_tasks" USING btree (
+  "contract_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_tasks_customer" ON "public"."crm_tasks" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_tasks_customer_id" ON "public"."crm_tasks" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_tasks_deleted" ON "public"."crm_tasks" USING btree (
+  "deleted_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_tasks_due" ON "public"."crm_tasks" USING btree (
+  "due_date" "pg_catalog"."date_ops" ASC NULLS LAST,
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_tasks_opportunity_id" ON "public"."crm_tasks" USING btree (
+  "opportunity_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_tasks
+-- ----------------------------
+ALTER TABLE "public"."crm_tasks" ADD CONSTRAINT "crm_tasks_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_user_extensions
+-- ----------------------------
+CREATE INDEX "idx_crm_user_extensions_manager_id" ON "public"."crm_user_extensions" USING btree (
+  "manager_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_user_extensions_sales_area" ON "public"."crm_user_extensions" USING btree (
+  "sales_area" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_user_extensions_team_id" ON "public"."crm_user_extensions" USING btree (
+  "team_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_user_extensions_user_id" ON "public"."crm_user_extensions" USING btree (
+  "user_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table crm_user_extensions
+-- ----------------------------
+ALTER TABLE "public"."crm_user_extensions" ADD CONSTRAINT "crm_user_extensions_user_id_key" UNIQUE ("user_id");
+
+-- ----------------------------
+-- Primary Key structure for table crm_user_extensions
+-- ----------------------------
+ALTER TABLE "public"."crm_user_extensions" ADD CONSTRAINT "crm_user_extensions_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_workflow_approvals
+-- ----------------------------
+CREATE INDEX "idx_crm_approvals_initiator" ON "public"."crm_workflow_approvals" USING btree (
+  "initiator_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_approvals_status" ON "public"."crm_workflow_approvals" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_approvals_type" ON "public"."crm_workflow_approvals" USING btree (
+  "workflow_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_workflow_approvals_deleted" ON "public"."crm_workflow_approvals" USING btree (
+  "deleted_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_workflow_approvals_initiator_id" ON "public"."crm_workflow_approvals" USING btree (
+  "initiator_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_workflow_approvals_related_id" ON "public"."crm_workflow_approvals" USING btree (
+  "related_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_workflow_approvals
+-- ----------------------------
+ALTER TABLE "public"."crm_workflow_approvals" ADD CONSTRAINT "crm_workflow_approvals_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_workflow_logs
+-- ----------------------------
+CREATE INDEX "idx_crm_workflow_logs_customer" ON "public"."crm_workflow_logs" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_workflow_logs_customer_id" ON "public"."crm_workflow_logs" USING btree (
+  "customer_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_workflow_logs_opportunity_id" ON "public"."crm_workflow_logs" USING btree (
+  "opportunity_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_workflow_logs_result" ON "public"."crm_workflow_logs" USING btree (
+  "execution_result" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_workflow_logs_rule" ON "public"."crm_workflow_logs" USING btree (
+  "rule_id" "pg_catalog"."int4_ops" ASC NULLS LAST,
+  "executed_at" "pg_catalog"."timestamp_ops" DESC NULLS FIRST
+);
+CREATE INDEX "idx_crm_workflow_logs_rule_id" ON "public"."crm_workflow_logs" USING btree (
+  "rule_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_workflow_logs
+-- ----------------------------
+ALTER TABLE "public"."crm_workflow_logs" ADD CONSTRAINT "crm_workflow_logs_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table crm_workflow_rules
+-- ----------------------------
+CREATE INDEX "idx_crm_workflow_rules_deleted" ON "public"."crm_workflow_rules" USING btree (
+  "deleted_at" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_workflow_rules_event" ON "public"."crm_workflow_rules" USING btree (
+  "trigger_event" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "idx_crm_workflow_rules_type" ON "public"."crm_workflow_rules" USING btree (
+  "rule_type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST,
+  "enabled" "pg_catalog"."bool_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table crm_workflow_rules
+-- ----------------------------
+ALTER TABLE "public"."crm_workflow_rules" ADD CONSTRAINT "crm_workflow_rules_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table gen_demo
+-- ----------------------------
+CREATE INDEX "ix_gen_demo_created_id" ON "public"."gen_demo" USING btree (
+  "created_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_demo_created_time" ON "public"."gen_demo" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_demo_id" ON "public"."gen_demo" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_demo_status" ON "public"."gen_demo" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_demo_updated_id" ON "public"."gen_demo" USING btree (
+  "updated_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_demo_updated_time" ON "public"."gen_demo" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_gen_demo_uuid" ON "public"."gen_demo" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table gen_demo
+-- ----------------------------
+ALTER TABLE "public"."gen_demo" ADD CONSTRAINT "gen_demo_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table gen_demo01
+-- ----------------------------
+CREATE INDEX "ix_gen_demo01_created_id" ON "public"."gen_demo01" USING btree (
+  "created_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_demo01_created_time" ON "public"."gen_demo01" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_demo01_id" ON "public"."gen_demo01" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_demo01_status" ON "public"."gen_demo01" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_demo01_updated_id" ON "public"."gen_demo01" USING btree (
+  "updated_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_demo01_updated_time" ON "public"."gen_demo01" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_gen_demo01_uuid" ON "public"."gen_demo01" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table gen_demo01
+-- ----------------------------
+ALTER TABLE "public"."gen_demo01" ADD CONSTRAINT "gen_demo01_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table gen_table
+-- ----------------------------
+CREATE INDEX "ix_gen_table_created_id" ON "public"."gen_table" USING btree (
+  "created_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_table_created_time" ON "public"."gen_table" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_table_id" ON "public"."gen_table" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_table_status" ON "public"."gen_table" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_table_updated_id" ON "public"."gen_table" USING btree (
+  "updated_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_table_updated_time" ON "public"."gen_table" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_gen_table_uuid" ON "public"."gen_table" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table gen_table
+-- ----------------------------
+ALTER TABLE "public"."gen_table" ADD CONSTRAINT "gen_table_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table gen_table_column
+-- ----------------------------
+CREATE INDEX "ix_gen_table_column_created_id" ON "public"."gen_table_column" USING btree (
+  "created_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_table_column_created_time" ON "public"."gen_table_column" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_table_column_id" ON "public"."gen_table_column" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_table_column_status" ON "public"."gen_table_column" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_table_column_table_id" ON "public"."gen_table_column" USING btree (
+  "table_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_table_column_updated_id" ON "public"."gen_table_column" USING btree (
+  "updated_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_gen_table_column_updated_time" ON "public"."gen_table_column" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_gen_table_column_uuid" ON "public"."gen_table_column" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table gen_table_column
+-- ----------------------------
+ALTER TABLE "public"."gen_table_column" ADD CONSTRAINT "gen_table_column_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table sys_dept
+-- ----------------------------
+CREATE INDEX "ix_sys_dept_created_time" ON "public"."sys_dept" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_dept_id" ON "public"."sys_dept" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_dept_parent_id" ON "public"."sys_dept" USING btree (
+  "parent_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_dept_status" ON "public"."sys_dept" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_dept_updated_time" ON "public"."sys_dept" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_sys_dept_uuid" ON "public"."sys_dept" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table sys_dept
+-- ----------------------------
+ALTER TABLE "public"."sys_dept" ADD CONSTRAINT "sys_dept_code_key" UNIQUE ("code");
+
+-- ----------------------------
+-- Primary Key structure for table sys_dept
+-- ----------------------------
+ALTER TABLE "public"."sys_dept" ADD CONSTRAINT "sys_dept_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table sys_dict_data
+-- ----------------------------
+CREATE INDEX "ix_sys_dict_data_created_time" ON "public"."sys_dict_data" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_dict_data_id" ON "public"."sys_dict_data" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_dict_data_status" ON "public"."sys_dict_data" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_dict_data_updated_time" ON "public"."sys_dict_data" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_sys_dict_data_uuid" ON "public"."sys_dict_data" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table sys_dict_data
+-- ----------------------------
+ALTER TABLE "public"."sys_dict_data" ADD CONSTRAINT "sys_dict_data_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table sys_dict_type
+-- ----------------------------
+CREATE INDEX "ix_sys_dict_type_created_time" ON "public"."sys_dict_type" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_dict_type_id" ON "public"."sys_dict_type" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_dict_type_status" ON "public"."sys_dict_type" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_dict_type_updated_time" ON "public"."sys_dict_type" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_sys_dict_type_uuid" ON "public"."sys_dict_type" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table sys_dict_type
+-- ----------------------------
+ALTER TABLE "public"."sys_dict_type" ADD CONSTRAINT "sys_dict_type_dict_type_key" UNIQUE ("dict_type");
+
+-- ----------------------------
+-- Primary Key structure for table sys_dict_type
+-- ----------------------------
+ALTER TABLE "public"."sys_dict_type" ADD CONSTRAINT "sys_dict_type_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table sys_log
+-- ----------------------------
+CREATE INDEX "ix_sys_log_created_id" ON "public"."sys_log" USING btree (
+  "created_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_log_created_time" ON "public"."sys_log" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_log_id" ON "public"."sys_log" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_log_status" ON "public"."sys_log" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_log_updated_id" ON "public"."sys_log" USING btree (
+  "updated_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_log_updated_time" ON "public"."sys_log" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_sys_log_uuid" ON "public"."sys_log" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table sys_log
+-- ----------------------------
+ALTER TABLE "public"."sys_log" ADD CONSTRAINT "sys_log_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table sys_menu
+-- ----------------------------
+CREATE INDEX "ix_sys_menu_created_time" ON "public"."sys_menu" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_menu_id" ON "public"."sys_menu" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_menu_parent_id" ON "public"."sys_menu" USING btree (
+  "parent_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_menu_status" ON "public"."sys_menu" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_menu_updated_time" ON "public"."sys_menu" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_sys_menu_uuid" ON "public"."sys_menu" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table sys_menu
+-- ----------------------------
+ALTER TABLE "public"."sys_menu" ADD CONSTRAINT "sys_menu_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table sys_notice
+-- ----------------------------
+CREATE INDEX "ix_sys_notice_created_id" ON "public"."sys_notice" USING btree (
+  "created_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_notice_created_time" ON "public"."sys_notice" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_notice_id" ON "public"."sys_notice" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_notice_status" ON "public"."sys_notice" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_notice_updated_id" ON "public"."sys_notice" USING btree (
+  "updated_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_notice_updated_time" ON "public"."sys_notice" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_sys_notice_uuid" ON "public"."sys_notice" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table sys_notice
+-- ----------------------------
+ALTER TABLE "public"."sys_notice" ADD CONSTRAINT "sys_notice_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table sys_param
+-- ----------------------------
+CREATE INDEX "ix_sys_param_created_time" ON "public"."sys_param" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_param_id" ON "public"."sys_param" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_param_status" ON "public"."sys_param" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_param_updated_time" ON "public"."sys_param" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_sys_param_uuid" ON "public"."sys_param" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table sys_param
+-- ----------------------------
+ALTER TABLE "public"."sys_param" ADD CONSTRAINT "sys_param_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table sys_position
+-- ----------------------------
+CREATE INDEX "ix_sys_position_created_id" ON "public"."sys_position" USING btree (
+  "created_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_position_created_time" ON "public"."sys_position" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_position_id" ON "public"."sys_position" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_position_status" ON "public"."sys_position" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_position_updated_id" ON "public"."sys_position" USING btree (
+  "updated_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_position_updated_time" ON "public"."sys_position" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_sys_position_uuid" ON "public"."sys_position" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table sys_position
+-- ----------------------------
+ALTER TABLE "public"."sys_position" ADD CONSTRAINT "sys_position_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table sys_role
+-- ----------------------------
+CREATE INDEX "ix_sys_role_created_time" ON "public"."sys_role" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_role_id" ON "public"."sys_role" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_role_status" ON "public"."sys_role" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_role_updated_time" ON "public"."sys_role" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_sys_role_uuid" ON "public"."sys_role" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table sys_role
+-- ----------------------------
+ALTER TABLE "public"."sys_role" ADD CONSTRAINT "sys_role_code_key" UNIQUE ("code");
+
+-- ----------------------------
+-- Primary Key structure for table sys_role
+-- ----------------------------
+ALTER TABLE "public"."sys_role" ADD CONSTRAINT "sys_role_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Primary Key structure for table sys_role_depts
+-- ----------------------------
+ALTER TABLE "public"."sys_role_depts" ADD CONSTRAINT "sys_role_depts_pkey" PRIMARY KEY ("role_id", "dept_id");
+
+-- ----------------------------
+-- Primary Key structure for table sys_role_menus
+-- ----------------------------
+ALTER TABLE "public"."sys_role_menus" ADD CONSTRAINT "sys_role_menus_pkey" PRIMARY KEY ("role_id", "menu_id");
+
+-- ----------------------------
+-- Indexes structure for table sys_tenant
+-- ----------------------------
+CREATE INDEX "ix_sys_tenant_created_time" ON "public"."sys_tenant" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_tenant_id" ON "public"."sys_tenant" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_tenant_status" ON "public"."sys_tenant" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_tenant_updated_time" ON "public"."sys_tenant" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_sys_tenant_uuid" ON "public"."sys_tenant" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table sys_tenant
+-- ----------------------------
+ALTER TABLE "public"."sys_tenant" ADD CONSTRAINT "sys_tenant_name_key" UNIQUE ("name");
+ALTER TABLE "public"."sys_tenant" ADD CONSTRAINT "sys_tenant_code_key" UNIQUE ("code");
+
+-- ----------------------------
+-- Primary Key structure for table sys_tenant
+-- ----------------------------
+ALTER TABLE "public"."sys_tenant" ADD CONSTRAINT "sys_tenant_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table sys_user
+-- ----------------------------
+CREATE INDEX "ix_sys_user_created_id" ON "public"."sys_user" USING btree (
+  "created_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_user_created_time" ON "public"."sys_user" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_user_dept_id" ON "public"."sys_user" USING btree (
+  "dept_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_user_id" ON "public"."sys_user" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_user_status" ON "public"."sys_user" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_user_tenant_id" ON "public"."sys_user" USING btree (
+  "tenant_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_user_updated_id" ON "public"."sys_user" USING btree (
+  "updated_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_sys_user_updated_time" ON "public"."sys_user" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_sys_user_uuid" ON "public"."sys_user" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table sys_user
+-- ----------------------------
+ALTER TABLE "public"."sys_user" ADD CONSTRAINT "sys_user_username_key" UNIQUE ("username");
+ALTER TABLE "public"."sys_user" ADD CONSTRAINT "sys_user_mobile_key" UNIQUE ("mobile");
+ALTER TABLE "public"."sys_user" ADD CONSTRAINT "sys_user_email_key" UNIQUE ("email");
+
+-- ----------------------------
+-- Primary Key structure for table sys_user
+-- ----------------------------
+ALTER TABLE "public"."sys_user" ADD CONSTRAINT "sys_user_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Primary Key structure for table sys_user_positions
+-- ----------------------------
+ALTER TABLE "public"."sys_user_positions" ADD CONSTRAINT "sys_user_positions_pkey" PRIMARY KEY ("user_id", "position_id");
+
+-- ----------------------------
+-- Primary Key structure for table sys_user_roles
+-- ----------------------------
+ALTER TABLE "public"."sys_user_roles" ADD CONSTRAINT "sys_user_roles_pkey" PRIMARY KEY ("user_id", "role_id");
+
+-- ----------------------------
+-- Indexes structure for table task_job
+-- ----------------------------
+CREATE INDEX "ix_task_job_created_time" ON "public"."task_job" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_job_id" ON "public"."task_job" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_job_job_id" ON "public"."task_job" USING btree (
+  "job_id" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_job_updated_time" ON "public"."task_job" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_task_job_uuid" ON "public"."task_job" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Primary Key structure for table task_job
+-- ----------------------------
+ALTER TABLE "public"."task_job" ADD CONSTRAINT "task_job_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table task_node
+-- ----------------------------
+CREATE INDEX "ix_task_node_created_id" ON "public"."task_node" USING btree (
+  "created_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_node_created_time" ON "public"."task_node" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_node_id" ON "public"."task_node" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_node_status" ON "public"."task_node" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_node_updated_id" ON "public"."task_node" USING btree (
+  "updated_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_node_updated_time" ON "public"."task_node" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_task_node_uuid" ON "public"."task_node" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table task_node
+-- ----------------------------
+ALTER TABLE "public"."task_node" ADD CONSTRAINT "task_node_code_key" UNIQUE ("code");
+
+-- ----------------------------
+-- Primary Key structure for table task_node
+-- ----------------------------
+ALTER TABLE "public"."task_node" ADD CONSTRAINT "task_node_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table task_workflow
+-- ----------------------------
+CREATE INDEX "ix_task_workflow_created_id" ON "public"."task_workflow" USING btree (
+  "created_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_workflow_created_time" ON "public"."task_workflow" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_workflow_id" ON "public"."task_workflow" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_workflow_status" ON "public"."task_workflow" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_workflow_updated_id" ON "public"."task_workflow" USING btree (
+  "updated_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_workflow_updated_time" ON "public"."task_workflow" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_task_workflow_uuid" ON "public"."task_workflow" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table task_workflow
+-- ----------------------------
+ALTER TABLE "public"."task_workflow" ADD CONSTRAINT "uq_task_workflow_code" UNIQUE ("code");
+
+-- ----------------------------
+-- Primary Key structure for table task_workflow
+-- ----------------------------
+ALTER TABLE "public"."task_workflow" ADD CONSTRAINT "task_workflow_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Indexes structure for table task_workflow_node_type
+-- ----------------------------
+CREATE INDEX "ix_task_workflow_node_type_created_id" ON "public"."task_workflow_node_type" USING btree (
+  "created_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_workflow_node_type_created_time" ON "public"."task_workflow_node_type" USING btree (
+  "created_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_workflow_node_type_id" ON "public"."task_workflow_node_type" USING btree (
+  "id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_workflow_node_type_status" ON "public"."task_workflow_node_type" USING btree (
+  "status" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_workflow_node_type_updated_id" ON "public"."task_workflow_node_type" USING btree (
+  "updated_id" "pg_catalog"."int4_ops" ASC NULLS LAST
+);
+CREATE INDEX "ix_task_workflow_node_type_updated_time" ON "public"."task_workflow_node_type" USING btree (
+  "updated_time" "pg_catalog"."timestamp_ops" ASC NULLS LAST
+);
+CREATE UNIQUE INDEX "ix_task_workflow_node_type_uuid" ON "public"."task_workflow_node_type" USING btree (
+  "uuid" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+);
+
+-- ----------------------------
+-- Uniques structure for table task_workflow_node_type
+-- ----------------------------
+ALTER TABLE "public"."task_workflow_node_type" ADD CONSTRAINT "task_workflow_node_type_code_key" UNIQUE ("code");
+
+-- ----------------------------
+-- Primary Key structure for table task_workflow_node_type
+-- ----------------------------
+ALTER TABLE "public"."task_workflow_node_type" ADD CONSTRAINT "task_workflow_node_type_pkey" PRIMARY KEY ("id");
+
+-- ----------------------------
+-- Foreign Keys structure for table app_portal
+-- ----------------------------
+ALTER TABLE "public"."app_portal" ADD CONSTRAINT "app_portal_created_id_fkey" FOREIGN KEY ("created_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "public"."app_portal" ADD CONSTRAINT "app_portal_tenant_id_fkey" FOREIGN KEY ("tenant_id") REFERENCES "public"."sys_tenant" ("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE "public"."app_portal" ADD CONSTRAINT "app_portal_updated_id_fkey" FOREIGN KEY ("updated_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+
+-- ----------------------------
+-- Foreign Keys structure for table gen_demo
+-- ----------------------------
+ALTER TABLE "public"."gen_demo" ADD CONSTRAINT "gen_demo_created_id_fkey" FOREIGN KEY ("created_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "public"."gen_demo" ADD CONSTRAINT "gen_demo_updated_id_fkey" FOREIGN KEY ("updated_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+
+-- ----------------------------
+-- Foreign Keys structure for table gen_demo01
+-- ----------------------------
+ALTER TABLE "public"."gen_demo01" ADD CONSTRAINT "gen_demo01_created_id_fkey" FOREIGN KEY ("created_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "public"."gen_demo01" ADD CONSTRAINT "gen_demo01_updated_id_fkey" FOREIGN KEY ("updated_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+
+-- ----------------------------
+-- Foreign Keys structure for table gen_table
+-- ----------------------------
+ALTER TABLE "public"."gen_table" ADD CONSTRAINT "gen_table_created_id_fkey" FOREIGN KEY ("created_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "public"."gen_table" ADD CONSTRAINT "gen_table_updated_id_fkey" FOREIGN KEY ("updated_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+
+-- ----------------------------
+-- Foreign Keys structure for table gen_table_column
+-- ----------------------------
+ALTER TABLE "public"."gen_table_column" ADD CONSTRAINT "gen_table_column_created_id_fkey" FOREIGN KEY ("created_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "public"."gen_table_column" ADD CONSTRAINT "gen_table_column_table_id_fkey" FOREIGN KEY ("table_id") REFERENCES "public"."gen_table" ("id") ON DELETE CASCADE ON UPDATE NO ACTION;
+ALTER TABLE "public"."gen_table_column" ADD CONSTRAINT "gen_table_column_updated_id_fkey" FOREIGN KEY ("updated_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+
+-- ----------------------------
+-- Foreign Keys structure for table sys_dept
+-- ----------------------------
+ALTER TABLE "public"."sys_dept" ADD CONSTRAINT "sys_dept_parent_id_fkey" FOREIGN KEY ("parent_id") REFERENCES "public"."sys_dept" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+
+-- ----------------------------
+-- Foreign Keys structure for table sys_dict_data
+-- ----------------------------
+ALTER TABLE "public"."sys_dict_data" ADD CONSTRAINT "sys_dict_data_dict_type_id_fkey" FOREIGN KEY ("dict_type_id") REFERENCES "public"."sys_dict_type" ("id") ON DELETE CASCADE ON UPDATE NO ACTION;
+
+-- ----------------------------
+-- Foreign Keys structure for table sys_log
+-- ----------------------------
+ALTER TABLE "public"."sys_log" ADD CONSTRAINT "sys_log_created_id_fkey" FOREIGN KEY ("created_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "public"."sys_log" ADD CONSTRAINT "sys_log_updated_id_fkey" FOREIGN KEY ("updated_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+
+-- ----------------------------
+-- Foreign Keys structure for table sys_menu
+-- ----------------------------
+ALTER TABLE "public"."sys_menu" ADD CONSTRAINT "sys_menu_parent_id_fkey" FOREIGN KEY ("parent_id") REFERENCES "public"."sys_menu" ("id") ON DELETE SET NULL ON UPDATE NO ACTION;
+
+-- ----------------------------
+-- Foreign Keys structure for table sys_notice
+-- ----------------------------
+ALTER TABLE "public"."sys_notice" ADD CONSTRAINT "sys_notice_created_id_fkey" FOREIGN KEY ("created_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "public"."sys_notice" ADD CONSTRAINT "sys_notice_updated_id_fkey" FOREIGN KEY ("updated_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+
+-- ----------------------------
+-- Foreign Keys structure for table sys_position
+-- ----------------------------
+ALTER TABLE "public"."sys_position" ADD CONSTRAINT "sys_position_created_id_fkey" FOREIGN KEY ("created_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "public"."sys_position" ADD CONSTRAINT "sys_position_updated_id_fkey" FOREIGN KEY ("updated_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+
+-- ----------------------------
+-- Foreign Keys structure for table sys_role_depts
+-- ----------------------------
+ALTER TABLE "public"."sys_role_depts" ADD CONSTRAINT "sys_role_depts_dept_id_fkey" FOREIGN KEY ("dept_id") REFERENCES "public"."sys_dept" ("id") ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE "public"."sys_role_depts" ADD CONSTRAINT "sys_role_depts_role_id_fkey" FOREIGN KEY ("role_id") REFERENCES "public"."sys_role" ("id") ON DELETE CASCADE ON UPDATE CASCADE;
+
+-- ----------------------------
+-- Foreign Keys structure for table sys_role_menus
+-- ----------------------------
+ALTER TABLE "public"."sys_role_menus" ADD CONSTRAINT "sys_role_menus_menu_id_fkey" FOREIGN KEY ("menu_id") REFERENCES "public"."sys_menu" ("id") ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE "public"."sys_role_menus" ADD CONSTRAINT "sys_role_menus_role_id_fkey" FOREIGN KEY ("role_id") REFERENCES "public"."sys_role" ("id") ON DELETE CASCADE ON UPDATE CASCADE;
+
+-- ----------------------------
+-- Foreign Keys structure for table sys_user
+-- ----------------------------
+ALTER TABLE "public"."sys_user" ADD CONSTRAINT "sys_user_created_id_fkey" FOREIGN KEY ("created_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "public"."sys_user" ADD CONSTRAINT "sys_user_dept_id_fkey" FOREIGN KEY ("dept_id") REFERENCES "public"."sys_dept" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "public"."sys_user" ADD CONSTRAINT "sys_user_tenant_id_fkey" FOREIGN KEY ("tenant_id") REFERENCES "public"."sys_tenant" ("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE "public"."sys_user" ADD CONSTRAINT "sys_user_updated_id_fkey" FOREIGN KEY ("updated_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+
+-- ----------------------------
+-- Foreign Keys structure for table sys_user_positions
+-- ----------------------------
+ALTER TABLE "public"."sys_user_positions" ADD CONSTRAINT "sys_user_positions_position_id_fkey" FOREIGN KEY ("position_id") REFERENCES "public"."sys_position" ("id") ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE "public"."sys_user_positions" ADD CONSTRAINT "sys_user_positions_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."sys_user" ("id") ON DELETE CASCADE ON UPDATE CASCADE;
+
+-- ----------------------------
+-- Foreign Keys structure for table sys_user_roles
+-- ----------------------------
+ALTER TABLE "public"."sys_user_roles" ADD CONSTRAINT "sys_user_roles_role_id_fkey" FOREIGN KEY ("role_id") REFERENCES "public"."sys_role" ("id") ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE "public"."sys_user_roles" ADD CONSTRAINT "sys_user_roles_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."sys_user" ("id") ON DELETE CASCADE ON UPDATE CASCADE;
+
+-- ----------------------------
+-- Foreign Keys structure for table task_node
+-- ----------------------------
+ALTER TABLE "public"."task_node" ADD CONSTRAINT "task_node_created_id_fkey" FOREIGN KEY ("created_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "public"."task_node" ADD CONSTRAINT "task_node_updated_id_fkey" FOREIGN KEY ("updated_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+
+-- ----------------------------
+-- Foreign Keys structure for table task_workflow
+-- ----------------------------
+ALTER TABLE "public"."task_workflow" ADD CONSTRAINT "task_workflow_created_id_fkey" FOREIGN KEY ("created_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "public"."task_workflow" ADD CONSTRAINT "task_workflow_updated_id_fkey" FOREIGN KEY ("updated_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+
+-- ----------------------------
+-- Foreign Keys structure for table task_workflow_node_type
+-- ----------------------------
+ALTER TABLE "public"."task_workflow_node_type" ADD CONSTRAINT "task_workflow_node_type_created_id_fkey" FOREIGN KEY ("created_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "public"."task_workflow_node_type" ADD CONSTRAINT "task_workflow_node_type_updated_id_fkey" FOREIGN KEY ("updated_id") REFERENCES "public"."sys_user" ("id") ON DELETE SET NULL ON UPDATE CASCADE;

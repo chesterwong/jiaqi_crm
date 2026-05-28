@@ -1,0 +1,529 @@
+================================================================================
+07-crm-enum.sql 枚举字段清单
+================================================================================
+
+总注释数: 1258
+枚举字段数: 138
+字典已定义: 56
+字典未定义: 82
+
+================================================================================
+枚举字段清单（按表分组）
+================================================================================
+
+表: crm_ai_customer_profiles (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ engagement_level               -> crm_ai_customer_profiles_engagement_level          | 等级
+     注释: 参与度等级
+  ❌ preferred_contact_method       -> crm_ai_customer_profiles_preferred_contact_method  | 方法
+     注释: 首选联系方式
+
+表: crm_ai_recommendations (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ entity_type                    -> crm_ai_recommendations_entity_type                 | 类型
+     注释: 实体类型
+  ❌ recommendation_type            -> crm_ai_recommendations_recommendation_type         | 类型
+     注释: 推荐类型
+
+表: crm_campaign_leads (3 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ participation_type             -> crm_campaign_leads_participation_type              | 类型
+     注释: 参与类型
+  ❌ attendance_status              -> crm_campaign_leads_attendance_status               | 状态
+     注释: 出席状态
+  ✅ is_converted                   -> crm_campaign_leads_is_converted                    | 是否
+     注释: 是否已转化:0-否,1-是
+
+表: crm_campaigns (1 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ campaign_type                  -> crm_campaigns_campaign_type                        | 类型
+     注释: 活动类型
+
+表: crm_contact_change_logs (1 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ change_type                    -> crm_contact_change_logs_change_type                | 类型
+     注释: 变更类型
+
+表: crm_contact_relations (5 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ related_entity_type            -> crm_contact_relations_related_entity_type          | 类型
+     注释: 关联实体类型
+  ❌ relation_type                  -> crm_contact_relations_relation_type                | 类型
+     注释: 关系类型
+  ❌ decision_role                  -> crm_contact_relations_decision_role                | 角色
+     注释: 决策角色
+  ❌ influence_level                -> crm_contact_relations_influence_level              | 等级
+     注释: 影响力等级
+  ✅ is_deleted                     -> crm_contact_relations_is_deleted                   | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_contact_visits (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ✅ visit_type                     -> crm_contact_visits_visit_type                      | 类型
+     注释: 拜访类型:1-首次拜访,2-常规拜访,3-回访,4-线上沟通,5-会议
+  ✅ is_deleted                     -> crm_contact_visits_is_deleted                      | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_contacts (3 个枚举字段)
+--------------------------------------------------------------------------------
+  ✅ is_primary                     -> crm_contacts_is_primary                            | 是否
+     注释: 是否主要联系人:0-否,1-是
+  ❌ influence_level                -> crm_contacts_influence_level                       | 等级
+     注释: 影响力等级
+  ✅ is_deleted                     -> crm_contacts_is_deleted                            | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_contract_invoices (3 个枚举字段)
+--------------------------------------------------------------------------------
+  ✅ invoice_type                   -> crm_contract_invoices_invoice_type                 | 类型
+     注释: 发票类型:1-增值税专票,2-增值税普票,3-普通发票
+  ✅ invoice_status                 -> crm_contract_invoices_invoice_status               | 状态
+     注释: 发票状态:1-草稿,2-已开具,3-已发送,4-已收款,5-已作废
+  ✅ is_deleted                     -> crm_contract_invoices_is_deleted                   | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_contracts (3 个枚举字段)
+--------------------------------------------------------------------------------
+  ✅ contract_type                  -> crm_contracts_contract_type                        | 类型
+     注释: 合同类型:1-销售合同,2-服务合同,3-框架协议,4-续签合同,5-变更协议,6-终止协议
+  ✅ approval_status                -> crm_contracts_approval_status                      | 状态
+     注释: 审批状态:1-待审批,2-审批中,3-已通过,4-已拒绝,5-已撤销
+  ✅ is_deleted                     -> crm_contracts_is_deleted                           | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_customer_activities (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ✅ activity_type                  -> crm_customer_activities_activity_type              | 类型
+     注释: 活动类型:1-电话,2-邮件,3-拜访,4-会议,5-培训,6-展会
+  ❌ related_type                   -> crm_customer_activities_related_type               | 类型
+     注释: 关联类型
+
+表: crm_customer_addresses (4 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ address_type                   -> crm_customer_addresses_address_type                | 类型
+     注释: 地址类型
+  ✅ is_default                     -> crm_customer_addresses_is_default                  | 是否
+     注释: 是否默认:0-否,1-是
+  ✅ is_active                      -> crm_customer_addresses_is_active                   | 是否
+     注释: 是否启用:0-否,1-是
+  ✅ is_deleted                     -> crm_customer_addresses_is_deleted                  | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_customer_attachments (4 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ file_type                      -> crm_customer_attachments_file_type                 | 类型
+     注释: 文件类型
+  ❌ mime_type                      -> crm_customer_attachments_mime_type                 | 类型
+     注释: MIME类型
+  ❌ attachment_type                -> crm_customer_attachments_attachment_type           | 类型
+     注释: 附件类型
+  ✅ is_deleted                     -> crm_customer_attachments_is_deleted                | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_customer_change_logs (1 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ change_type                    -> crm_customer_change_logs_change_type               | 类型
+     注释: 变更类型
+
+表: crm_customer_duplicate_logs (1 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ collision_type                 -> crm_customer_duplicate_logs_collision_type         | 类型
+     注释: 冲突类型
+
+表: crm_customer_health (3 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ health_level                   -> crm_customer_health_health_level                   | 等级
+     注释: 健康等级
+  ❌ risk_level                     -> crm_customer_health_risk_level                     | 等级
+     注释: 风险等级
+  ❌ renewal_status                 -> crm_customer_health_renewal_status                 | 状态
+     注释: 续约状态
+
+表: crm_customer_health_scores (1 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ health_level                   -> crm_customer_health_scores_health_level            | 等级
+     注释: 健康等级
+
+表: crm_customer_pool_logs (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ action_type                    -> crm_customer_pool_logs_action_type                 | 类型
+     注释: 操作类型
+  ❌ transfer_type                  -> crm_customer_pool_logs_transfer_type               | 类型
+     注释: 转移类型
+
+表: crm_customer_satisfaction_surveys (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ survey_type                    -> crm_customer_satisfaction_surveys_survey_type      | 类型
+     注释: 调查类型
+  ❌ follow_up_status               -> crm_customer_satisfaction_surveys_follow_up_status | 状态
+     注释: 跟进状态
+
+表: crm_customer_tags (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ tag_source                     -> crm_customer_tags_tag_source                       | 来源
+     注释: 标签来源
+  ✅ is_deleted                     -> crm_customer_tags_is_deleted                       | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_customer_timeline (3 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ event_type                     -> crm_customer_timeline_event_type                   | 类型
+     注释: 事件类型
+  ❌ event_category                 -> crm_customer_timeline_event_category               | 分类
+     注释: 事件分类
+  ❌ related_type                   -> crm_customer_timeline_related_type                 | 类型
+     注释: 关联类型
+
+表: crm_customers (4 个枚举字段)
+--------------------------------------------------------------------------------
+  ✅ customer_type                  -> crm_customers_customer_type                        | 类型
+     注释: 客户类型:1-企业客户,2-个人客户,3-政府机构,4-事业单位,5-合作伙伴
+  ✅ pool_status                    -> crm_customers_pool_status                          | 状态
+     注释: 公海池状态:1-私有,2-公海
+  ❌ customer_level                 -> crm_customers_customer_level                       | 等级
+     注释: 客户等级:A/B/C/D
+  ❌ is_parent                      -> crm_customers_is_parent                            | 是否
+     注释: 是否父客户(集团总部)
+
+表: crm_data_dicts (5 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ dict_type                      -> crm_data_dicts_dict_type                           | 类型
+     注释: 字典类型
+  ✅ is_leaf                        -> crm_data_dicts_is_leaf                             | 是否
+     注释: 是否叶子节点:0-否,1-是
+  ❌ dict_status                    -> crm_data_dicts_dict_status                         | 状态
+     注释: 字典状态
+  ✅ is_default                     -> crm_data_dicts_is_default                          | 是否
+     注释: 是否默认:0-否,1-是
+  ✅ is_deleted                     -> crm_data_dicts_is_deleted                          | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_deliveries (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ delivery_method                -> crm_deliveries_delivery_method                     | 方法
+     注释: 交付方式
+  ❌ delivery_status                -> crm_deliveries_delivery_status                     | 状态
+     注释: 物流状态
+
+表: crm_follow_records (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ✅ follow_type                    -> crm_follow_records_follow_type                     | 类型
+     注释: 跟进方式:1-电话,2-邮件,3-拜访,4-微信,5-其他
+  ❌ contact_mode                   -> crm_follow_records_contact_mode                    | 模式
+     注释: 联系方式
+
+表: crm_followups (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ followup_type                  -> crm_followups_followup_type                        | 类型
+     注释: 跟进类型
+  ✅ is_deleted                     -> crm_followups_is_deleted                           | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_import_records (1 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ import_type                    -> crm_import_records_import_type                     | 类型
+     注释: 导入类型
+
+表: crm_invoices (1 个枚举字段)
+--------------------------------------------------------------------------------
+  ✅ invoice_type                   -> crm_invoices_invoice_type                          | 类型
+     注释: 发票类型:1-增值税专票,2-增值税普票,3-普通发票
+
+表: crm_joint_followups (3 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ role_type                      -> crm_joint_followups_role_type                      | 类型
+     注释: 角色类型
+  ✅ can_edit                       -> crm_joint_followups_can_edit                       | 是否可以
+     注释: 是否可编辑:0-否,1-是
+  ✅ can_view_sensitive             -> crm_joint_followups_can_view_sensitive             | 是否可以
+     注释: 是否可查看敏感信息:0-否,1-是
+
+表: crm_lead_scores (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ score_level                    -> crm_lead_scores_score_level                        | 等级
+     注释: 评分等级
+  ❌ is_qualified                   -> crm_lead_scores_is_qualified                       | 是否
+     注释: 是否合格
+
+表: crm_leads (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ nurturing_stage                -> crm_leads_nurturing_stage                          | 阶段
+     注释: 培育阶段
+  ✅ is_deleted                     -> crm_leads_is_deleted                               | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_marketing_campaigns (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ campaign_type                  -> crm_marketing_campaigns_campaign_type              | 类型
+     注释: 活动类型
+  ✅ is_deleted                     -> crm_marketing_campaigns_is_deleted                 | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_marketing_channels (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ channel_type                   -> crm_marketing_channels_channel_type                | 类型
+     注释: 渠道类型
+  ❌ channel_category               -> crm_marketing_channels_channel_category            | 分类
+     注释: 渠道分类
+
+表: crm_notifications (3 个枚举字段)
+--------------------------------------------------------------------------------
+  ✅ notification_type              -> crm_notifications_notification_type                | 类型
+     注释: 通知类型:1-系统通知,2-审批通知,3-提醒通知,4-公告
+  ❌ related_type                   -> crm_notifications_related_type                     | 类型
+     注释: 关联类型
+  ✅ is_read                        -> crm_notifications_is_read                          | 是否
+     注释: 是否已读:0-未读,1-已读
+
+表: crm_operation_logs (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ target_type                    -> crm_operation_logs_target_type                     | 类型
+     注释: 目标类型
+  ❌ request_method                 -> crm_operation_logs_request_method                  | 方法
+     注释: 请求方法
+
+表: crm_opportunities (1 个枚举字段)
+--------------------------------------------------------------------------------
+  ✅ is_deleted                     -> crm_opportunities_is_deleted                       | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_opportunity_products (1 个枚举字段)
+--------------------------------------------------------------------------------
+  ✅ is_preferred                   -> crm_opportunity_products_is_preferred              | 是否
+     注释: 是否首选:0-否,1-是
+
+表: crm_opportunity_stages (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ is_system                      -> crm_opportunity_stages_is_system                   | 是否
+     注释: 是否系统内置
+  ❌ is_final                       -> crm_opportunity_stages_is_final                    | 是否
+     注释: 是否终态
+
+表: crm_order_items (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ production_status              -> crm_order_items_production_status                  | 状态
+     注释: 生产状态
+  ✅ is_deleted                     -> crm_order_items_is_deleted                         | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_orders (3 个枚举字段)
+--------------------------------------------------------------------------------
+  ✅ order_status                   -> crm_orders_order_status                            | 状态
+     注释: 订单状态:1-待确认,2-已确认,3-生产中,4-已发货,5-已完成,6-已取消
+  ✅ payment_status                 -> crm_orders_payment_status                          | 状态
+     注释: 付款状态:1-未付款,2-部分付款,3-已付款,4-退款中,5-已退款
+  ✅ is_deleted                     -> crm_orders_is_deleted                              | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_payments (4 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ payment_method                 -> crm_payments_payment_method                        | 方法
+     注释: 付款方式
+  ❌ is_invoiced                    -> crm_payments_is_invoiced                           | 是否
+     注释: 是否已开票
+  ✅ payment_status                 -> crm_payments_payment_status                        | 状态
+     注释: 付款状态:1-未付款,2-部分付款,3-已付款,4-退款中,5-已退款
+  ✅ is_deleted                     -> crm_payments_is_deleted                            | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_pool_transfers (1 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ transfer_type                  -> crm_pool_transfers_transfer_type                   | 类型
+     注释: 转移类型
+
+表: crm_price_tiers (1 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ customer_level                 -> crm_price_tiers_customer_level                     | 等级
+     注释: 客户等级:A-战略客户,B-重要客户,C-普通客户,D-潜在客户
+
+表: crm_product_documents (4 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ doc_type                       -> crm_product_documents_doc_type                     | 类型
+     注释: 文档类型
+  ❌ mime_type                      -> crm_product_documents_mime_type                    | 类型
+     注释: MIME类型
+  ❌ is_latest                      -> crm_product_documents_is_latest                    | 是否
+     注释: 是否最新版本
+  ✅ is_deleted                     -> crm_product_documents_is_deleted                   | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_product_price_history (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ price_type                     -> crm_product_price_history_price_type               | 类型
+     注释: 价格类型
+  ✅ approval_status                -> crm_product_price_history_approval_status          | 状态
+     注释: 审批状态:1-待审批,2-审批中,3-已通过,4-已拒绝,5-已撤销
+
+表: crm_product_price_policies (3 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ policy_type                    -> crm_product_price_policies_policy_type             | 类型
+     注释: 策略类型
+  ❌ customer_level                 -> crm_product_price_policies_customer_level          | 等级
+     注释: 客户等级:A-战略客户,B-重要客户,C-普通客户,D-潜在客户
+  ✅ is_deleted                     -> crm_product_price_policies_is_deleted              | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_product_prices (4 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ price_type                     -> crm_product_prices_price_type                      | 类型
+     注释: 价格类型
+  ✅ is_active                      -> crm_product_prices_is_active                       | 是否
+     注释: 是否启用:0-否,1-是
+  ❌ customer_level                 -> crm_product_prices_customer_level                  | 等级
+     注释: 客户等级:A-战略客户,B-重要客户,C-普通客户,D-潜在客户
+  ✅ approval_status                -> crm_product_prices_approval_status                 | 状态
+     注释: 审批状态:1-待审批,2-审批中,3-已通过,4-已拒绝,5-已撤销
+
+表: crm_product_skus (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ✅ is_default                     -> crm_product_skus_is_default                        | 是否
+     注释: 是否默认:0-否,1-是
+  ✅ is_deleted                     -> crm_product_skus_is_deleted                        | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_products (3 个枚举字段)
+--------------------------------------------------------------------------------
+  ✅ product_type                   -> crm_products_product_type                          | 类型
+     注释: 产品类型:1-硬件,2-软件,3-服务
+  ❌ is_featured                    -> crm_products_is_featured                           | 是否
+     注释: 是否推荐
+  ✅ is_deleted                     -> crm_products_is_deleted                            | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_quotations (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ✅ approval_status                -> crm_quotations_approval_status                     | 状态
+     注释: 审批状态:1-待审批,2-审批中,3-已通过,4-已拒绝,5-已撤销
+  ✅ is_deleted                     -> crm_quotations_is_deleted                          | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_renewals (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ renewal_type                   -> crm_renewals_renewal_type                          | 类型
+     注释: 续约类型
+  ✅ is_deleted                     -> crm_renewals_is_deleted                            | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_report_templates (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ report_type                    -> crm_report_templates_report_type                   | 类型
+     注释: 报表类型
+  ❌ is_public                      -> crm_report_templates_is_public                     | 是否
+     注释: 是否公开
+
+表: crm_sales_activities (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ✅ activity_type                  -> crm_sales_activities_activity_type                 | 类型
+     注释: 活动类型:1-电话,2-邮件,3-拜访,4-会议,5-培训,6-展会
+  ✅ is_deleted                     -> crm_sales_activities_is_deleted                    | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_satisfaction_surveys (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ survey_type                    -> crm_satisfaction_surveys_survey_type               | 类型
+     注释: 调查类型
+  ✅ is_deleted                     -> crm_satisfaction_surveys_is_deleted                | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_tag_definitions (3 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ tag_type                       -> crm_tag_definitions_tag_type                       | 类型
+     注释: 标签类型
+  ❌ is_multi_select                -> crm_tag_definitions_is_multi_select                | 是否
+     注释: 是否多选
+  ❌ is_required                    -> crm_tag_definitions_is_required                    | 是否
+     注释: 是否必填
+
+表: crm_tags (1 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ tag_category                   -> crm_tags_tag_category                              | 分类
+     注释: 标签分类
+
+表: crm_tasks (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ task_type                      -> crm_tasks_task_type                                | 类型
+     注释: 任务类型
+  ✅ is_deleted                     -> crm_tasks_is_deleted                               | 是否
+     注释: 逻辑删除标记:0-未删除,1-已删除
+
+表: crm_test_monitor_report (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ test_type                      -> crm_test_monitor_report_test_type                  | 类型
+     注释: 测试类型(api/ui/all)
+  ❌ is_completed                   -> crm_test_monitor_report_is_completed               | 是否
+     注释: 是否完成(0否/1是)
+
+表: crm_workflow_approvals (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ workflow_type                  -> crm_workflow_approvals_workflow_type               | 类型
+     注释: 工作流类型
+  ❌ related_type                   -> crm_workflow_approvals_related_type                | 类型
+     注释: 关联类型
+
+表: crm_workflow_rules (2 个枚举字段)
+--------------------------------------------------------------------------------
+  ❌ rule_type                      -> crm_workflow_rules_rule_type                       | 类型
+     注释: 规则类型
+  ❌ action_type                    -> crm_workflow_rules_action_type                     | 类型
+     注释: 操作类型
+
+================================================================================
+需要添加 [dict_type] 标记的 SQL 语句
+================================================================================
+
+1. COMMENT ON COLUMN "crm_campaign_leads"."is_converted" IS '是否已转化:0-否,1-是 [crm_campaign_leads_is_converted]';
+2. COMMENT ON COLUMN "crm_contact_relations"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_contact_relations_is_deleted]';
+3. COMMENT ON COLUMN "crm_contact_visits"."visit_type" IS '拜访类型:1-首次拜访,2-常规拜访,3-回访,4-线上沟通,5-会议 [crm_contact_visits_visit_type]';
+4. COMMENT ON COLUMN "crm_contact_visits"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_contact_visits_is_deleted]';
+5. COMMENT ON COLUMN "crm_contacts"."is_primary" IS '是否主要联系人:0-否,1-是 [crm_contacts_is_primary]';
+6. COMMENT ON COLUMN "crm_contacts"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_contacts_is_deleted]';
+7. COMMENT ON COLUMN "crm_contract_invoices"."invoice_type" IS '发票类型:1-增值税专票,2-增值税普票,3-普通发票 [crm_contract_invoices_invoice_type]';
+8. COMMENT ON COLUMN "crm_contract_invoices"."invoice_status" IS '发票状态:1-草稿,2-已开具,3-已发送,4-已收款,5-已作废 [crm_contract_invoices_invoice_status]';
+9. COMMENT ON COLUMN "crm_contract_invoices"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_contract_invoices_is_deleted]';
+10. COMMENT ON COLUMN "crm_contracts"."contract_type" IS '合同类型:1-销售合同,2-服务合同,3-框架协议,4-续签合同,5-变更协议,6-终止协议 [crm_contracts_contract_type]';
+11. COMMENT ON COLUMN "crm_contracts"."approval_status" IS '审批状态:1-待审批,2-审批中,3-已通过,4-已拒绝,5-已撤销 [crm_contracts_approval_status]';
+12. COMMENT ON COLUMN "crm_contracts"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_contracts_is_deleted]';
+13. COMMENT ON COLUMN "crm_customer_activities"."activity_type" IS '活动类型:1-电话,2-邮件,3-拜访,4-会议,5-培训,6-展会 [crm_customer_activities_activity_type]';
+14. COMMENT ON COLUMN "crm_customer_addresses"."is_default" IS '是否默认:0-否,1-是 [crm_customer_addresses_is_default]';
+15. COMMENT ON COLUMN "crm_customer_addresses"."is_active" IS '是否启用:0-否,1-是 [crm_customer_addresses_is_active]';
+16. COMMENT ON COLUMN "crm_customer_addresses"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_customer_addresses_is_deleted]';
+17. COMMENT ON COLUMN "crm_customer_attachments"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_customer_attachments_is_deleted]';
+18. COMMENT ON COLUMN "crm_customer_tags"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_customer_tags_is_deleted]';
+19. COMMENT ON COLUMN "crm_customers"."customer_type" IS '客户类型:1-企业客户,2-个人客户,3-政府机构,4-事业单位,5-合作伙伴 [crm_customers_customer_type]';
+20. COMMENT ON COLUMN "crm_customers"."pool_status" IS '公海池状态:1-私有,2-公海 [crm_customers_pool_status]';
+21. COMMENT ON COLUMN "crm_data_dicts"."is_leaf" IS '是否叶子节点:0-否,1-是 [crm_data_dicts_is_leaf]';
+22. COMMENT ON COLUMN "crm_data_dicts"."is_default" IS '是否默认:0-否,1-是 [crm_data_dicts_is_default]';
+23. COMMENT ON COLUMN "crm_data_dicts"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_data_dicts_is_deleted]';
+24. COMMENT ON COLUMN "crm_follow_records"."follow_type" IS '跟进方式:1-电话,2-邮件,3-拜访,4-微信,5-其他 [crm_follow_records_follow_type]';
+25. COMMENT ON COLUMN "crm_followups"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_followups_is_deleted]';
+26. COMMENT ON COLUMN "crm_invoices"."invoice_type" IS '发票类型:1-增值税专票,2-增值税普票,3-普通发票 [crm_invoices_invoice_type]';
+27. COMMENT ON COLUMN "crm_joint_followups"."can_edit" IS '是否可编辑:0-否,1-是 [crm_joint_followups_can_edit]';
+28. COMMENT ON COLUMN "crm_joint_followups"."can_view_sensitive" IS '是否可查看敏感信息:0-否,1-是 [crm_joint_followups_can_view_sensitive]';
+29. COMMENT ON COLUMN "crm_leads"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_leads_is_deleted]';
+30. COMMENT ON COLUMN "crm_marketing_campaigns"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_marketing_campaigns_is_deleted]';
+31. COMMENT ON COLUMN "crm_notifications"."notification_type" IS '通知类型:1-系统通知,2-审批通知,3-提醒通知,4-公告 [crm_notifications_notification_type]';
+32. COMMENT ON COLUMN "crm_notifications"."is_read" IS '是否已读:0-未读,1-已读 [crm_notifications_is_read]';
+33. COMMENT ON COLUMN "crm_opportunities"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_opportunities_is_deleted]';
+34. COMMENT ON COLUMN "crm_opportunity_products"."is_preferred" IS '是否首选:0-否,1-是 [crm_opportunity_products_is_preferred]';
+35. COMMENT ON COLUMN "crm_order_items"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_order_items_is_deleted]';
+36. COMMENT ON COLUMN "crm_orders"."order_status" IS '订单状态:1-待确认,2-已确认,3-生产中,4-已发货,5-已完成,6-已取消 [crm_orders_order_status]';
+37. COMMENT ON COLUMN "crm_orders"."payment_status" IS '付款状态:1-未付款,2-部分付款,3-已付款,4-退款中,5-已退款 [crm_orders_payment_status]';
+38. COMMENT ON COLUMN "crm_orders"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_orders_is_deleted]';
+39. COMMENT ON COLUMN "crm_payments"."payment_status" IS '付款状态:1-未付款,2-部分付款,3-已付款,4-退款中,5-已退款 [crm_payments_payment_status]';
+40. COMMENT ON COLUMN "crm_payments"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_payments_is_deleted]';
+41. COMMENT ON COLUMN "crm_product_documents"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_product_documents_is_deleted]';
+42. COMMENT ON COLUMN "crm_product_price_history"."approval_status" IS '审批状态:1-待审批,2-审批中,3-已通过,4-已拒绝,5-已撤销 [crm_product_price_history_approval_status]';
+43. COMMENT ON COLUMN "crm_product_price_policies"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_product_price_policies_is_deleted]';
+44. COMMENT ON COLUMN "crm_product_prices"."is_active" IS '是否启用:0-否,1-是 [crm_product_prices_is_active]';
+45. COMMENT ON COLUMN "crm_product_prices"."approval_status" IS '审批状态:1-待审批,2-审批中,3-已通过,4-已拒绝,5-已撤销 [crm_product_prices_approval_status]';
+46. COMMENT ON COLUMN "crm_product_skus"."is_default" IS '是否默认:0-否,1-是 [crm_product_skus_is_default]';
+47. COMMENT ON COLUMN "crm_product_skus"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_product_skus_is_deleted]';
+48. COMMENT ON COLUMN "crm_products"."product_type" IS '产品类型:1-硬件,2-软件,3-服务 [crm_products_product_type]';
+49. COMMENT ON COLUMN "crm_products"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_products_is_deleted]';
+50. COMMENT ON COLUMN "crm_quotations"."approval_status" IS '审批状态:1-待审批,2-审批中,3-已通过,4-已拒绝,5-已撤销 [crm_quotations_approval_status]';
+51. COMMENT ON COLUMN "crm_quotations"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_quotations_is_deleted]';
+52. COMMENT ON COLUMN "crm_renewals"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_renewals_is_deleted]';
+53. COMMENT ON COLUMN "crm_sales_activities"."activity_type" IS '活动类型:1-电话,2-邮件,3-拜访,4-会议,5-培训,6-展会 [crm_sales_activities_activity_type]';
+54. COMMENT ON COLUMN "crm_sales_activities"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_sales_activities_is_deleted]';
+55. COMMENT ON COLUMN "crm_satisfaction_surveys"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_satisfaction_surveys_is_deleted]';
+56. COMMENT ON COLUMN "crm_tasks"."is_deleted" IS '逻辑删除标记:0-未删除,1-已删除 [crm_tasks_is_deleted]';

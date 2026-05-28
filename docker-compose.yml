@@ -1,0 +1,99 @@
+# ========================================
+# FastapiAdmin 本地开发环境 Docker 配置
+# 仅包含数据库服务（PostgreSQL + Redis）
+# 后端和前端在本地直接运行
+# ========================================
+
+version: '3.8'
+
+services:
+  # PostgreSQL 数据库服务
+  postgres:
+    container_name: fastapiadmin-postgres
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      TZ: "Asia/Shanghai"
+      POSTGRES_DB: "fastapiadmin"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "FastapiAdmin@2026"
+    ports:
+      - "5432:5432"  # 固定端口：5432
+    volumes:
+      # 持久化 PostgreSQL 数据
+      - ./devops/postgres/data:/var/lib/postgresql/data
+    networks:
+      - fastapiadmin-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d fastapiadmin"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+  # Redis 缓存服务
+  redis:
+    container_name: fastapiadmin-redis
+    image: redis:7-alpine
+    restart: always
+    environment:
+      TZ: "Asia/Shanghai"
+    ports:
+      - "6379:6379"  # 固定端口：6379
+    volumes:
+      # 持久化 Redis 数据
+      - ./devops/redis/data:/data
+    command: >
+      redis-server 
+      --requirepass FastapiAdmin@2026
+      --appendonly yes
+    networks:
+      - fastapiadmin-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "FastapiAdmin@2026", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 5s
+
+  # PostgreSQL 自动备份服务（每日 12:00 / 18:00 / 22:00，保留最近7天）
+  postgres-backup:
+    image: postgres:16-alpine
+    container_name: fastapiadmin-postgres-backup
+    restart: always
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      TZ: "Asia/Shanghai"
+      PGPASSWORD: "FastapiAdmin@2026"
+    volumes:
+      - ./devops/backup/backup.sh:/backup.sh:ro
+      - ./docs/database:/backup
+    entrypoint: ["/bin/sh"]
+    command:
+      - "-c"
+      - >
+        echo "[$$(date)] backup scheduler started, schedule: 12:00 / 18:00 / 22:00" &&
+        while true; do
+          HOUR=$$(date +%H);
+          MIN=$$(date +%M);
+          if [ $$HOUR -lt 12 ]; then NEXT=12;
+          elif [ $$HOUR -lt 18 ]; then NEXT=18;
+          elif [ $$HOUR -lt 22 ]; then NEXT=22;
+          else NEXT=12; EXTRA=1; fi;
+          if [ "$$EXTRA" = "1" ]; then
+            SECONDS=$$(( (24 - $$HOUR) * 3600 - $$MIN * 60 + 12 * 3600 ));
+          else
+            SECONDS=$$(( ($$NEXT - $$HOUR) * 3600 - $$MIN * 60 ));
+          fi;
+          echo "[$$(date)] next backup at $$NEXT:00, in $$((SECONDS/3600))h $$((SECONDS%3600/60))m";
+          sleep $$SECONDS;
+          /backup.sh;
+        done
+    networks:
+      - fastapiadmin-network
+
+networks:
+  fastapiadmin-network:
+    driver: bridge

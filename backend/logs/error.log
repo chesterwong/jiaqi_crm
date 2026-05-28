@@ -1,0 +1,31 @@
+2026-05-28 13:43:28.925 | ERROR    | app.scripts.init_app:lifespan:77 - ❌ 应用初始化失败: cannot use a string pattern on a bytes-like object
+2026-05-28 13:52:18.997 | ERROR    | app.scripts.init_app:lifespan:77 - ❌ 应用初始化失败: cannot use a string pattern on a bytes-like object
+2026-05-28 13:55:55.382 | ERROR    | app.core.exceptions:CustomExceptionHandler:80 - [自定义异常] POST /api/v1/system/auth/login | 错误码: -1 | 错误信息: 验证码不能为空 | 详情: None
+2026-05-28 14:38:47.474 | ERROR    | app.core.ap_scheduler:_update_scheduler_status:490 - 更新调度器状态失败: (psycopg.OperationalError) connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: 5432, hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: 5432, hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-28 14:42:27.692 | ERROR    | app.core.exceptions:HttpExceptionHandler:102 - [HTTP异常] GET / | 状态码: 404 | 错误信息: Not Found
+2026-05-28 14:42:27.717 | ERROR    | app.core.exceptions:HttpExceptionHandler:102 - [HTTP异常] GET /favicon.ico | 状态码: 404 | 错误信息: Not Found
+2026-05-28 14:42:29.481 | ERROR    | app.core.exceptions:HttpExceptionHandler:102 - [HTTP异常] GET / | 状态码: 404 | 错误信息: Not Found
+2026-05-28 14:42:43.763 | ERROR    | app.core.exceptions:CustomExceptionHandler:80 - [自定义异常] GET /api/v1/system/notice/available | 错误码: 10401 | 错误信息: 认证已失效 | 详情: None
+2026-05-28 14:51:20.278 | ERROR    | app.core.ap_scheduler:_update_scheduler_status:490 - 更新调度器状态失败: (psycopg.OperationalError) connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: 5432, hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: 5432, hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-28 15:08:43.848 | ERROR    | app.core.exceptions:CustomExceptionHandler:80 - [自定义异常] GET /api/v1/monitor/resource/list | 错误码: 10401 | 错误信息: 认证已失效 | 详情: None
+2026-05-28 15:08:43.849 | ERROR    | app.core.exceptions:CustomExceptionHandler:80 - [自定义异常] GET /api/v1/system/notice/available | 错误码: 10401 | 错误信息: 认证已失效 | 详情: None
+2026-05-28 15:08:43.884 | ERROR    | app.core.exceptions:HttpExceptionHandler:102 - [HTTP异常] GET /api/v1/static/upload/2026/04/26/logo_20260426134735A387.png | 状态码: 404 | 错误信息: Not Found
+2026-05-28 15:16:45.017 | ERROR    | app.core.exceptions:CustomExceptionHandler:80 - [自定义异常] GET /api/v1/monitor/resource/list | 错误码: 10401 | 错误信息: 认证已失效 | 详情: None
+2026-05-28 15:16:45.018 | ERROR    | app.core.exceptions:CustomExceptionHandler:80 - [自定义异常] GET /api/v1/system/notice/available | 错误码: 10401 | 错误信息: 认证已失效 | 详情: None
+2026-05-28 15:16:45.059 | ERROR    | app.core.exceptions:HttpExceptionHandler:102 - [HTTP异常] GET /api/v1/static/upload/2026/04/26/logo_20260426134735A387.png | 状态码: 404 | 错误信息: Not Found
+2026-05-28 15:19:46.585 | ERROR    | app.core.exceptions:CustomExceptionHandler:80 - [自定义异常] GET /api/v1/system/notice/available | 错误码: 10401 | 错误信息: 认证已失效 | 详情: None
+2026-05-28 15:19:46.619 | ERROR    | app.core.exceptions:HttpExceptionHandler:102 - [HTTP异常] GET /api/v1/static/upload/2026/04/26/logo_20260426134735A387.png | 状态码: 404 | 错误信息: Not Found
+2026-05-28 15:20:43.534 | ERROR    | app.core.exceptions:CustomExceptionHandler:80 - [自定义异常] PUT /api/v1/system/user/current/info/update | 错误码: -1 | 错误信息: 超级管理员不能修改个人信息 | 详情: None
+2026-05-28 15:21:06.385 | ERROR    | app.core.exceptions:CustomExceptionHandler:80 - [自定义异常] PUT /api/v1/system/user/current/info/update | 错误码: -1 | 错误信息: 超级管理员不能修改个人信息 | 详情: None
+2026-05-28 15:22:40.949 | ERROR    | app.core.exceptions:HttpExceptionHandler:102 - [HTTP异常] GET /api/v1/static/upload/2026/04/26/logo_20260426134735A387.png | 状态码: 404 | 错误信息: Not Found
+2026-05-28 15:23:06.406 | ERROR    | app.core.exceptions:CustomExceptionHandler:80 - [自定义异常] PUT /api/v1/system/user/current/info/update | 错误码: -1 | 错误信息: 超级管理员不能修改个人信息 | 详情: None
+2026-05-28 15:25:07.326 | ERROR    | app.core.exceptions:HttpExceptionHandler:102 - [HTTP异常] GET /api/v1/static/upload/2026/04/26/logo_20260426134735A387.png | 状态码: 404 | 错误信息: Not Found
