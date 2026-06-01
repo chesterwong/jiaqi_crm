@@ -62,7 +62,7 @@
         </div>
       </div>
       <!-- 登录页底部版权 -->
-      <el-text size="small" class="py-2.5! fixed bottom-0 text-center">
+      <!-- <el-text size="small" class="py-2.5! fixed bottom-0 text-center">
         <a :href="configStore.configData.sys_git_code.config_value" target="_blank">
           {{ configStore.configData.sys_web_copyright.config_value }} |
         </a>
@@ -71,7 +71,7 @@
         <a :href="configStore.configData.sys_web_clause.config_value" target="_blank">条款</a>
         {{ configStore.configData.sys_keep_record.config_value }}
       </el-text>
-    </div>
+    </div> -->
   </div>
 </template>
 

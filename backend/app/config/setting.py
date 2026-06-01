@@ -126,6 +126,14 @@ class Settings(BaseSettings):
     HTTPX_DEFAULT_TIMEOUT: float = 10.0  # 对外请求默认超时（秒），见 app/common/httpx_defaults.py
 
     # ================================================= #
+    # ******************* 飞书开放平台 ******************* #
+    # ================================================= #
+    FEISHU_APP_ID: str = ""
+    FEISHU_APP_SECRET: str = ""
+    # Wiki 链接中 wiki/ 后的 node_token，如 XdjXwTfjtiHnmlkDjCecXeKrnPH
+    FEISHU_WIKI_NODE_TOKEN: str = "XdjXwTfjtiHnmlkDjCecXeKrnPH"
+
+    # ================================================= #
     # ********************* 日志配置 ******************* #
     # ================================================= #
     # 是否额外写入 JSON Lines（loguru ``serialize=True``，与控制台/info.log 同源，便于日志平台采集）

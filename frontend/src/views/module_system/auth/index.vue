@@ -88,7 +88,7 @@
         </transition>
 
         <!-- 登录页底部版权 -->
-        <footer class="auth-panel__footer">
+        <!-- <footer class="auth-panel__footer">
           <el-text size="small">
             <a :href="configStore.configData?.sys_git_code?.config_value || ''" target="_blank">
               {{ configStore.configData?.sys_web_copyright?.config_value || "" }}
@@ -107,7 +107,7 @@
             </a>
             {{ configStore.configData?.sys_keep_record?.config_value || "" }}
           </el-text>
-        </footer>
+        </footer> -->
       </section>
     </div>
   </div>
@@ -144,8 +144,8 @@ const formComponents = {
 
 // 预填登录信息（通过具名 v-model 双向绑定传递）
 const loginPreset = reactive<{ username: string; password: string }>({
-  username: "admin",
-  password: "123456",
+  username: "",
+  password: "",
 });
 
 let notificationInstance: ReturnType<typeof ElNotification> | null = null;

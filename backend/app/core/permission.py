@@ -1,6 +1,6 @@
 from typing import Any
 
-from sqlalchemy import select
+from sqlalchemy import or_, select
 from sqlalchemy.sql.elements import ColumnElement
 
 from app.api.v1.module_system.auth.schema import AuthSchema
@@ -37,6 +37,26 @@ class Permission:
         self.model = model
         self.auth = auth
         self.conditions: list[ColumnElement] = []  # 权限条件列表
+
+    def __self_or_owner_condition(self) -> ColumnElement | None:
+        """
+        「仅本人」数据权限：created_id 或 owner_id 命中当前用户均可查看。
+
+        营销资源等业务以 owner_id（归属）为准，导入数据 created_id 常为管理员。
+        """
+        if not self.auth.user:
+            return None
+        user_id = self.auth.user.id
+        parts: list[ColumnElement] = []
+        owner_id_attr = getattr(self.model, "owner_id", None)
+        created_id_attr = getattr(self.model, "created_id", None)
+        if owner_id_attr is not None:
+            parts.append(owner_id_attr == user_id)
+        if created_id_attr is not None:
+            parts.append(created_id_attr == user_id)
+        if not parts:
+            return None
+        return parts[0] if len(parts) == 1 else or_(*parts)
 
     async def filter_query(self, query: Any) -> Any:
         """
@@ -175,10 +195,7 @@ class Permission:
         """
         仅本人数据权限过滤
         """
-        created_id_attr = getattr(self.model, "created_id", None)
-        if created_id_attr is not None and self.auth.user:
-            return created_id_attr == self.auth.user.id
-        return None
+        return self.__self_or_owner_condition()
 
     async def __filter_by_data_scope(self) -> ColumnElement | None:
         """
@@ -193,10 +210,7 @@ class Permission:
         # 如果用户没有角色,则只能查看自己的数据
         roles = getattr(self.auth.user, "roles", []) or []
         if not roles:
-            created_id_attr = getattr(self.model, "created_id", None)
-            if created_id_attr is not None and self.auth.user:
-                return created_id_attr == self.auth.user.id
-            return None
+            return self.__self_or_owner_condition()
 
         # 获取用户所有角色的权限范围
         data_scopes = set()
@@ -222,29 +236,24 @@ class Permission:
                 if dept_id_attr is not None:
                     return dept_id_attr.in_(list(accessible_dept_ids))
 
-            # 其他模型：通过created_by关系过滤创建人的部门
+            dept_parts: list[ColumnElement] = []
             creator_rel = getattr(self.model, "created_by", None)
             if creator_rel is not None and hasattr(UserModel, "dept_id"):
-                return creator_rel.has(UserModel.dept_id.in_(list(accessible_dept_ids)))
+                dept_parts.append(creator_rel.has(UserModel.dept_id.in_(list(accessible_dept_ids))))
+            owner_rel = getattr(self.model, "owner", None)
+            if owner_rel is not None and hasattr(UserModel, "dept_id"):
+                dept_parts.append(owner_rel.has(UserModel.dept_id.in_(list(accessible_dept_ids))))
+            if dept_parts:
+                return dept_parts[0] if len(dept_parts) == 1 else or_(*dept_parts)
 
-            # 降级方案：只能查看自己的数据
-            created_id_attr = getattr(self.model, "created_id", None)
-            if created_id_attr is not None and self.auth.user:
-                return created_id_attr == self.auth.user.id
-            return None
+            return self.__self_or_owner_condition()
 
         # 处理仅本人数据权限
         if self.DATA_SCOPE_SELF in data_scopes:
-            created_id_attr = getattr(self.model, "created_id", None)
-            if created_id_attr is not None and self.auth.user:
-                return created_id_attr == self.auth.user.id
-            return None
+            return self.__self_or_owner_condition()
 
         # 默认情况：只能查看自己的数据
-        created_id_attr = getattr(self.model, "created_id", None)
-        if created_id_attr is not None and self.auth.user:
-            return created_id_attr == self.auth.user.id
-        return None
+        return self.__self_or_owner_condition()
 
     async def __get_accessible_dept_ids(
         self, data_scopes: set, custom_dept_ids: set

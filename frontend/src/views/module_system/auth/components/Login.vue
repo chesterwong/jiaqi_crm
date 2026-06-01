@@ -91,16 +91,26 @@
           </el-form-item>
         </el-form>
 
-        <div flex-center gap-10px>
+        <!-- <div flex-center gap-10px>
           <el-text size="default">{{ t("login.noAccount") }}</el-text>
           <el-link type="primary" underline="never" @click="toOtherForm('register')">
             {{ t("login.reg") }}
           </el-link>
         </div>
+        -->
       </el-tab-pane>
 
-      <!-- 快速登录 -->
-      <el-tab-pane v-if="autoLoginUsers.length > 0" label="快速登录" name="quick">
+      <!-- 快速登录（仅内网 IP 192.168.112.173 展示） -->
+      <!-- <el-tab-pane
+        v-if="showQuickLogin && autoLoginUsers.length > 0"
+        label="快速登录"
+        name="quick"
+      > -->
+      <el-tab-pane
+        v-if="showQuickLogin && autoLoginUsers.length > 0"
+        label="快速登录"
+        name="quick"
+      >
         <div class="quick-login-section">
           <div class="quick-login-tip">
             <el-text type="info">{{ t("login.quickLoginTip") }}</el-text>
@@ -143,7 +153,7 @@
     </el-tabs>
 
     <!-- 第三方登录 -->
-    <div class="third-party-login">
+    <!-- <div class="third-party-login">
       <div class="divider-container">
         <div class="divider-line"></div>
         <span class="divider-text">{{ t("login.otherLoginMethods") }}</span>
@@ -163,7 +173,7 @@
           <div text-20px cursor-pointer class="i-svg:gitee" />
         </CommonWrapper>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script setup lang="ts">
@@ -198,10 +208,18 @@ const props = defineProps<{ presetUsername?: string; presetPassword?: string }>(
 const route = useRoute();
 const router = useRouter();
 
-// 组件挂载时获取验证码和免登录用户列表
+/** 仅该主机名展示快速登录（与访问地址 IP 一致） */
+const QUICK_LOGIN_HOST = "192.168.112.173";
+const showQuickLogin = computed(
+  () => typeof window !== "undefined" && window.location.hostname === QUICK_LOGIN_HOST
+);
+
+// 组件挂载时获取验证码；快速登录仅内网 IP 拉取用户列表
 onMounted(() => {
   getCaptcha();
-  getAutoLoginUsers();
+  if (showQuickLogin.value) {
+    getAutoLoginUsers();
+  }
 });
 
 // 组件激活时获取验证码（适用于KeepAlive缓存的情况）

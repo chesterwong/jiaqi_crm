@@ -1,0 +1,8 @@
+# 销售管理插件
+
+name = "salesmanagement"
+title = "销售管理"
+version = "1.0.0"
+description = "营销资源台账与小鹅通联系人关联"
+optional = true
+tags = ["crm", "sales"]

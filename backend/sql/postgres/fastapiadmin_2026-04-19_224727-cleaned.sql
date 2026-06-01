@@ -3811,7 +3811,7 @@ COPY public.sys_param (config_name, config_key, config_value, config_type, id, u
 网页图标	sys_web_favicon	https://service.fastapiadmin.com/api/v1/static/image/favicon.png	t	3	16181e3d-87c8-44c5-9fac-d0f3dea0a719	0	初始化数据	2026-04-19 22:42:02.979377	2026-04-19 22:42:02.979377	f	\N
 网站Logo	sys_web_logo	https://service.fastapiadmin.com/api/v1/static/image/logo.png	t	4	760e50f2-6130-4152-8f14-bfcd52fe1ee6	0	初始化数据	2026-04-19 22:42:02.979381	2026-04-19 22:42:02.979381	f	\N
 登录背景	sys_login_background	https://service.fastapiadmin.com/api/v1/static/image/background.svg	t	5	e701a007-1e6d-462a-87ce-982f34dbfadb	0	初始化数据	2026-04-19 22:42:02.979385	2026-04-19 22:42:02.979386	f	\N
-版权信息	sys_web_copyright	Copyright © 2025-2026 service.fastapiadmin.com 版权所有	t	6	2cf41c18-9a98-4e6e-95b9-35107d6d323e	0	初始化数据	2026-04-19 22:42:02.979389	2026-04-19 22:42:02.97939	f	\N
+版权信息	sys_web_copyright	Copyright © 2025-2026 chesterbox 版权所有 版权所有	t	6	2cf41c18-9a98-4e6e-95b9-35107d6d323e	0	初始化数据	2026-04-19 22:42:02.979389	2026-04-19 22:42:02.97939	f	\N
 备案信息	sys_keep_record	陕ICP备2025069493号-1	t	7	0c518743-deb9-45b9-999b-954b6915d91a	0	初始化数据	2026-04-19 22:42:02.979393	2026-04-19 22:42:02.979394	f	\N
 帮助文档	sys_help_doc	https://service.fastapiadmin.com	t	8	e1281069-d3af-46e6-acaf-9761b4ca055f	0	初始化数据	2026-04-19 22:42:02.979397	2026-04-19 22:42:02.979398	f	\N
 隐私政策	sys_web_privacy	https://github.com/fastapiadmin/FastapiAdmin/blob/master/LICENSE	t	9	50d9b606-51ff-4733-bb00-aebd712327e9	0	初始化数据	2026-04-19 22:42:02.979402	2026-04-19 22:42:02.979402	f	\N

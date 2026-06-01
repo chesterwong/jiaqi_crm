@@ -19,7 +19,11 @@ import type { ISelectConfig } from "@/components/TableSelect/index.vue";
 import UserAPI from "@/api/module_system/user";
 
 // 父组件双向绑定的值（选中用户ID）
-const props = defineProps<{ modelValue?: number }>();
+const props = defineProps<{
+  modelValue?: number;
+  /** 限定部门 ID，例如销售部 */
+  deptId?: number;
+}>();
 
 // 事件向上派发，支持父组件监听和 v-model（仅回传选中用户ID）
 const emit = defineEmits<{
@@ -56,6 +60,9 @@ const selectConfig: ISelectConfig = {
   indexAction(params) {
     // 映射查询参数到后端接口
     const query: any = { ...params };
+    if (props.deptId != null) {
+      query.dept_id = props.deptId;
+    }
     // 清理空字符串/空值，避免后端 422
     Object.keys(query).forEach((k) => {
       const v = query[k];

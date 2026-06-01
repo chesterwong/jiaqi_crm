@@ -11,7 +11,7 @@
       <el-tab-pane label="网站配置" name="website">
         <el-form :model="configState" label-suffix=":" label-width="auto" label-position="right">
           <!-- 系统配置 -->
-          <el-divider>网站配置</el-divider>
+          <!-- <el-divider>网站配置</el-divider>
           <div v-for="(item, key) in systemConfigs" :key="key">
             <el-form-item :label="item.config_name">
               <span class="flex items-center gap-2 w-full">
@@ -24,7 +24,7 @@
                 />
               </span>
             </el-form-item>
-          </div>
+          </div> -->
 
           <!-- logo配置 -->
           <el-divider>网站图标</el-divider>
